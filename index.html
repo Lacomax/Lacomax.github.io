@@ -352,13 +352,13 @@
         <label>Richtung:
           <select id="directionFilter">
             <option value="both">Beides</option>
-            <option value="en-to-de">Englisch → Deutsch</option>
-            <option value="de-to-en">Deutsch → Englisch</option>
+            <option value="en-to-de">En → De</option>
+            <option value="de-to-en">De → En</option>
           </select>
         </label>
         <label>Reihenfolge:
           <select id="orderFilter">
-            <option value="seq">Sequentiell</option>
+            <option value="seq">wie im Buch</option>
             <option value="rand">Zufällig</option>
           </select>
         </label>
@@ -383,7 +383,7 @@
   </div>
 
   <div class="question">
-    <div class="question-label">Übersetze:</div>
+    <div class="question-label">Übersetze/Translate:</div>
     <div id="wordPrompt"></div>
     <span id="answerLang"></span>
     <div class="input-container">
@@ -410,7 +410,7 @@
     <div id="feedback"></div>
     </div>
     <div class="button-group">
-      <button id="checkAnswerBtn">Überprüfen (Enter)</button>
+      <button id="checkAnswerBtn" style="display:none;">Überprüfen (Enter)</button>
       <button id="continueBtn" style="display:none;">Weiter (Enter)</button>
   </div>
 
