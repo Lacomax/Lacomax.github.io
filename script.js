@@ -459,7 +459,14 @@ keyboard.addEventListener('click', (e) => {
 });
 
 function playRandomCorrectSound() {
-    const soundFile = correctSounds[Math.floor(Math.random() * correctSounds.length)];
-    const audio = new Audio("./correct_mp3/" + soundFile);
+    // Generate a random number between 1 and 25
+    const randomNumber = Math.floor(Math.random() * 25) + 1;
+    // Format the number with leading zeros if less than 10
+    const formattedNumber = randomNumber < 10 ? `0${randomNumber}` : `${randomNumber}`;
+    // Construct the file name
+    const soundFile = `correct${formattedNumber}.mp3`;
+    // Play the sound
+    const audio = new Audio("correct_mp3/" + soundFile);
     audio.play();
 }
+
