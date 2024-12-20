@@ -58,7 +58,7 @@ bookSelect.addEventListener('change', () => {
         return;
     }
 
-    let jsonFile = bookSelected === "FR-DE" ? "vocabD1b.json" : "vocabGL2B.json";
+    let jsonFile = bookSelected === "FR-DE" ? "./vocabD1b.json" : "./vocabGL2B.json";
     fetch(jsonFile)
         .then(response => response.json())
         .then(data => {
@@ -454,6 +454,6 @@ keyboard.addEventListener('click', (e) => {
 
 function playRandomCorrectSound() {
     const soundFile = correctSounds[Math.floor(Math.random() * correctSounds.length)];
-    const audio = new Audio("correct_mp3/" + soundFile);
+    const audio = new Audio("./correct_mp3/" + soundFile);
     audio.play();
 }
