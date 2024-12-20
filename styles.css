@@ -1,197 +1,102 @@
-body {
+/* Estilos generales */
+html, body {
     margin: 0;
-    font-family: "Arial", sans-serif;
-    background: #f9f9f9;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Evitar overflow en la pantalla principal */
+    font-family: Arial, sans-serif;
 }
 
+/* Encabezado */
 header .banner {
     background: #66b3ff;
-    padding: 20px;
+    padding: 20px; /* Padding general */
     text-align: center;
     color: #fff;
 }
 
 header h1 {
-    font-size: 2em; /* Bigger and white text for Vokabeltrainer */
-    color: #fff;
-    margin: 0;
-    padding:0;
+    font-size: 2em;
+    margin: 10px 0;
 }
 
 .banner-content {
-    margin-top: 15px;
-    color: #fff;
     font-size: 1.2em;
-    line-height: 1.5em;
+    margin-top: 10px;
 }
 
 .banner-content img.banner-flag {
-    width: 30px; 
+    width: 30px;
     height: auto;
-    display: block;
     margin: 0 auto;
     margin-top: 10px;
 }
 
+/* Contenedor principal */
 main {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    overflow-y: auto; /* Habilitar scroll dentro del main */
+    max-height: calc(100vh - 150px); /* Ajustar la altura máxima */
 }
 
-.setup-panel, .quiz-panel, .stats-panel {
-    width: 90%;
-    max-width: 600px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Panel del cuestionario */
+.quiz-panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.filters h2 {
-    text-align: center;
-    margin-bottom: 15px;
+.quiz-panel h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.filters select, 
-#answerInput {
+.quiz-panel input {
     width: 100%;
     padding: 10px;
-    font-size: 1.1em;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom:10px;
-}
-
-.filters button, 
-#checkAnswerBtn, 
-#startBtn, 
-#restartBtn {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1em;
-    background: #66b3ff;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
     margin-top: 10px;
-}
-
-.filters button:hover, 
-#checkAnswerBtn:hover, 
-#startBtn:hover, 
-#restartBtn:hover {
-    background: #5599dd;
-}
-
-.illustrations {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.illustrations img {
-    max-width: 60px;
-    margin: 0 10px;
-}
-
-.quiz-panel {
-    text-align: center;
-}
-
-.question-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.question-container input {
-    font-size: 1.2em;
-}
-
-.feedback {
-    margin-top: 20px;
-    font-size: 1.4em;
-    font-weight: bold;
-    min-height: 40px;
-    line-height: 1.4em;
-    transition: 0.3s ease;
-}
-
-.example {
-    margin-top: 20px;
-    font-size: 1.1em;
-    color: #555;
-}
-
-.progress-container {
-    width: 100%;
-    background: #eee;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    height: 20px;
-}
-
-.progress-bar {
-    height: 20px;
-    background: #66b3ff;
-    width: 0%;
-    transition: width 0.5s ease;
-}
-
-#progressInfo {
-    margin-bottom: 20px;
-    font-size: 1.1em;
-}
-
-.stats-panel {
-    text-align: center;
-}
-
-#mostRepeatedList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#mostRepeatedList li {
-    margin: 5px 0;
-    font-size: 1.2em;
-}
-
-.keyboard {
-    margin: 10px 0;
-}
-.keyboard button {
-    margin: 5px;
-    padding: 5px 10px;
-    font-size: 1.1em;
-    border-radius: 4px;
     border: 1px solid #ccc;
-    cursor: pointer;
-}
-.keyboard button:hover {
-    background: #e0e0e0;
+    border-radius: 5px;
 }
 
-/* Responsive adjustments */
+/* Ajustes responsivos para móviles */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 1.5em;
+    header .banner {
+        padding: 10px; /* Reducir el padding */
     }
 
-    .question-container h2 {
-        font-size: 1.6em;
+    header h1 {
+        font-size: 1.2em; /* Reducir el tamaño del texto */
+        margin: 5px 0; /* Reducir margen */
     }
 
-    #answerInput {
-        font-size: 1em;
+    .banner-content {
+        font-size: 0.9em; /* Reducir tamaño del texto */
+        margin-top: 5px;
     }
 
-    #checkAnswerBtn, #startBtn, #restartBtn {
-        font-size: 1em;
-        padding: 10px;
+    .banner-content img.banner-flag {
+        width: 20px; /* Reducir tamaño de la bandera */
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 5px; /* Reducir padding en dispositivos pequeños */
+        max-height: calc(100vh - 150px); /* Ajustar altura del contenedor */
+    }
+
+    .quiz-panel {
+        margin-bottom: 10px; /* Reducir espacio entre elementos */
+    }
+
+    .quiz-panel h2 {
+        font-size: 1.2em; /* Reducir tamaño de los encabezados */
+    }
+
+    .quiz-panel input {
+        padding: 8px; /* Reducir tamaño de los campos de entrada */
     }
 }

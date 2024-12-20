@@ -716,7 +716,7 @@
     {
         "lesson": "Unité 1",
         "module": "B",
-        "french": "de/d’",
+        "french": "de; d’",
         "german": "aus; von",
         "example": "Il vient d’Allemagne et parle très bien français."
     },
@@ -940,7 +940,7 @@
     {
         "lesson": "Unité 2",
         "module": "DE",
-        "french": "un journal/des journaux",
+        "french": "un journal;des journaux",
         "german": "eine Zeitung",
         "example": "J’achète un journal chaque matin pour lire les actualités."
     },
@@ -1122,14 +1122,14 @@
     {
         "lesson": "Unité 2",
         "module": "A",
-        "french": "français/française",
+        "french": "français;française",
         "german": "französisch",
         "example": "Ma copine est française, elle vient de Lyon."
     },
     {
         "lesson": "Unité 2",
         "module": "A",
-        "french": "écouter qn/qc",
+        "french": "écouter qn;écouter qc",
         "german": "jemandem zuhören; etwas anhören",
         "example": "J’aime écouter de la musique classique en travaillant."
     },
@@ -2368,7 +2368,7 @@
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "demi/demie",
+        "french": "demi;demie",
         "german": "halb",
         "example": "Il reste une demi-heure avant que le film ne commence."
     },
@@ -2768,7 +2768,7 @@
         "lesson": "Unité 4",
         "module": "B",
         "french": "faire qc",
-        "german": "etwas tun /machen",
+        "german": "etwas tun; etwas machen",
         "example": "On va faire une promenade après le déjeuner."
     },
     {
@@ -3180,8 +3180,8 @@
     {
         "lesson": "Unité 5",
         "module": "A",
-        "french": "minuit ",
-        "german": "Mitternacht/12 Uhr nachts",
+        "french": "minuit",
+        "german": "Mitternacht; 12 Uhr nachts",
         "example": "Je suis rentré chez moi à minuit pile."
     },
     {
@@ -3517,7 +3517,7 @@
         "lesson": "Unité 5",
         "module": "B",
         "french": "poser qc",
-        "german": "etwas setzen/stellen/legen",
+        "german": "etwas setzen; etwas stellen;etwas legen",
         "example": "Peux-tu poser ce livre sur la table ?"
     },
     {
