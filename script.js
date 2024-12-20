@@ -311,21 +311,26 @@ function checkAnswer() {
         playRandomCorrectSound();
 
         feedbackMessage.style.color = "green";
-        if (bookSelected === "FR-DE") {
-            feedbackMessage.textContent = (questionLanguage === "FR->DE") ? "Richtig!" : "Très bien!";
-        } else {
-            feedbackMessage.textContent = (questionLanguage === "DE->EN") ? "Good job!" : "Richtig!";
-        }
+        feedbackMessage.textContent =
+            bookSelected === "FR-DE"
+                ? (questionLanguage === "FR->DE" ? "Richtig!" : "Très bien!")
+                : (questionLanguage === "DE->EN" ? "Good job!" : "Richtig!");
 
         correctCount++;
         answeredWords[key] = (answeredWords[key] || 0) + 1;
 
         updateProgress();
 
+        // Disable input and button temporarily
+        answerInput.disabled = true;
+        checkAnswerBtn.disabled = true;
+
         setTimeout(() => {
             currentIndex++;
+            answerInput.disabled = false;
+            checkAnswerBtn.disabled = false;
             showNextWord();
-        }, 2000);
+        }, 2000); // Wait 2 seconds before showing the next word
     } else {
         feedbackMessage.style.color = "red";
         feedbackMessage.textContent = "Oops!";
@@ -340,6 +345,7 @@ function checkAnswer() {
         waitingForNextAfterIncorrect = true;
     }
 }
+
 
 function getCorrectAnswers(wordData) {
     let correctAnswerArr;
