@@ -58,7 +58,7 @@ bookSelect.addEventListener('change', () => {
         return;
     }
 
-    let jsonFile = bookSelected === "FR-DE" ? "./vocabD1b.json" : "./vocabGL2B.json";
+    let jsonFile = bookSelected === "FR-DE" ? "./vocabD1B.json" : "./vocabGL2B.json";
     fetch(jsonFile)
         .then(response => response.json())
         .then(data => {
