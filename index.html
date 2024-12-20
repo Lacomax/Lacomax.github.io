@@ -1,832 +1,98 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Englisch-Deutsch Vokabeltrainer</title>
-<style>
-  body { 
-    font-family: sans-serif; 
-    margin:0; 
-    background: #F9FFF9; 
-    color: #333; 
-    font-size: 18px;
-    display:flex;
-    flex-direction:column;
-    min-height:100vh;
-    align-items:center;
-  }
-  .banner {
-    width:100%;
-    display:flex; 
-    flex-direction:column;
-    align-items:center; 
-    justify-content:center; 
-    background-color: #428A42; 
-    padding:10px; 
-    color:white;
-  }
-  .banner h1 {
-    margin:0;
-    text-align:center;
-    font-size:1.8em;
-  }
-  
-  .content {
-    flex:1;
-    margin:20px;
-    width:100%;
-    max-width:800px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .filters-container {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-bottom:20px;
-    width:100%;
-  }
-
-  .filter-row {
-    display:flex; 
-    flex-wrap: wrap;
-    gap: 15px;
-    align-items:flex-end; 
-    justify-content:center;
-    width:100%;
-  }
-
-  .filters {
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 15px;
-    align-items:flex-end; 
-    justify-content:center;
-  }
-
-  .filters > label {
-    display:flex;
-    flex-direction: column;
-    font-size: 0.9em;
-    align-items:center;
-  }
-
-  select, button, input {
-    padding: 5px;
-    margin-top: 5px;
-    border-radius:5px;
-    border:1px solid #ccc;
-    font-size: 1em;
-  }
-
-  #toggleHelpBtn {
-    background: #428A42;
-    color: white;
-    border:none;
-    cursor:pointer;
-    margin-top:5px;
-    width:30px;
-    height:30px;
-    border-radius:50%;
-    font-weight:bold;
-    font-size:1em;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  #toggleHelpBtn:hover {
-    background: #397539;
-  }
-
-  #startBtn, #restartBtn {
-    background: #428A42;
-    color: white;
-    border:none;
-    cursor:pointer;
-    margin-top:5px;
-  }
-  #startBtn:hover, #restartBtn:hover {
-    background: #397539;
-  }
-
-  .help-section {
-    background: #ffffffcc; 
-    padding:10px; 
-    margin-bottom:20px; 
-    border-radius:5px; 
-    display:none;
-    max-width:600px;
-    text-align:left;
-  }
-
-  .question {
-    display:none; 
-    flex-direction:column; 
-    align-items:center; 
-    text-align:center;
-    margin-bottom: 30px;
-    width:100%;
-  }
-
-  .question-label {
-    font-size:1em;
-    margin-bottom:5px; 
-    font-weight:normal; 
-  }
-
-  #wordPrompt { 
-    font-size:1.8em; 
-    margin-bottom:20px; 
-    font-weight:bold; 
-  }
-
-  #answerLang {
-    display:block;
-    font-size:0.9em;
-    margin-bottom:5px;
-    color:#333;
-  }
-
-  .input-container {
-    position:relative;
-    display:flex;
-    justify-content:center;
-    margin-bottom:10px;
-    width:100%;
-  }
-  #answerInput { 
-    font-size:1em; 
-    width:140%; 
-    max-width:630px; 
-    text-align:center; 
-    padding:5px; 
-    margin:0 auto;
-  }
-
-  .special-chars {
-    display:flex;
-    flex-wrap:wrap;
-    gap:5px;
-    margin-bottom:10px;
-    justify-content:center;
-    width:100%;
-  }
-
-  .char-button {
-    cursor:pointer;
-    background:#eee;
-    border:1px solid #ccc;
-    border-radius:3px;
-    padding:5px 8px;
-    font-size:1em;
-    transition: background 0.2s;
-  }
-  .char-button:hover {
-    background:#ddd;
-  }
-
-  .button-group {
-    display:flex; 
-    gap:20px; 
-    margin-top:20px;
-    justify-content:center;
-    width:100%;
-  }
-  #checkAnswerBtn, #continueBtn {
-    background: #428A42;
-    color: white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    padding:10px 20px;
-    font-size: 1em;
-  }
-  #checkAnswerBtn:hover, #continueBtn:hover {
-    background: #397539;
-  }
-
-  #feedback {
-    margin-top:20px; 
-    white-space:pre-wrap; 
-    text-align:center;
-    max-width:600px;
-    margin:0 auto;
-  }
-
-  .feedback-correct {
-    background: #DFF0D8;
-    color: #3C763D;
-    border-radius:5px;
-    padding:15px;
-    font-size:1.2em;
-    text-align:center;
-    max-width:500px;
-    margin:20px auto 0;
-  }
-
-  .feedback-wrong {
-    background: #FCE8E8; 
-    color: #333;
-    border-radius:5px;
-    padding:15px;
-    font-weight:normal;
-    text-align:center;
-    max-width:500px;
-    margin:20px auto 0;
-  }
-
-  .feedback-wrong .feedback-header {
-    font-weight:bold;
-    font-size:1.2em;
-    margin-bottom:10px;
-    color:#BB4444;
-    text-align:center;
-  }
-
-  .answer-line {
-    margin-bottom:10px;
-    font-size:1em;
-  }
-
-  .correct-answer {
-    font-weight:bold;
-    font-size:1.8em; 
-    color:#000; 
-    display:block;
-    margin-top:5px;
-  }
-
-  .example-line {
-    font-size:1em;
-    line-height:1.4;
-    color:#000;
-    margin-top:10px;
-  }
-
-  .progress {
-    display:none; 
-    flex-direction:column; 
-    align-items:center;
-    margin-bottom:20px;
-    width:100%;
-  }
-  .progress-wrapper {
-    position:relative; 
-    width:80%; 
-    max-width:300px; 
-    margin:10px 0;
-  }
-
-  #progressStats {
-    text-align:center;
-    margin-bottom:5px;
-    font-size:0.9em;
-    width:100%;
-  }
-
-  #progressBar {
-    width:100%;
-  }
-
-  #score {
-    text-align:center; 
-    margin-top:20px;
-    width:100%;
-    display:none; 
-  }
-  .badge {
-    background:gold; 
-    padding:5px; 
-    border-radius:5px; 
-    margin-top:10px; 
-    display:inline-block; 
-    font-weight:bold;
-  }
-  #restartBtn {
-    display:none; 
-    margin-top:20px;
-    margin:20px auto 0 auto;
-  }
-
-  @media(max-width:600px) {
-    #wordPrompt {
-      font-size:1.5em;
-    }
-    .correct-answer {
-      font-size:1.4em;
-    }
-    .answer-line, .example-line {
-      font-size:0.9em;
-    }
-    #answerInput {
-      width:95%;
-      max-width:none;
-    }
-  }
-
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vokabeltrainer</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-<div class="banner">
-  <h1>Englisch-Deutsch Vokabeltrainer</h1>
-  <h4>Green Line 2 Bayern</h4>
-</div>
-<div class="content">
-  <div class="filters-container">
-    <div class="filter-row">
-      <button id="toggleHelpBtn">?</button>
-      <div class="filters">
-        <label>Lektion:
-          <select id="lessonFilter">
-            <option value="">Alle</option>
-          </select>
-        </label>
-        <label>Modul:
-          <select id="moduleFilter">
-            <option value="">Alle</option>
-          </select>
-        </label>
-        <label>Richtung:
-          <select id="directionFilter">
-            <option value="both">Beides</option>
-            <option value="en-to-de">En → De</option>
-            <option value="de-to-en">De → En</option>
-          </select>
-        </label>
-        <label>Reihenfolge:
-          <select id="orderFilter">
-            <option value="seq">wie im Buch</option>
-            <option value="rand">Zufällig</option>
-          </select>
-        </label>
-      </div>
-    </div>
-    <div class="filters">
-      <button id="startBtn">Übung starten</button>
-    </div>
-  </div>
+    <header>
+        <div class="banner">
+            <h1 id="bannerTitle">Vokabeltrainer</h1>
+            <!-- After start, we will dynamically add book, lesson|module, and flag as separate elements below -->
+            <div id="bannerContent" class="banner-content"></div>
+        </div>
+    </header>
 
-  <div class="help-section" id="helpSection">
-    <p>Willkommen! Hier sind einige Tipps:</p>
-    <ul>
-      <li>Wähle Lektion, Modul und Richtung, dann starte die Übung.</li>
-      <li>Wähle auch, ob die Fragen in Reihenfolge oder zufällig gestellt werden.</li>
-      <li>Übersetze die angezeigte Vokabel und drücke Enter oder klicke auf "Überprüfen".</li>
-      <li>Wenn du von Englisch nach Deutsch übersetzt, achte auf korrekte Groß-/Kleinschreibung.</li>
-      <li>Wenn deine Antwort nicht ganz richtig ist, bekommst du später eine weitere Chance.</li>
-      <li>Die Fortschrittsanzeige zeigt dir deine Lernfortschritte an.</li>
-      <li>Du musst auch die Satzzeichen am Ende schreiben.</li>
-    </ul>
-  </div>
+    <main>
+        <section class="setup-panel">
+            <div class="filters">
+                <h2>Buch</h2>
+                <select id="bookSelect">
+                    <option value="">-- Wählen Sie --</option>
+                    <option value="FR-DE">Découvertes 1 - Bayern</option>
+                    <option value="DE-EN">Green Line 2 - Bayern</option>
+                </select>
 
-  <div class="question">
-    <div class="question-label">Übersetze/Translate:</div>
-    <div id="wordPrompt"></div>
-    <span id="answerLang"></span>
-    <div class="input-container">
-      <input type="text" id="answerInput" placeholder="Deine Antwort"/>
-    </div>
-    <div class="special-chars">
-      <span class="char-button">á</span>
-      <span class="char-button">é</span>
-      <span class="char-button">í</span>
-      <span class="char-button">ó</span>
-      <span class="char-button">ú</span>
-      <span class="char-button">à</span>
-      <span class="char-button">è</span>
-      <span class="char-button">ê</span>
-      <span class="char-button">ö</span>
-      <span class="char-button">ä</span>
-      <span class="char-button">ü</span>
-      <span class="char-button">ß</span>
-      <span class="char-button">ç</span>
-      <span class="char-button">î</span>
-      <span class="char-button">ô</span>
-    </div>
+                <label for="lessonSelect" id="lessonLabel" style="display:none;"></label>
+                <select id="lessonSelect" style="display:none;">
+                    <option value="all">All</option>
+                </select>
 
-    <div id="feedback"></div>
-    </div>
-    <div class="button-group">
-      <button id="checkAnswerBtn" style="display:none;">Überprüfen (Enter)</button>
-      <button id="continueBtn" style="display:none;">Weiter (Enter)</button>
-  </div>
+                <label for="moduleSelect" id="moduleLabel" style="display:none;"></label>
+                <select id="moduleSelect" style="display:none;">
+                    <option value="all">All</option>
+                </select>
 
-  <div class="progress">
-    <div id="progressStats">
-      <span id="correctCount">0</span>/<span id="totalCount">0</span>
-    </div>
-    <div class="progress-wrapper">
-      <progress id="progressBar" max="100" value="0"></progress>
-    </div>
-  </div>
+                <label for="directionSelect" id="directionLabel" style="display:none;"></label>
+                <select id="directionSelect" style="display:none;">
+                </select>
 
-  <div id="score"></div>
-  <button id="restartBtn">Neu starten</button>
-</div>
-<script>
-let data = [];
-let filteredData = [];
-let currentIndex = 0;
-let mode = "en-to-de";
-let errors = {};
-let correctCount = 0;
-let askedCount = 0;
-let requiredCorrectStreak = 2;
-let currentItem = null;
-let answerChecked = false;
-let directionMode = "both"; 
-let mainPassDone = false;
-let toReview = [];
-let startTime = 0;
-let orderMode = "seq";
+                <div style="display:none;" id="orderContainer">
+                    <label id="orderLabel">
+                        <input type="checkbox" id="randomOrder" checked />
+                    </label>
+                </div>
 
-let attemptsPerWord = {};
-let attemptsDistribution = {};
-let hardestWords = {};
+                <button id="startBtn" style="display:none;">Commencer</button>
+            </div>
 
-const checkBtn = document.getElementById('checkAnswerBtn');
-const continueBtn = document.getElementById('continueBtn');
-const answerInput = document.getElementById('answerInput');
-const helpSection = document.getElementById('helpSection');
-const questionSection = document.querySelector('.question');
-const progressSection = document.querySelector('.progress');
-const scoreSection = document.getElementById('score');
-const restartBtn = document.getElementById('restartBtn');
-let enterDisabled = false; // para deshabilitar Enter tras respuesta errónea
+            <div class="illustrations">
+                <img id="flag1" class="flag" style="display:none;">
+                <img id="flag2" class="flag" style="display:none;">
+            </div>
+        </section>
 
-document.getElementById('startBtn').addEventListener('click', startPractice);
-checkBtn.addEventListener('click', handleCheckAnswer);
-continueBtn.addEventListener('click', handleContinue);
-restartBtn.addEventListener('click', resetUI);
-document.getElementById('toggleHelpBtn').addEventListener('click', toggleHelp);
+        <section class="quiz-panel" style="display:none;">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p id="progressInfo"></p>
 
-answerInput.addEventListener('keyup', (e)=>{
-  if(e.key==="Enter" && !enterDisabled){
-    let val = answerInput.value.trim();
-    if(!answerChecked && val!=="") {
-      handleCheckAnswer();
-    } else if (answerChecked) {
-      handleContinue();
-    }
-  }
-});
+            <div class="question-container">
+                <h2 id="questionText">...</h2>
+                <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off"/>
+                <div class="keyboard">
+                    <button data-char="é">é</button>
+                    <button data-char="è">è</button>
+                    <button data-char="ê">ê</button>
+                    <button data-char="ë">ë</button>
+                    <button data-char="à">à</button>
+                    <button data-char="â">â</button>
+                    <button data-char="î">î</button>
+                    <button data-char="ï">ï</button>
+                    <button data-char="ô">ô</button>
+                    <button data-char="ù">ù</button>
+                    <button data-char="û">û</button>
+                    <button data-char="ç">ç</button>
+                </div>
+                <button id="checkAnswerBtn">Valider</button>
+            </div>
 
-answerInput.addEventListener('input', ()=>{
-  let val = answerInput.value.trim();
-  checkBtn.disabled = (val==="");
-});
+            <div class="feedback" id="feedbackMessage"></div>
+            <div class="example" id="exampleSentence"></div>
+        </section>
 
-document.querySelectorAll('.char-button').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    answerInput.value += btn.textContent;
-    checkBtn.disabled = (answerInput.value.trim()==="");
-    answerInput.focus();
-  });
-});
+        <section class="stats-panel" style="display:none;">
+            <h2 id="statsTitle">Statistiques</h2>
+            <p id="statsSummary"></p>
+            <h3 id="mostRepeatedTitle">Mots les plus répétés:</h3>
+            <ul id="mostRepeatedList"></ul>
+            <button id="restartBtn">Réessayer / Try again</button>
+        </section>
+    </main>
 
-function resetUI(){
-  helpSection.style.display = "block";
-  questionSection.style.display = "none";
-  progressSection.style.display = "none";
-  scoreSection.style.display = "none";
-  restartBtn.style.display = "none";
-
-  document.getElementById('feedback').textContent="";
-  document.getElementById('feedback').className="";
-  answerInput.value="";
-  checkBtn.style.display='inline-block';
-  continueBtn.style.display='none';
-  checkBtn.disabled=true;
-}
-
-fetch('vocab.json') 
-  .then(r=>r.json())
-  .then(jsonData=>{
-    data = jsonData;
-    resetUI(); 
-    initFilters();
-});
-
-function initFilters(){
-  const lessons = [...new Set(data.map(d=>d.lesson))].sort();
-  
-  const lessonSelect = document.getElementById('lessonFilter');
-  lessons.forEach(l=>{
-    const opt = document.createElement('option');
-    opt.value=l;opt.textContent=l;
-    lessonSelect.appendChild(opt);
-  });
-
-  lessonSelect.addEventListener('change',updateModules);
-  updateModules();
-
-  function updateModules(){
-    const moduleVal = document.getElementById('moduleFilter');
-    moduleVal.innerHTML="<option value=''>Alle</option>";
-    const selectedLesson = lessonSelect.value;
-    let modulesFiltered = data.filter(d=> selectedLesson==="" || d.lesson===selectedLesson)
-                              .map(d=>d.module)
-                              .filter(m=>m!=="");
-    const uniqueModules = [...new Set(modulesFiltered)].sort();
-    uniqueModules.forEach(m=>{
-      const opt = document.createElement('option');
-      opt.value=m;opt.textContent=m;
-      moduleVal.appendChild(opt);
-    });
-  }
-}
-
-function toggleHelp(){
-  helpSection.style.display = (helpSection.style.display==="none"||helpSection.style.display==="")?"block":"none";
-}
-
-function startPractice(){
-  const lessonVal = document.getElementById('lessonFilter').value;
-  const moduleVal = document.getElementById('moduleFilter').value;
-  directionMode = document.getElementById('directionFilter').value;
-  orderMode = document.getElementById('orderFilter').value;
-
-  filteredData = data.filter(d=>
-    (lessonVal===""||d.lesson===lessonVal) && 
-    (moduleVal===""||d.module===moduleVal)
-  );
-
-  if(filteredData.length===0){
-    alert("Keine Einträge für diese Auswahl vorhanden.");
-    return;
-  }
-
-  if(orderMode==="rand"){
-    shuffleArray(filteredData);
-  }
-
-  currentIndex = 0;
-  askedCount = 0;
-  correctCount = 0;
-  errors = {};
-  toReview = [];
-  mainPassDone = false;
-  attemptsPerWord = {};
-  attemptsDistribution = {};
-  hardestWords = {};
-  enterDisabled = false;
-
-  helpSection.style.display="none";
-  questionSection.style.display='flex';
-  progressSection.style.display='flex';
-  scoreSection.style.display='none';
-  restartBtn.style.display='none';
-
-  answerChecked = false;
-  answerInput.value="";
-  checkBtn.style.display='inline-block';
-  continueBtn.style.display='none';
-  checkBtn.disabled=true; 
-  startTime = Date.now(); 
-
-  document.getElementById('totalCount').textContent=filteredData.length;
-
-  updateProgress();
-  nextQuestion();
-}
-
-function nextQuestion(){
-  document.getElementById('feedback').textContent="";
-  document.getElementById('feedback').className="";
-  answerInput.value="";
-  checkBtn.disabled=true;
-  enterDisabled = false; 
-
-  if(!mainPassDone && currentIndex>=filteredData.length){
-    mainPassDone = true;
-    if(toReview.length>0){
-      if(orderMode==="rand") shuffleArray(toReview);
-      filteredData = toReview.slice(); 
-      toReview = [];
-      currentIndex = 0;
-    } else {
-      endPractice();
-      return;
-    }
-  } else if (mainPassDone && currentIndex>=filteredData.length) {
-    let pending = toReview.filter(item=> {
-      let cf;
-      if(directionMode==="both"){
-        cf = (item.english + ";" + item.german);
-      } else if(directionMode==="en-to-de"){
-        cf = item.german;
-      } else {
-        cf = item.english;
-      }
-      let allCorrectAnswers = cf.split(';').map(a=>a.trim());
-      return allCorrectAnswers.some(ans=>{
-        let ansKey = (directionMode==="en-to-de")?ans:ans.toLowerCase();
-        return (errors[ansKey]||0)<requiredCorrectStreak;
-      });
-    });
-    
-    if(pending.length>0){
-      if(orderMode==="rand") shuffleArray(pending);
-      filteredData = pending;
-      currentIndex = 0;
-      toReview = [];
-    } else {
-      endPractice();
-      return;
-    }
-  }
-
-  currentItem = filteredData[currentIndex];
-
-  let wordKey = getWordKey(currentItem);
-  attemptsPerWord[wordKey] = 1;
-
-  if(directionMode==="both"){
-    mode = (mode==="en-to-de")?"de-to-en":"en-to-de";
-  } else {
-    mode = directionMode;
-  }
-  
-  let promptText = (mode==="en-to-de") ? currentItem.english : currentItem.german;
-  document.getElementById('wordPrompt').textContent = promptText; 
-
-  if(mode==="en-to-de"){
-    document.getElementById('answerLang').textContent="EN → DE";
-  } else {
-    document.getElementById('answerLang').textContent="DE → EN";
-  }
-
-  answerChecked = false;
-  answerInput.focus();
-  continueBtn.style.display='none';
-  checkBtn.style.display='inline-block';
-}
-
-function handleCheckAnswer(){
-  if(answerChecked) return;
-  let val = answerInput.value.trim();
-  if(val==="") return; 
-  checkAnswer();
-  answerChecked = true;
-}
-
-function handleContinue(){
-  if(!answerChecked) return;
-  currentIndex++;
-  nextQuestion();
-}
-
-function checkAnswer(){
-  const userAnswer = answerInput.value.trim();
-
-  let correctField = (mode==="en-to-de")?currentItem.german:currentItem.english;
-  let correctAnswers = correctField.split(';').map(ans=>ans.trim());
-
-  askedCount++;
-  
-  let isCorrect;
-  if(mode==="en-to-de"){
-    isCorrect = correctAnswers.includes(userAnswer);
-  } else {
-    let userLower = userAnswer.toLowerCase();
-    let cA = correctAnswers.map(a=>a.toLowerCase());
-    isCorrect = cA.includes(userLower);
-  }
-
-  const feedback = document.getElementById('feedback');
-  let wordKey = getWordKey(currentItem);
-
-  if(isCorrect){
-    correctCount++;
-    correctAnswers.forEach(ans=>{
-      let ansKey = (mode==="en-to-de")?ans:ans.toLowerCase();
-      errors[ansKey] = errors[ansKey]||0;
-      if((mode==="en-to-de" && ans===userAnswer)||(mode!=="en-to-de" && ans.toLowerCase()===userAnswer.toLowerCase())) {
-        errors[ansKey]++;
-      }
-    });
-    feedback.className = "feedback-correct";
-    feedback.innerHTML = `✔️ Richtig :)`;
-    if(currentItem.example){
-      feedback.innerHTML += `<div class="example-line">${currentItem.example}</div>`;
-    }
-
-    recordAttemptCount(wordKey);
-    updateProgress();
-    checkBtn.style.display='none';
-    continueBtn.style.display='inline-block';
-  } else {
-    feedback.className = "feedback-wrong";
-    feedback.innerHTML = `
-      <div class="feedback-header" style="text-align:center;">
-        Nicht ganz richtig!
-      </div>
-      <div class="answer-line">Die richtige Antwort ist:<br><span class="correct-answer">${correctAnswers.join("; ")}</span></div>
-    `;
-    if(currentItem.example){
-      feedback.innerHTML += `<div class="example-line">${currentItem.example}</div>`;
-    }
-
-    attemptsPerWord[wordKey] = (attemptsPerWord[wordKey]||1)+1;
-
-    updateProgress();
-
-    // Ocultar ambos botones
-    checkBtn.style.display='none';
-    continueBtn.style.display='none';
-
-    // Deshabilitar Enter por 1 segundo
-    enterDisabled = true;
-    setTimeout(()=>{
-      enterDisabled = false;
-      continueBtn.style.display='inline-block';
-    },1000);
-    
-    let needReview = correctAnswers.some(ans=>{
-      let ansKey = (mode==="en-to-de")?ans:ans.toLowerCase();
-      return (errors[ansKey]||0)<requiredCorrectStreak;
-    });
-    let itemInReview = toReview.find(i=>i===currentItem);
-    if(!itemInReview && needReview){
-      toReview.push(currentItem);
-    }
-  }
-}
-
-function recordAttemptCount(wordKey){
-  let attempts = attemptsPerWord[wordKey]||1;
-  attemptsDistribution[attempts] = (attemptsDistribution[attempts]||0)+1;
-  hardestWords[wordKey] = attempts;
-}
-
-function updateProgress(){
-  const total = filteredData.length; 
-  const value = (total>0)?(correctCount/total)*100:0;
-  document.getElementById('progressBar').value=value;
-  document.getElementById('correctCount').textContent=correctCount;
-}
-
-function endPractice(){
-  const endTime = Date.now();
-  const totalTimeSeconds = (endTime - startTime)/1000;
-  const avgTime = askedCount>0 ? (totalTimeSeconds/askedCount).toFixed(2) : 0;
-
-  document.querySelector('.question-label').style.display='none';
-  document.getElementById('wordPrompt').style.display='none';
-  document.getElementById('answerLang').style.display='none';
-  document.querySelector('.input-container').style.display='none';
-  document.querySelector('.special-chars').style.display='none'; 
-
-  const feedback = document.getElementById('feedback');
-  feedback.className="";
-  feedback.innerHTML = "Du hast ein Abzeichen gewonnen 🎉";
-  feedback.style.color = "#333";
-  feedback.style.fontSize = "1em";
-
-  let attemptsStats = "";
-  const sortedAttemptKeys = Object.keys(attemptsDistribution).map(n=>parseInt(n)).sort((a,b)=>a-b);
-  sortedAttemptKeys.forEach(k=>{
-    attemptsStats += `<li>${k} Versuch(e): ${attemptsDistribution[k]} Wörter</li>`;
-  });
-
-  let maxAttempts = 0;
-  Object.values(hardestWords).forEach(a=>{
-    if(a>maxAttempts) maxAttempts=a;
-  });
-  let hardest = Object.keys(hardestWords).filter(k=>hardestWords[k]===maxAttempts);
-
-  const stats = `
-    <p>Statistiken:</p>
-    <ul style="list-style:none;padding:0;margin:10px 0;">
-      <li>Insgesamt beantwortete Wörter: ${askedCount}</li>
-      <li>Durchschnittliche Zeit pro Wort: ${avgTime} Sek.</li>
-      <li>Verteilung nach Versuchen:</li>
-      <ul>${attemptsStats}</ul>
-      <li>Schwierigste Wörter (benötigten ${maxAttempts} Versuche): ${hardest.join(', ')}</li>
-    </ul>
-  `;
-
-  scoreSection.innerHTML = `<div class="badge">Neues Level erreicht!</div>` + stats;
-  scoreSection.style.display='block';
-  answerInput.value="";
-  continueBtn.style.display='none';
-  checkBtn.style.display='none';
-  restartBtn.style.display='inline-block';
-}
-
-function getWordKey(item){
-  return (mode==="en-to-de")?item.english:item.german;
-}
-
-function shuffleArray(arr){
-  for(let i=arr.length-1; i>0; i--){
-    const j = Math.floor(Math.random()* (i+1));
-    [arr[i], arr[j]]=[arr[j], arr[i]];
-  }
-}
-</script>
+    <script src="script.js"></script>
 </body>
 </html>

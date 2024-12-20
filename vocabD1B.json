@@ -1,0 +1,5098 @@
+[
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Bienvenue!",
+        "german": "Willkommen!",
+        "example": "Bienvenue chez nous pour commencer cette aventure en français."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Salut! ",
+        "german": "Hallo!; Grüß dich!",
+        "example": "Salut, ça fait longtemps qu’on ne s’est pas vus !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Sarah",
+        "german": "Sarah",
+        "example": "Sarah est ma meilleure amie depuis l'école primaire"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "et",
+        "german": "und",
+        "example": "J'aime le chocolat et les fraises"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "toi",
+        "german": "du (betont)",
+        "example": "Et toi, que fais-tu ce week-end ?"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "moi",
+        "german": "ich (betont)",
+        "example": "Moi, je travaille comme professeur"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "je m’appelle",
+        "german": "ich heiße",
+        "example": "Bonjour, je m’appelle Sophie et toi ?"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Ça va?",
+        "german": "Wie geht’s?",
+        "example": "Salut ! Ça va bien aujourd’hui ?"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "oui",
+        "german": "ja",
+        "example": "Oui, je voudrais un café, s'il vous plaît"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "merci",
+        "german": "danke",
+        "example": "Merci de m'avoir aidé"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "A plus! ",
+        "german": "Bis später!",
+        "example": "Je dois y aller, A plus !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Bonjour!",
+        "german": "Guten Tag!",
+        "example": "Bonjour, comment vas-tu aujourd’hui ?"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Au revoir!",
+        "german": "Auf Wiedersehen!",
+        "example": "Merci pour la visite, au revoir et à bientôt !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Salut! ",
+        "german": "Tschüss!",
+        "example": "Salut, ça fait longtemps qu’on ne s’est pas vus !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un ami/une amie",
+        "german": "ein Freund/eine Freundin",
+        "example": "Marie est une amie très chère pour moi."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Bonjour, les amis!",
+        "german": "Guten Tag, Freunde!",
+        "example": "Bonjour, comment vas-tu aujourd’hui ?"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "bien (adv.)",
+        "german": "gut (Adv.)",
+        "example": "Je parle bien le français maintenant."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "une chanson",
+        "german": "ein Lied",
+        "example": "Ma chanson préférée est très romantique"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Venez!",
+        "german": "Kommt! Aufforderung",
+        "example": "Venez rapidement, le film va commencer !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "à",
+        "german": "in; nach",
+        "example": "Je vais à Paris ce week-end"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un copain/une copine ",
+        "german": "ein Freund/eine Freundin",
+        "example": "Léo est mon copain depuis trois ans."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "à demain",
+        "german": "bis morgen",
+        "example": "À demain, on se retrouve à la même heure."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "voilà",
+        "german": "da ist; da sind",
+        "example": "Voilà ton livre que tu cherchais"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "une bise ",
+        "german": "ein Kuss; ein Küsschen",
+        "example": "Je te fais une bise avant de partir."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "pour",
+        "german": "für",
+        "example": "Ce cadeau est pour toi"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Quoi?",
+        "german": "Was?",
+        "example": "Quoi ? Tu ne sais pas où est ton sac ?"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Je pique une crise! ",
+        "german": "Ich krieg die Krise.",
+        "example": "Je pique une crise parce que j’ai perdu mon téléphone."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "vite (adv.)",
+        "german": "schnell (Adv.)",
+        "example": "Dépêche-toi, vite, sinon on va rater le bus !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "Appelle la police!",
+        "german": "Ruf die Polizei!",
+        "example": "Si tu vois quelque chose de dangereux, appelle la police tout de suite."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "pas de dessert",
+        "german": "kein Nachtisch",
+        "example": "Si tu ne finis pas ton repas, il n’y aura pas de dessert."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "dans le désert",
+        "german": "in der Wüste",
+        "example": "Les nuits dans le désert sont froides et silencieuses."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "aussi",
+        "german": "auch",
+        "example": "J'aime le chocolat, et aussi les fruits"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un bonbon",
+        "german": "ein Bonbon",
+        "example": "Mon enfant adore les bonbons"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "C’est bon!",
+        "german": "Das ist gut!",
+        "example": "Ce gâteau est délicieux, c’est bon !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un croissant",
+        "german": "ein Croissant Hörnchen",
+        "example": "Je prends un croissant au petit-déjeuner"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un ballon",
+        "german": "ein Ball",
+        "example": "Les enfants jouent avec un ballon"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un lapin",
+        "german": "ein Kaninchen",
+        "example": "Mon lapin est blanc et très mignon"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un volcan",
+        "german": "ein Vulkan",
+        "example": "Le volcan est très impressionnant"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "la main",
+        "german": "die Hand",
+        "example": "Il me tend la main en signe d'amitié"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un chien",
+        "german": "ein Hund",
+        "example": "Mon chien s'appelle Rex"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un crayon",
+        "german": "ein Bleistift",
+        "example": "J'écris avec un crayon bleu"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un éléphant",
+        "german": "ein Elefant",
+        "example": "L'éléphant est un animal très intelligent"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un enfant",
+        "german": "ein Kind",
+        "example": "L'enfant joue dans le parc"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "une maison",
+        "german": "ein Haus",
+        "example": "Ma maison est près du centre-ville"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un gratin",
+        "german": "ein Auflauf Speise, Gericht",
+        "example": "J'adore le gratin de pommes de terre"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "mon petit chat",
+        "german": "mein kleines Kätzchen",
+        "example": "Mon petit chat ronronne sur le canapé"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un",
+        "german": "eins",
+        "example": "Un jour, je visiterai la France"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "deux",
+        "german": "zwei",
+        "example": "J'ai deux chats à la maison"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "trois",
+        "german": "drei",
+        "example": "Nous avons trois chambres dans notre appartement"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "quatre",
+        "german": "vier",
+        "example": "Il y a quatre pommes sur la table."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "cinq",
+        "german": "fünf",
+        "example": "Nous sommes cinq dans ma famille."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "six",
+        "german": "sechs",
+        "example": "L'école commence à six heures et demie."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "sept",
+        "german": "sieben",
+        "example": "Le match est à sept heures du soir."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "huit",
+        "german": "acht",
+        "example": "J'ai huit amis dans ma classe."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "neuf",
+        "german": "neun",
+        "example": "Le train part à neuf heures précises."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "dix",
+        "german": "zehn",
+        "example": "Elle a dix euros pour acheter des bonbons."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "onze",
+        "german": "elf",
+        "example": "Il est déjà onze heures, il faut dormir !"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "douze",
+        "german": "zwölf",
+        "example": "Nous sommes douze invités pour le dîner."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un CDI",
+        "german": "eine Schulbibliothek",
+        "example": "J'ai obtenu un CDI dans une grande entreprise"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un café",
+        "german": "ein Café",
+        "example": "Je prends un café avant de commencer le travail"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "une pharmacie",
+        "german": "eine Apotheke",
+        "example": "La pharmacie est ouverte 24h/24"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un bureau de poste",
+        "german": "ein Postamt",
+        "example": "Je vais au bureau de poste poster un colis"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un restaurant",
+        "german": "ein Restaurant",
+        "example": "Nous mangeons dans un restaurant italien"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un parc",
+        "german": "ein Park",
+        "example": "Les enfants jouent dans le parc"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "une boulangerie",
+        "german": "eine Bäckerei",
+        "example": "J'achète du pain frais à la boulangerie"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "un cinéma",
+        "german": "ein Kino",
+        "example": "Allons voir un film au cinéma ce soir"
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "une médiathèque",
+        "german": "eine Mediathek",
+        "example": "Je vais à la médiathèque pour emprunter un livre."
+    },
+    {
+        "lesson": "Au début",
+        "module": "_",
+        "french": "dans la rue",
+        "german": "auf der Straße",
+        "example": "Je marche dans la rue principale"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "DE",
+        "french": "Bonjour!",
+        "german": "Guten Tag!",
+        "example": "Bonjour, comment vas-tu aujourd’hui ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "DE",
+        "french": "Paris",
+        "german": "Paris",
+        "example": "Paris est la capitale de la France"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "et",
+        "german": "und",
+        "example": "J'aime le chocolat et les fraises"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Viens!",
+        "german": "Komm!",
+        "example": "Viens ici, j’ai quelque chose à te montrer."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "papa",
+        "german": "Papa",
+        "example": "Mon papa m'aide avec mes devoirs"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "vite  (adv.)",
+        "german": "schnell (Adv.)",
+        "example": "Dépêche-toi, vite, sinon on va rater le bus !"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Miaou!",
+        "german": "Miau!",
+        "example": "Le chat fait miaou quand il a faim."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Ouah, ouah!",
+        "german": "Wau, wau!",
+        "example": "Le chien aboie fort : ouah, ouah !"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "S.P.A.",
+        "german": "die S.P.A.",
+        "example": "La S.P.A. s’occupe des animaux abandonnés."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Ça va?",
+        "german": "Wie geht’s?",
+        "example": "Salut ! Ça va bien aujourd’hui ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "je m’appelle",
+        "german": "ich heiße",
+        "example": "Bonjour, je m’appelle Sophie et toi ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "qui",
+        "german": "wer",
+        "example": "Qui est cette fille avec toi ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Qui est-ce?",
+        "german": "Wer ist das?",
+        "example": "Qui est-ce qui frappe à la porte ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Attention!",
+        "german": "Achtung!; Vorsicht!",
+        "example": "Attention ! La route est glissante ici."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "non",
+        "german": "nein",
+        "example": "Non, je ne veux pas sortir ce soir"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Pardon",
+        "german": "Entschuldigung",
+        "example": "Pardon, je ne voulais pas te déranger."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Salut! ",
+        "german": "Hallo!/Grüß dich!; Grüß dich!",
+        "example": "Salut, ça fait longtemps qu’on ne s’est pas vus !"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Comment?",
+        "german": "Wie?",
+        "example": "Comment tu t’appelles déjà ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "ce/c’",
+        "german": "das",
+        "example": "Ce livre appartient à mon frère."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "c’est",
+        "german": "das ist",
+        "example": "C’est incroyable de voir tant de gens ici."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "moi",
+        "german": "ich (betont)",
+        "example": "Moi, je travaille comme professeur"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "je suis",
+        "german": "ich bin",
+        "example": "Je suis étudiant à l'université"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "toi",
+        "german": "du (betont)",
+        "example": "Et toi, que fais-tu ce week-end ?"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "voilà",
+        "german": "da ist; da sind",
+        "example": "Voilà ton livre que tu cherchais"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "A",
+        "french": "Tu t’appelles comment?",
+        "german": "Wie heißt du?",
+        "example": "Tu t’appelles comment, toi ? Je ne me souviens plus."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "bizarre",
+        "german": "komisch; merkwürdig",
+        "example": "Cette situation est vraiment bizarre"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "un chat",
+        "german": "eine Katze",
+        "example": "Mon chat dort tout le temps"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "un chien",
+        "german": "ein Hund",
+        "example": "Mon chien s'appelle Rex"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "mais",
+        "german": "aber",
+        "example": "J'aime le chocolat, mais pas le café"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "oui",
+        "german": "ja",
+        "example": "Oui, je voudrais un café, s'il vous plaît"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "bien (adv.)",
+        "german": "gut (Adv.)",
+        "example": "Je parle bien le français maintenant."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "merci",
+        "german": "danke",
+        "example": "Merci de m'avoir aidé"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "ici",
+        "german": "hier; hierher",
+        "example": "Viens ici, s'il te plaît"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "tu es",
+        "german": "du bist",
+        "example": "Tu es mon meilleur ami"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "de/d’",
+        "german": "aus; von",
+        "example": "Il vient d’Allemagne et parle très bien français."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "super",
+        "german": "super; toll",
+        "example": "La fête d’hier soir était super amusante."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "un garçon",
+        "german": "ein Junge",
+        "example": "Le garçon joue au football"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "une fille",
+        "german": "ein Mädchen; eine Tochter",
+        "example": "Ma fille apprend à jouer du piano"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "il est",
+        "german": "er ist",
+        "example": "Il est très intelligent"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "elle est",
+        "german": "sie ist",
+        "example": "Elle est médecin"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "fantastique",
+        "german": "fantastisch; toll",
+        "example": "Ce film est fantastique !"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "aussi",
+        "german": "auch",
+        "example": "J'aime le chocolat, et aussi les fruits"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "un copain/une copine ",
+        "german": "ein Freund/eine Freundin",
+        "example": "Léo est mon copain depuis trois ans."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "une dame",
+        "german": "eine Dame; eine Frau",
+        "example": "La dame traverse la rue"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "un monsieur",
+        "german": "ein Herr; ein Mann",
+        "example": "Un monsieur m'a aidé à porter mes courses"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "Toulouse",
+        "german": "",
+        "example": "Toulouse est une belle ville du sud de la France"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "Strasbourg",
+        "german": "Straßburg",
+        "example": "Ma tante habite à Strasbourg en Alsace."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "Nice",
+        "german": "Nizza",
+        "example": "Nice est une ville ensoleillée près de la mer."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "Brest",
+        "german": "Brest",
+        "example": "Brest se trouve au nord-ouest de la France."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "madame …",
+        "german": "Frau …",
+        "example": "Madame Dupont est notre professeure de maths."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "Bof! ",
+        "german": "Na ja. ugs.; Ach. ugs.",
+        "example": "Bof ! Ce film n’était pas terrible."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "B",
+        "french": "Au revoir!",
+        "german": "Auf Wiedersehen!",
+        "example": "Merci pour la visite, au revoir et à bientôt !"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un cochon d’Inde",
+        "german": "ein Meereschweinchen",
+        "example": "J’ai adopté un cochon d’Inde trop mignon."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un poisson",
+        "german": "ein Fisch",
+        "example": "Le poisson nage dans l'aquarium"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un cheval/des chevaux",
+        "german": "ein Pferd/Pferde",
+        "example": "Elle monte à cheval tous les week-ends."
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "une souris",
+        "german": "eine Maus",
+        "example": "Une souris court sous l'armoire"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un cochon",
+        "german": "ein Schwein",
+        "example": "Le cochon mange dans la ferme"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un canari",
+        "german": "ein Kanarienvogel",
+        "example": "Mon canari chante tout le temps"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un perroquet",
+        "german": "ein Papagei",
+        "example": "Le perroquet répète tout ce qu'il entend"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un rat",
+        "german": "eine Ratte",
+        "example": "Le rat est un animal intelligent"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "une tortue",
+        "german": "eine Schildkröte",
+        "example": "Ma tortue vit dans le jardin"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "une perruche",
+        "german": "ein Wellensittich",
+        "example": "La perruche vole dans sa cage"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un serpent",
+        "german": "eine Schlange",
+        "example": "Le serpent rampe sur le sol"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "un hamster",
+        "german": "ein Hamster",
+        "example": "Mon hamster tourne dans sa roue"
+    },
+    {
+        "lesson": "Unité 1",
+        "module": "P",
+        "french": "A tout à l’heure!",
+        "german": "Bis gleich!",
+        "example": "Je vais au magasin, à tout à l’heure !"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "un magasin",
+        "german": "ein Geschäft; ein Laden",
+        "example": "Je vais au magasin acheter du pain"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "un journal/des journaux",
+        "german": "eine Zeitung",
+        "example": "J’achète un journal chaque matin pour lire les actualités."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "une BD",
+        "german": "ein Comic",
+        "example": "J'aime lire des bandes dessinées"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "une affiche",
+        "german": "ein Plakat; ein Poster",
+        "example": "L'affiche est collée sur le mur"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "Qu’est-ce que c’est?",
+        "german": "Was ist das?",
+        "example": "Qu’est-ce que c’est, cet objet étrange sur la table ?"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "à (Paris)",
+        "german": "in (Paris); nach (Paris)",
+        "example": "Je vais à Paris ce week-end"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "une maison",
+        "german": "ein Haus",
+        "example": "Ma maison est près du centre-ville"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "_",
+        "french": "une maison de la presse",
+        "german": "ein Zeitschriften- und Schreibwarengeschäft",
+        "example": "Je vais à la maison de la presse pour acheter un journal."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "que",
+        "german": "was",
+        "example": "Que veux-tu faire ce soir ?"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "Que fait Léo?",
+        "german": "Was macht Léo?",
+        "example": "Que fait Léo ce soir ? Il vient avec nous ?"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "regarder qc",
+        "german": "etwas ansehen; etwas betrachten",
+        "example": "J’aime regarder des séries sur Netflix."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "parler",
+        "german": "sprechen",
+        "example": "Parlons de nos vacances"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "avec",
+        "german": "mit",
+        "example": "Je sors avec mes amis"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "chercher qn/qc",
+        "german": "jemanden/etwas suchen",
+        "example": "Il part chercher sa sœur à l’école."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "DE",
+        "french": "arriver",
+        "german": "ankommen; kommen",
+        "example": "Je vais arriver en retard"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "en français",
+        "german": "auf Französisch",
+        "example": "Je parle en français avec mes amis"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un stylo",
+        "german": "ein Füller; ein Kuli",
+        "example": "J'écris avec un stylo bleu"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une gomme",
+        "german": "ein Radiergummi",
+        "example": "J'efface mes erreurs avec une gomme"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un livre",
+        "german": "ein Buch",
+        "example": "Je lis un livre passionnant"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un cahier",
+        "german": "ein Heft",
+        "example": "Mon cahier est plein de notes"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un crayon",
+        "german": "ein Bleistift",
+        "example": "J'écris avec un crayon bleu"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un truc ",
+        "german": "ein Ding; eine Sache",
+        "example": "Donne-moi ce truc, je vais t’aider."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une trousse",
+        "german": "ein Federmäppchen",
+        "example": "Ma trousse est dans mon sac"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une feuille",
+        "german": "ein Blatt",
+        "example": "Je dessine sur une feuille de papier"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un cartable",
+        "german": "eine Schultasche",
+        "example": "Mon cartable est lourd"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un classeur",
+        "german": "ein Ordner",
+        "example": "Je range mes documents dans un classeur"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un sac à dos",
+        "german": "ein Rucksack",
+        "example": "Je porte un sac à dos pour l'école"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "français/française",
+        "german": "französisch",
+        "example": "Ma copine est française, elle vient de Lyon."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "écouter qn/qc",
+        "german": "jemandem zuhören; etwas anhören",
+        "example": "J’aime écouter de la musique classique en travaillant."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "trouver qn/qc",
+        "german": "jemanden/etwas finden",
+        "example": "Peux-tu m’aider à trouver mes clés ?"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "travailler",
+        "german": "arbeiten",
+        "example": "Je travaille dur tous les jours"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "porter qc",
+        "german": "etwas tragen",
+        "example": "Elle aime porter des vêtements colorés."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "dans",
+        "german": "in",
+        "example": "Le chat est dans la maison"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une rue",
+        "german": "eine Straße",
+        "example": "Je marche dans une rue paisible"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "dans la rue",
+        "german": "auf der Straße",
+        "example": "Je marche dans la rue principale"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "entrer",
+        "german": "eintreten; hereinkommen",
+        "example": "Entre, s'il te plaît"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "euh …",
+        "german": "äh …",
+        "example": "Euh …"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "là",
+        "german": "da; dort",
+        "example": "Viens là, je te montre quelque chose"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "Chut!",
+        "german": "Pst!",
+        "example": "Chut ! On est dans une bibliothèque."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "pour",
+        "german": "für",
+        "example": "Ce cadeau est pour toi"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une école",
+        "german": "eine Schule",
+        "example": "Mon école est près de chez moi"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "en vacances",
+        "german": "in den Ferien",
+        "example": "Nous partons en vacances en Espagne cet été."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "Tiens!",
+        "german": "Sieh mal!; Schau mal!",
+        "example": "Tiens ! Voilà ton cadeau pour ton anniversaire."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une grand-mère",
+        "german": "eine Großmutter",
+        "example": "Ma grand-mère fait de bons gâteaux"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un carton",
+        "german": "ein Karton",
+        "example": "Je range mes affaires dans un carton"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "un ami/une amie",
+        "german": "ein Freund/eine Freundin",
+        "example": "Marie est une amie très chère pour moi."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "Zut! ",
+        "german": "Mist!; Verdammt!",
+        "example": "Zut ! J’ai oublié mon portefeuille à la maison."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "une catastrophe",
+        "german": "eine Katastrophe",
+        "example": "C'est une vraie catastrophe !"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "A",
+        "french": "il dit/elle dit",
+        "german": "er sagt/sie sagt",
+        "example": "Il dit qu'il viendra demain"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "être",
+        "german": "sein",
+        "example": "Je veux être heureux"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "_",
+        "french": "devant",
+        "german": "vor",
+        "example": "La voiture est garée devant la maison"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "habiter",
+        "german": "wohnen",
+        "example": "J'habite à Paris"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "où",
+        "german": "wo; wohin",
+        "example": "Où vas-tu ce soir ?"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "un t-shirt",
+        "german": "ein T-Shirt",
+        "example": "Je porte un t-shirt rouge"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "le rugby",
+        "german": "das Rugby",
+        "example": "J'aime regarder le rugby à la télévision"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "le judo",
+        "german": "das Judo",
+        "example": "Je fais du judo depuis 5 ans"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "Qu’est-ce que …?",
+        "german": "Was …?",
+        "example": "Qu’est-ce qu’il y a ? Tu as l’air triste."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "le sport",
+        "german": "der Sport",
+        "example": "Le sport est important pour la santé"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "la musique",
+        "german": "die Musik",
+        "example": "J'aime écouter de la musique"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "un frère",
+        "german": "ein Bruder",
+        "example": "Mon frère est plus âgé que moi"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "une sœur",
+        "german": "eine Schwester",
+        "example": "Ma sœur étudie à l'université"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "sympa",
+        "german": "nett",
+        "example": "Il est vraiment sympa"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "détester qn/qc",
+        "german": "jemanden/etwas verabscheuen",
+        "example": "Je déteste les araignées, elles me font peur."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "ça",
+        "german": "das",
+        "example": "Ça, c'est une bonne idée"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "d’accord",
+        "german": "einverstanden; o.k.",
+        "example": "Tu viens avec nous ? D’accord, je suis partant !"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "alors",
+        "german": "jetzt; dann",
+        "example": "Alors, on y va ?"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "Ouf!",
+        "german": "Uff!",
+        "example": "Ouf ! J’ai fini mon travail juste à temps."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "aimer qn/qc",
+        "german": "jemanden/etwas lieben; jemanden/etwas mögen",
+        "example": "J’aime les crêpes avec du Nutella."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "le rock",
+        "german": "die Rockmusik",
+        "example": "J'écoute du rock tous les jours"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "le foot(ball)",
+        "german": "der Fußball",
+        "example": "On joue au foot chaque dimanche matin."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "un vélo",
+        "german": "ein Fahrrad",
+        "example": "Je fais du vélo le week-end"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "la techno",
+        "german": "Techno",
+        "example": "J'aime danser sur de la techno"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "le rap",
+        "german": "Rap",
+        "example": "Le rap est un genre musical populaire"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "la gymnastique",
+        "german": "das Turnen; die Gymnastik",
+        "example": "Je fais de la gymnastique au gymnase"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "B",
+        "french": "une chanson",
+        "german": "ein Lied",
+        "example": "Ma chanson préférée est très romantique"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "un saxophone",
+        "german": "ein Saxophon",
+        "example": "Mon frère joue du saxophone"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "un piano",
+        "german": "ein Klavier; ein Piano",
+        "example": "Je prends des cours de piano"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "un dessin",
+        "german": "eine Zeichnung",
+        "example": "J'aime faire des dessins"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "le basket(ball)",
+        "german": "Basketball",
+        "example": "Le basket est mon sport préféré."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "l’athlétisme ",
+        "german": "die Leichtathletik",
+        "example": "L’athlétisme est un sport qui demande de l’endurance."
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "le roller",
+        "german": "der Rollerskate; der Inliner",
+        "example": "Je fais du roller dans le parc"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "un cinéma",
+        "german": "ein Kino",
+        "example": "Allons voir un film au cinéma ce soir"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "le VTT",
+        "german": "das Mountainbike",
+        "example": "Je fais du VTT le dimanche"
+    },
+    {
+        "lesson": "Unité 2",
+        "module": "P",
+        "french": "la lecture",
+        "german": "das Lesen",
+        "example": "La lecture est mon passe-temps préféré"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "DE",
+        "french": "un anniversaire",
+        "german": "ein Geburtstag",
+        "example": "Joyeux anniversaire !"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une idée",
+        "german": "eine Idee; ein Gedanke",
+        "example": "J'ai une bonne idée"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "des",
+        "german": "Plural von un/une",
+        "example": "Des amis sont venus me voir"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un cadeau",
+        "german": "ein Geschenk",
+        "example": "J'ai reçu un cadeau d'anniversaire"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "la FNAC",
+        "german": "die FNAC",
+        "example": "Je vais à la FNAC acheter des livres"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "bientôt",
+        "german": "bald",
+        "example": "Je te reverrai bientôt"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "Ah, bon?",
+        "german": "Ach ja?; Wirklich?",
+        "example": "Ah, bon ? Je ne savais pas que tu parlais espagnol."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une histoire",
+        "german": "eine Geschichte",
+        "example": "Je raconte une histoire à mes enfants"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "ou",
+        "german": "oder",
+        "example": "Veux-tu du thé ou du café ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un ordinateur",
+        "german": "ein Computer",
+        "example": "J'utilise mon ordinateur pour travailler"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un CD/des CD",
+        "german": "eine CD/CDs",
+        "example": "Mon frère a une grande collection de CD de rock."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "il y a",
+        "german": "es ist; es sind",
+        "example": "Il y a beaucoup de monde ici"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "ensemble",
+        "german": "gemeinsam; zusammen",
+        "example": "Nous travaillons ensemble"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "d’abord",
+        "german": "zuerst",
+        "example": "D’abord, tu ranges ta chambre et après, tu sors."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "Qu’est-ce qu’il y a?",
+        "german": "Was gibt es?",
+        "example": "Qu’est-ce qu’il y a ? Tu as l’air triste."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "Bien sûr!",
+        "german": "Na klar!; Selbstverständlich!",
+        "example": "Tu peux m’aider ? Bien sûr, avec plaisir !"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "préparer qc",
+        "german": "etwas vorbereiten",
+        "example": "Elle doit préparer le dîner pour ses invités."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "la France",
+        "german": "Frankreich",
+        "example": "La France est un beau pays"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "l’Allemagne",
+        "german": "Deutschland",
+        "example": "L’Allemagne est un pays voisin de la France."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "en Allemagne",
+        "german": "in Deutschland",
+        "example": "Il habite en Allemagne depuis trois ans."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "Allô?",
+        "german": "Hallo?",
+        "example": "Allô ? Qui est à l’appareil ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un train",
+        "german": "ein Zug",
+        "example": "Je prends le train pour voyager"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "Cologne",
+        "german": "Köln",
+        "example": "La cathédrale de Cologne est très impressionnante."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "demain",
+        "german": "morgen",
+        "example": "Demain, j'ai un rendez-vous"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "ton/ta/tes",
+        "german": "dein/deine",
+        "example": "Où sont tes livres ? Ils ne sont pas dans ton sac ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "mon/ma/mes",
+        "german": "mein/meine",
+        "example": "Voici ma maison, elle est jolie, non ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "C’est dommage.",
+        "german": "Das ist schade.",
+        "example": "C’est dommage que tu ne puisses pas venir ce soir."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "inviter qn",
+        "german": "jemanden einladen",
+        "example": "Je vais inviter mes amis pour mon anniversaire."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "allemand",
+        "german": "deutsch",
+        "example": "Je parle un peu allemand"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "en allemand",
+        "german": "auf Deutsch",
+        "example": "Peux-tu dire cette phrase en allemand ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "à bientôt",
+        "german": "bis bald",
+        "example": "À bientôt, prends soin de toi !"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "maman",
+        "german": "Mama; Mutti",
+        "example": "Maman prépare un délicieux gâteau pour le goûter."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une chambre",
+        "german": "ein (Schlaf-)Zimmer",
+        "example": "Ma chambre est au premier étage"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une bougie",
+        "german": "eine Kerze",
+        "example": "J'allume une bougie pour le dîner"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un gâteau/des gâteaux",
+        "german": "ein Kuchen/Kuchen",
+        "example": "Ce gâteau au chocolat est vraiment délicieux."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "ranger qc",
+        "german": "etwas aufräumen",
+        "example": "Je dois ranger ma chambre avant de sortir."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "s’il te plaît",
+        "german": "bitte (wenn man jemanden duzt)",
+        "example": "Donne-moi un verre d’eau, s’il te plaît."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "s’il vous plaît",
+        "german": "bitte (wenn man jemanden siezt)",
+        "example": "Excusez-moi, pourriez-vous m’aider, s’il vous plaît ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "maintenant",
+        "german": "jetzt",
+        "example": "Maintenant, je suis prêt"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une affaire",
+        "german": "eine Sache; eine Angelegenheit",
+        "example": "C'est une bonne affaire"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "toujours",
+        "german": "immer",
+        "example": "Je t'aimerai toujours"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "aujourd’hui",
+        "german": "heute",
+        "example": "Aujourd’hui, il fait beau et je vais au parc."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une famille",
+        "german": "eine Familie",
+        "example": "Ma famille est très importante"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un enfant",
+        "german": "ein Kind",
+        "example": "L'enfant joue dans le parc"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "les grands-parents ",
+        "german": "die Großeltern",
+        "example": "Mes grands-parents habitent dans une petite maison à la campagne."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un grand-père",
+        "german": "ein Großvater",
+        "example": "Mon grand-père adore raconter des histoires drôles."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "les parents  ",
+        "german": "die Eltern",
+        "example": "Mes parents travaillent tous les deux en ville."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un père",
+        "german": "ein Vater",
+        "example": "Mon père travaille comme ingénieur"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une mère",
+        "german": "eine Mutter",
+        "example": "Ma mère est médecin"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un oncle",
+        "german": "ein Onkel",
+        "example": "Mon oncle habite à Lyon"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une tante",
+        "german": "eine Tante",
+        "example": "Ma tante m'offre toujours des cadeaux"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un fils",
+        "german": "ein Sohn",
+        "example": "J'ai un fils de 10 ans"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "une demi-sœur",
+        "german": "eine Halbschwester",
+        "example": "J'ai une demi-sœur du côté de mon père"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "A",
+        "french": "un demi-frère",
+        "german": "ein Halbbruder",
+        "example": "J’ai un demi-frère qui vit avec sa maman."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "_",
+        "french": "un cousin/une cousine",
+        "german": "ein Cousin/eine Cousine",
+        "example": "Ma cousine et moi aimons jouer ensemble pendant les vacances."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "décembre ",
+        "german": "Dezember",
+        "example": "Décembre est le mois des fêtes de fin d’année."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "son/sa/ses",
+        "german": "sein/seine; ihr/ihre",
+        "example": "Marie adore ses chats, ils sont très mignons."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "C’est ça?",
+        "german": "Stimmt’s?",
+        "example": "Tu vas à la fête ce soir ? C’est ça ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "encore",
+        "german": "noch",
+        "example": "Je veux encore un morceau de gâteau, s’il te plaît."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "un DVD",
+        "german": "eine DVD",
+        "example": "On va regarder un film en DVD ce soir."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "un jeu/des jeux",
+        "german": "ein Spiel/Spiele",
+        "example": "J’adore les jeux vidéo avec mes amis."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "_",
+        "french": "un jeu vidéo/des jeux vidéo",
+        "german": "ein Computerspiel/Computerspiele",
+        "example": "Quel est ton jeu vidéo préféré ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "la faim",
+        "german": "der Hunger",
+        "example": "J’ai très faim, on mange bientôt ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "avoir faim",
+        "german": "Hunger haben",
+        "example": "J'ai vraiment faim après cette longue journée."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "manger qc",
+        "german": "etwas essen",
+        "example": "Tu veux manger une pizza avec moi ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "souffler qc",
+        "german": "etwas ausblasen",
+        "example": "Il va souffler ses bougies d’anniversaire."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "puis",
+        "german": "dann",
+        "example": "On ira au cinéma et puis on mangera au restaurant."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "chanter",
+        "german": "singen",
+        "example": "Elle chante souvent sous la douche, c’est amusant."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "un an",
+        "german": "ein Jahr",
+        "example": "Mon petit frère a un an aujourd’hui."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "avoir onze ans",
+        "german": "elf Jahre alt sein",
+        "example": "Léo va avoir onze ans le mois prochain."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "l’envie",
+        "german": "die Lust; das Verlangen",
+        "example": "J’ai envie de partir en vacances au soleil."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "avoir envie de faire qc",
+        "german": "Lust haben, etwas zu tun",
+        "example": "J’ai envie de regarder un film ce soir."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "sur",
+        "german": "auf; über",
+        "example": "Mon livre est sur la table."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "une surprise",
+        "german": "eine Überraschung",
+        "example": "J'ai une surprise pour ton anniversaire !"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "avoir",
+        "german": "haben",
+        "example": "J'ai un nouveau vélo rouge."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "un mois",
+        "german": "ein Monat",
+        "example": "Janvier est le premier mois de l'année."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "une année",
+        "german": "ein Jahr",
+        "example": "Cette année, nous allons visiter la France."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "janvier ",
+        "german": "Januar",
+        "example": "Janvier est le premier mois de l’année."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "février ",
+        "german": "Februar",
+        "example": "En février, il fait souvent froid et il neige."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "mars ",
+        "german": "März",
+        "example": "Mars annonce l’arrivée du printemps."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "avril ",
+        "german": "April",
+        "example": "Les fleurs commencent à pousser en avril."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "mai ",
+        "german": "Mai",
+        "example": "En mai, il y a souvent des jours fériés."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "juin ",
+        "german": "Juni",
+        "example": "L’école se termine en juin pour les vacances d’été."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "juillet ",
+        "german": "Juli",
+        "example": "Juillet est parfait pour aller à la plage."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "août ",
+        "german": "August",
+        "example": "Beaucoup de familles partent en vacances en août."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "septembre ",
+        "german": "September",
+        "example": "La rentrée scolaire a lieu en septembre."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "octobre ",
+        "german": "Oktober",
+        "example": "En octobre, les feuilles des arbres tombent."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "novembre ",
+        "german": "November",
+        "example": "Novembre est souvent un mois gris et pluvieux."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "_",
+        "french": "décembre ",
+        "german": "Dezember",
+        "example": "Décembre est le mois des fêtes de fin d’année."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "quand",
+        "german": "wann",
+        "example": "Quand arrives-tu à la maison ?"
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "le premier",
+        "german": "der erste",
+        "example": "Le premier jour de l’année, on fête le Nouvel An."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "l’âge ",
+        "german": "das Alter",
+        "example": "À ton âge, j’allais déjà à l’école tout seul."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "Tu as quel âge?",
+        "german": "Wie alt bist du?",
+        "example": "Tu as quel âge ? Moi, j’ai dix ans."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "B",
+        "french": "il s’appelle",
+        "german": "er heißt",
+        "example": "Il s’appelle Lucas et il adore le foot."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "la Pentecôte",
+        "german": "Pfingsten",
+        "example": "La Pentecôte est une fête chrétienne importante."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "Noël ",
+        "german": "Weihnachten",
+        "example": "À Noël, on décore le sapin et on échange des cadeaux."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "le nouvel an",
+        "german": "Neujahr",
+        "example": "On fête le Nouvel An avec des feux d’artifice."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "le baptême",
+        "german": "die Taufe",
+        "example": "Le baptême de ma petite sœur a eu lieu hier."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "le 14 Juillet",
+        "german": "der 14. Juli französischer Nationalfeiertag",
+        "example": "Le 14 Juillet, c’est la fête nationale en France."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "Pâques",
+        "german": "Ostern",
+        "example": "À Pâques, les enfants cherchent des œufs en chocolat."
+    },
+    {
+        "lesson": "Unité 3",
+        "module": "P",
+        "french": "le mariage",
+        "german": "die Hochzeit",
+        "example": "Le mariage de ma tante était très émouvant."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "un collège",
+        "german": "ein Collège",
+        "example": "Mon frère est au collège cette année."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "une cour",
+        "german": "ein (Schul-)Hof",
+        "example": "Les enfants jouent dans la cour de l’école."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "un élève/une élève",
+        "german": "ein Schüler/eine Schülerin",
+        "example": "Cet élève est très sérieux en classe."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "un cours",
+        "german": "eine Unterrichtsstunde",
+        "example": "J’ai un cours de français tous les lundis matin."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "l’allemand ",
+        "german": "Deutsch",
+        "example": "J’apprends l’allemand à l’école depuis deux ans."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "un retard",
+        "german": "eine Verspätung",
+        "example": "J’ai eu un retard de cinq minutes à cause du bus."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "être en retard",
+        "german": "zu spät kommen",
+        "example": "Tu es encore en retard aujourd’hui !"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "un CDI",
+        "german": "eine Schulbibliothek",
+        "example": "J'ai obtenu un CDI dans une grande entreprise"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "une cantine",
+        "german": "eine Kantine; eine Mensa",
+        "example": "On mange à la cantine tous les midis."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "une infirmerie",
+        "german": "eine Krankenstation",
+        "example": "Je vais à l’infirmerie parce que j’ai mal à la tête."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "Aïe!",
+        "german": "Aua!",
+        "example": "Aïe ! Je me suis cogné le pied contre la chaise."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "un pied",
+        "german": "ein Fuß",
+        "example": "J’ai marché toute la journée, mes pieds me font mal."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "DE",
+        "french": "jouer",
+        "german": "spielen",
+        "example": "J'aime jouer au football avec mes amis."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une journée",
+        "german": "ein Tag",
+        "example": "Aujourd’hui a été une longue journée de travail."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une heure",
+        "german": "eine Stunde",
+        "example": "Il est déjà une heure de l’après-midi."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "sept heures",
+        "german": "sieben Uhr",
+        "example": "On se retrouve devant l’école à sept heures."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "sept heures et demie",
+        "german": "halb acht",
+        "example": "Il part à sept heures et demie tous les matins."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "sept heures moins le quart",
+        "german": "Viertel vor sieben Uhr",
+        "example": "Le train arrive à sept heures moins le quart."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "sept heures et quart",
+        "german": "Viertel nach sieben",
+        "example": "Il commence son cours à sept heures et quart."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "un lit",
+        "german": "ein Bett",
+        "example": "J’adore mon lit, il est très confortable."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "demi/demie",
+        "german": "halb",
+        "example": "Il reste une demi-heure avant que le film ne commence."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "les toilettes",
+        "german": "die Toilette",
+        "example": "Où sont les toilettes, s’il vous plaît ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "un quart",
+        "german": "ein Viertel",
+        "example": "Il est trois heures et quart, dépêchons-nous !"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "huit heures et quart",
+        "german": "Viertel nach acht",
+        "example": "L’école commence à huit heures et quart."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "midi",
+        "german": "zwölf Uhr; mittags",
+        "example": "On mange souvent à midi à la cantine."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "après",
+        "german": "nach; danach",
+        "example": "Après l’école, je fais mes devoirs."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "rentrer",
+        "german": "zurückkommen; nach Hause gehen",
+        "example": "Je rentre de l'école à 16 heures."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "à la maison",
+        "german": "zu Hause; nach Hause",
+        "example": "Je rentre directement à la maison après les cours."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "six heures moins le quart",
+        "german": "Viertel vor sechs",
+        "example": "Le réveil sonne à six heures moins le quart."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "chez qn",
+        "german": "bei jemandem",
+        "example": "Je vais chez mon ami ce soir pour regarder un film."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "la télévision",
+        "german": "das Fernsehen",
+        "example": "Elle regarde la télévision tous les soirs avant de dormir."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "commencer",
+        "german": "anfangen; beginnen",
+        "example": "Le film commence à vingt heures précises."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "Quelle heure est-il?",
+        "german": "Wie viel Uhr ist es?; Wie spät ist es?",
+        "example": "Excusez-moi, quelle heure est-il maintenant ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "à quelle heure?",
+        "german": "um wie viel Uhr?",
+        "example": "À quelle heure commence ton entraînement ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "de … à",
+        "german": "von … bis",
+        "example": "Je travaille de huit heures à dix-sept heures."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une clé",
+        "german": "ein Schlüssel",
+        "example": "J’ai oublié ma clé à la maison."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une clé USB",
+        "german": "ein USB-Stick",
+        "example": "Peux-tu me prêter ta clé USB pour copier le fichier ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "lundi ",
+        "german": "Montag; am Montag",
+        "example": "Lundi, je vais chez le médecin pour un contrôle."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "aller",
+        "german": "gehen; fahren",
+        "example": "Je vais au parc avec mes amis."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "ne … pas",
+        "german": "nicht",
+        "example": "Je ne comprends pas ce que tu veux dire."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "la 6eA",
+        "german": "die Klasse 6A",
+        "example": "Je suis dans la classe de la 6eA cette année."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une minute",
+        "german": "eine Minute",
+        "example": "Attends-moi une minute, j’arrive tout de suite !"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une classe",
+        "german": "eine Klasse",
+        "example": "Notre classe est très grande et lumineuse."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "sous",
+        "german": "unter",
+        "example": "Le chat est caché sous la table."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une salle de cours",
+        "german": "ein Klassenraum",
+        "example": "La salle de cours est au premier étage."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "Excusez-moi.",
+        "german": "Entschuldigung!",
+        "example": "Excusez-moi, pouvez-vous me montrer le chemin ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "Excuse-moi.",
+        "german": "Entschuldige bitte.",
+        "example": "Excuse-moi, je ne voulais pas te déranger."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "une place",
+        "german": "ein Platz",
+        "example": "Cette place est libre, tu peux t’asseoir ici."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "la main",
+        "german": "die Hand",
+        "example": "Il me tend la main en signe d'amitié"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "la récréation",
+        "german": "die Pause",
+        "example": "À la récréation, on joue au foot avec les copains."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "retrouver qn/qc",
+        "german": "jemanden treffen; etwas wiederfinden",
+        "example": "Je vais retrouver mes amis après les cours."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "en 6eB",
+        "german": "in der 6B",
+        "example": "Ma sœur est en 6eB cette année."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "raconter qc",
+        "german": "etwas erzählen",
+        "example": "Elle aime raconter des histoires drôles à ses amis."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "Il/Elle est à qui?",
+        "german": "Wem gehört er/sie/es?",
+        "example": "Cette trousse, elle est à qui ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "Je ne sais pas.",
+        "german": "Ich weiß nicht.",
+        "example": "Je ne sais pas où j’ai laissé mon téléphone."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "Ce ne sont pas mes affaires.",
+        "german": "Das sind nicht meine Sachen.",
+        "example": "Ces livres ne sont pas mes affaires."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "discuter (de qc)",
+        "german": "(über etwas) diskutieren; sich (über etwas) unterhalten",
+        "example": "On va discuter du projet pendant la réunion."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "un professeur/une professeure",
+        "german": "ein Lehrer/eine Lehrerin",
+        "example": "Le professeur de français est très gentil."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "le temps",
+        "german": "die Zeit",
+        "example": "Le temps change souvent au printemps."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "l’emploi  du temps",
+        "german": "der Stundenplan",
+        "example": "Mon emploi du temps est chargé cette semaine."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "mardi ",
+        "german": "Dienstag; am Dienstag",
+        "example": "Mardi, j’ai un cours de musique."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "mercredi ",
+        "german": "Mittwoch; am Mittwoch",
+        "example": "On joue au basket tous les mercredis après-midi."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "jeudi ",
+        "german": "Donnerstag; am Donnerstag",
+        "example": "Jeudi, on prépare la fête d’anniversaire."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "vendredi ",
+        "german": "Freitag; am Freitag",
+        "example": "Vendredi soir, je vais au cinéma avec mes amis."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "samedi ",
+        "german": "Samstag; am Samstag",
+        "example": "Le samedi, je fais souvent du sport."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "dimanche ",
+        "german": "Sonntag; am Sonntag",
+        "example": "Dimanche, je reste à la maison pour me reposer."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "un mot",
+        "german": "ein Wort",
+        "example": "Je cherche le mot juste."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "un gymnase",
+        "german": "eine Turnhalle",
+        "example": "On a cours de sport au gymnase ce matin."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "un rêve",
+        "german": "ein Traum",
+        "example": "Mon rêve est de voyager autour du monde."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "cool ",
+        "german": "cool",
+        "example": "Ce week-end avec mes amis était trop cool."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "cliquer",
+        "german": "klicken",
+        "example": "Clique ici pour ouvrir le fichier."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "notre/nos",
+        "german": "unser/unsere",
+        "example": "Notre professeur nous a donné des devoirs pour lundi."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "votre/vos",
+        "german": "euer/eure; Ihr/Ihre",
+        "example": "Où sont vos livres d’histoire ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "leur/leurs",
+        "german": "ihr/ihre",
+        "example": "Ils adorent leurs animaux de compagnie."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "une interrogation",
+        "german": "eine Klassenarbeit",
+        "example": "On a une interrogation de maths demain."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "quelque chose",
+        "german": "etwas",
+        "example": "J'ai quelque chose à te dire."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "un sac",
+        "german": "eine Tasche",
+        "example": "N’oublie pas ton sac avant de partir."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "faire qc",
+        "german": "etwas tun /machen",
+        "example": "On va faire une promenade après le déjeuner."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "une copie",
+        "german": "eine Kopie",
+        "example": "Il a rendu sa copie juste avant la fin de l’examen."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "un exercice",
+        "german": "eine Übung",
+        "example": "Cet exercice de mathématiques est difficile."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "si",
+        "german": "doch",
+        "example": "Si tu veux, on peut aller au parc ensemble."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "comme ça",
+        "german": "so; auf diese Weise",
+        "example": "Pourquoi tu me regardes comme ça ?"
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "comme",
+        "german": "wie",
+        "example": "Elle chante comme une star professionnelle."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "les devoirs",
+        "german": "die (Haus)Aufgaben",
+        "example": "J’ai beaucoup de devoirs à faire ce soir."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "avoir raison",
+        "german": "Recht haben",
+        "example": "Tu as raison, il faut se dépêcher."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "une partie",
+        "german": "ein Teil",
+        "example": "Nous avons joué une partie d’échecs cet après-midi."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "la fin",
+        "german": "das Ende/der Schluss",
+        "example": "La fin du film était très triste."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "un titre",
+        "german": "Titel",
+        "example": "Le titre de ce livre est très intéressant."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "B",
+        "french": "derrière",
+        "german": "hinter",
+        "example": "Le chat se cache derrière le canapé."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "l’E.P.S.",
+        "german": "Sport",
+        "example": "J’ai E.P.S. aujourd’hui, on va jouer au handball."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "les arts plastiques ",
+        "german": "Kunst",
+        "example": "En arts plastiques, nous dessinons et faisons de la peinture."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "les S.V.T.",
+        "german": "Biologie",
+        "example": "Les S.V.T. nous apprennent tout sur les plantes et les animaux."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "la technologie",
+        "german": "Technik",
+        "example": "On utilise des ordinateurs en cours de technologie."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "l’anglais ",
+        "german": "Englisch",
+        "example": "J’aime bien l’anglais parce que c’est utile pour voyager."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "les mathématiques",
+        "german": "Mathematik",
+        "example": "Les mathématiques demandent beaucoup de concentration."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "_",
+        "french": "l’histoire-géo",
+        "german": "Geschichte und Erdkunde",
+        "example": "En histoire-géo, nous étudions la Révolution française."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "l’éducation musicale",
+        "german": "Musik",
+        "example": "On apprend à chanter en éducation musicale."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "P",
+        "french": "le français",
+        "german": "Französisch",
+        "example": "Le français est ma matière préférée à l’école."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "un quartier",
+        "german": "ein Stadtviertel",
+        "example": "J’habite dans un quartier calme près du parc."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "Batignolles",
+        "german": "Name eines Viertels in Paris",
+        "example": "Le quartier des Batignolles est connu pour ses beaux jardins."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "le, la dix-septième",
+        "german": "der, die, das siebzehnte",
+        "example": "Nous habitons dans le dix-septième arrondissement de Paris."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "_",
+        "french": "un arrondissement",
+        "german": "ein Arrondissement ein Verwaltungsbezirk",
+        "example": "Paris est divisé en vingt arrondissements."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "une photo",
+        "german": "ein Foto",
+        "example": "J'ai pris une photo de mon chien."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "un parc",
+        "german": "ein Park",
+        "example": "Les enfants jouent dans le parc"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "le roller",
+        "german": "das Inlinerfahren",
+        "example": "Je fais du roller dans le parc"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "une avenue",
+        "german": "eine Straße",
+        "example": "L’avenue des Champs-Élysées est très célèbre."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "une activité",
+        "german": "eine Freizeitbeschäftigung",
+        "example": "Je fais une nouvelle activité parascolaire."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "tout le monde",
+        "german": "alle; jeder",
+        "example": "Tout le monde est prêt pour commencer la fête."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "un stand",
+        "german": "ein Stand; eine Bude",
+        "example": "Il y a un stand de crêpes à la fête."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "DE",
+        "french": "une crêpe",
+        "german": "eine Crêpe",
+        "example": "Je vais préparer une crêpe au sucre pour le goûter."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un taxi",
+        "german": "ein Taxi",
+        "example": "J'ai pris un taxi pour arriver à temps."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "passer",
+        "german": "etwas verbringen",
+        "example": "Elle va passer le week-end chez ses grands-parents."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "la nuit",
+        "german": "die Nacht",
+        "example": "La nuit, les étoiles brillent très fort dans le ciel."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une entrée",
+        "german": "ein Eingang",
+        "example": "L’entrée du musée est gratuite aujourd’hui."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le soir",
+        "german": "der Abend",
+        "example": "Le soir, on regarde souvent un film en famille."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "ce soir",
+        "german": "heute Abend",
+        "example": "Ce soir, je vais manger au restaurant avec mes amis."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un jour",
+        "german": "ein Tag",
+        "example": "Chaque jour est une nouvelle aventure."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "A plus! ",
+        "german": "Bis später!",
+        "example": "Je dois y aller, A plus !"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "ma puce ",
+        "german": "meine Kleine wörtl.: mein Floh",
+        "example": "Bonne nuit, ma puce, fais de beaux rêves."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "A plus, ma puce!",
+        "german": "Bis später, mein Kleines.",
+        "example": "A plus, ma puce, on se voit demain !"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une voiture",
+        "german": "ein Auto",
+        "example": "Ma famille a une voiture bleue."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "en voiture",
+        "german": "mit dem Auto",
+        "example": "On part en voiture pour aller à la plage."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "loin (adv.)",
+        "german": "weit (Adv.)",
+        "example": "L’école n’est pas loin de ma maison."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "à pied",
+        "german": "zu Fuß",
+        "example": "Je préfère aller à pied plutôt que de prendre le bus."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "aller faire qc",
+        "german": "etwas tun werden",
+        "example": "On va aller faire les courses cet après-midi."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un appartement",
+        "german": "eine Wohnung",
+        "example": "Mon appartement est près du centre-ville."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une pièce",
+        "german": "ein Zimmer",
+        "example": "Il y a quatre pièces dans notre appartement."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une salle de bains",
+        "german": "ein Bad; ein Badezimmer",
+        "example": "La salle de bains est à côté de ma chambre."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un salon",
+        "german": "ein Wohnzimmer",
+        "example": "Le salon est spacieux et lumineux."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une chambre d’enfant",
+        "german": "ein Kinderzimmer",
+        "example": "La chambre d’enfant est décorée avec des jouets."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une salle à manger",
+        "german": "ein Esszimmer",
+        "example": "Nous mangeons toujours dans la salle à manger."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "les W.-C.",
+        "german": "die Toilette",
+        "example": "Les W.-C. sont au fond du couloir."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un couloir",
+        "german": "ein Gang; ein Flur",
+        "example": "Le couloir de l'école est long."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une table",
+        "german": "ein Tisch",
+        "example": "Mets les assiettes sur la table, s’il te plaît."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "à table",
+        "german": "bei Tisch",
+        "example": "Les enfants, à table ! Le dîner est prêt."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un repas",
+        "german": "ein Essen; eine Mahlzeit",
+        "example": "Nous préparons un repas délicieux."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "minuit ",
+        "german": "Mitternacht/12 Uhr nachts",
+        "example": "Je suis rentré chez moi à minuit pile."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le matin",
+        "german": "der Morgen",
+        "example": "Le matin, je me lève à sept heures."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "un tour",
+        "german": "eine Tour; ein Rundgang",
+        "example": "Faisons un tour du quartier à vélo."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le samedi",
+        "german": "samstags",
+        "example": "Le samedi, je n’ai pas école et je me repose."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "l’après-midi ",
+        "german": "der Nachmittag; nachmittags",
+        "example": "Cet après-midi, je vais voir un film au cinéma."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "faire du judo",
+        "german": "Judo machen, betreiben",
+        "example": "Mon frère fait du judo deux fois par semaine."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "l’athlétisme ",
+        "german": "die Leichtathletik",
+        "example": "L’athlétisme est un sport qui demande de l’endurance."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "je voudrais …",
+        "german": "ich möchte gerne …",
+        "example": "Je suis étudiant à l'université"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le bruit",
+        "german": "das Geräusch; der Lärm",
+        "example": "Le bruit dans la rue m’empêche de dormir."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "tard",
+        "german": "spät",
+        "example": "Il est déjà tard, il faut dormir."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une cuisine",
+        "german": "eine Küche",
+        "example": "Ma maman prépare toujours de bons plats dans la cuisine."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "quitter qc",
+        "german": "etwas verlassen",
+        "example": "Il va quitter la maison pour aller à l’université."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "des spaghettis",
+        "german": "Spaghetti",
+        "example": "On mange des spaghettis à la bolognaise ce soir."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "déjà",
+        "german": "schon",
+        "example": "Tu as déjà terminé tes devoirs ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le basket(ball)",
+        "german": "Basketball",
+        "example": "Le basket est mon sport préféré."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le volley(ball)",
+        "german": "Volleyball",
+        "example": "On joue au volley sur la plage pendant l’été."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le hand-ball",
+        "german": "Handball",
+        "example": "Mon équipe de hand-ball a gagné le match."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "l’équitation",
+        "german": "das Reiten",
+        "example": "L’équitation est une activité qui nécessite beaucoup d’entraînement."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le cyclisme",
+        "german": "Radfahren",
+        "example": "Le cyclisme est un sport très populaire en France."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le ski",
+        "german": "Ski fahren",
+        "example": "En hiver, nous allons faire du ski dans les Alpes."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "la natation",
+        "german": "das Schwimmen",
+        "example": "J’adore la natation, surtout en été à la piscine."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "la danse",
+        "german": "der Tanz; das Tanzen",
+        "example": "Elle prend des cours de danse classique depuis trois ans."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le théâtre",
+        "german": "das Theater",
+        "example": "Nous allons voir une pièce de théâtre ce soir."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "une guitare",
+        "german": "eine Gitarre",
+        "example": "Mon frère joue de la guitare dans un groupe."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "le tennis",
+        "german": "Tennis",
+        "example": "Le tennis est un sport qui demande beaucoup de précision."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "A",
+        "french": "comme",
+        "german": "als",
+        "example": "Elle chante comme une star professionnelle."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "à droite",
+        "german": "(nach) rechts",
+        "example": "Tourne à droite au prochain carrefour."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "à gauche",
+        "german": "(nach) links",
+        "example": "Tourne à gauche après le carrefour."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "une boulangerie",
+        "german": "eine Bäckerei",
+        "example": "J'achète du pain frais à la boulangerie"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "tout droit",
+        "german": "geradeaus",
+        "example": "Continue tout droit jusqu’à la boulangerie."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "un café",
+        "german": "ein Café",
+        "example": "Je prends un café avant de commencer le travail"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "traverser qc",
+        "german": "etwas überqueren",
+        "example": "Il faut traverser la rue au passage piéton."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "un carrefour",
+        "german": "eine Kreuzung",
+        "example": "Tourne à droite au carrefour suivant."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "tourner",
+        "german": "drehen; abbiegen",
+        "example": "Tourne à gauche au prochain carrefour."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "pour faire qc",
+        "german": "um etwas zu tun",
+        "example": "Je vais à la bibliothèque pour faire mes devoirs."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "beaucoup",
+        "german": "viel",
+        "example": "J’ai beaucoup de livres à la maison."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "Merci beaucoup!",
+        "german": "Vielen Dank!",
+        "example": "Merci beaucoup pour ton aide précieuse."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "la poste",
+        "german": "die Post",
+        "example": "Je vais à la poste pour envoyer un colis."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "une piscine",
+        "german": "ein Schwimmbad",
+        "example": "La piscine est ouverte tous les jours en été."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "Vous pouvez répéter, s’il vous plaît?",
+        "german": "Können Sie bitte wiederholen?",
+        "example": "Je n’ai pas bien compris, vous pouvez répéter, s’il vous plaît ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "un champion/une championne",
+        "german": "ein Champion; ein Meister/eine Meisterin",
+        "example": "Elle est championne de natation dans sa région."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "un numéro",
+        "german": "eine Nummer",
+        "example": "Quel est ton numéro de téléphone ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "un combat",
+        "german": "ein Kampf",
+        "example": "Le combat de boxe a duré plusieurs rounds."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "vraiment",
+        "german": "wirklich",
+        "example": "Ce film est vraiment intéressant, je te le conseille."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "même",
+        "german": "sogar",
+        "example": "Même si tu es fatigué, il faut finir ton travail."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "une interview",
+        "german": "ein Interview",
+        "example": "J'ai vu une interview intéressante."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "est-ce que",
+        "german": "Frageformel",
+        "example": "Est-ce que tu veux venir avec nous au parc ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "gagner qc",
+        "german": "etwas gewinnen",
+        "example": "Il a gagné le tournoi de tennis cette année."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "poser qc",
+        "german": "etwas setzen/stellen/legen",
+        "example": "Peux-tu poser ce livre sur la table ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "une question",
+        "german": "eine Frage",
+        "example": "J'ai une question importante à poser."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "Comment est-ce que ...?",
+        "german": "Wie ... ?",
+        "example": "Comment est-ce que tu fais pour cuisiner si bien ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "tomber",
+        "german": "fallen",
+        "example": "Je ne veux pas tomber de vélo."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "faire mal",
+        "german": "weh tun",
+        "example": "Attention, ça risque de te faire mal au dos."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "pourquoi?",
+        "german": "warum?",
+        "example": "Pourquoi es-tu en retard aujourd’hui ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "parce que",
+        "german": "weil",
+        "example": "Je suis en retard parce que j’ai raté le bus."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "trop",
+        "german": "zu viel; zu sehr",
+        "example": "Il y a trop de bruit dans cette pièce."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "nul",
+        "german": "blöd",
+        "example": "Ce jeu est vraiment nul, on s’ennuie."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "C’est trop nul!",
+        "german": "Das ist zu blöd! ugs.",
+        "example": "Ce film ? C’est trop nul, je ne le conseille pas."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "B",
+        "french": "avoir mal",
+        "german": "Schmerzen haben",
+        "example": "J’ai mal à la tête depuis ce matin."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "le parc des Batignolles",
+        "german": "Park von Batignolles",
+        "example": "On se retrouve au parc des Batignolles pour pique-niquer."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un portable",
+        "german": "ein Handy; ein Mobiltelefon",
+        "example": "Mon portable est un iPhone."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un SMS",
+        "german": "eine SMS",
+        "example": "J'envoie un SMS à mon ami."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un film",
+        "german": "ein Film",
+        "example": "Nous allons voir un film au cinéma."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "la soif",
+        "german": "der Durst",
+        "example": "J’ai soif, peux-tu me donner un verre d’eau ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "avoir soif",
+        "german": "Durst haben",
+        "example": "Après le sport, on a toujours soif."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "prendre qc",
+        "german": "etwas nehmen; hier: essen",
+        "example": "Je vais prendre un jus d’orange au café."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "une gaufre",
+        "german": "eine Waffel",
+        "example": "J’adore manger une gaufre avec du chocolat chaud."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "coûter",
+        "german": "kosten",
+        "example": "Combien coûte ce livre ? Je le trouve intéressant."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "Ça coûte combien?",
+        "german": "Wie viel kostet das?",
+        "example": "Excusez-moi, ça coûte combien ce livre ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "combien (de)",
+        "german": "wie viel",
+        "example": "Combien de personnes viennent à la fête ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un euro/des euros",
+        "german": "ein Euro/Euro",
+        "example": "Ce sandwich coûte trois euros."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un centime",
+        "german": "ein Cent",
+        "example": "Il manque encore vingt centimes pour payer."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un vendeur/une vendeuse",
+        "german": "ein Verkäufer/eine Verkäuferin",
+        "example": "La vendeuse m’a aidé à choisir cette chemise."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un coca",
+        "german": "eine Cola",
+        "example": "J’aimerais boire un coca bien frais."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "une eau minérale",
+        "german": "ein Mineralwasser",
+        "example": "Une bouteille d’eau minérale, s’il vous plaît."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un jus de pomme",
+        "german": "ein Apfelsaft",
+        "example": "Je préfère le jus de pomme au jus d’orange."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "l’eau",
+        "german": "das Wasser",
+        "example": "L’eau est essentielle pour la santé."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "une pomme",
+        "german": "ein Apfel",
+        "example": "J’ai mangé une pomme comme goûter."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un jus",
+        "german": "ein Saft",
+        "example": "Quel jus veux-tu ? Orange ou raisin ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "une orange",
+        "german": "eine Orange",
+        "example": "Je mange une orange au petit-déjeuner."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un diabolo menthe",
+        "german": "ein Diabolo Menthe",
+        "example": "Le diabolo menthe est une boisson très rafraîchissante."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "Ça fait combien?",
+        "german": "Wie viel kostet das?",
+        "example": "Ça fait combien pour tout ce que j’ai acheté ?"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "Ça fait …",
+        "german": "Das macht …; Das kostet …",
+        "example": "Ça fait cinq euros et cinquante centimes."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "un client/une cliente",
+        "german": "ein Kunde/eine Kundin",
+        "example": "Le client a commandé une pizza quatre fromages."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "C",
+        "french": "Bonne journée!",
+        "german": "Einen schönen Tag!",
+        "example": "Merci pour votre accueil, bonne journée !"
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "la planche à voile",
+        "german": "das Windsurfen",
+        "example": "Il pratique la planche à voile pendant les vacances."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "le ski nautique",
+        "german": "das Wasserskifahren",
+        "example": "Le ski nautique est très amusant en été."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "une maison des jeunes",
+        "german": "ein Jugendzentrum",
+        "example": "La maison des jeunes propose beaucoup d’activités."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un terrain de foot",
+        "german": "ein Fußballplatz",
+        "example": "Nous jouons sur le terrain de foot."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un club de foot",
+        "german": "ein Fußballverein",
+        "example": "Mon frère joue dans un club de foot local."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un club sportif",
+        "german": "ein Sportverein",
+        "example": "Le club sportif organise des tournois chaque mois."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "une école de musique",
+        "german": "eine Musikschule",
+        "example": "Je prends des cours de piano à l’école de musique."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un glacier",
+        "german": "ein Eisverkäufer; eine Eisdiele",
+        "example": "On va au glacier pour manger une glace à la fraise."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un coiffeur/une coiffeuse",
+        "german": "ein Frisör; eine Frisörin",
+        "example": "Le coiffeur m’a fait une coupe parfaite."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "une papeterie",
+        "german": "ein Schreibwarengeschäft",
+        "example": "Je vais à la papeterie pour acheter des cahiers."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un supermarché",
+        "german": "ein Supermarkt",
+        "example": "Il y a un grand supermarché près de chez moi."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un grand magasin",
+        "german": "ein Kaufhaus",
+        "example": "Le grand magasin est rempli de décorations de Noël."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "un kiosque",
+        "german": "ein Kiosk",
+        "example": "J’achète mon journal chaque matin au kiosque."
+    },
+    {
+        "lesson": "Unité 5",
+        "module": "P",
+        "french": "une bibliothèque",
+        "german": "eine Bücherei",
+        "example": "La bibliothèque est calme et idéale pour étudier."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "une fête",
+        "german": "ein Fest; eine Party",
+        "example": "Nous allons à une fête ce soir."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "une fête nationale",
+        "german": "ein Nationalfeiertag",
+        "example": "Le 14 Juillet est la fête nationale en France."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "les gens",
+        "german": "die Leute",
+        "example": "Les gens aiment se promener dans ce parc."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "un bal",
+        "german": "ein Ball ; ein Fest",
+        "example": "On a dansé toute la nuit au bal de fin d’année."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "grand/grande",
+        "german": "groß",
+        "example": "Ce parc est tellement grand qu’on peut s’y perdre."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "un feu/des feux",
+        "german": "ein Feuer/Feuer",
+        "example": "Les enfants adorent les feux d’artifice en été."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "un feu d’artifice",
+        "german": "ein Feuerwerk",
+        "example": "Le feu d’artifice du 14 Juillet est magnifique."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "une tour",
+        "german": "ein Turm",
+        "example": "La tour Eiffel est le symbole de Paris."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "la tour Eiffel",
+        "german": "der Eiffelturm",
+        "example": "La tour Eiffel est un monument célèbre."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "DE",
+        "french": "danser",
+        "german": "tanzen",
+        "example": "J'aime danser sur de la musique."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "le TGV",
+        "german": "der TGV",
+        "example": "Je prends le TGV pour aller à Lyon rapidement."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "une personne",
+        "german": "eine Person",
+        "example": "Il y a une personne qui attend devant la porte."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "l’arrivée",
+        "german": "die Ankunft",
+        "example": "L’arrivée du train est prévue à huit heures."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "un problème",
+        "german": "ein Problem",
+        "example": "J’ai un problème avec mon ordinateur portable."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "téléphoner à qn",
+        "german": "mit jemandem telefonieren; jemanden anrufen",
+        "example": "Je vais téléphoner à ma mère pour lui donner des nouvelles."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "rester",
+        "german": "bleiben",
+        "example": "Je préfère rester à la maison aujourd’hui."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "hier",
+        "german": "gestern",
+        "example": "Hier, j'ai visité un musée."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "un journal/des journaux",
+        "german": "eine Zeitung ; ein Tagebuch",
+        "example": "J’achète un journal chaque matin pour lire les actualités."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "les vacances",
+        "german": "der Urlaub ; die Ferien",
+        "example": "Cet été, nous partons en vacances à la montagne."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "dernier/dernière",
+        "german": "letzter/letzte/letztes",
+        "example": "La semaine dernière, nous avons visité un musée."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "triste/triste",
+        "german": "traurig",
+        "example": "Il est triste parce qu’il a perdu son match."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "intéressant/intéressante",
+        "german": "interessant",
+        "example": "Ce livre est vraiment intéressant, je l’ai adoré."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "très",
+        "german": "sehr",
+        "example": "Je suis très fatigué aujourd’hui."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "bon/bonne",
+        "german": "gut",
+        "example": "Ce gâteau est vraiment très bon."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "peut-être",
+        "german": "vielleicht",
+        "example": "Peut-être que je viendrai à ta fête ce soir."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "une gare",
+        "german": "ein Bahnhof",
+        "example": "La gare est très animée ce matin."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "Lyon",
+        "german": "Lyon Stadt im Osten Frankreichs",
+        "example": "Lyon est une belle ville connue pour sa gastronomie."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "un chanteur/une chanteuse",
+        "german": "ein Sänger/eine Sängerin",
+        "example": "Mon chanteur préféré est très célèbre en France."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "oublier qc",
+        "german": "etwas vergessen",
+        "example": "J’ai oublié mes clés dans ma voiture."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "petit/petite",
+        "german": "klein",
+        "example": "C’est une petite maison pleine de charme."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "enfin",
+        "german": "endlich ; schließlich",
+        "example": "Enfin, le week-end est arrivé !"
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "un chapeau",
+        "german": "ein Hut",
+        "example": "Il porte un chapeau noir."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "joli/jolie",
+        "german": "hübsch",
+        "example": "Cette robe est très jolie, elle te va bien."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "une robe",
+        "german": "ein Kleid",
+        "example": "Elle porte une belle robe bleue pour la soirée."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "long/longue",
+        "german": "lang",
+        "example": "Cette route est longue, mais le paysage est magnifique."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "un pantalon",
+        "german": "eine Hose",
+        "example": "J'achète un nouveau pantalon."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "vert/verte",
+        "german": "grün",
+        "example": "J’adore les pommes vertes, elles sont délicieuses."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "content/contente",
+        "german": "zufrieden ; froh",
+        "example": "Je suis contente de te voir aujourd’hui."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "avant",
+        "german": "vor",
+        "example": "Je t’appelle avant de partir de la maison."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "mettre qc",
+        "german": "etwas stellen; etwas legen; etwas setzen; etwas anziehen",
+        "example": "Tu peux mettre le livre sur la table ?"
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "la Place de la Bastille",
+        "german": "der Platz der Bastille",
+        "example": "La Place de la Bastille est un endroit historique de Paris."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "mauvais/mauvaise",
+        "german": "schlecht",
+        "example": "Ce film est mauvais, je ne l’ai pas aimé."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "donner qc à qn",
+        "german": "jemandem etwas geben",
+        "example": "Il a donné son cahier à son camarade de classe."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "Quoi?",
+        "german": "Was?",
+        "example": "Quoi ? Tu ne sais pas où est ton sac ?"
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une casquette",
+        "german": "eine Kappe ; eine Schirmmütze",
+        "example": "Je mets une casquette quand il fait soleil."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "la poche",
+        "german": "die Tasche ; die Hosentasche",
+        "example": "J’ai mis mon téléphone dans ma poche."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "demander (qc) à qn",
+        "german": "jemanden (nach etwas) fragen ;jemanden (um etwas) bitten",
+        "example": "Je vais demander l’heure à cette dame."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "entre",
+        "german": "zwischen",
+        "example": "Le magasin est entre la boulangerie et la pharmacie."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "montrer qc à qn",
+        "german": "jemandem etwas zeigen",
+        "example": "Peux-tu me montrer tes nouvelles chaussures ?"
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "parler à qn",
+        "german": "mit jemandem sprechen",
+        "example": "Je vais parler à mon professeur après le cours."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "autre/autre",
+        "german": "anderer/andere/anderes",
+        "example": "J’aimerais goûter un autre gâteau, s’il te plaît."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "rencontrer qn",
+        "german": "jemanden treffen; jemandem begegnen",
+        "example": "J’ai rencontré mon meilleur ami à l’école."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "aider qn",
+        "german": "jemandem helfen",
+        "example": "Peux-tu m’aider à porter ces sacs ?"
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un courriel",
+        "german": "eine E-Mail",
+        "example": "J’ai envoyé un courriel à mon professeur pour poser une question."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une couleur",
+        "german": "eine Farbe",
+        "example": "Quelle est ta couleur préférée ?"
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "bleu/bleue",
+        "german": "blau",
+        "example": "Le ciel est bleu aujourd’hui, il fait beau."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "blanc/blanche",
+        "german": "weiß",
+        "example": "La neige blanche recouvre les montagnes en hiver."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "rouge/rouge",
+        "german": "rot",
+        "example": "Elle porte une écharpe rouge pour se protéger du froid."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "jaune/jaune",
+        "german": "gelb",
+        "example": "Le soleil jaune brille dans le ciel."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "surtout",
+        "german": "vor allem",
+        "example": "J’aime beaucoup les desserts, surtout les gâteaux au chocolat."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un vêtement",
+        "german": "ein Kleidungsstück",
+        "example": "J'achète un nouveau vêtement."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "noir/noire",
+        "german": "schwarz",
+        "example": "Il préfère les vêtements noirs, ils sont plus élégants."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "gris/grise",
+        "german": "grau",
+        "example": "Le ciel est gris aujourd’hui, il va pleuvoir."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un jean",
+        "german": "eine Jeans",
+        "example": "Il porte un jean bleu tous les jours."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une basket",
+        "german": "ein Turnschuh",
+        "example": "J’ai acheté de nouvelles baskets pour faire du sport."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une jupe",
+        "german": "ein Rock",
+        "example": "Elle porte une jupe longue pour la cérémonie."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un anorak",
+        "german": "ein Anorak",
+        "example": "Mets ton anorak, il fait froid dehors."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une chemise",
+        "german": "ein Hemd",
+        "example": "Mon père porte toujours une chemise pour aller au travail."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une veste",
+        "german": "eine Jacke",
+        "example": "Ma veste est rouge et noire."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "une chaussure",
+        "german": "ein Schuh",
+        "example": "J’ai perdu une chaussure en courant dans le parc."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un pull",
+        "german": "ein Pulli",
+        "example": "J’ai mis un pull chaud pour affronter l’hiver."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "les fringues",
+        "german": "die Klamotten",
+        "example": "Elle adore les fringues et fait souvent du shopping."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un short",
+        "german": "Shorts",
+        "example": "Je mets un short quand il fait très chaud."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un sweat",
+        "german": "ein Sweatshirt",
+        "example": "Il porte un sweat gris avec un logo."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un blouson",
+        "german": "ein Blouson; eine Jacke",
+        "example": "Son blouson en cuir est très à la mode."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "B",
+        "french": "un poème",
+        "german": "ein Gedicht",
+        "example": "On étudie un poème de Victor Hugo en classe."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "P",
+        "french": "un sketch",
+        "german": "ein Sketch",
+        "example": "Les élèves ont préparé un sketch pour la fête de l’école."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "P",
+        "french": "un sandwich",
+        "german": "ein Sandwich",
+        "example": "Je mange un sandwich au déjeuner."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "P",
+        "french": "une boisson",
+        "german": "ein Getränk",
+        "example": "Je voudrais une boisson fraîche."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "P",
+        "french": "une tarte flambée",
+        "german": "ein Flammkuchen",
+        "example": "J’adore manger une tarte flambée en Alsace."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "P",
+        "french": "une pizza",
+        "german": "eine Pizza",
+        "example": "Ce soir, on commande une pizza aux quatre fromages."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "P",
+        "french": "des chips",
+        "german": "Chips",
+        "example": "Je mange des chips pendant les pique-niques."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "une semaine",
+        "german": "eine Woche",
+        "example": "La semaine prochaine, nous partons en voyage scolaire."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "un reportage",
+        "german": "eine Reportage",
+        "example": "J'ai regardé un reportage à la télévision."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "une ville",
+        "german": "eine Stadt",
+        "example": "Paris est une belle ville."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "un assistant/une assistante",
+        "german": "ein Assistent/eine Assistentin",
+        "example": "L’assistante nous aide pendant le cours d’anglais."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "un endroit",
+        "german": "ein Ort",
+        "example": "Cet endroit est magnifique pour faire des photos."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "un touriste/une touriste",
+        "german": "ein Tourist/eine Touristin",
+        "example": "Les touristes adorent visiter la tour Eiffel."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "le Louvre",
+        "german": "der Louvre",
+        "example": "Le Louvre est un musée célèbre pour la Joconde."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "un musée",
+        "german": "ein Museum",
+        "example": "Nous visitons le musée ce week-end."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "une cathédrale",
+        "german": "eine Kathedrale",
+        "example": "La cathédrale Notre-Dame est un monument historique."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "_",
+        "french": "Notre-Dame",
+        "german": "Notre-Dame",
+        "example": "La cathédrale Notre-Dame est située au cœur de Paris."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "la Défense",
+        "german": "Stadtteil von Paris",
+        "example": "La Défense est le quartier des affaires à Paris."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "moderne",
+        "german": "modern",
+        "example": "Ce bâtiment est très moderne et innovant."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "l’Arc de triomphe ",
+        "german": "der Arc de triomphe Triumpfbogen",
+        "example": "L’Arc de triomphe est un symbole national français."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "DE",
+        "french": "visiter qc",
+        "german": "etwas besichtigen",
+        "example": "Nous allons visiter le musée d’Orsay demain."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "beau",
+        "german": "schön",
+        "example": "Il fait beau aujourd’hui, profitons du soleil."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Il fait beau.",
+        "german": "Es ist schönes Wetter.",
+        "example": "---"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "faire de l’escalade",
+        "german": "klettern",
+        "example": "Nous allons faire de l’escalade en montagne ce week-end."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "chaud/chaude",
+        "german": "warm; heiß",
+        "example": "Il fait chaud en été, j’adore ça."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Il fait chaud.",
+        "german": "Es ist warm/heiß.",
+        "example": "---"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "la vue",
+        "german": "die Aussicht",
+        "example": "La vue depuis le sommet de la tour est magnifique."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "un restaurant",
+        "german": "ein Restaurant",
+        "example": "Nous mangeons dans un restaurant italien"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "une boutique",
+        "german": "eine Boutique; ein Ladengeschäft",
+        "example": "Cette boutique vend des vêtements très élégants."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "un souvenir",
+        "german": "eine Erinnerung; ein Andenken",
+        "example": "J'ai acheté un souvenir de Paris."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "un bureau",
+        "german": "ein Schreibtisch; hier: ein Arbeitszimmer",
+        "example": "Mon père travaille dans un bureau en centre-ville."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Eiffel, Gustave",
+        "german": "französischer Ingenieur, 18321923",
+        "example": "Gustave Eiffel a construit la célèbre tour Eiffel."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "écrire qc à qn",
+        "german": "jemandem etwas schreiben",
+        "example": "Je vais écrire une lettre à mon grand-père."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "une carte",
+        "german": "eine Karte",
+        "example": "J'envoie une carte postale à mes parents."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "une carte postale",
+        "german": "eine Postkarte; eine Ansichtskarte",
+        "example": "Je t’ai envoyé une carte postale depuis la mer."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "le vent",
+        "german": "der Wind",
+        "example": "Il y a beaucoup de vent aujourd'hui."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Il y a du vent.",
+        "german": "Es ist windig.",
+        "example": "---"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "beaucoup de",
+        "german": "viel(e)",
+        "example": "Il y a beaucoup de livres dans cette bibliothèque."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "le temps",
+        "german": "das Wetter",
+        "example": "Le temps change souvent au printemps."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Quel temps fait-il?",
+        "german": "Wie ist das Wetter?",
+        "example": "Quel temps fait-il chez toi aujourd’hui ?"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "froid/froide",
+        "german": "kalt",
+        "example": "L’eau est froide, je n’ose pas me baigner."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "neiger",
+        "german": "schneien",
+        "example": "En hiver, il commence à neiger dans les montagnes."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Il fait mauvais.",
+        "german": "Es ist schlechtes Wetter.",
+        "example": "---"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "pleuvoir",
+        "german": "regnen",
+        "example": "Il commence à pleuvoir, prends ton parapluie."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Il pleut.",
+        "german": "Es regnet.",
+        "example": "---"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Il fait froid.",
+        "german": "Es ist kalt.",
+        "example": "---"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "lire qc/qc à qn",
+        "german": "etwas lesen; jemandem etwas vorlesen",
+        "example": "J’aime lire des histoires à mes petits cousins."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Cher …;Chère …",
+        "german": "Lieber …;Liebe …",
+        "example": "Chère Sophie, je t’écris pour te donner des nouvelles."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "papi/papy ",
+        "german": "Opi",
+        "example": "Mon papi m’emmène souvent pêcher pendant les vacances."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": " mamie",
+        "german": "Omi",
+        "example": "Ma mamie fait toujours de délicieux gâteaux."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "génial/géniale",
+        "german": "super; genial",
+        "example": "Ce film était génial, j’ai adoré !"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "la Joconde",
+        "german": "Mona Lisa Gemälde von Leonardo da Vinci",
+        "example": "La Joconde est le tableau le plus célèbre du Louvre."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "une bise ",
+        "german": "ein Kuss; ein Küsschen",
+        "example": "Je te fais une bise avant de partir."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Coucou!",
+        "german": "Hallo!",
+        "example": "Coucou ! Comment ça va aujourd’hui ?"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "A",
+        "french": "Comment allez-vous?",
+        "german": "Wie geht es euch/Ihnen?",
+        "example": "Bonjour, comment allez-vous aujourd’hui ?"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un million",
+        "german": "eine Million",
+        "example": "Un million de personnes visitent Paris chaque année."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un kilomètre",
+        "german": "ein Kilometer",
+        "example": "J’ai marché un kilomètre pour venir jusqu’ici."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "tôt (adv.)",
+        "german": "früh (Adv.)",
+        "example": "Je me suis réveillé très tôt ce matin pour aller courir."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un bus",
+        "german": "ein Bus",
+        "example": "Je prends le bus pour aller au centre-ville."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "une station",
+        "german": "eine Station; eine Haltestelle",
+        "example": "La station de métro est juste à côté de la boulangerie."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "le métro",
+        "german": "die Metro; die U-Bahn",
+        "example": "À Paris, on prend souvent le métro pour se déplacer."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "fatigué/fatiguée",
+        "german": "müde",
+        "example": "Après une longue journée, je suis fatigué."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "par jour",
+        "german": "pro Tag; täglich",
+        "example": "Je bois deux litres d’eau par jour."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un moyen de transport",
+        "german": "ein Verkehrsmittel",
+        "example": "Le vélo est un moyen de transport écologique."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un peu",
+        "german": "ein wenig",
+        "example": "J’ai un peu faim, mais je peux attendre."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "la gare de l’Est",
+        "german": "der Ostbahnhof",
+        "example": "Le train pour Strasbourg part de la gare de l’Est."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un ticket",
+        "german": "ein Fahrschein; eine Fahrkarte",
+        "example": "J'achète un ticket de métro."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "écologique/écologique",
+        "german": "ökologisch; umweltfreundlich",
+        "example": "Utiliser des sacs réutilisables est très écologique."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "en train",
+        "german": "mit dem Zug",
+        "example": "Nous allons en train à Marseille pour les vacances."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "B",
+        "french": "un avion",
+        "german": "ein Flugzeug",
+        "example": "Je prends l'avion pour mes vacances."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "un marché",
+        "german": "ein Markt",
+        "example": "Nous allons au marché acheter des légumes."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "un marché aux puces",
+        "german": "ein Flohmarkt",
+        "example": "J’ai trouvé des objets anciens au marché aux puces."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "ne … pas de",
+        "german": "kein/keine",
+        "example": "Il n’y a pas de chocolat dans le frigo."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "pas de problème",
+        "german": "kein Problem",
+        "example": "Tu veux que je t’aide ? Pas de problème !"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "une chose",
+        "german": "eine Sache; ein Ding",
+        "example": "J’ai oublié une chose importante à la maison."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "un exemple",
+        "german": "ein Beispiel",
+        "example": "Peux-tu me donner un exemple ?"
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "par exemple",
+        "german": "zum Beispiel",
+        "example": "J’aime les fruits, par exemple les pommes et les bananes."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "on peut",
+        "german": "man kann",
+        "example": "On peut aller au parc cet après-midi si tu veux."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "pratique/pratique",
+        "german": "praktisch",
+        "example": "Cette application est très pratique pour apprendre le français."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "ne … plus",
+        "german": "nicht mehr",
+        "example": "Je n’ai plus faim, j’ai assez mangé."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "ne … plus de",
+        "german": "kein/keine mehr",
+        "example": "Il n’y a plus de lait dans le frigo."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "plus de problème",
+        "german": "kein Problem mehr",
+        "example": "Maintenant que tout est réglé, il n’y a plus de problème."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "inventer qc",
+        "german": "etwas erfinden",
+        "example": "Il aime inventer des histoires pour ses enfants."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "cher/chère",
+        "german": "teuer",
+        "example": "Ce pull est trop cher pour mon budget."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "ouvert/ouverte",
+        "german": "offen",
+        "example": "La bibliothèque est ouverte jusqu’à 18 heures."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "adorer qn/qc",
+        "german": "jemanden/etwas sehr gern mögen",
+        "example": "J’adore les crêpes avec du Nutella."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "désirer qc",
+        "german": "etwas wünschen",
+        "example": "Je désire acheter cette robe rouge."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "(je suis) désolé/désolée",
+        "german": "es tut mir leid",
+        "example": "Je suis désolée, je ne peux pas venir ce soir."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "peu de",
+        "german": "wenig(e)",
+        "example": "Il y a peu de monde au marché aujourd’hui."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "C",
+        "french": "beaucoup de",
+        "german": "viel(e)",
+        "example": "Il y a beaucoup de livres dans cette bibliothèque."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "un grand huit",
+        "german": "eine Achterbahn",
+        "example": "Le grand huit est l’attraction la plus impressionnante du parc."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "vrai/vraie",
+        "german": "richtig; echt",
+        "example": "Cette histoire est vraie, je l’ai entendue à la radio."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "un parc d’attractions",
+        "german": "ein Freizeitpark; ein Erlebnispark",
+        "example": "Nous allons passer la journée au parc d’attractions."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "un lecteur/une lectrice",
+        "german": "ein Leser/eine Leserin",
+        "example": "Elle est une grande lectrice de romans policiers."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "l’Internet ",
+        "german": "das Internet",
+        "example": "Je trouve beaucoup d’informations sur Internet."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "sur Internet",
+        "german": "im Internet",
+        "example": "J’ai acheté ce pull sur Internet, c’était moins cher."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "ne … rien",
+        "german": "nichts",
+        "example": "Il ne mange rien depuis ce matin."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "une liste",
+        "german": "eine Liste",
+        "example": "J'ai fait une liste de mes courses."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "une réponse",
+        "german": "eine Antwort",
+        "example": "Je cherche la bonne réponse."
+    },
+    {
+        "lesson": "Unité 7",
+        "module": "D",
+        "french": "adorer qn/qc",
+        "german": "jemanden/etwas sehr gern mögen",
+        "example": "J’adore les crêpes avec du Nutella."
+    }
+]
