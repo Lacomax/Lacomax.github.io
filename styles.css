@@ -63,7 +63,7 @@ main {
 }
 
 /* Ajustes responsivos para móviles */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     header .banner {
         padding: 10px; /* Reducir el padding */
     }
