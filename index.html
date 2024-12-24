@@ -1,100 +1,42 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vokabeltrainer</title>
-    <link rel="stylesheet" href="styles.css"/>
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <h1 id="bannerTitle">Vokabeltrainer</h1>
-            <!-- After start, we will dynamically add book, lesson|module, and flag as separate elements below -->
-            <div id="bannerContent" class="banner-content"></div>
-        </div>
+    <header class="banner">
+        <h1>Vokabeltrainer</h1>
     </header>
-
     <main>
-        <section class="setup-panel">
-            <div class="filters">
-                <h2>Buch</h2>
-                <select id="bookSelect">
-                    <option value="">-- Wählen Sie --</option>
-                    <option value="FR-DE">Découvertes 1 - Bayern</option>
-                    <option value="DE-EN">Green Line 2 - Bayern</option>
-                </select>
-
-                <label for="lessonSelect" id="lessonLabel" style="display:none;"></label>
-                <select id="lessonSelect" style="display:none;">
-                    <option value="all">All</option>
-                </select>
-
-                <label for="moduleSelect" id="moduleLabel" style="display:none;"></label>
-                <select id="moduleSelect" style="display:none;">
-                    <option value="all">All</option>
-                </select>
-
-                <label for="directionSelect" id="directionLabel" style="display:none;"></label>
-                <select id="directionSelect" style="display:none;">
-                </select>
-
-                <div style="display:none;" id="orderContainer">
-                    <label id="orderLabel">
-                        <input type="checkbox" id="randomOrder" checked />
-                    </label>
-                </div>
-
-                <button id="startBtn" style="display:none;">Commencer</button>
-            </div>
-
-            <div class="illustrations">
-                <img id="flag1" class="flag" style="display:none;">
-                <img id="flag2" class="flag" style="display:none;">
-            </div>
-        </section>
-
-        <section class="quiz-panel" style="display:none;">
-            <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            <p id="progressInfo"></p>
-
-            <div class="question-container">
-                <h2 id="questionText">...</h2>
-                <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off"/>
-                <div class="keyboard">
-                    <button data-char="é">é</button>
-                    <button data-char="è">è</button>
-                    <button data-char="ê">ê</button>
-                    <button data-char="ë">ë</button>
-                    <button data-char="à">à</button>
-                    <button data-char="â">â</button>
-                    <button data-char="î">î</button>
-                    <button data-char="ï">ï</button>
-                    <button data-char="ô">ô</button>
-                    <button data-char="ù">ù</button>
-                    <button data-char="û">û</button>
-                    <button data-char="ç">ç</button>
-                </div>
-                <button id="checkAnswerBtn">Valider</button>
-            </div>
-
-            <div class="feedback" id="feedbackMessage"></div>
-            <div class="example" id="exampleSentence"></div>
-        </section>
-
-        <section class="stats-panel" style="display:none;">
-            <h2 id="statsTitle">Statistiques</h2>
-            <p id="statsSummary"></p>
-            <h3 id="mostRepeatedTitle">Mots les plus répétés:</h3>
-            <ul id="mostRepeatedList"></ul>
-            <button id="restartBtn">Réessayer / Try again</button>
-        </section>
+        <div class="filters-container">
+            <label for="book">Buch</label>
+            <select id="book">
+                <option>Découvertes 1 - Bayern</option>
+            </select>
+            <label for="lesson">Sélectionnez la leçon:</label>
+            <select id="lesson">
+                <option>All</option>
+            </select>
+            <label for="module">Sélectionnez le module:</label>
+            <select id="module">
+                <option>All</option>
+            </select>
+            <label for="direction">Direction de pratique:</label>
+            <select id="direction">
+                <option>Les deux</option>
+            </select>
+            <label>
+                <input type="checkbox" id="random-order" /> Ordre aléatoire
+            </label>
+            <button id="start">Commencer</button>
+        </div>
+        <div class="flags-container">
+            <img src="flag_france.png" alt="France">
+            <img src="flag_germany.png" alt="Germany">
+        </div>
     </main>
-
-    <script src="script.js"></script>
 </body>
 </html>
