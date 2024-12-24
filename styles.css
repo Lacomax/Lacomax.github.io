@@ -40,6 +40,7 @@ main {
     align-items: center;
     justify-content: center; /* Centrar verticalmente */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    margin-top: 0; /* Eliminar distancia entre banner y primer filtro */
 }
 
 .setup-panel, .quiz-panel, .stats-panel {
