@@ -9,6 +9,7 @@ header .banner {
     padding: 20px;
     text-align: center;
     color: #fff;
+    margin-bottom: 0;
 }
 
 header h1 {
@@ -51,6 +52,7 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 0; /* Reducir margen superior */
     margin-bottom: 20px;
 }
 
