@@ -10,7 +10,7 @@ html, body {
 /* Encabezado */
 header .banner {
     background: #66b3ff;
-    padding: 20px; /* Padding general */
+    padding: 20px;
     text-align: center;
     color: #fff;
 }
@@ -20,18 +20,6 @@ header h1 {
     margin: 10px 0;
 }
 
-.banner-content {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-.banner-content img.banner-flag {
-    width: 30px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
 /* Contenedor principal */
 main {
     padding: 20px;
@@ -39,31 +27,42 @@ main {
     max-height: calc(100vh - 150px); /* Ajustar la altura máxima */
 }
 
-/* Panel del cuestionario */
-.quiz-panel {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Contenedor de filtros */
+.filters-container {
+    display: flex; /* Usar flexbox para centrar */
+    flex-direction: column; /* Asegura que los elementos sigan un flujo vertical */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    margin: 0 auto;
+    text-align: center; /* Alinear el texto al centro */
+    width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
-.quiz-panel h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.filters-container select,
+.filters-container button,
+.filters-container label {
+    margin-bottom: 10px; /* Espaciado uniforme */
 }
 
-.quiz-panel input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.filters-container {
+    max-width: 400px; /* Limitar el ancho máximo del menú */
+}
+
+/* Contenedor de banderas */
+.flags-container {
+    display: flex;
+    justify-content: center; /* Centrar las banderas horizontalmente */
+    gap: 10px; /* Espaciado entre las banderas */
+    margin-top: 20px;
+}
+
+.flags-container img {
+    width: 50px; /* Tamaño ajustado para las banderas */
+    height: auto;
 }
 
 /* Ajustes responsivos para móviles */
-@media (max-width: 200px) {
+@media (max-width: 600px) {
     header .banner {
         padding: 10px; /* Reducir el padding */
     }
@@ -73,30 +72,18 @@ main {
         margin: 5px 0; /* Reducir margen */
     }
 
-    .banner-content {
-        font-size: 0.9em; /* Reducir tamaño del texto */
-        margin-top: 5px;
+    .filters-container {
+        padding: 10px;
+        max-width: 100%; /* Asegurar adaptabilidad en pantallas pequeñas */
     }
 
-    .banner-content img.banner-flag {
-        width: 20px; /* Reducir tamaño de la bandera */
-        margin-top: 5px;
+    .filters-container select,
+    .filters-container button,
+    .filters-container label {
+        font-size: 0.9em; /* Reducir tamaño de los elementos */
     }
 
-    main {
-        padding: 5px; /* Reducir padding en dispositivos pequeños */
-        max-height: calc(100vh - 150px); /* Ajustar altura del contenedor */
-    }
-
-    .quiz-panel {
-        margin-bottom: 10px; /* Reducir espacio entre elementos */
-    }
-
-    .quiz-panel h2 {
-        font-size: 1.2em; /* Reducir tamaño de los encabezados */
-    }
-
-    .quiz-panel input {
-        padding: 8px; /* Reducir tamaño de los campos de entrada */
+    .flags-container img {
+        width: 40px; /* Ajustar tamaño de las banderas */
     }
 }
