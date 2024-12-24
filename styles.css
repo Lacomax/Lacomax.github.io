@@ -15,7 +15,7 @@ header h1 {
     font-size: 2em; /* Bigger and white text for Vokabeltrainer */
     color: #fff;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 .banner-content {
@@ -26,7 +26,7 @@ header h1 {
 }
 
 .banner-content img.banner-flag {
-    width: 30px; 
+    width: 20px; /* Reducir el ancho */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -38,6 +38,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
 }
 
 .setup-panel, .quiz-panel, .stats-panel {
@@ -47,6 +49,7 @@ main {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
+    margin: 0 auto; /* Centra horizontalmente */
     margin-bottom: 20px;
 }
 
@@ -62,7 +65,7 @@ main {
     font-size: 1.1em;
     border-radius: 4px;
     border: 1px solid #ccc;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .filters button, 
@@ -164,6 +167,7 @@ main {
 .keyboard {
     margin: 10px 0;
 }
+
 .keyboard button {
     margin: 5px;
     padding: 5px 10px;
@@ -172,6 +176,7 @@ main {
     border: 1px solid #ccc;
     cursor: pointer;
 }
+
 .keyboard button:hover {
     background: #e0e0e0;
 }
