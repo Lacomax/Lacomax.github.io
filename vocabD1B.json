@@ -821,8 +821,8 @@
     {
         "lesson": "Unité 1",
         "module": "B",
-        "french": "madame …",
-        "german": "Frau …",
+        "french": "madame ...",
+        "german": "Frau ...",
         "example": "Madame Dupont est notre professeure de maths."
     },
     {
@@ -940,7 +940,7 @@
     {
         "lesson": "Unité 2",
         "module": "DE",
-        "french": "un journal;des journaux",
+        "french": "un journal; des journaux",
         "german": "eine Zeitung",
         "example": "J’achète un journal chaque matin pour lire les actualités."
     },
@@ -1122,14 +1122,14 @@
     {
         "lesson": "Unité 2",
         "module": "A",
-        "french": "français;française",
+        "french": "français; française",
         "german": "französisch",
         "example": "Ma copine est française, elle vient de Lyon."
     },
     {
         "lesson": "Unité 2",
         "module": "A",
-        "french": "écouter qn;écouter qc",
+        "french": "écouter qn; écouter qc",
         "german": "jemandem zuhören; etwas anhören",
         "example": "J’aime écouter de la musique classique en travaillant."
     },
@@ -1185,9 +1185,9 @@
     {
         "lesson": "Unité 2",
         "module": "A",
-        "french": "euh …",
-        "german": "äh …",
-        "example": "Euh …"
+        "french": "euh ...",
+        "german": "äh ...",
+        "example": "Euh ..."
     },
     {
         "lesson": "Unité 2",
@@ -1325,8 +1325,8 @@
     {
         "lesson": "Unité 2",
         "module": "B",
-        "french": "Qu’est-ce que …?",
-        "german": "Was …?",
+        "french": "Qu’est-ce que ...?",
+        "german": "Was ...?",
         "example": "Qu’est-ce qu’il y a ? Tu as l’air triste."
     },
     {
@@ -1480,7 +1480,7 @@
         "lesson": "Unité 2",
         "module": "P",
         "french": "le basket(ball)",
-        "german": "Basketball",
+        "german": "der Basketball",
         "example": "Le basket est mon sport préféré."
     },
     {
@@ -2368,7 +2368,7 @@
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "demi;demie",
+        "french": "demi; demie",
         "german": "halb",
         "example": "Il reste une demi-heure avant que le film ne commence."
     },
@@ -2459,15 +2459,15 @@
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "à quelle heure?",
-        "german": "um wie viel Uhr?",
+        "french": "À quelle heure?",
+        "german": "Um wie viel Uhr?",
         "example": "À quelle heure commence ton entraînement ?"
     },
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "de … à",
-        "german": "von … bis",
+        "french": "de ... à",
+        "german": "von ... bis",
         "example": "Je travaille de huit heures à dix-sept heures."
     },
     {
@@ -2501,7 +2501,7 @@
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "ne … pas",
+        "french": "ne ... pas",
         "german": "nicht",
         "example": "Je ne comprends pas ce que tu veux dire."
     },
@@ -2543,7 +2543,7 @@
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "Excusez-moi.",
+        "french": "Excusez-moi!",
         "german": "Entschuldigung!",
         "example": "Excusez-moi, pouvez-vous me montrer le chemin ?"
     },
@@ -2578,8 +2578,15 @@
     {
         "lesson": "Unité 4",
         "module": "A",
-        "french": "retrouver qn/qc",
-        "german": "jemanden treffen; etwas wiederfinden",
+        "french": "retrouver qn",
+        "german": "jemanden treffen",
+        "example": "Je vais retrouver mes amis après les cours."
+    },
+    {
+        "lesson": "Unité 4",
+        "module": "A",
+        "french": "retrouver qc",
+        "german": "etwas wiederfinden",
         "example": "Je vais retrouver mes amis après les cours."
     },
     {
@@ -3229,8 +3236,8 @@
     {
         "lesson": "Unité 5",
         "module": "A",
-        "french": "je voudrais …",
-        "german": "ich möchte gerne …",
+        "french": "je voudrais ...",
+        "german": "ich möchte gerne ...",
         "example": "Je suis étudiant à l'université"
     },
     {
@@ -3279,7 +3286,7 @@
         "lesson": "Unité 5",
         "module": "A",
         "french": "le basket(ball)",
-        "german": "Basketball",
+        "german": "der Basketball",
         "example": "Le basket est mon sport préféré."
     },
     {
@@ -3517,7 +3524,7 @@
         "lesson": "Unité 5",
         "module": "B",
         "french": "poser qc",
-        "german": "etwas setzen; etwas stellen;etwas legen",
+        "german": "etwas setzen; etwas stellen; etwas legen",
         "example": "Peux-tu poser ce livre sur la table ?"
     },
     {
@@ -3531,7 +3538,7 @@
         "lesson": "Unité 5",
         "module": "B",
         "french": "Comment est-ce que ...?",
-        "german": "Wie ... ?",
+        "german": "Wie ...?",
         "example": "Comment est-ce que tu fais pour cuisiner si bien ?"
     },
     {
@@ -3754,8 +3761,8 @@
     {
         "lesson": "Unité 5",
         "module": "C",
-        "french": "Ça fait …",
-        "german": "Das macht …; Das kostet …",
+        "french": "Ça fait ...",
+        "german": "Das macht ...; Das kostet ...",
         "example": "Ça fait cinq euros et cinquante centimes."
     },
     {
@@ -3895,7 +3902,7 @@
         "lesson": "Unité 6",
         "module": "DE",
         "french": "un bal",
-        "german": "ein Ball ; ein Fest",
+        "german": "ein Ball; ein Fest",
         "example": "On a dansé toute la nuit au bal de fin d’année."
     },
     {
@@ -3992,15 +3999,22 @@
     {
         "lesson": "Unité 6",
         "module": "A",
-        "french": "un journal/des journaux",
-        "german": "eine Zeitung ; ein Tagebuch",
+        "french": "des journaux",
+        "german": "die Zeitung; das Tagebuch",
+        "example": "J’achète un journal chaque matin pour lire les actualités."
+    },
+    {
+        "lesson": "Unité 6",
+        "module": "A",
+        "french": "un journal",
+        "german": "eine Zeitung; ein Tagebuch",
         "example": "J’achète un journal chaque matin pour lire les actualités."
     },
     {
         "lesson": "Unité 6",
         "module": "A",
         "french": "les vacances",
-        "german": "der Urlaub ; die Ferien",
+        "german": "der Urlaub; die Ferien",
         "example": "Cet été, nous partons en vacances à la montagne."
     },
     {
@@ -4084,7 +4098,7 @@
         "lesson": "Unité 6",
         "module": "A",
         "french": "enfin",
-        "german": "endlich ; schließlich",
+        "german": "endlich; schließlich",
         "example": "Enfin, le week-end est arrivé !"
     },
     {
@@ -4133,7 +4147,7 @@
         "lesson": "Unité 6",
         "module": "A",
         "french": "content/contente",
-        "german": "zufrieden ; froh",
+        "german": "zufrieden; froh",
         "example": "Je suis contente de te voir aujourd’hui."
     },
     {
@@ -4182,21 +4196,21 @@
         "lesson": "Unité 6",
         "module": "B",
         "french": "une casquette",
-        "german": "eine Kappe ; eine Schirmmütze",
+        "german": "eine Kappe; eine Schirmmütze",
         "example": "Je mets une casquette quand il fait soleil."
     },
     {
         "lesson": "Unité 6",
         "module": "B",
         "french": "la poche",
-        "german": "die Tasche ; die Hosentasche",
+        "german": "die Tasche; die Hosentasche",
         "example": "J’ai mis mon téléphone dans ma poche."
     },
     {
         "lesson": "Unité 6",
         "module": "B",
         "french": "demander (qc) à qn",
-        "german": "jemanden (nach etwas) fragen ;jemanden (um etwas) bitten",
+        "german": "jemanden (nach etwas) fragen; jemanden (um etwas) bitten",
         "example": "Je vais demander l’heure à cette dame."
     },
     {
@@ -4727,8 +4741,8 @@
     {
         "lesson": "Unité 7",
         "module": "A",
-        "french": "Cher …;Chère …",
-        "german": "Lieber …;Liebe …",
+        "french": "Cher ...; Chère ...",
+        "german": "Lieber ...; Liebe ...",
         "example": "Chère Sophie, je t’écris pour te donner des nouvelles."
     },
     {
@@ -4902,7 +4916,7 @@
     {
         "lesson": "Unité 7",
         "module": "C",
-        "french": "ne … pas de",
+        "french": "ne ... pas de",
         "german": "kein/keine",
         "example": "Il n’y a pas de chocolat dans le frigo."
     },
@@ -4951,14 +4965,14 @@
     {
         "lesson": "Unité 7",
         "module": "C",
-        "french": "ne … plus",
+        "french": "ne ... plus",
         "german": "nicht mehr",
         "example": "Je n’ai plus faim, j’ai assez mangé."
     },
     {
         "lesson": "Unité 7",
         "module": "C",
-        "french": "ne … plus de",
+        "french": "ne ... plus de",
         "german": "kein/keine mehr",
         "example": "Il n’y a plus de lait dans le frigo."
     },
@@ -5070,7 +5084,7 @@
     {
         "lesson": "Unité 7",
         "module": "D",
-        "french": "ne … rien",
+        "french": "ne ... rien",
         "german": "nichts",
         "example": "Il ne mange rien depuis ce matin."
     },
