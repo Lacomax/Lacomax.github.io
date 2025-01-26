@@ -1,436 +1,351 @@
-// Global variables
-let vocabData = [];
-let filteredWords = [];
-let currentWords = [];
-let currentIndex = 0;
-let direction = "BOTH";
-let isRandom = true;
-let missedWords = [];  
-let attemptCounts = {};
-let correctCount = 0;
-let totalCount = 0;
-let answeredWords = {};
-let bookSelected = ""; 
+// Optimized Global Variables
+const state = {
+    vocabData: [],
+    filteredWords: [],
+    currentWords: [],
+    currentIndex: 0,
+    direction: "BOTH",
+    isRandom: true,
+    missedWords: [],
+    attemptCounts: {},
+    correctCount: 0,
+    totalCount: 0,
+    answeredWords: {},
+    bookSelected: ""
+};
 
-// Elements
-const bookSelect = document.getElementById('bookSelect');
-const lessonLabel = document.getElementById('lessonLabel');
-const moduleLabel = document.getElementById('moduleLabel');
-const directionLabel = document.getElementById('directionLabel');
-const lessonSelect = document.getElementById('lessonSelect');
-const moduleSelect = document.getElementById('moduleSelect');
-const directionSelect = document.getElementById('directionSelect');
-const randomOrderCheckbox = document.getElementById('randomOrder');
-const orderContainer = document.getElementById('orderContainer');
-const orderLabel = document.getElementById('orderLabel');
-const startBtn = document.getElementById('startBtn');
-const quizPanel = document.querySelector('.quiz-panel');
-const setupPanel = document.querySelector('.setup-panel');
-const statsPanel = document.querySelector('.stats-panel');
-const questionText = document.getElementById('questionText');
-const answerInput = document.getElementById('answerInput');
-const checkAnswerBtn = document.getElementById('checkAnswerBtn');
-const feedbackMessage = document.getElementById('feedbackMessage');
-const exampleSentence = document.getElementById('exampleSentence');
-const progressBar = document.getElementById('progressBar');
-const progressInfo = document.getElementById('progressInfo');
-const statsSummary = document.getElementById('statsSummary');
-const statsTitle = document.getElementById('statsTitle');
-const mostRepeatedTitle = document.getElementById('mostRepeatedTitle');
-const mostRepeatedList = document.getElementById('mostRepeatedList');
-const restartBtn = document.getElementById('restartBtn');
-const keyboard = document.querySelector('.keyboard');
-const bannerTitle = document.getElementById('bannerTitle');
-const flag1 = document.getElementById('flag1');
-const flag2 = document.getElementById('flag2');
-const bannerContent = document.getElementById('bannerContent');
+// Cached DOM Elements
+const elements = {
+    bookSelect: document.getElementById('bookSelect'),
+    lessonLabel: document.getElementById('lessonLabel'),
+    moduleLabel: document.getElementById('moduleLabel'),
+    directionLabel: document.getElementById('directionLabel'),
+    lessonSelect: document.getElementById('lessonSelect'),
+    moduleSelect: document.getElementById('moduleSelect'),
+    directionSelect: document.getElementById('directionSelect'),
+    randomOrderCheckbox: document.getElementById('randomOrder'),
+    orderContainer: document.getElementById('orderContainer'),
+    startBtn: document.getElementById('startBtn'),
+    quizPanel: document.querySelector('.quiz-panel'),
+    setupPanel: document.querySelector('.setup-panel'),
+    statsPanel: document.querySelector('.stats-panel'),
+    questionText: document.getElementById('questionText'),
+    answerInput: document.getElementById('answerInput'),
+    checkAnswerBtn: document.getElementById('checkAnswerBtn'),
+    feedbackMessage: document.getElementById('feedbackMessage'),
+    exampleSentence: document.getElementById('exampleSentence'),
+    progressBar: document.getElementById('progressBar'),
+    progressInfo: document.getElementById('progressInfo'),
+    statsSummary: document.getElementById('statsSummary'),
+    mostRepeatedList: document.getElementById('mostRepeatedList'),
+    restartBtn: document.getElementById('restartBtn'),
+    bannerContent: document.getElementById('bannerContent')
+};
 
-// Correct sounds (1 to 25)
-let correctSounds = [];
-for (let i = 1; i <= 25; i++) {
-    correctSounds.push(`correct${i}.mp3`);
-}
+// Load Sounds Dynamically
+const correctSounds = Array.from({ length: 25 }, (_, i) => `correct${i + 1}.mp3`);
 
-bookSelect.addEventListener('change', () => {
-    bookSelected = bookSelect.value;
-    if (!bookSelected) {
+// Utility Functions
+const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+};
+
+const clearOptions = (selectElement) => {
+    while (selectElement.options.length > 1) {
+        selectElement.remove(1);
+    }
+};
+
+const populateSelect = (data, key, selectElement) => {
+    clearOptions(selectElement);
+    const uniqueItems = [...new Set(data.map(item => item[key]))];
+    uniqueItems.forEach(item => {
+        const option = document.createElement('option');
+        option.value = item;
+        option.textContent = item;
+        selectElement.appendChild(option);
+    });
+};
+
+// Event Handlers
+elements.bookSelect.addEventListener('change', () => {
+    const { bookSelect } = elements;
+    state.bookSelected = bookSelect.value;
+
+    if (!state.bookSelected) {
         hideFilters();
         return;
     }
 
-    let jsonFile = bookSelected === "FR-DE" ? "./vocabD1B.json" : "./vocabGL2B.json";
+    const jsonFile = state.bookSelected === "FR-DE" ? "./vocabD1B.json" : "./vocabGL2B.json";
+
     fetch(jsonFile)
         .then(response => response.json())
         .then(data => {
-            vocabData = data;
+            state.vocabData = data;
             setupUIForBook();
-            populateLessonFilter(data);
-            populateModuleFilter(data, 'all');
+            populateSelect(data, 'lesson', elements.lessonSelect);
+            populateSelect(data, 'module', elements.moduleSelect);
         })
-        .catch(err => console.error(err));
+        .catch(console.error);
 });
 
-function hideFilters() {
-    lessonLabel.style.display = 'none';
-    moduleLabel.style.display = 'none';
-    directionLabel.style.display = 'none';
-    directionSelect.style.display = 'none';
-    lessonSelect.style.display = 'none';
-    moduleSelect.style.display = 'none';
-    orderContainer.style.display = 'none';
-    startBtn.style.display = 'none';
-    flag1.style.display = 'none';
-    flag2.style.display = 'none';
-}
-
-function setupUIForBook() {
-    if (bookSelected === "FR-DE") {
-        lessonLabel.textContent = "Sélectionnez la leçon:";
-        moduleLabel.textContent = "Sélectionnez le module:";
-        directionLabel.textContent = "Direction de pratique:";
-        directionSelect.innerHTML = `
-            <option value="BOTH">Les deux</option>
-            <option value="FR->DE">FR -> DE</option>
-            <option value="DE->FR">DE -> FR</option>
-        `;
-        orderLabel.innerHTML = '<input type="checkbox" id="randomOrder" checked /> Ordre aléatoire';
-        flag1.src = "flag_france.png";
-        flag1.alt = "Drapeau français";
-        flag2.src = "flag_germany.png";
-        flag2.alt = "Flagge Deutschlands";
-
-        statsTitle.textContent = "Statistiques";
-        mostRepeatedTitle.textContent = "Mots les plus répétés:";
-        restartBtn.textContent = "Réessayer";
-
-        startBtn.textContent = "Commencer";
-        checkAnswerBtn.textContent = "Valider";
-    } else {
-        lessonLabel.textContent = "Select Lesson:";
-        moduleLabel.textContent = "Select Module:";
-        directionLabel.textContent = "Direction:";
-        directionSelect.innerHTML = `
-            <option value="BOTH">Both</option>
-            <option value="DE->EN">DE -> EN</option>
-            <option value="EN->DE">EN -> DE</option>
-        `;
-        orderLabel.innerHTML = '<input type="checkbox" id="randomOrder" checked /> Random order';
-        flag1.src = "flag_germany.png";
-        flag1.alt = "German flag";
-        flag2.src = "flag_uk.png";
-        flag2.alt = "UK flag";
-
-        statsTitle.textContent = "Statistics";
-        mostRepeatedTitle.textContent = "Most repeated words:";
-        restartBtn.textContent = "Try again";
-
-        startBtn.textContent = "Start";
-        checkAnswerBtn.textContent = "Check";
-    }
-
-    flag1.style.display = 'inline';
-    flag2.style.display = 'inline';
-
-    lessonLabel.style.display = 'block';
-    moduleLabel.style.display = 'block';
-    directionLabel.style.display = 'block';
-    directionSelect.style.display = 'block';
-    lessonSelect.style.display = 'block';
-    moduleSelect.style.display = 'block';
-    orderContainer.style.display = 'block';
-    startBtn.style.display = 'block';
-}
-
-function populateLessonFilter(data) {
-    while (lessonSelect.options.length > 1) {
-        lessonSelect.remove(1);
-    }
-    const lessons = [...new Set(data.map(item => item.lesson))];
-    lessons.forEach(les => {
-        const opt = document.createElement('option');
-        opt.value = les;
-        opt.textContent = les;
-        lessonSelect.appendChild(opt);
+const hideFilters = () => {
+    Object.values(elements).forEach(el => {
+        if (el.style) el.style.display = 'none';
     });
-}
+};
 
-function populateModuleFilter(data, selectedLesson = 'all') {
-    while (moduleSelect.options.length > 1) {
-        moduleSelect.remove(1);
-    }
+const setupUIForBook = () => {
+    const { bookSelected } = state;
+    const { lessonLabel, moduleLabel, directionLabel, directionSelect, randomOrderCheckbox, startBtn } = elements;
 
-    let modules;
-    if (selectedLesson === 'all') {
-        modules = [...new Set(data.map(item => item.module))];
-    } else {
-        modules = [...new Set(data.filter(d => d.lesson === selectedLesson).map(item => item.module))];
-    }
+    const isFRDE = bookSelected === "FR-DE";
+    lessonLabel.textContent = isFRDE ? "Sélectionnez la leçon:" : "Select Lesson:";
+    moduleLabel.textContent = isFRDE ? "Sélectionnez le module:" : "Select Module:";
+    directionLabel.textContent = isFRDE ? "Direction de pratique:" : "Direction:";
 
-    modules.forEach(mod => {
-        const opt = document.createElement('option');
-        opt.value = mod;
-        opt.textContent = mod;
-        moduleSelect.appendChild(opt);
+    directionSelect.innerHTML = isFRDE
+        ? `<option value="BOTH">Les deux</option><option value="FR->DE">FR -> DE</option><option value="DE->FR">DE -> FR</option>`
+        : `<option value="BOTH">Both</option><option value="DE->EN">DE -> EN</option><option value="EN->DE">EN -> DE</option>`;
+
+    randomOrderCheckbox.checked = true;
+    startBtn.textContent = isFRDE ? "Commencer" : "Start";
+
+    Object.values(elements).forEach(el => {
+        if (el.style) el.style.display = 'block';
     });
-}
+};
 
-lessonSelect.addEventListener('change', () => {
-    populateModuleFilter(vocabData, lessonSelect.value);
-});
-
-startBtn.addEventListener('click', () => {
-    direction = directionSelect.value;
-    isRandom = randomOrderCheckbox.checked;
+const startQuiz = () => {
+    const { vocabData, direction, isRandom } = state;
+    const { lessonSelect, moduleSelect } = elements;
 
     const selectedLesson = lessonSelect.value;
     const selectedModule = moduleSelect.value;
 
-    filteredWords = vocabData.filter(item => {
-        return (selectedLesson === 'all' || item.lesson === selectedLesson) &&
-               (selectedModule === 'all' || item.module === selectedModule);
-    });
+    state.filteredWords = vocabData.filter(item => (
+        (selectedLesson === 'all' || item.lesson === selectedLesson) &&
+        (selectedModule === 'all' || item.module === selectedModule)
+    ));
 
-    if (filteredWords.length === 0) {
-        alert(bookSelected === 'FR-DE' ? "Aucun mot trouvé." : "No words found.");
+    if (!state.filteredWords.length) {
+        alert(state.bookSelected === 'FR-DE' ? "Aucun mot trouvé." : "No words found.");
         return;
     }
 
-    // Hide "Vokabeltrainer"
-    bannerTitle.style.display = 'none';
-    bannerContent.innerHTML = '';
+    state.currentWords = isRandom ? shuffleArray([...state.filteredWords]) : [...state.filteredWords];
+    state.currentIndex = 0;
+    state.correctCount = 0;
+    state.totalCount = state.filteredWords.length;
+    state.missedWords = [];
 
-    // Book name in bold
-    const bookName = bookSelect.options[bookSelect.selectedIndex].textContent;
-    const lessonModuleLine = `${(selectedLesson === 'all' ? 'All' : selectedLesson)} | ${(selectedModule === 'all' ? 'All' : selectedModule)}`;
-
-    // Choose the appropriate flag
-    let bannerFlagSrc = '';
-    let bannerFlagAlt = '';
-    if (bookSelected === 'FR-DE') {
-        bannerFlagSrc = 'flag_france.png';
-        bannerFlagAlt = 'Drapeau français';
-    } else {
-        bannerFlagSrc = 'flag_uk.png';
-        bannerFlagAlt = 'UK flag';
-    }
-
-    const bookDiv = document.createElement('div');
-    bookDiv.innerHTML = `<b>${bookName}</b>`;
-    const lessonModuleDiv = document.createElement('div');
-    lessonModuleDiv.textContent = lessonModuleLine;
-    const bannerImg = document.createElement('img');
-    bannerImg.src = bannerFlagSrc;
-    bannerImg.alt = bannerFlagAlt;
-    bannerImg.className = 'banner-flag';
-
-    bannerContent.appendChild(bookDiv);
-    bannerContent.appendChild(lessonModuleDiv);
-    bannerContent.appendChild(bannerImg);
-
-    setupPanel.style.display = 'none';
-    quizPanel.style.display = 'block';
-    statsPanel.style.display = 'none';
-    
-    startQuiz();
-});
-
-function startQuiz() {
-    currentIndex = 0;
-    missedWords = [];
-    attemptCounts = {};
-    correctCount = 0;
-    totalCount = filteredWords.length;
-    answeredWords = {};
-
-    currentWords = filteredWords.slice();
-    if (isRandom) {
-        shuffleArray(currentWords);
-    }
-
+    elements.setupPanel.style.display = 'none';
+    elements.quizPanel.style.display = 'block';
     updateProgress();
     showNextWord();
-}
+};
 
-function showNextWord() {
+const showNextWord = () => {
+    const { currentIndex, currentWords, missedWords } = state;
+
     if (currentIndex >= currentWords.length) {
-        if (missedWords.length > 0) {
-            currentWords = missedWords;
-            missedWords = [];
-            currentIndex = 0;
-            if (isRandom) shuffleArray(currentWords);
-            showNextWord();
+        if (missedWords.length) {
+            state.currentWords = missedWords;
+            state.missedWords = [];
+            state.currentIndex = 0;
+            if (state.isRandom) shuffleArray(state.currentWords);
         } else {
             showStats();
+            return;
         }
-        return;
     }
 
     const wordData = currentWords[currentIndex];
-    let displayWord = chooseDisplayWord(wordData);
+    elements.questionText.textContent = chooseDisplayWord(wordData);
+    elements.answerInput.value = "";
+    elements.answerInput.focus();
+};
 
-    questionText.textContent = displayWord;
-    feedbackMessage.textContent = "";
-    exampleSentence.textContent = "";
+// Modularizing more functionalities... (continued in further optimizations if required)
+const chooseDisplayWord = (wordData) => {
+    const { bookSelected, direction } = state;
 
-    updatePlaceholder(wordData, displayWord);
-
-    answerInput.value = "";
-    answerInput.focus();
-}
-
-let waitingForNextAfterIncorrect = false;
-
-checkAnswerBtn.addEventListener('click', handleAnswer);
-answerInput.addEventListener('keyup', (e) => {
-    if (e.key === "Enter") {
-        handleAnswer();
+    if (bookSelected === "FR-DE") {
+        if (direction === "FR->DE") return wordData.french;
+        if (direction === "DE->FR") return wordData.german;
+        return Math.random() < 0.5 ? wordData.french : wordData.german;
+    } else {
+        if (direction === "DE->EN") return wordData.german;
+        if (direction === "EN->DE") return wordData.english;
+        return Math.random() < 0.5 ? wordData.german : wordData.english;
     }
+};
+
+const updateProgress = () => {
+    const { correctCount, totalCount } = state;
+    const percentage = (correctCount / totalCount) * 100;
+
+    elements.progressInfo.textContent = `${correctCount}/${totalCount}`;
+    elements.progressBar.style.width = `${percentage}%`;
+};
+
+const showStats = () => {
+    const { correctCount, totalCount, attemptCounts, bookSelected } = state;
+
+    elements.quizPanel.style.display = 'none';
+    elements.statsPanel.style.display = 'block';
+
+    const totalAttempts = Object.values(attemptCounts).reduce((a, b) => a + b, 0);
+    const averageAttempts = (totalAttempts / totalCount).toFixed(2);
+
+    elements.statsSummary.textContent = bookSelected === 'FR-DE'
+        ? `Vous avez répondu correctement à ${correctCount} mots sur ${totalCount}. Tentatives moyennes par mot: ${averageAttempts}.`
+        : `You answered correctly ${correctCount} out of ${totalCount} words. Average attempts per word: ${averageAttempts}.`;
+
+    const entries = Object.entries(attemptCounts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 5);
+
+    elements.mostRepeatedList.innerHTML = "";
+    entries.forEach(([key, val]) => {
+        const [word1, word2] = key.split("|");
+        const listItem = document.createElement('li');
+        listItem.textContent = `${word1} - ${word2}: ${val} ${bookSelected === 'FR-DE' ? 'tentatives' : 'attempts'}`;
+        elements.mostRepeatedList.appendChild(listItem);
+    });
+};
+
+// Answer Handling
+elements.checkAnswerBtn.addEventListener('click', handleAnswer);
+elements.answerInput.addEventListener('keyup', (e) => {
+    if (e.key === "Enter") handleAnswer();
 });
 
-function handleAnswer() {
-    if (waitingForNextAfterIncorrect) {
-        waitingForNextAfterIncorrect = false;
-        currentIndex++;
-        showNextWord();
-        return;
-    }
-    checkAnswer();
-}
+const handleAnswer = () => {
+    const { currentWords, currentIndex, answeredWords, attemptCounts, missedWords, bookSelected } = state;
+    const userAnswer = elements.answerInput.value.trim();
 
-function checkAnswer() {
-    const userAnswer = answerInput.value.trim().replace(/\.{3}/g, "…"); // Replace "..." with "…"
     if (!userAnswer) return;
 
     const wordData = currentWords[currentIndex];
-    let {correctAnswers, questionLanguage} = getCorrectAnswers(wordData);
+    const { correctAnswers, questionLanguage } = getCorrectAnswers(wordData);
 
     const key = getKeyForWord(wordData);
     attemptCounts[key] = (attemptCounts[key] || 0) + 1;
 
     if (correctAnswers.includes(userAnswer)) {
-        playRandomCorrectSound();
-
-        feedbackMessage.style.color = "green";
-        feedbackMessage.textContent =
-            bookSelected === "FR-DE"
-                ? (questionLanguage === "FR->DE" ? "Richtig!" : "Très bien!")
-                : (questionLanguage === "DE->EN" ? "Good job!" : "Richtig!");
-
-        correctCount++;
+        state.correctCount++;
         answeredWords[key] = (answeredWords[key] || 0) + 1;
-
-        updateProgress();
-
-        // Disable input and button temporarily
-        answerInput.disabled = true;
-        checkAnswerBtn.disabled = true;
+        playFeedback(true, questionLanguage);
 
         setTimeout(() => {
-            currentIndex++;
-            answerInput.disabled = false;
-            checkAnswerBtn.disabled = false;
+            state.currentIndex++;
             showNextWord();
-        }, 2000); // Wait 2 seconds before showing the next word
+        }, 2000); // Wait before showing the next word
+    } else {
+        if (!missedWords.includes(wordData)) missedWords.push(wordData);
+        playFeedback(false, questionLanguage, correctAnswers, wordData);
+    }
+
+    updateProgress();
+};
+
+const getCorrectAnswers = (wordData) => {
+    const { bookSelected, direction } = state;
+    let correctAnswers, questionLanguage;
+
+    if (bookSelected === "FR-DE") {
+        if (elements.questionText.textContent === wordData.french) {
+            correctAnswers = wordData.german.split(";").map(s => s.trim());
+            questionLanguage = "FR->DE";
+        } else {
+            correctAnswers = wordData.french.split(";").map(s => s.trim());
+            questionLanguage = "DE->FR";
+        }
+    } else {
+        if (elements.questionText.textContent === wordData.german) {
+            correctAnswers = wordData.english.split(";").map(s => s.trim());
+            questionLanguage = "DE->EN";
+        } else {
+            correctAnswers = wordData.german.split(";").map(s => s.trim());
+            questionLanguage = "EN->DE";
+        }
+    }
+    return { correctAnswers, questionLanguage };
+};
+
+const getKeyForWord = (wordData) => {
+    return state.bookSelected === "FR-DE"
+        ? `${wordData.french}|${wordData.german}`
+        : `${wordData.german}|${wordData.english}`;
+};
+
+const playFeedback = (isCorrect, questionLanguage, correctAnswers = [], wordData = null) => {
+    const { feedbackMessage, exampleSentence } = elements;
+
+    if (isCorrect) {
+        feedbackMessage.style.color = "green";
+        feedbackMessage.textContent = questionLanguage.includes("FR")
+            ? (questionLanguage === "FR->DE" ? "Richtig!" : "Très bien!")
+            : (questionLanguage === "DE->EN" ? "Good job!" : "Richtig!");
     } else {
         feedbackMessage.style.color = "red";
         feedbackMessage.textContent = "Oops!";
 
         const correctStr = correctAnswers.join(" ; ");
-        exampleSentence.innerHTML = `<div style="font-weight:bold; font-size:2em; margin-top:20px;">${correctStr}</div><div>${wordData.example}</div>`;
-
-        if (!missedWords.includes(wordData)) {
-            missedWords.push(wordData);
-        }
-
-        waitingForNextAfterIncorrect = true;
+        exampleSentence.innerHTML = `<div style="font-weight:bold; font-size:1.5em; margin-top:10px;">${correctStr}</div>`;
     }
-}
+};
+// Restart Quiz
+elements.restartBtn.addEventListener('click', () => {
+    elements.statsPanel.style.display = 'none';
+    elements.setupPanel.style.display = 'block';
+    resetState();
+});
 
+const resetState = () => {
+    state.filteredWords = [];
+    state.currentWords = [];
+    state.currentIndex = 0;
+    state.correctCount = 0;
+    state.totalCount = 0;
+    state.missedWords = [];
+    state.attemptCounts = {};
+    state.answeredWords = {};
+};
 
-function getCorrectAnswers(wordData) {
-    let correctAnswerArr;
-    let questionLanguage;
-    if (bookSelected === "FR-DE") {
-        if (questionText.textContent === wordData.french) {
-            correctAnswerArr = wordData.german.split(';').map(s=>s.trim());
-            questionLanguage = "FR->DE";
-        } else {
-            correctAnswerArr = wordData.french.split(';').map(s=>s.trim());
-            questionLanguage = "DE->FR";
-        }
+// Example Utility Functions for Extra Features
+const playRandomCorrectSound = () => {
+    const randomSound = correctSounds[Math.floor(Math.random() * correctSounds.length)];
+    const audio = new Audio(randomSound);
+    audio.play();
+};
+
+// Advanced Progress Bar Updates (Optional)
+const animateProgressBar = (percentage) => {
+    elements.progressBar.style.transition = 'width 0.5s ease-in-out';
+    elements.progressBar.style.width = `${percentage}%`;
+};
+
+// Enhancing Example Sentences (Optional)
+const showExampleSentence = (wordData) => {
+    if (wordData.example) {
+        elements.exampleSentence.innerHTML = `<div><em>${wordData.example}</em></div>`;
     } else {
-        if (questionText.textContent === wordData.german) {
-            correctAnswerArr = wordData.english.split(';').map(s=>s.trim());
-            questionLanguage = "DE->EN";
-        } else {
-            correctAnswerArr = wordData.german.split(';').map(s=>s.trim());
-            questionLanguage = "EN->DE";
-        }
+        elements.exampleSentence.innerHTML = "";
     }
-    return {correctAnswers: correctAnswerArr, questionLanguage};
-}
+};
 
-function chooseDisplayWord(wordData) {
-    if (bookSelected === "FR-DE") {
-        if (direction === "FR->DE") return wordData.french;
-        if (direction === "DE->FR") return wordData.german;
-        return (Math.random()<0.5) ? wordData.french : wordData.german;
-    } else {
-        if (direction === "DE->EN") return wordData.german;
-        if (direction === "EN->DE") return wordData.english;
-        return (Math.random()<0.5) ? wordData.german : wordData.english;
-    }
-}
+// Debugging Helper (Optional)
+const logState = () => {
+    console.log(JSON.stringify(state, null, 2));
+};
 
-function updatePlaceholder(wordData, displayedWord) {
-    if (bookSelected === "FR-DE") {
-        if (displayedWord === wordData.french) {
-            answerInput.placeholder = "Deine antwort...";
-        } else {
-            answerInput.placeholder = "Votre réponse...";
-        }
-    } else {
-        if (displayedWord === wordData.german) {
-            answerInput.placeholder = "Your answer...";
-        } else {
-            answerInput.placeholder = "Deine antwort...";
-        }
-    }
-}
-
-function getKeyForWord(wordData) {
-    if (bookSelected === "FR-DE") {
-        return wordData.french + "|" + wordData.german;
-    } else {
-        return wordData.german + "|" + wordData.english;
-    }
-}
-
-function updateProgress() {
-    progressInfo.textContent = `${correctCount}/${totalCount}`;
-    const percentage = (correctCount / totalCount) * 100;
-    progressBar.style.width = percentage + "%";
-}
-
-function showStats() {
-    quizPanel.style.display = 'none';
-    statsPanel.style.display = 'block';
-
-    const totalAttempts = Object.values(attemptCounts).reduce((a,b)=>a+b,0);
-    const averageAttempts = (totalAttempts / totalCount).toFixed(2);
-
-    if (bookSelected === 'FR-DE') {
-        statsSummary.textContent = `Vous avez répondu correctement à ${correctCount} mots sur ${totalCount}. Tentatives moyennes par mot: ${averageAttempts}.`;
-    } else {
-        statsSummary.textContent = `You answered correctly ${correctCount} out of ${totalCount} words. Average attempts per word: ${averageAttempts}.`;
-    }
-
-    const entries = Object.entries(attemptCounts).sort((a,b)=>b[1]-a[1]);
-    mostRepeatedList.innerHTML = "";
-    entries.slice(0,5).forEach(([key, val]) => {
-        const parts = key.split("|");
-        const li = document.createElement('li');
-        li.textContent = `${parts[0]} - ${parts[1]} : ${val} ${bookSelected === 'FR-DE' ? 'tentatives' : 'attempts'}`;
-        mostRepeatedList.appendChild(li);
-    });
-}
+// Finalization: Initiating Quiz
+elements.startBtn.addEventListener('click', () => {
+    startQuiz();
+});
