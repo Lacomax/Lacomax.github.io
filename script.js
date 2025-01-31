@@ -298,7 +298,7 @@ function handleAnswer() {
 }
 
 function checkAnswer() {
-    const userAnswer = answerInput.value.trim().replace(/\.{3}/g, "…"); // Replace "..." with "…"
+    const userAnswer = answerInput.value.trim();
     if (!userAnswer) return;
 
     const wordData = currentWords[currentIndex];
@@ -434,3 +434,39 @@ function showStats() {
         mostRepeatedList.appendChild(li);
     });
 }
+
+restartBtn.addEventListener('click', () => {
+    statsPanel.style.display = 'none';
+    setupPanel.style.display = 'block';
+    bannerTitle.style.display = 'block';
+    bannerTitle.textContent = "Vokabeltrainer";
+    bannerContent.innerHTML = "";
+});
+
+function shuffleArray(array) {
+    for (let i = array.length -1; i > 0; i--) {
+        const j = Math.floor(Math.random()* (i+1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+keyboard.addEventListener('click', (e) => {
+    if (e.target.dataset.char) {
+        const char = e.target.dataset.char;
+        answerInput.value += char;
+        answerInput.focus();
+    }
+});
+
+function playRandomCorrectSound() {
+    // Generate a random number between 1 and 25
+    const randomNumber = Math.floor(Math.random() * 25) + 1;
+    // Format the number with leading zeros if less than 10
+    const formattedNumber = randomNumber < 10 ? `0${randomNumber}` : `${randomNumber}`;
+    // Construct the file name
+    const soundFile = `correct${formattedNumber}.mp3`;
+    // Play the sound
+    const audio = new Audio("correct_mp3/" + soundFile);
+    audio.play();
+}
+
