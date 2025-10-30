@@ -1,0 +1,38 @@
+{
+  "name": "vokabeltrainer",
+  "version": "1.0.0",
+  "description": "Interactive vocabulary trainer for German language learners",
+  "main": "script.js",
+  "scripts": {
+    "test": "node tests/vocab.test.js",
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "format": "prettier --write \"**/*.{js,css,html,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,css,html,json,md}\"",
+    "serve": "npx serve .",
+    "validate": "npm run lint && npm run format:check && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lacomax/Lacomax.github.io.git"
+  },
+  "keywords": [
+    "vocabulary",
+    "learning",
+    "education",
+    "german",
+    "french",
+    "english",
+    "pwa",
+    "quiz"
+  ],
+  "author": "Lacomax",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

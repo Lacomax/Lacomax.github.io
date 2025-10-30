@@ -1,0 +1,118 @@
+{
+  "name": "Vokabeltrainer - Interactive Vocabulary Learning",
+  "short_name": "Vokabeltrainer",
+  "description": "Interactive vocabulary trainer for German language learners. Practice French-German and German-English with smart repetition.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#66b3ff",
+  "background_color": "#ffffff",
+  "lang": "de",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "docs/screenshot-setup.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Setup screen for selecting book, lesson, and quiz options"
+    },
+    {
+      "src": "docs/screenshot-quiz.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Quiz interface with special character keyboard"
+    },
+    {
+      "src": "docs/screenshot-stats.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Statistics showing progress and most repeated words"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "French-German Quiz",
+      "short_name": "FR-DE",
+      "description": "Start French to German vocabulary quiz",
+      "url": "/?book=FR-DE",
+      "icons": [
+        {
+          "src": "flag_france.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "German-English Quiz",
+      "short_name": "DE-EN",
+      "description": "Start German to English vocabulary quiz",
+      "url": "/?book=DE-EN",
+      "icons": [
+        {
+          "src": "flag_uk.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
