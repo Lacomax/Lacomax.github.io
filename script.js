@@ -98,7 +98,9 @@ const AppState = {
     answeredWords: {},
     bookSelected: '',
     isProcessingAnswer: false,
-    audioCache: new Map()
+    audioCache: new Map(),
+    quizStartTime: 0,
+    quizEndTime: 0
 };
 
 // ============================================================================
@@ -498,6 +500,7 @@ function startQuiz() {
     AppState.totalCount = AppState.filteredWords.length;
     AppState.answeredWords = {};
     AppState.isProcessingAnswer = false;
+    AppState.quizStartTime = Date.now();
 
     AppState.currentWords = AppState.filteredWords.slice();
     if (AppState.isRandom) {
@@ -588,6 +591,17 @@ function handleCorrectAnswer(questionLanguage, key) {
             : t('correctDE');
     }
 
+    // Show example sentence for correct answers too
+    const wordData = AppState.currentWords[AppState.currentIndex];
+    if (wordData.example) {
+        const exampleDiv = document.createElement('div');
+        exampleDiv.textContent = wordData.example;
+        exampleDiv.style.marginTop = '10px';
+        exampleDiv.style.fontStyle = 'italic';
+        DOM.exampleSentence.textContent = '';
+        DOM.exampleSentence.appendChild(exampleDiv);
+    }
+
     AppState.correctCount++;
     AppState.answeredWords[key] = (AppState.answeredWords[key] || 0) + 1;
 
@@ -673,25 +687,84 @@ function showStats() {
     DOM.quizPanel.style.display = 'none';
     DOM.statsPanel.style.display = 'block';
 
+    // Calculate time spent
+    AppState.quizEndTime = Date.now();
+    const timeSpentMs = AppState.quizEndTime - AppState.quizStartTime;
+    const timeSpentSeconds = Math.floor(timeSpentMs / 1000);
+    const minutes = Math.floor(timeSpentSeconds / 60);
+    const seconds = timeSpentSeconds % 60;
+    const timeFormatted = minutes > 0
+        ? `${minutes}m ${seconds}s`
+        : `${seconds}s`;
+
+    // Calculate statistics
     const totalAttempts = Object.values(AppState.attemptCounts).reduce((a, b) => a + b, 0);
     const averageAttempts = (totalAttempts / AppState.totalCount).toFixed(2);
+    const accuracy = ((AppState.correctCount / totalAttempts) * 100).toFixed(1);
+    const firstAttemptCorrect = Object.values(AppState.attemptCounts).filter(count => count === 1).length;
+    const wordsPerMinute = minutes > 0 ? (AppState.correctCount / minutes).toFixed(1) : 'N/A';
 
-    DOM.statsSummary.textContent = t('statsSummary')(
-        AppState.correctCount,
-        AppState.totalCount,
-        averageAttempts
-    );
+    // Build enhanced summary
+    const summaryDiv = document.createElement('div');
+    summaryDiv.className = 'stats-summary-enhanced';
 
+    // Main stats
+    const mainStatsHTML = `
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-value">${AppState.correctCount}/${AppState.totalCount}</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Mots complétés' : 'Words completed'}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${timeFormatted}</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Temps total' : 'Total time'}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${accuracy}%</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Précision' : 'Accuracy'}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${averageAttempts}</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Tentatives moy.' : 'Avg. attempts'}</div>
+            </div>
+        </div>
+        <div class="stat-details">
+            <p><strong>${AppState.bookSelected === 'FR-DE' ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
+            <p><strong>${AppState.bookSelected === 'FR-DE' ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${AppState.bookSelected === 'FR-DE' ? 'mots/min' : 'words/min'}</p>
+            <p><strong>${AppState.bookSelected === 'FR-DE' ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
+        </div>
+    `;
+
+    summaryDiv.innerHTML = mainStatsHTML;
+    DOM.statsSummary.innerHTML = '';
+    DOM.statsSummary.appendChild(summaryDiv);
+
+    // Most repeated words
     const entries = Object.entries(AppState.attemptCounts)
         .sort((a, b) => b[1] - a[1]);
 
     DOM.mostRepeatedList.innerHTML = '';
-    entries.slice(0, 5).forEach(([key, val]) => {
-        const parts = key.split('|');
+
+    if (entries.length > 0 && entries[0][1] > 1) {
+        entries.slice(0, 5).forEach(([key, val]) => {
+            if (val > 1) { // Only show words that needed more than 1 attempt
+                const parts = key.split('|');
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <span class="word-pair">${parts[0]} - ${parts[1]}</span>
+                    <span class="attempt-badge">${val} ${t('attempts')}</span>
+                `;
+                DOM.mostRepeatedList.appendChild(li);
+            }
+        });
+    } else {
         const li = document.createElement('li');
-        li.textContent = `${parts[0]} - ${parts[1]} : ${val} ${t('attempts')}`;
+        li.className = 'perfect-score';
+        li.textContent = AppState.bookSelected === 'FR-DE'
+            ? '🎉 Parfait! Tous les mots corrects du premier coup!'
+            : '🎉 Perfect! All words correct on first try!';
         DOM.mostRepeatedList.appendChild(li);
-    });
+    }
 }
 
 // ============================================================================

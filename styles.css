@@ -240,29 +240,110 @@ main {
     text-align: center;
 }
 
+/* Enhanced statistics display */
+.stats-summary-enhanced {
+    margin: 20px 0;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background: var(--progress-bg);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-details {
+    text-align: left;
+    background: var(--card-background);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 15px;
+}
+
+.stat-details p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
 #mostRepeatedList {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
 }
 
 #mostRepeatedList li {
-    margin: 5px 0;
-    font-size: 1.2rem;
-    padding: 8px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    padding: 12px 15px;
     background: var(--progress-bg);
-    border-radius: 4px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word-pair {
+    font-weight: 500;
+    flex: 1;
+}
+
+.attempt-badge {
+    background: var(--error-color);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.perfect-score {
+    background: var(--success-color);
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px;
+    justify-content: center;
 }
 
 .keyboard {
     margin: 10px 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.keyboard-row {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
+    width: 100%;
 }
 
-.keyboard button {
+.keyboard button,
+.keyboard-row button {
     padding: 8px 12px;
     font-size: 1.1rem;
     border-radius: 4px;
@@ -274,11 +355,13 @@ main {
     min-width: 40px;
 }
 
-.keyboard button:hover {
+.keyboard button:hover,
+.keyboard-row button:hover {
     background: var(--button-hover-bg);
 }
 
-.keyboard button:focus {
+.keyboard button:focus,
+.keyboard-row button:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }

@@ -100,23 +100,58 @@
                 <label for="answerInput" class="sr-only">Your answer</label>
                 <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off" aria-required="true"/>
                 <div class="keyboard" role="toolbar" aria-label="Special characters keyboard">
-                    <button data-char="'" aria-label="Insert apostrophe" type="button">'</button>
-                    <button data-char="é" aria-label="Insert e acute" type="button">é</button>
-                    <button data-char="è" aria-label="Insert e grave" type="button">è</button>
-                    <button data-char="ê" aria-label="Insert e circumflex" type="button">ê</button>
-                    <button data-char="ë" aria-label="Insert e diaeresis" type="button">ë</button>
-                    <button data-char="à" aria-label="Insert a grave" type="button">à</button>
-                    <button data-char="â" aria-label="Insert a circumflex" type="button">â</button>
-                    <button data-char="ä" aria-label="Insert a umlaut" type="button">ä</button>
-                    <button data-char="î" aria-label="Insert i circumflex" type="button">î</button>
-                    <button data-char="ï" aria-label="Insert i diaeresis" type="button">ï</button>
-                    <button data-char="ô" aria-label="Insert o circumflex" type="button">ô</button>
-                    <button data-char="ù" aria-label="Insert u grave" type="button">ù</button>
-                    <button data-char="û" aria-label="Insert u circumflex" type="button">û</button>
-                    <button data-char="ü" aria-label="Insert u umlaut" type="button">ü</button>
-                    <button data-char="œ" aria-label="Insert oe ligature" type="button">œ</button>
-                    <button data-char="ç" aria-label="Insert c cedilla" type="button">ç</button>
-                    <button data-char="ß" aria-label="Insert sharp s" type="button">ß</button>
+                    <!-- Fila 1: Vocales con acento agudo y grave (Francés) -->
+                    <div class="keyboard-row">
+                        <button data-char="é" aria-label="Insert e acute" type="button">é</button>
+                        <button data-char="É" aria-label="Insert E acute" type="button">É</button>
+                        <button data-char="è" aria-label="Insert e grave" type="button">è</button>
+                        <button data-char="È" aria-label="Insert E grave" type="button">È</button>
+                        <button data-char="à" aria-label="Insert a grave" type="button">à</button>
+                        <button data-char="À" aria-label="Insert A grave" type="button">À</button>
+                        <button data-char="ù" aria-label="Insert u grave" type="button">ù</button>
+                        <button data-char="Ù" aria-label="Insert U grave" type="button">Ù</button>
+                    </div>
+                    <!-- Fila 2: Vocales con circunflejo y diéresis (Francés/Alemán) -->
+                    <div class="keyboard-row">
+                        <button data-char="ê" aria-label="Insert e circumflex" type="button">ê</button>
+                        <button data-char="Ê" aria-label="Insert E circumflex" type="button">Ê</button>
+                        <button data-char="â" aria-label="Insert a circumflex" type="button">â</button>
+                        <button data-char="Â" aria-label="Insert A circumflex" type="button">Â</button>
+                        <button data-char="î" aria-label="Insert i circumflex" type="button">î</button>
+                        <button data-char="Î" aria-label="Insert I circumflex" type="button">Î</button>
+                        <button data-char="ô" aria-label="Insert o circumflex" type="button">ô</button>
+                        <button data-char="Ô" aria-label="Insert O circumflex" type="button">Ô</button>
+                        <button data-char="û" aria-label="Insert u circumflex" type="button">û</button>
+                        <button data-char="Û" aria-label="Insert U circumflex" type="button">Û</button>
+                    </div>
+                    <!-- Fila 3: Diéresis (Francés/Alemán) -->
+                    <div class="keyboard-row">
+                        <button data-char="ë" aria-label="Insert e diaeresis" type="button">ë</button>
+                        <button data-char="Ë" aria-label="Insert E diaeresis" type="button">Ë</button>
+                        <button data-char="ï" aria-label="Insert i diaeresis" type="button">ï</button>
+                        <button data-char="Ï" aria-label="Insert I diaeresis" type="button">Ï</button>
+                        <button data-char="ÿ" aria-label="Insert y diaeresis" type="button">ÿ</button>
+                        <button data-char="Ÿ" aria-label="Insert Y diaeresis" type="button">Ÿ</button>
+                        <button data-char="ä" aria-label="Insert a umlaut" type="button">ä</button>
+                        <button data-char="Ä" aria-label="Insert A umlaut" type="button">Ä</button>
+                        <button data-char="ö" aria-label="Insert o umlaut" type="button">ö</button>
+                        <button data-char="Ö" aria-label="Insert O umlaut" type="button">Ö</button>
+                        <button data-char="ü" aria-label="Insert u umlaut" type="button">ü</button>
+                        <button data-char="Ü" aria-label="Insert U umlaut" type="button">Ü</button>
+                    </div>
+                    <!-- Fila 4: Caracteres especiales -->
+                    <div class="keyboard-row">
+                        <button data-char="ç" aria-label="Insert c cedilla" type="button">ç</button>
+                        <button data-char="Ç" aria-label="Insert C cedilla" type="button">Ç</button>
+                        <button data-char="œ" aria-label="Insert oe ligature" type="button">œ</button>
+                        <button data-char="Œ" aria-label="Insert OE ligature" type="button">Œ</button>
+                        <button data-char="æ" aria-label="Insert ae ligature" type="button">æ</button>
+                        <button data-char="Æ" aria-label="Insert AE ligature" type="button">Æ</button>
+                        <button data-char="ß" aria-label="Insert sharp s" type="button">ß</button>
+                        <button data-char="'" aria-label="Insert apostrophe" type="button">'</button>
+                        <button data-char="«" aria-label="Insert left guillemet" type="button">«</button>
+                        <button data-char="»" aria-label="Insert right guillemet" type="button">»</button>
+                    </div>
                 </div>
                 <button id="checkAnswerBtn" type="button" aria-label="Check answer">Valider</button>
             </div>
