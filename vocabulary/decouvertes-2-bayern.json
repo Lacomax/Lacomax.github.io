@@ -1,0 +1,4202 @@
+[
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "la rentrée",
+        "german": "der Schul(jahres)beginn",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un nom",
+        "german": "ein Name",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une liste",
+        "german": "eine Liste",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "environ",
+        "german": "ungefähr; etwa",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "la cinquième",
+        "german": "die fünfte Klasse",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "en 5e",
+        "german": "in der fünften Klasse",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un effaceur",
+        "german": "ein Tintenlöscher; ein Tintenkiller",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une règle",
+        "german": "eine Regel; ein Lineal",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une trousse",
+        "german": "ein Federmäppchen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un feutre",
+        "german": "ein Filzstift",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "lui",
+        "german": "er (betont) (m.) (Sg.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "eux",
+        "german": "sie (betont) (m.) (Pl.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "savoir",
+        "german": "wissen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "savoir faire qc",
+        "german": "etwas tun können (wissen, wie\netwas geht)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une blague",
+        "german": "ein Scherz; ein Streich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "vrai/vraie",
+        "german": "wahr; richtig; echt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "avoir l’air",
+        "german": "aussehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un exemple",
+        "german": "ein Beispiel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "la colère",
+        "german": "der Zorn; die Wut",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "bête/bête",
+        "german": "dumm; blöd",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "par exemple",
+        "german": "zum Beispiel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "le même/la même",
+        "german": "derselbe/dieselbe/dasselbe; der\nGleiche/die Gleiche/das Gleiche",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "connaître qn/qc",
+        "german": "jemanden/etwas kennen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "comprendre qc",
+        "german": "etwas verstehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "là-bas",
+        "german": "da(hin); dort (drüben)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "à côté de",
+        "german": "neben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un nouveau/une nouvelle",
+        "german": "ein Neuer/eine Neue",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "la tête",
+        "german": "der Kopf; das Gesicht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "On y va!",
+        "german": "Gehen wir!; Auf geht’s!",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "en cours",
+        "german": "im Unterricht; in den Unterricht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "sans",
+        "german": "ohne",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "drôle/drôle",
+        "german": "lustig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "tout",
+        "german": "alles",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une différence",
+        "german": "ein Unterschied",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "faire la différence (entre)",
+        "german": "unterscheiden (zwischen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "vouloir dire",
+        "german": "meinen; bedeuten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "qui",
+        "german": "der/die/das (Relativpronomen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "que",
+        "german": "den/die/das (Relativpronomen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "mettre qc",
+        "german": "etwas stellen; etwas legen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "penser à qn/qc",
+        "german": "an jdn./etw. denken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une boulette",
+        "german": "ein Kügelchen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "le papier",
+        "german": "das Papier",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un acteur/une actrice",
+        "german": "ein Schauspieler/eine\nSchauspielerin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "sur Internet",
+        "german": "im Internet",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "timide/timide",
+        "german": "schüchtern",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "la poubelle",
+        "german": "der Mülleimer; der Papierkorb",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "continuer",
+        "german": "weitermachen; fortfahren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "où",
+        "german": "wo (Relativpronomen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "avoir cours",
+        "german": "Unterricht haben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un mot de passe",
+        "german": "ein Passwort",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un résultat",
+        "german": "ein Ergebnis",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "ressembler à qn/qc",
+        "german": "jdm./etw. ähnlich sein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "être né(e) (Infinitiv: naître)",
+        "german": "geboren werden/sein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "mille",
+        "german": "tausend",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "en deux mille",
+        "german": "im Jahr 2000",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "possible/possible",
+        "german": "möglich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une star",
+        "german": "ein Star",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un cinéma",
+        "german": "ein Kino",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une devinette",
+        "german": "ein Rätsel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "présenter qc/qn à qn",
+        "german": "jdm. jdn./etw. vorstellen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "deviner qc",
+        "german": "etw. erraten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "décrire qn/qc",
+        "german": "jdn./etw. beschreiben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un homme",
+        "german": "ein Mann",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une femme",
+        "german": "eine Frau",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un œil/des yeux",
+        "german": "ein Auge/Augen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "marron/marron",
+        "german": "braun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un cheveu/des cheveux",
+        "german": "ein Haar/Haare",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "blond/blonde",
+        "german": "blond",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "brun/brune",
+        "german": "dunkelbraun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "roux/rousse",
+        "german": "rot(haarig)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "mal (adv.)",
+        "german": "schlecht (Adv.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "le premier plan",
+        "german": "der Vordergrund (Bild, Foto, Film)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un centre",
+        "german": "ein Zentrum; eine Mitte; ein\nMittelpunkt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "l’arrière-plan (m.)",
+        "german": "der Hintergrund (Bild, Foto, Film)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "mystérieux/mystérieuse",
+        "german": "geheimnisvoll; seltsam; mysteriös",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "la lumière",
+        "german": "das Licht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "les frères Lumière",
+        "german": "die Brüder Lumière",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "un tunnel",
+        "german": "ein Tunnel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "un souterrain",
+        "german": "ein unterirdischer Gang",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "une traboule",
+        "german": "Verbindungsgang, Besonderheit in\nder Altstadt von Lyon",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "une traboule",
+        "german": "Verbindungsgang, Besonderheit in\nder Altstadt von Lyon",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "un couloir",
+        "german": "ein Gang; ein Flur",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "un escalier",
+        "german": "eine Treppe",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "passer",
+        "german": "vorbeigehen; vorübergehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "prêt/prête",
+        "german": "fertig; bereit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "dernier/dernière",
+        "german": "letzter/letzte/letztes",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "l’histoire-géographie (f.)",
+        "german": "Geschichte und Erdkunde\n(Schulfach)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "organiser qc",
+        "german": "etw. organisieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une information",
+        "german": "eine Information",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "hier",
+        "german": "gestern",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une visite",
+        "german": "ein Besuch; eine Besichtigung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "fermer qc",
+        "german": "etw. schließen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "casse-gueule (adj.) (fam.) (inv.)",
+        "german": "gefährlich; unfallträchtig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "le passé",
+        "german": "die Vergangenheit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "utiliser qc",
+        "german": "etw. benutzen; etw. verwenden",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un dictionnaire",
+        "german": "ein Wörterbuch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une quiche",
+        "german": "eine Quiche (salziger Kuchen, meist\nmit Käse und Speck); hier: ein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "souvent",
+        "german": "oft",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "chatter avec qn",
+        "german": "mit jdm. (im Internet) chatten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une discussion",
+        "german": "eine Diskussion; eine Unterhaltung;\nein Gespräch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une sortie",
+        "german": "ein Ausgang; ein Ausflug",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "voir qc",
+        "german": "etw. sehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "la peur",
+        "german": "die Angst",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "faire peur à qn",
+        "german": "jdm. Angst machen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "avoir peur de qn/qc",
+        "german": "Angst haben vor jdm./etw.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un vampire",
+        "german": "ein Vampir",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "à propos de qc",
+        "german": "apropos; etw. betreffend",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "sombre/sombre",
+        "german": "dunkel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "presque",
+        "german": "fast; beinahe",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un dragon",
+        "german": "ein Drache",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "contre",
+        "german": "gegen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "des idées noires (f.) (pl.)",
+        "german": "düstere Gedanken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une grille",
+        "german": "eine Gittertür; ein Drahtzaun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "fermé/fermée",
+        "german": "geschlossen; verschlossen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un moment",
+        "german": "ein Moment",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "à ce moment-là",
+        "german": "in diesem Augenblick",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "le bras",
+        "german": "der Arm",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "heureux/heureuse",
+        "german": "glücklich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "malheureux/malheureuse",
+        "german": "unglücklich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "curieux/curieuse",
+        "german": "neugierig; merkwürdig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "courageux/courageuse",
+        "german": "mutig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "dangereux/dangereuse",
+        "german": "gefährlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "aux cheveux longs",
+        "german": "mit langen Haaren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "ouvrir qc",
+        "german": "etw. öffnen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "seul/seule",
+        "german": "allein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "quelqu’un",
+        "german": "jemand",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un dessinateur/une dessinatrice",
+        "german": "ein Zeichner/eine Zeichnerin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un dessin",
+        "german": "eine Zeichnung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "prochain/prochaine",
+        "german": "nächster/nächste/nächstes",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "devoir faire qc",
+        "german": "etw. tun müssen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une page",
+        "german": "eine Seite",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "en avoir marre de qn/qc (fam.)",
+        "german": "von jdm./etw. die Nase voll haben\n(ugs.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "respecter qn/qc",
+        "german": "jdn./etw. achten; jdn./etw.\nrespektieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une poche",
+        "german": "eine Tasche; eine Hosentasche",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "appeler qn",
+        "german": "jdn. anrufen; jdn. rufen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "monter",
+        "german": "hinaufgehen; einsteigen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "ouvert/ouverte",
+        "german": "offen; geöffnet",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une porte",
+        "german": "eine Tür",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la chance",
+        "german": "das Glück; die Chance",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "expliquer qc à qn",
+        "german": "jdm. etw. erklären",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "Qu’est-ce que tu en penses?",
+        "german": "Wie denkst du darüber?; Was hältst\ndu davon?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "que",
+        "german": "dass (Konjunktion)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "trouver que",
+        "german": "finden, dass",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "penser que",
+        "german": "denken, dass",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "un vêtement",
+        "german": "ein Kleidungsstück",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "mettre qc",
+        "german": "etw. anziehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "parfois",
+        "german": "manchmal",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "un pays",
+        "german": "ein Land",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "pauvre/pauvre",
+        "german": "arm",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "une course",
+        "german": "ein Lauf; ein Rennen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "participer à qc",
+        "german": "an etw. teilnehmen; bei etw.\nmitmachen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se réveiller",
+        "german": "aufwachen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "s’énerver",
+        "german": "sich aufregen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se disputer avec qn",
+        "german": "sich mit jdm. streiten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une habitude",
+        "german": "eine Gewohnheit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "d’habitude",
+        "german": "gewöhnlich; normalerweise",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "s'entendre",
+        "german": "sich verstehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se laver",
+        "german": "sich waschen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se lever",
+        "german": "aufstehen; sich erheben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "ensuite",
+        "german": "dann; danach",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "s’habiller",
+        "german": "sich anziehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se retrouver",
+        "german": "sich treffen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se coucher",
+        "german": "sich schlafen legen; sich hinlegen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "tout de suite",
+        "german": "sofort",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "sortir",
+        "german": "ausgehen; hinausgehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se doucher",
+        "german": "duschen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "pendant",
+        "german": "während",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une note",
+        "german": "eine Note",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "plusieurs (inv.)",
+        "german": "mehrere",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se sentir",
+        "german": "sich fühlen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "dormir",
+        "german": "schlafen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "…, hein? (fam.)",
+        "german": "…, oder?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "ben, ... (fam.)",
+        "german": "nun, ...; nun ja",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "J’y crois pas! (fam.)",
+        "german": "Ich glaub’s nicht! (ugs.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un jean",
+        "german": "eine Jeans",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une chaise",
+        "german": "ein Stuhl",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "court/courte",
+        "german": "kurz",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "ça craint (fam.)",
+        "german": "das ist riskant; das ist nicht o.k.\n(ugs.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "s’intéresser à qc",
+        "german": "sich für etw. interessieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "le look",
+        "german": "das Aussehen; der Look; die\nAufmachung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "la tenue",
+        "german": "die Kleidung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un legging",
+        "german": "eine Legging",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "moche (fam.)",
+        "german": "hässlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se dépêcher (de faire qc)",
+        "german": "sich beeilen (etw. zu tun)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se changer",
+        "german": "sich umziehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "prendre son petit-déjeuner",
+        "german": "frühstücken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "partir",
+        "german": "weggehen; abfahren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un short",
+        "german": "Shorts (Pl.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une leçon",
+        "german": "eine Lektion",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se rappeler qn/qc",
+        "german": "sich an jdn./etw. erinnern",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "le contraire (de)",
+        "german": "das Gegenteil (von)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une jupe",
+        "german": "ein Rock",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un pantalon",
+        "german": "eine Hose",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une basket",
+        "german": "ein Turnschuh",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une chemise",
+        "german": "ein Hemd",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un chemisier",
+        "german": "eine Bluse",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un pull-over / un pull (fam.)",
+        "german": "ein Pullover / ein Pulli (ugs.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un sweat-shirt",
+        "german": "ein Sweatshirt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une chaussure",
+        "german": "ein Schuh",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une veste",
+        "german": "eine Jacke",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un chapeau",
+        "german": "ein Hut",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un anorak",
+        "german": "ein Anorak",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "Ça me va?",
+        "german": "Steht mir das?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "Ça va avec … ?",
+        "german": "Passt das zu ...?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "Ça dépend.",
+        "german": "Das kommt darauf an.; Je nachdem.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "Ça te va bien.",
+        "german": "Das steht dir gut.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "Ça me plaît.",
+        "german": "Das gefällt mir.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "chic (inv.)",
+        "german": "schick",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "assez (adv.)",
+        "german": "ziemlich; genug",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "bien joué",
+        "german": "gut gemacht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "chaque",
+        "german": "jeder; jede; jedes + Nomen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un message",
+        "german": "eine Mitteilung; eine Nachricht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "ne … que",
+        "german": "nur",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "il n’y a pas que …",
+        "german": "es gibt nicht nur …",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "la vie",
+        "german": "das Leben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "Bonne chance !",
+        "german": "Viel Glück!",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "venir",
+        "german": "kommen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "plus tard",
+        "german": "später",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "être en forme (fam.)",
+        "german": "gut drauf sein (ugs.); (gut) in Form\nsein (ugs.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "quand même",
+        "german": "trotzdem; doch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "sûr/sûre",
+        "german": "sicher",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "l'Action contre la faim",
+        "german": "die \"Aktion gegen den Hunger\"\n(Name einer gemeinnützigen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "le départ",
+        "german": "die Abfahrt; der Aufbruch; der Start",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "sportif/sportive",
+        "german": "sportlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "longtemps (adv.)",
+        "german": "lange",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "se passer",
+        "german": "geschehen; sich ereignen; sich\nabspielen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "l'applaudissement (m.)",
+        "german": "der Beifall; der Applaus",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "il n’y a plus que",
+        "german": "es gibt nur noch; es sind nur noch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "une piste",
+        "german": "eine Piste; ein Pfad; eine Bahn",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "arrêter qc",
+        "german": "etw. beenden; etw. anhalten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "retourner",
+        "german": "zurückkehren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "crier",
+        "german": "schreien",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "pareil/pareille",
+        "german": "gleich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un mot clé",
+        "german": "ein Schlüsselwort",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "remarquer qn/qc",
+        "german": "jdn./etw. bemerken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un son",
+        "german": "ein Klang; ein Ton",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "la Bretagne",
+        "german": "die Bretagne (Region im Westen\nFrankreichs)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "le printemps",
+        "german": "der Frühling",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "proposer à qn de faire qc",
+        "german": "jdm. vorschlagen, etw. zu tun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "au bord de qc",
+        "german": "am Rande von etw.; am Ufer von\netw.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "la mer",
+        "german": "das Meer",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "plaire à qn",
+        "german": "jdm. gefallen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un office de tourisme",
+        "german": "ein Fremdenverkehrsamt; eine\nTouristeninformation",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un Breton/une Bretonne",
+        "german": "ein Bretone/eine Bretonin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "breton/bretonne (adj.)",
+        "german": "bretonisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "le nord-ouest",
+        "german": "der Nordwesten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "le nord",
+        "german": "der Norden",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "le sud",
+        "german": "der Süden",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "l’est (m.)",
+        "german": "der Osten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "l’ouest (m.)",
+        "german": "der Westen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "une plage",
+        "german": "ein Strand",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un gîte",
+        "german": "ein Ferienhaus",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un hôtel",
+        "german": "ein Hotel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "une date",
+        "german": "ein Datum",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un prix",
+        "german": "ein Preis",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "remplacer qc",
+        "german": "etw. ersetzen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une autoroute",
+        "german": "eine Autobahn",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "le péage",
+        "german": "die Mautstelle",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un bouchon",
+        "german": "ein Korken; hier: ein Verkehrsstau",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "normal/normale;\nnormaux/normales",
+        "german": "normal",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "envoyer qc à qn",
+        "german": "jdm. etw. schicken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "passer qc à qn",
+        "german": "jdm. etw. reichen; jdm. etw.\n(weiter)geben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une tablette",
+        "german": "ein Tablet-Computer",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Ça ne lui dit rien.",
+        "german": "Er/Sie hat keine Lust darauf.; Das\nsagt ihm/ihr nicht zu.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "la radio",
+        "german": "das Radio",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une aire de repos",
+        "german": "ein Rastplatz",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "s'installer",
+        "german": "sich setzen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un pique-nique",
+        "german": "ein Picknick",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "apporter qc à qn",
+        "german": "jdm. etw. (mit-)bringen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un sandwich",
+        "german": "ein Sandwich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "chaud/chaude",
+        "german": "warm; heiß",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il fait chaud.",
+        "german": "Es ist warm.; Es ist heiß.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "le soleil",
+        "german": "die Sonne",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "laisser qc",
+        "german": "etw. lassen; etw. zurücklassen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une erreur",
+        "german": "ein Irrtum",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "plutôt",
+        "german": "eher; vielmehr; ziemlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un invité/une invitée",
+        "german": "ein Gast",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "le temps",
+        "german": "das Wetter",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Quel temps fait-il?",
+        "german": "Wie ist das Wetter?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il fait beau.",
+        "german": "Es ist schönes Wetter.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il fait mauvais.",
+        "german": "Es ist schlechtes Wetter.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "pleuvoir",
+        "german": "regnen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "froid/froide",
+        "german": "kalt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il fait froid.",
+        "german": "Es ist kalt.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il fait doux.",
+        "german": "Es ist mild.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il fait ... degrés.",
+        "german": "Es hat ... Grad.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "neiger",
+        "german": "schneien",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "le vent",
+        "german": "der Wind",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il y a du vent.",
+        "german": "Es ist windig.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Il y a du soleil.",
+        "german": "Es ist sonnig.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "briller",
+        "german": "scheinen; funkeln",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "l’été (m.)",
+        "german": "der Sommer",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "l’automne (m.)",
+        "german": "der Herbst",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "l’hiver m.",
+        "german": "der Winter",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "répéter qc",
+        "german": "etw. wiederholen; etw.\nnachsprechen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un village",
+        "german": "ein Dorf",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "gaulois/gauloise",
+        "german": "gallisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "si",
+        "german": "ob",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une saison",
+        "german": "eine Jahreszeit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "nager",
+        "german": "schwimmen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "jusqu'à",
+        "german": "bis",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "jouer à qc",
+        "german": "etw. spielen (ein Spiel)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un ballon",
+        "german": "ein Ball",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "le sable",
+        "german": "der Sand",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "nous pourrions",
+        "german": "wir könnten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "Ça me dit!",
+        "german": "Darauf habe ich Lust!; Das sagt mir\nzu.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un ancêtre/une ancêtre",
+        "german": "ein Vorfahre/eine Vorfahrin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un Gaulois/une Gauloise",
+        "german": "ein Gallier/eine Gallierin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "vivre",
+        "german": "leben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "vivre qc",
+        "german": "etw. erleben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "il y a 2000 ans",
+        "german": "(jetzt) vor 2000 Jahren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "large/large",
+        "german": "breit; weit (Kleidung)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "pratique/pratique",
+        "german": "praktisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "le droit",
+        "german": "das Recht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "avoir le droit de faire qc",
+        "german": "das Recht haben, etw. zu tun; etw.\ntun dürfen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un métier",
+        "german": "ein Beruf",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "la réalité",
+        "german": "die Wirklichkeit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "important/importante",
+        "german": "wichtig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un conseil",
+        "german": "ein Rat; ein Ratschlag",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "une époque",
+        "german": "eine Epoche; ein Zeitalter",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "le pain",
+        "german": "das Brot",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "le fromage",
+        "german": "der Käse",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "le vin",
+        "german": "der Wein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "la bière",
+        "german": "das Bier",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "s’amuser",
+        "german": "sich vergnügen; sich amüsieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un jouet",
+        "german": "ein Spielzeug",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "le bois",
+        "german": "das Holz",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "la terre",
+        "german": "die Erde; der Boden; hier: der Ton",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "apprendre qc",
+        "german": "etw. lernen; etw. erfahren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "jeune/jeune",
+        "german": "jung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un jeune/une jeune",
+        "german": "ein Jugendlicher/eine Jugendliche",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un chef/une chef",
+        "german": "ein Chef/eine Chefin; hier: ein\nHäuptling",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "une guerre",
+        "german": "ein Krieg",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "faire la guerre à qn",
+        "german": "Krieg führen gegen jdn.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "un Romain/une Romaine",
+        "german": "ein Römer/eine Römerin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "Jules César",
+        "german": "Julius Cäsar röm. Feldherr und\nPolitiker (101–44 v. Chr.)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "occuper qc",
+        "german": "etw. besetzen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "la Gaule",
+        "german": "Gallien",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 4",
+        "module": "C",
+        "french": "une aventure",
+        "german": "ein Abenteuer",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "l’art (m.)",
+        "german": "die Kunst",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "le cirque",
+        "german": "der Zirkus",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "les arts du cirque (m.) (pl.)",
+        "german": "die Zirkuskünste",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "le parachutisme",
+        "german": "das Fallschirmspringen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "le saut à l’élastique",
+        "german": "das Bungee-Jumping",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "rêver (de faire qc)",
+        "german": "(davon) träumen (etw. zu tun)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "fou(fol)/folle",
+        "german": "verrückt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "essayer de faire qc",
+        "german": "versuchen, etw. zu tun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "pratiquer qc",
+        "german": "etw. ausüben; etw. praktizieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "comparer qn/qc (avec qn/qc)",
+        "german": "jdn./etw. (mit jdm./etw.)\nvergleichen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "plus grand que/plus grande que",
+        "german": "größer als",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "aussi grand que/aussi grande que",
+        "german": "genauso groß wie",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "moins grand que/moins grande que",
+        "german": "weniger groß als/kleiner als",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le plus grand/la plus grande",
+        "german": "am größten; der größte/die größte",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le moins grand/la moins grande",
+        "german": "am wenigsten groß (= am kleinsten)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "occuper qc",
+        "german": "etw. einnehmen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le meilleur/la meilleure",
+        "german": "der beste/die beste",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "l’escalade (f.)",
+        "german": "das Klettern",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un mur",
+        "german": "eine Mauer; eine Wand",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le monde",
+        "german": "die Welt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "beaucoup de monde",
+        "german": "viele Leute",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "la marche",
+        "german": "das Gehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le ski",
+        "german": "das Skifahren; der Ski",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "l’équitation (f.)",
+        "german": "das Reiten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "l’escrime (f.)",
+        "german": "das Fechten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "lancer qc à qn",
+        "german": "jdm. etw. zuwerfen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "attraper qn/qc",
+        "german": "jdn./etw. fangen; jdn./etw.\nerwischen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "sauter",
+        "german": "springen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "grimper",
+        "german": "klettern",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "fort/forte",
+        "german": "stark",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "être fort/forte en qc",
+        "german": "gut sein in etw.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "facile/facile",
+        "german": "leicht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "difficile/difficile",
+        "german": "schwierig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "marcher",
+        "german": "gehen; laufen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un animateur/une animatrice",
+        "german": "ein Kursleiter/eine Kursleiterin; ein\nBetreuer/eine Betreuerin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "réfléchir (à qc)",
+        "german": "nachdenken (über etw.); (etw.)\nüberlegen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un trampoline",
+        "german": "ein Trampolin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un skateboard",
+        "german": "ein Skateboard",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le parkour",
+        "german": "Parkour (Sportart, Hindernislauf)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "finir qc",
+        "german": "etw. beenden",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "réussir à faire qc",
+        "german": "etw. fertigbringen; etw. schaffen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "choisir qc",
+        "german": "etw. wählen; etw. aussuchen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "grave/grave",
+        "german": "schlimm",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un atelier",
+        "german": "eine Werkstatt; hier: ein Workshop;\neine Arbeitsgruppe",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une corde",
+        "german": "ein Seil; eine Leine; hier: ein Band",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "mou(mol)/molle",
+        "german": "weich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "la corde molle",
+        "german": "die Slackline (leicht gespanntes\nBand, auf dem man balanciert)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "ne … pas encore",
+        "german": "noch nicht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "dessus",
+        "german": "darauf",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "l’équilibre (m.)",
+        "german": "das Gleichgewicht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une figure",
+        "german": "eine Figur (beim Sport)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "sonner",
+        "german": "klingeln",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un club",
+        "german": "ein Klub; ein Verein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "sortir qc (de qc)",
+        "german": "etw. herausholen (aus etw.); etw.\nhervorholen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une balle",
+        "german": "ein (kleiner) Ball (z.B. beim Tennis)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "jongler",
+        "german": "jonglieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "simple/simple",
+        "german": "einfach",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "au fait",
+        "german": "übrigens",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un téléphone",
+        "german": "ein Telefon",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un coup de téléphone",
+        "german": "ein Telefonanruf",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "tout/toute",
+        "german": "ganz (+ Nomen); alle (+ Nomen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "parler de qc",
+        "german": "über etw. sprechen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un but",
+        "german": "ein Ziel; hier: ein Tor (beim Fußball)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un rétroviseur",
+        "german": "ein Rückspiegel; ein Seitenspiegel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "s’arrêter",
+        "german": "anhalten; Halt machen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "avancer",
+        "german": "vorwärts kommen; vorankommen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "soudain",
+        "german": "plötzlich; auf einmal",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "près de qn/qc",
+        "german": "nahe bei jdm./etw.; neben\njdm./etw.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "casser qc",
+        "german": "etw. kaputt machen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "cassé/cassée",
+        "german": "gebrochen; zerbrochen; zerbrochen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un propriétaire/une propriétaire",
+        "german": "ein Eigentümer/eine Eigentümerin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "par là",
+        "german": "in der Nähe; hier irgendwo",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "Qu’est-ce qui s’est passé?",
+        "german": "Was ist passiert?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "marquer un but",
+        "german": "ein Tor schießen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "envoyer le ballon à qn",
+        "german": "jdm. den Ball zuspielen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "jurer",
+        "german": "schwören",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une équipe",
+        "german": "eine Mannschaft; ein Team",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "à cause de qn/qc",
+        "german": "einer Person/einer Sache wegen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "taper",
+        "german": "klopfen; schlagen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "taper dans le ballon",
+        "german": "gegen den Ball treten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "la vérité",
+        "german": "die Wahrheit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "vers",
+        "german": "gegen; in Richtung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "c’est pour ça que (fam.)",
+        "german": "deshalb",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une jambe",
+        "german": "ein Bein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un match",
+        "german": "ein Spiel; ein Wettkampf",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "Allez les gars! (fam.)",
+        "german": "Auf geht's, Jungs!",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une situation",
+        "german": "eine Situation",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un évènement",
+        "german": "ein Ereignis",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un marché",
+        "german": "ein Markt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "faire les courses (f.) (pl.)",
+        "german": "einkaufen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un fruit",
+        "german": "eine Frucht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un légume",
+        "german": "ein Gemüse",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "faire la cuisine",
+        "german": "kochen; Essen zubereiten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une tomate",
+        "german": "eine Tomate",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une pomme de terre",
+        "german": "eine Kartoffel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un citron",
+        "german": "eine Zitrone",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une salade",
+        "german": "ein Salat",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le lait",
+        "german": "die Milch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "la viande",
+        "german": "das Fleisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un œuf/des œufs",
+        "german": "ein Ei/Eier",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le yaourt",
+        "german": "der Joghurt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le sucre",
+        "german": "der Zucker",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "la farine",
+        "german": "das Mehl",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un supermarché",
+        "german": "ein Supermarkt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un collègue/une collègue",
+        "german": "ein Kollege/eine Kollegin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "Je veux bien.",
+        "german": "(Ich möchte) Gerne!",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un steak-frites",
+        "german": "ein Steak mit Pommes",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "une entrée",
+        "german": "hier: eine Vorspeise",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "l’huile (f.)",
+        "german": "das Öl",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "une olive",
+        "german": "eine Olive",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un saucisson",
+        "german": "eine (Salami-)Wurst",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "une moule",
+        "german": "eine Miesmuschel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "falloir",
+        "german": "brauchen; müssen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "il faut qc",
+        "german": "man braucht etw.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un dessert",
+        "german": "ein Nachtisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "le chocolat",
+        "german": "die Schokolade",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "la lune",
+        "german": "der Mond",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "il faut faire qc",
+        "german": "man muss etw. tun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "C’est à qui?",
+        "german": "Wer ist an der Reihe?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un kilo de",
+        "german": "ein Kilo (von)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un doigt",
+        "german": "ein Finger",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un rince-doigts",
+        "german": "eine Wasserschale (zum Reinigen\nder Finger beim Essen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "désirer qc",
+        "german": "etw. wünschen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "un litre de",
+        "german": "ein Liter (von)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "une boisson",
+        "german": "ein Getränk",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "une bouteille",
+        "german": "eine Flasche",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "gratuit/gratuite",
+        "german": "kostenlos; gratis",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "boire qc",
+        "german": "etw. trinken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "aller chercher qn/qc",
+        "german": "jdn./etw. holen; jdn./etw. abholen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "payer qc",
+        "german": "etw. bezahlen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "une recette",
+        "german": "ein Rezept",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "le sel",
+        "german": "das Salz",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "mettre la table",
+        "german": "den Tisch decken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "une assiette",
+        "german": "ein Teller",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "une fourchette",
+        "german": "eine Gabel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "un couteau",
+        "german": "ein Messer",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "une cuillère",
+        "german": "ein Löffel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "un verre",
+        "german": "ein Glas",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "une serviette",
+        "german": "eine Serviette",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "espérer",
+        "german": "hoffen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "le beurre",
+        "german": "die Butter",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "le silence",
+        "german": "die Ruhe; die Stille",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "concentré/concentrée",
+        "german": "konzentriert",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "avoir le temps de faire qc",
+        "german": "Zeit haben, etw. zu tun",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "goûter qc",
+        "german": "etw. probieren (Essen, Trinken)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "rigoler (fam.)",
+        "german": "lachen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "le plat principal",
+        "german": "das Hauptgericht",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "Combien est-ce qu’il en faut?",
+        "german": "Wie viel(e) brauchen wir (davon)?",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "un gramme",
+        "german": "ein Gramm",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "reprendre qc",
+        "german": "noch einmal nehmen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "un morceau/des morceaux",
+        "german": "ein Stück/Stücke",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "une tasse",
+        "german": "eine Tasse",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "le café",
+        "german": "der Kaffee",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "découvrir qc",
+        "german": "etw. entdecken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "Nantes",
+        "german": "Stadt im Westen Frankreichs",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "les Pays de la Loire (m.) (pl.)",
+        "german": "Region im Westen Frankreichs",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "partout",
+        "german": "überall",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "une rivière",
+        "german": "ein Fluss",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "un fleuve",
+        "german": "ein Fluss; ein Strom",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "la Sèvre",
+        "german": "Fluss im Westen Frankreichs",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "la Loire",
+        "german": "längster Fluss Frankreichs (1006\nkm)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "un port",
+        "german": "ein Hafen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "une île",
+        "german": "eine Insel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "toutes sortes de",
+        "german": "alle möglichen; allerlei",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "un spectacle",
+        "german": "eine Darbietung; eine Vorstellung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "une machine",
+        "german": "eine Maschine",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "un personnage",
+        "german": "eine Figur; eine Persönlichkeit; eine\nPerson",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "géant/géante",
+        "german": "riesengroß",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "nouveau (nouvel)/nouvelle",
+        "german": "neu",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "un échange",
+        "german": "ein Tausch; ein Austausch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "beau (bel)/belle; beau",
+        "german": "schön",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "connu/connue",
+        "german": "bekannt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "vieux (vieil)/vieille",
+        "german": "alt",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "nantais/nantaise",
+        "german": "aus Nantes",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "un écrivain/une femme écrivain",
+        "german": "ein Schriftsteller/eine\nSchriftstellerin",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "entier/entière",
+        "german": "ganz; völlig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "commencer par qn/qc",
+        "german": "beginnen mit jdm./etw.",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "une région",
+        "german": "eine Gegend; eine Region",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "une forêt",
+        "german": "ein Wald",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "en gros",
+        "german": "im Großen und Ganzen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "DE",
+        "french": "la campagne",
+        "german": "das Land (im Gegensatz zur Stadt)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un étage",
+        "german": "ein Stockwerk; eine Etage",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "depuis",
+        "german": "hier: von ... aus (Ort)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "manquer",
+        "german": "fehlen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un centre socioculturel",
+        "german": "ein Kulturzentrum",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un club de foot",
+        "german": "ein Fußballverein",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un stade",
+        "german": "ein Stadion",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "tranquille/tranquille",
+        "german": "ruhig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "en une demi-heure",
+        "german": "in(nerhalb) einer halben Stunde",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un centre-ville",
+        "german": "ein Stadtzentrum; eine Stadtmitte",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "en plus",
+        "german": "außerdem; zusätzlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un trajet",
+        "german": "eine Strecke",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "la circulation",
+        "german": "der Verkehr",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "rouler",
+        "german": "fahren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "s’ennuyer",
+        "german": "sich langweilen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "différent/différente",
+        "german": "anders; unterschiedlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un immeuble",
+        "german": "ein Gebäude; ein (Wohn)Haus",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un tram",
+        "german": "eine Tram; eine Straßenbahn",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un quatre-pièces",
+        "german": "eine Vierzimmerwohnung",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un logement",
+        "german": "eine Wohnung; eine Unterkunft",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "une banlieue",
+        "german": "ein Vorort; ein Vorstadtbereich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "la nature",
+        "german": "die Natur",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "une ferme",
+        "german": "ein Bauernhof",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "l’espace (m.)",
+        "german": "der Weltraum; der Raum; der Platz",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "déménager",
+        "german": "umziehen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un travail/des travaux",
+        "german": "eine Arbeit/Arbeiten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "au début",
+        "german": "am Anfang",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "s'orienter",
+        "german": "sich orientieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "A",
+        "french": "un festival",
+        "german": "ein Festival",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "un nombre",
+        "german": "eine Zahl",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "un audioguide",
+        "german": "ein Audioguide (Gerät zum\nAbspielen von Informationen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "guider qn",
+        "german": "jdn. führen; jdn. lenken",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "une compagnie de théâtre",
+        "german": "eine Theatertruppe",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "un château/des châteaux",
+        "german": "ein Schloss/Schlösser",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "les Ducs de Bretagne (m.)",
+        "german": "die Herzöge der Bretagne",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "dater de …",
+        "german": "stammen aus …; sein von …",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "un siècle",
+        "german": "ein Jahrhundert",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "un stade",
+        "german": "ein Stadion",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "un jardin",
+        "german": "ein Garten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "B",
+        "french": "une plante",
+        "german": "eine Pflanze",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "mort/morte",
+        "german": "tot; gestorben",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un roman",
+        "german": "ein Roman",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "la science-fiction",
+        "german": "die Science-Fiction",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "gros/grosse",
+        "german": "dick; groß; groß",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "l’Inde (f.)",
+        "german": "Indien",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "la technique",
+        "german": "die Technik",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "imaginer qc",
+        "german": "sich etw. (aus)denken; sich etw.\nvorstellen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "exister",
+        "german": "existieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un sous-marin",
+        "german": "ein Unterseeboot; ein U-Boot",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un extrait",
+        "german": "ein Auszug",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "anglais/anglaise",
+        "german": "englisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un pari",
+        "german": "eine Wette",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un serviteur",
+        "german": "ein Diener",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un paquebot",
+        "german": "ein Passagierschiff",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "le commerce",
+        "german": "der Handel",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "un traîneau",
+        "german": "ein Schlitten (von Pferden oder\nHunden gezogen)",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "C",
+        "french": "nombreux/nombreuse",
+        "german": "zahlreich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "une prison",
+        "german": "ein Gefängnis",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "un prisonnier/une prisonnière",
+        "german": "ein Gefangener/eine Gefangene",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "s’occuper de qn/qc",
+        "german": "sich mit jdm./etw. beschäftigen;\nsich um jdn./etw. kümmern",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "libre/libre",
+        "german": "frei",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "la liberté",
+        "german": "die Freiheit",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "se marier avec qn",
+        "german": "jdn. heiraten",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "exister",
+        "german": "existieren",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "traditionnel/traditionnelle",
+        "german": "traditionell",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "le folk rock",
+        "german": "der Folkrock",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "fonder qc",
+        "german": "etw. gründen",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "le succès",
+        "german": "der Erfolg",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "rythmé/rythmée",
+        "german": "rhythmisch",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "entraînant/entraînante",
+        "german": "mitreißend",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "l’amour (m.)",
+        "german": "die Liebe",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "un style",
+        "german": "ein Stil",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "le hip-hop",
+        "german": "der Hip-Hop",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "le rythme",
+        "german": "der Rhythmus",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "rapide/rapide",
+        "german": "schnell",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "lent/lente",
+        "german": "langsam",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "une mélodie",
+        "german": "eine Melodie",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "gai/gaie",
+        "german": "fröhlich",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "ennuyeux/ennuyeuse",
+        "german": "langweilig",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "la voix",
+        "german": "die Stimme",
+        "example": ""
+    },
+    {
+        "lesson": "Leçon 7",
+        "module": "D",
+        "french": "un album",
+        "german": "ein Album; hier: ein Musikalbum,\neine CD",
+        "example": ""
+    }
+]

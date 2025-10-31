@@ -11,10 +11,12 @@
 const CONFIG = {
     CORRECT_ANSWER_DELAY_MS: 2000,
     TOTAL_CORRECT_SOUNDS: 25,
-    AUDIO_PATH: 'correct_mp3/',
+    AUDIO_PATH: 'audio/correct/',
     JSON_FILES: {
-        'FR-DE': './vocabD1B.json',
-        'DE-EN': './vocabGL2B.json'
+        'FR-DE': './vocabulary/decouvertes-1-bayern.json',
+        'FR-DE-2': './vocabulary/decouvertes-2-bayern.json',
+        'DE-EN': './vocabulary/greenline-2-bayern.json',
+        'DE-EN-3': './vocabulary/greenline-3-bayern.json'
     },
     STORAGE_KEY: 'vokabeltrainer_progress'
 };
@@ -47,9 +49,36 @@ const TRANSLATIONS = {
             `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
         attempts: 'tentatives',
         errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
-        flag1: { src: 'flag_france.png', alt: 'Drapeau français' },
-        flag2: { src: 'flag_germany.png', alt: 'Flagge Deutschlands' },
-        bannerFlag: { src: 'flag_france.png', alt: 'Drapeau français' }
+        flag1: { src: 'images/flags/france.png', alt: 'Drapeau français' },
+        flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
+    },
+    'FR-DE-2': {
+        selectLesson: 'Sélectionnez la leçon:',
+        selectModule: 'Sélectionnez le module:',
+        direction: 'Direction de pratique:',
+        directionBoth: 'Les deux',
+        directionForward: 'FR → DE',
+        directionBackward: 'DE → FR',
+        randomOrder: 'Ordre aléatoire',
+        start: 'Commencer',
+        check: 'Valider',
+        correctFR: 'Très bien!',
+        correctDE: 'Richtig!',
+        incorrect: 'Oops!',
+        noWords: 'Aucun mot trouvé.',
+        placeholderDE: 'Deine antwort...',
+        placeholderFR: 'Votre réponse...',
+        statsTitle: 'Statistiques',
+        mostRepeated: 'Mots les plus répétés:',
+        restart: 'Réessayer',
+        statsSummary: (correct, total, avg) =>
+            `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
+        attempts: 'tentatives',
+        errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
+        flag1: { src: 'images/flags/france.png', alt: 'Drapeau français' },
+        flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
     },
     'DE-EN': {
         selectLesson: 'Select Lesson:',
@@ -74,9 +103,36 @@ const TRANSLATIONS = {
             `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
         attempts: 'attempts',
         errorLoading: 'Error loading data. Please try again.',
-        flag1: { src: 'flag_germany.png', alt: 'German flag' },
-        flag2: { src: 'flag_uk.png', alt: 'UK flag' },
-        bannerFlag: { src: 'flag_uk.png', alt: 'UK flag' }
+        flag1: { src: 'images/flags/germany.png', alt: 'German flag' },
+        flag2: { src: 'images/flags/uk.png', alt: 'UK flag' },
+        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' }
+    },
+    'DE-EN-3': {
+        selectLesson: 'Select Lesson:',
+        selectModule: 'Select Module:',
+        direction: 'Direction:',
+        directionBoth: 'Both',
+        directionForward: 'DE → EN',
+        directionBackward: 'EN → DE',
+        randomOrder: 'Random order',
+        start: 'Start',
+        check: 'Check',
+        correctDE: 'Richtig!',
+        correctEN: 'Good job!',
+        incorrect: 'Oops!',
+        noWords: 'No words found.',
+        placeholderDE: 'Deine antwort...',
+        placeholderEN: 'Your answer...',
+        statsTitle: 'Statistics',
+        mostRepeated: 'Most repeated words:',
+        restart: 'Try again',
+        statsSummary: (correct, total, avg) =>
+            `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
+        attempts: 'attempts',
+        errorLoading: 'Error loading data. Please try again.',
+        flag1: { src: 'images/flags/germany.png', alt: 'German flag' },
+        flag2: { src: 'images/flags/uk.png', alt: 'UK flag' },
+        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' }
     }
 };
 
@@ -367,19 +423,23 @@ function populateLessonFilter(data) {
 /**
  * Populates module filter dropdown
  * @param {Array} data - Vocabulary data
- * @param {string} selectedLesson - Currently selected lesson
+ * @param {Array|string} selectedLessons - Currently selected lessons (array for multiple selection)
  */
-function populateModuleFilter(data, selectedLesson = 'all') {
+function populateModuleFilter(data, selectedLessons = 'all') {
     while (DOM.moduleSelect.options.length > 1) {
         DOM.moduleSelect.remove(1);
     }
 
     let modules;
-    if (selectedLesson === 'all') {
+
+    // Handle both single string and array of lessons
+    if (selectedLessons === 'all' || (Array.isArray(selectedLessons) && selectedLessons.includes('all'))) {
         modules = [...new Set(data.map(item => item.module))];
     } else {
+        // Convert to array if it's a single value
+        const lessonsArray = Array.isArray(selectedLessons) ? selectedLessons : [selectedLessons];
         modules = [...new Set(
-            data.filter(d => d.lesson === selectedLesson)
+            data.filter(d => lessonsArray.includes(d.lesson))
                 .map(item => item.module)
         )];
     }
@@ -410,7 +470,7 @@ function updateProgress() {
  * @param {string} displayedWord - Currently displayed word
  */
 function updatePlaceholder(wordData, displayedWord) {
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         if (displayedWord === wordData.french) {
             DOM.answerInput.placeholder = t('placeholderDE');
         } else {
@@ -435,7 +495,7 @@ function updatePlaceholder(wordData, displayedWord) {
  * @returns {string} Word to display
  */
 function chooseDisplayWord(wordData) {
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         if (AppState.direction === 'FORWARD') return wordData.french;
         if (AppState.direction === 'BACKWARD') return wordData.german;
         return Math.random() < 0.5 ? wordData.french : wordData.german;
@@ -455,7 +515,7 @@ function getCorrectAnswers(wordData) {
     let correctAnswerArr;
     let questionLanguage;
 
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         if (DOM.questionText.textContent === wordData.french) {
             correctAnswerArr = wordData.german.split(';').map(s => s.trim());
             questionLanguage = 'FR->DE';
@@ -482,7 +542,7 @@ function getCorrectAnswers(wordData) {
  * @returns {string} Unique key
  */
 function getKeyForWord(wordData) {
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         return `${wordData.french}|${wordData.german}`;
     } else {
         return `${wordData.german}|${wordData.english}`;
@@ -581,7 +641,7 @@ function handleCorrectAnswer(questionLanguage, key) {
     DOM.feedbackMessage.className = 'feedback success';
 
     // Set correct feedback based on question direction
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         DOM.feedbackMessage.textContent = questionLanguage === 'FR->DE'
             ? t('correctDE')
             : t('correctFR');
@@ -673,7 +733,7 @@ function handleIncorrectAnswer(correctAnswers, wordData) {
  * Shows statistics after quiz completion
  */
 function showStats() {
-    console.log('✅ showStats() ENHANCED VERSION v2.0 - If you see this, cache is cleared!');
+    console.log('✅ showStats() ENHANCED VERSION v3.0 - Cache cleared!');
 
     DOM.quizPanel.style.display = 'none';
     DOM.statsPanel.style.display = 'block';
@@ -695,9 +755,13 @@ function showStats() {
     const averageAttempts = totalAttempts > 0 ? (totalAttempts / AppState.totalCount).toFixed(2) : '0.00';
     const accuracy = totalAttempts > 0 ? ((AppState.correctCount / totalAttempts) * 100).toFixed(1) : '100.0';
     const firstAttemptCorrect = Object.values(AppState.attemptCounts).filter(count => count === 1).length;
-    const wordsPerMinute = minutes > 0 ? (AppState.correctCount / minutes).toFixed(1) : 'N/A';
+    // Calculate words per minute using total seconds (even if < 1 minute)
+    const wordsPerMinute = timeSpentSeconds > 0 ? (AppState.correctCount / (timeSpentSeconds / 60)).toFixed(1) : '0.0';
 
     console.log(`📈 Stats: ${AppState.correctCount}/${AppState.totalCount} | Accuracy: ${accuracy}% | Avg attempts: ${averageAttempts}`);
+
+    // Determine if French-German or German-English
+    const isFrenchGerman = AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2';
 
     // Build enhanced summary
     const summaryDiv = document.createElement('div');
@@ -708,25 +772,25 @@ function showStats() {
         <div class="stat-grid">
             <div class="stat-box">
                 <div class="stat-value">${AppState.correctCount}/${AppState.totalCount}</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Mots complétés' : 'Words completed'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Mots complétés' : 'Words completed'}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${timeFormatted}</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Temps total' : 'Total time'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Temps total' : 'Total time'}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${accuracy}%</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Précision' : 'Accuracy'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Précision' : 'Accuracy'}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${averageAttempts}</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Tentatives moy.' : 'Avg. attempts'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Tentatives moy.' : 'Avg. attempts'}</div>
             </div>
         </div>
         <div class="stat-details">
-            <p><strong>${AppState.bookSelected === 'FR-DE' ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
-            <p><strong>${AppState.bookSelected === 'FR-DE' ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${AppState.bookSelected === 'FR-DE' ? 'mots/min' : 'words/min'}</p>
-            <p><strong>${AppState.bookSelected === 'FR-DE' ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
+            <p><strong>${isFrenchGerman ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
+            <p><strong>${isFrenchGerman ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${isFrenchGerman ? 'mots/min' : 'words/min'}</p>
+            <p><strong>${isFrenchGerman ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
         </div>
     `;
 
@@ -755,7 +819,7 @@ function showStats() {
     } else {
         const li = document.createElement('li');
         li.className = 'perfect-score';
-        li.textContent = AppState.bookSelected === 'FR-DE'
+        li.textContent = isFrenchGerman
             ? '🎉 Parfait! Tous les mots corrects du premier coup!'
             : '🎉 Perfect! All words correct on first try!';
         DOM.mostRepeatedList.appendChild(li);
@@ -807,7 +871,8 @@ DOM.bookSelect.addEventListener('change', () => {
  * Handles lesson selection change
  */
 DOM.lessonSelect.addEventListener('change', () => {
-    populateModuleFilter(AppState.vocabData, DOM.lessonSelect.value);
+    const selectedLessons = Array.from(DOM.lessonSelect.selectedOptions).map(opt => opt.value);
+    populateModuleFilter(AppState.vocabData, selectedLessons);
 });
 
 /**
@@ -822,12 +887,15 @@ DOM.startBtn.addEventListener('click', () => {
     const randomCheckbox = document.getElementById('randomOrder');
     AppState.isRandom = randomCheckbox ? randomCheckbox.checked : true;
 
-    const selectedLesson = DOM.lessonSelect.value;
-    const selectedModule = DOM.moduleSelect.value;
+    // Get selected lessons and modules (multiple selection)
+    const selectedLessons = Array.from(DOM.lessonSelect.selectedOptions).map(opt => opt.value);
+    const selectedModules = Array.from(DOM.moduleSelect.selectedOptions).map(opt => opt.value);
 
+    // Filter vocabulary based on multiple selections
     AppState.filteredWords = AppState.vocabData.filter(item => {
-        return (selectedLesson === 'all' || item.lesson === selectedLesson) &&
-               (selectedModule === 'all' || item.module === selectedModule);
+        const lessonMatch = selectedLessons.includes('all') || selectedLessons.includes(item.lesson);
+        const moduleMatch = selectedModules.includes('all') || selectedModules.includes(item.module);
+        return lessonMatch && moduleMatch;
     });
 
     if (AppState.filteredWords.length === 0) {
@@ -840,7 +908,11 @@ DOM.startBtn.addEventListener('click', () => {
     DOM.bannerContent.innerHTML = '';
 
     const bookName = DOM.bookSelect.options[DOM.bookSelect.selectedIndex].textContent;
-    const lessonModuleLine = `${selectedLesson === 'all' ? 'All' : selectedLesson} | ${selectedModule === 'all' ? 'All' : selectedModule}`;
+
+    // Display selected lessons and modules
+    const lessonDisplay = selectedLessons.includes('all') ? 'All' : selectedLessons.join(', ');
+    const moduleDisplay = selectedModules.includes('all') ? 'All' : selectedModules.join(', ');
+    const lessonModuleLine = `${lessonDisplay} | ${moduleDisplay}`;
 
     const trans = TRANSLATIONS[AppState.bookSelected];
     const bannerFlag = trans.bannerFlag;

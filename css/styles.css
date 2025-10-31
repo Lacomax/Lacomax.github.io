@@ -130,6 +130,23 @@ main {
     outline-offset: 2px;
 }
 
+/* Multiple select styling */
+.filters select[multiple] {
+    min-height: 100px;
+    padding: 5px;
+}
+
+.filters select[multiple] option {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 2px;
+}
+
+.filters select[multiple] option:checked {
+    background: var(--primary-color);
+    color: white;
+}
+
 .filters button,
 #checkAnswerBtn,
 #startBtn,
