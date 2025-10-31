@@ -591,17 +591,6 @@ function handleCorrectAnswer(questionLanguage, key) {
             : t('correctDE');
     }
 
-    // Show example sentence for correct answers too
-    const wordData = AppState.currentWords[AppState.currentIndex];
-    if (wordData.example) {
-        const exampleDiv = document.createElement('div');
-        exampleDiv.textContent = wordData.example;
-        exampleDiv.style.marginTop = '10px';
-        exampleDiv.style.fontStyle = 'italic';
-        DOM.exampleSentence.textContent = '';
-        DOM.exampleSentence.appendChild(exampleDiv);
-    }
-
     AppState.correctCount++;
     AppState.answeredWords[key] = (AppState.answeredWords[key] || 0) + 1;
 
@@ -684,6 +673,8 @@ function handleIncorrectAnswer(correctAnswers, wordData) {
  * Shows statistics after quiz completion
  */
 function showStats() {
+    console.log('✅ showStats() ENHANCED VERSION v2.0 - If you see this, cache is cleared!');
+
     DOM.quizPanel.style.display = 'none';
     DOM.statsPanel.style.display = 'block';
 
@@ -697,12 +688,16 @@ function showStats() {
         ? `${minutes}m ${seconds}s`
         : `${seconds}s`;
 
+    console.log(`📊 Time spent: ${timeFormatted}`);
+
     // Calculate statistics
     const totalAttempts = Object.values(AppState.attemptCounts).reduce((a, b) => a + b, 0);
-    const averageAttempts = (totalAttempts / AppState.totalCount).toFixed(2);
-    const accuracy = ((AppState.correctCount / totalAttempts) * 100).toFixed(1);
+    const averageAttempts = totalAttempts > 0 ? (totalAttempts / AppState.totalCount).toFixed(2) : '0.00';
+    const accuracy = totalAttempts > 0 ? ((AppState.correctCount / totalAttempts) * 100).toFixed(1) : '100.0';
     const firstAttemptCorrect = Object.values(AppState.attemptCounts).filter(count => count === 1).length;
     const wordsPerMinute = minutes > 0 ? (AppState.correctCount / minutes).toFixed(1) : 'N/A';
+
+    console.log(`📈 Stats: ${AppState.correctCount}/${AppState.totalCount} | Accuracy: ${accuracy}% | Avg attempts: ${averageAttempts}`);
 
     // Build enhanced summary
     const summaryDiv = document.createElement('div');
