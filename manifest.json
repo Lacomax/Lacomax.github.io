@@ -95,7 +95,7 @@
       "url": "/?book=FR-DE",
       "icons": [
         {
-          "src": "flag_france.png",
+          "src": "images/flags/france.png",
           "sizes": "96x96"
         }
       ]
@@ -107,7 +107,7 @@
       "url": "/?book=DE-EN",
       "icons": [
         {
-          "src": "flag_uk.png",
+          "src": "images/flags/uk.png",
           "sizes": "96x96"
         }
       ]

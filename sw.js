@@ -3,35 +3,35 @@
  * Provides offline functionality and caching strategies
  */
 
-const CACHE_VERSION = 'v2.0.0';
+const CACHE_VERSION = 'v3.0.0';
 const CACHE_NAME = `vokabeltrainer-${CACHE_VERSION}`;
 
 // Files to cache immediately on install
 const STATIC_CACHE = [
     './',
     './index.html',
-    './styles.css',
-    './script.js',
+    './css/styles.css',
+    './js/script.js',
     './manifest.json',
-    './favicon.ico',
-    './flag_france.png',
-    './flag_germany.png',
-    './flag_uk.png'
+    './images/favicon.ico',
+    './images/flags/france.png',
+    './images/flags/germany.png',
+    './images/flags/uk.png'
 ];
 
 // Vocabulary JSON files (cache on first request)
 const DYNAMIC_CACHE = [
-    './vocabD1B.json',
-    './vocabD2B.json',
-    './vocabGL2B.json',
-    './GLBY3_Lernwoerter_mit_Artikeln_con_ejemplos.json'
+    './vocabulary/decouvertes-1-bayern.json',
+    './vocabulary/decouvertes-2-bayern.json',
+    './vocabulary/greenline-2-bayern.json',
+    './vocabulary/greenline-3-bayern.json'
 ];
 
 // Audio files (cache on demand)
 const AUDIO_CACHE = [];
 for (let i = 1; i <= 25; i++) {
     const num = i < 10 ? `0${i}` : `${i}`;
-    AUDIO_CACHE.push(`./correct_mp3/correct${num}.mp3`);
+    AUDIO_CACHE.push(`./audio/correct/correct${num}.mp3`);
 }
 
 /**

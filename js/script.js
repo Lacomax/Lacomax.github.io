@@ -11,12 +11,12 @@
 const CONFIG = {
     CORRECT_ANSWER_DELAY_MS: 2000,
     TOTAL_CORRECT_SOUNDS: 25,
-    AUDIO_PATH: 'correct_mp3/',
+    AUDIO_PATH: 'audio/correct/',
     JSON_FILES: {
-        'FR-DE': './vocabD1B.json',
-        'FR-DE-2': './vocabD2B.json',
-        'DE-EN': './vocabGL2B.json',
-        'DE-EN-3': './GLBY3_Lernwoerter_mit_Artikeln_con_ejemplos.json'
+        'FR-DE': './vocabulary/decouvertes-1-bayern.json',
+        'FR-DE-2': './vocabulary/decouvertes-2-bayern.json',
+        'DE-EN': './vocabulary/greenline-2-bayern.json',
+        'DE-EN-3': './vocabulary/greenline-3-bayern.json'
     },
     STORAGE_KEY: 'vokabeltrainer_progress'
 };
@@ -49,9 +49,9 @@ const TRANSLATIONS = {
             `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
         attempts: 'tentatives',
         errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
-        flag1: { src: 'flag_france.png', alt: 'Drapeau français' },
-        flag2: { src: 'flag_germany.png', alt: 'Flagge Deutschlands' },
-        bannerFlag: { src: 'flag_france.png', alt: 'Drapeau français' }
+        flag1: { src: 'images/flags/france.png', alt: 'Drapeau français' },
+        flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
     },
     'FR-DE-2': {
         selectLesson: 'Sélectionnez la leçon:',
@@ -76,9 +76,9 @@ const TRANSLATIONS = {
             `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
         attempts: 'tentatives',
         errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
-        flag1: { src: 'flag_france.png', alt: 'Drapeau français' },
-        flag2: { src: 'flag_germany.png', alt: 'Flagge Deutschlands' },
-        bannerFlag: { src: 'flag_france.png', alt: 'Drapeau français' }
+        flag1: { src: 'images/flags/france.png', alt: 'Drapeau français' },
+        flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
     },
     'DE-EN': {
         selectLesson: 'Select Lesson:',
@@ -103,9 +103,9 @@ const TRANSLATIONS = {
             `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
         attempts: 'attempts',
         errorLoading: 'Error loading data. Please try again.',
-        flag1: { src: 'flag_germany.png', alt: 'German flag' },
-        flag2: { src: 'flag_uk.png', alt: 'UK flag' },
-        bannerFlag: { src: 'flag_uk.png', alt: 'UK flag' }
+        flag1: { src: 'images/flags/germany.png', alt: 'German flag' },
+        flag2: { src: 'images/flags/uk.png', alt: 'UK flag' },
+        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' }
     },
     'DE-EN-3': {
         selectLesson: 'Select Lesson:',
@@ -130,9 +130,9 @@ const TRANSLATIONS = {
             `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
         attempts: 'attempts',
         errorLoading: 'Error loading data. Please try again.',
-        flag1: { src: 'flag_germany.png', alt: 'German flag' },
-        flag2: { src: 'flag_uk.png', alt: 'UK flag' },
-        bannerFlag: { src: 'flag_uk.png', alt: 'UK flag' }
+        flag1: { src: 'images/flags/germany.png', alt: 'German flag' },
+        flag2: { src: 'images/flags/uk.png', alt: 'UK flag' },
+        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' }
     }
 };
 
@@ -755,7 +755,8 @@ function showStats() {
     const averageAttempts = totalAttempts > 0 ? (totalAttempts / AppState.totalCount).toFixed(2) : '0.00';
     const accuracy = totalAttempts > 0 ? ((AppState.correctCount / totalAttempts) * 100).toFixed(1) : '100.0';
     const firstAttemptCorrect = Object.values(AppState.attemptCounts).filter(count => count === 1).length;
-    const wordsPerMinute = minutes > 0 ? (AppState.correctCount / minutes).toFixed(1) : 'N/A';
+    // Calculate words per minute using total seconds (even if < 1 minute)
+    const wordsPerMinute = timeSpentSeconds > 0 ? (AppState.correctCount / (timeSpentSeconds / 60)).toFixed(1) : '0.0';
 
     console.log(`📈 Stats: ${AppState.correctCount}/${AppState.totalCount} | Accuracy: ${accuracy}% | Avg attempts: ${averageAttempts}`);
 
