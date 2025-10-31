@@ -3,7 +3,7 @@
  * Provides offline functionality and caching strategies
  */
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v2.0.0';
 const CACHE_NAME = `vokabeltrainer-${CACHE_VERSION}`;
 
 // Files to cache immediately on install
@@ -22,7 +22,9 @@ const STATIC_CACHE = [
 // Vocabulary JSON files (cache on first request)
 const DYNAMIC_CACHE = [
     './vocabD1B.json',
-    './vocabGL2B.json'
+    './vocabD2B.json',
+    './vocabGL2B.json',
+    './GLBY3_Lernwoerter_mit_Artikeln_con_ejemplos.json'
 ];
 
 // Audio files (cache on demand)

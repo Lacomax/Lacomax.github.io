@@ -733,7 +733,7 @@ function handleIncorrectAnswer(correctAnswers, wordData) {
  * Shows statistics after quiz completion
  */
 function showStats() {
-    console.log('✅ showStats() ENHANCED VERSION v2.0 - If you see this, cache is cleared!');
+    console.log('✅ showStats() ENHANCED VERSION v3.0 - Cache cleared!');
 
     DOM.quizPanel.style.display = 'none';
     DOM.statsPanel.style.display = 'block';
@@ -759,6 +759,9 @@ function showStats() {
 
     console.log(`📈 Stats: ${AppState.correctCount}/${AppState.totalCount} | Accuracy: ${accuracy}% | Avg attempts: ${averageAttempts}`);
 
+    // Determine if French-German or German-English
+    const isFrenchGerman = AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2';
+
     // Build enhanced summary
     const summaryDiv = document.createElement('div');
     summaryDiv.className = 'stats-summary-enhanced';
@@ -768,25 +771,25 @@ function showStats() {
         <div class="stat-grid">
             <div class="stat-box">
                 <div class="stat-value">${AppState.correctCount}/${AppState.totalCount}</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Mots complétés' : 'Words completed'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Mots complétés' : 'Words completed'}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${timeFormatted}</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Temps total' : 'Total time'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Temps total' : 'Total time'}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${accuracy}%</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Précision' : 'Accuracy'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Précision' : 'Accuracy'}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${averageAttempts}</div>
-                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Tentatives moy.' : 'Avg. attempts'}</div>
+                <div class="stat-label">${isFrenchGerman ? 'Tentatives moy.' : 'Avg. attempts'}</div>
             </div>
         </div>
         <div class="stat-details">
-            <p><strong>${AppState.bookSelected === 'FR-DE' ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
-            <p><strong>${AppState.bookSelected === 'FR-DE' ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${AppState.bookSelected === 'FR-DE' ? 'mots/min' : 'words/min'}</p>
-            <p><strong>${AppState.bookSelected === 'FR-DE' ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
+            <p><strong>${isFrenchGerman ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
+            <p><strong>${isFrenchGerman ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${isFrenchGerman ? 'mots/min' : 'words/min'}</p>
+            <p><strong>${isFrenchGerman ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
         </div>
     `;
 
@@ -815,7 +818,7 @@ function showStats() {
     } else {
         const li = document.createElement('li');
         li.className = 'perfect-score';
-        li.textContent = AppState.bookSelected === 'FR-DE'
+        li.textContent = isFrenchGerman
             ? '🎉 Parfait! Tous les mots corrects du premier coup!'
             : '🎉 Perfect! All words correct on first try!';
         DOM.mostRepeatedList.appendChild(li);

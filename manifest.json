@@ -1,7 +1,7 @@
 {
   "name": "Vokabeltrainer - Interactive Vocabulary Learning",
   "short_name": "Vokabeltrainer",
-  "description": "Interactive vocabulary trainer for German language learners. Practice French-German and German-English with smart repetition.",
+  "description": "Interactive vocabulary trainer for German language learners. Practice French-German (Découvertes 1 & 2) and German-English (Green Line 2 & 3) with smart repetition and multiple lesson selection.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
