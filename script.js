@@ -1,263 +1,526 @@
-// Global variables
-let vocabData = [];
-let filteredWords = [];
-let currentWords = [];
-let currentIndex = 0;
-let direction = "BOTH";
-let isRandom = true;
-let missedWords = [];  
-let attemptCounts = {};
-let correctCount = 0;
-let totalCount = 0;
-let answeredWords = {};
-let bookSelected = ""; 
+/**
+ * Vokabeltrainer - Interactive Vocabulary Learning Application
+ * @author Lacomax
+ * @license GPL-2.0
+ */
 
-// Elements
-const bookSelect = document.getElementById('bookSelect');
-const lessonLabel = document.getElementById('lessonLabel');
-const moduleLabel = document.getElementById('moduleLabel');
-const directionLabel = document.getElementById('directionLabel');
-const lessonSelect = document.getElementById('lessonSelect');
-const moduleSelect = document.getElementById('moduleSelect');
-const directionSelect = document.getElementById('directionSelect');
-const randomOrderCheckbox = document.getElementById('randomOrder');
-const orderContainer = document.getElementById('orderContainer');
-const orderLabel = document.getElementById('orderLabel');
-const startBtn = document.getElementById('startBtn');
-const quizPanel = document.querySelector('.quiz-panel');
-const setupPanel = document.querySelector('.setup-panel');
-const statsPanel = document.querySelector('.stats-panel');
-const questionText = document.getElementById('questionText');
-const answerInput = document.getElementById('answerInput');
-const checkAnswerBtn = document.getElementById('checkAnswerBtn');
-const feedbackMessage = document.getElementById('feedbackMessage');
-const exampleSentence = document.getElementById('exampleSentence');
-const progressBar = document.getElementById('progressBar');
-const progressInfo = document.getElementById('progressInfo');
-const statsSummary = document.getElementById('statsSummary');
-const statsTitle = document.getElementById('statsTitle');
-const mostRepeatedTitle = document.getElementById('mostRepeatedTitle');
-const mostRepeatedList = document.getElementById('mostRepeatedList');
-const restartBtn = document.getElementById('restartBtn');
-const keyboard = document.querySelector('.keyboard');
-const bannerTitle = document.getElementById('bannerTitle');
-const flag1 = document.getElementById('flag1');
-const flag2 = document.getElementById('flag2');
-const bannerContent = document.getElementById('bannerContent');
+// ============================================================================
+// CONSTANTS & CONFIGURATION
+// ============================================================================
 
-// Correct sounds (1 to 25)
-let correctSounds = [];
-for (let i = 1; i <= 25; i++) {
-    correctSounds.push(`correct${i}.mp3`);
+const CONFIG = {
+    CORRECT_ANSWER_DELAY_MS: 2000,
+    TOTAL_CORRECT_SOUNDS: 25,
+    AUDIO_PATH: 'correct_mp3/',
+    JSON_FILES: {
+        'FR-DE': './vocabD1B.json',
+        'DE-EN': './vocabGL2B.json'
+    },
+    STORAGE_KEY: 'vokabeltrainer_progress'
+};
+
+// ============================================================================
+// TRANSLATIONS / i18n
+// ============================================================================
+
+const TRANSLATIONS = {
+    'FR-DE': {
+        selectLesson: 'Sélectionnez la leçon:',
+        selectModule: 'Sélectionnez le module:',
+        direction: 'Direction de pratique:',
+        directionBoth: 'Les deux',
+        directionForward: 'FR → DE',
+        directionBackward: 'DE → FR',
+        randomOrder: 'Ordre aléatoire',
+        start: 'Commencer',
+        check: 'Valider',
+        correctFR: 'Très bien!',
+        correctDE: 'Richtig!',
+        incorrect: 'Oops!',
+        noWords: 'Aucun mot trouvé.',
+        placeholderDE: 'Deine antwort...',
+        placeholderFR: 'Votre réponse...',
+        statsTitle: 'Statistiques',
+        mostRepeated: 'Mots les plus répétés:',
+        restart: 'Réessayer',
+        statsSummary: (correct, total, avg) =>
+            `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
+        attempts: 'tentatives',
+        errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
+        flag1: { src: 'flag_france.png', alt: 'Drapeau français' },
+        flag2: { src: 'flag_germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'flag_france.png', alt: 'Drapeau français' }
+    },
+    'DE-EN': {
+        selectLesson: 'Select Lesson:',
+        selectModule: 'Select Module:',
+        direction: 'Direction:',
+        directionBoth: 'Both',
+        directionForward: 'DE → EN',
+        directionBackward: 'EN → DE',
+        randomOrder: 'Random order',
+        start: 'Start',
+        check: 'Check',
+        correctDE: 'Richtig!',
+        correctEN: 'Good job!',
+        incorrect: 'Oops!',
+        noWords: 'No words found.',
+        placeholderDE: 'Deine antwort...',
+        placeholderEN: 'Your answer...',
+        statsTitle: 'Statistics',
+        mostRepeated: 'Most repeated words:',
+        restart: 'Try again',
+        statsSummary: (correct, total, avg) =>
+            `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
+        attempts: 'attempts',
+        errorLoading: 'Error loading data. Please try again.',
+        flag1: { src: 'flag_germany.png', alt: 'German flag' },
+        flag2: { src: 'flag_uk.png', alt: 'UK flag' },
+        bannerFlag: { src: 'flag_uk.png', alt: 'UK flag' }
+    }
+};
+
+// ============================================================================
+// APPLICATION STATE
+// ============================================================================
+
+const AppState = {
+    vocabData: [],
+    filteredWords: [],
+    currentWords: [],
+    currentIndex: 0,
+    direction: 'BOTH',
+    isRandom: true,
+    missedWords: [],
+    attemptCounts: {},
+    correctCount: 0,
+    totalCount: 0,
+    answeredWords: {},
+    bookSelected: '',
+    isProcessingAnswer: false,
+    audioCache: new Map(),
+    quizStartTime: 0,
+    quizEndTime: 0
+};
+
+// ============================================================================
+// DOM ELEMENTS CACHE
+// ============================================================================
+
+const DOM = {
+    bookSelect: document.getElementById('bookSelect'),
+    lessonLabel: document.getElementById('lessonLabel'),
+    moduleLabel: document.getElementById('moduleLabel'),
+    directionLabel: document.getElementById('directionLabel'),
+    lessonSelect: document.getElementById('lessonSelect'),
+    moduleSelect: document.getElementById('moduleSelect'),
+    directionSelect: document.getElementById('directionSelect'),
+    randomOrderCheckbox: document.getElementById('randomOrder'),
+    orderContainer: document.getElementById('orderContainer'),
+    orderLabel: document.getElementById('orderLabel'),
+    startBtn: document.getElementById('startBtn'),
+    quizPanel: document.querySelector('.quiz-panel'),
+    setupPanel: document.querySelector('.setup-panel'),
+    statsPanel: document.querySelector('.stats-panel'),
+    questionText: document.getElementById('questionText'),
+    answerInput: document.getElementById('answerInput'),
+    checkAnswerBtn: document.getElementById('checkAnswerBtn'),
+    feedbackMessage: document.getElementById('feedbackMessage'),
+    exampleSentence: document.getElementById('exampleSentence'),
+    progressBar: document.getElementById('progressBar'),
+    progressInfo: document.getElementById('progressInfo'),
+    progressContainer: document.querySelector('.progress-container'),
+    statsSummary: document.getElementById('statsSummary'),
+    statsTitle: document.getElementById('statsTitle'),
+    mostRepeatedTitle: document.getElementById('mostRepeatedTitle'),
+    mostRepeatedList: document.getElementById('mostRepeatedList'),
+    restartBtn: document.getElementById('restartBtn'),
+    keyboard: document.querySelector('.keyboard'),
+    bannerTitle: document.getElementById('bannerTitle'),
+    flag1: document.getElementById('flag1'),
+    flag2: document.getElementById('flag2'),
+    bannerContent: document.getElementById('bannerContent')
+};
+
+// ============================================================================
+// UTILITY FUNCTIONS
+// ============================================================================
+
+/**
+ * Shuffles array in place using Fisher-Yates algorithm
+ * @param {Array} array - Array to shuffle
+ */
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
 
-bookSelect.addEventListener('change', () => {
-    bookSelected = bookSelect.value;
-    if (!bookSelected) {
-        hideFilters();
-        return;
+/**
+ * Shows loading overlay
+ */
+function showLoading() {
+    let overlay = document.querySelector('.loading-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'loading-overlay';
+        overlay.innerHTML = '<div class="loading"></div>';
+        document.body.appendChild(overlay);
     }
+    overlay.style.display = 'flex';
+}
 
-    let jsonFile = bookSelected === "FR-DE" ? "./vocabD1B.json" : "./vocabGL2B.json";
-    fetch(jsonFile)
-        .then(response => response.json())
-        .then(data => {
-            vocabData = data;
-            setupUIForBook();
-            populateLessonFilter(data);
-            populateModuleFilter(data, 'all');
-        })
-        .catch(err => console.error(err));
-});
+/**
+ * Hides loading overlay
+ */
+function hideLoading() {
+    const overlay = document.querySelector('.loading-overlay');
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+}
 
+/**
+ * Saves current progress to localStorage
+ */
+function saveProgress() {
+    try {
+        const progress = {
+            bookSelected: AppState.bookSelected,
+            attemptCounts: AppState.attemptCounts,
+            timestamp: Date.now()
+        };
+        localStorage.setItem(CONFIG.STORAGE_KEY, JSON.stringify(progress));
+    } catch (error) {
+        console.error('Failed to save progress:', error);
+    }
+}
+
+/**
+ * Loads progress from localStorage
+ */
+function loadProgress() {
+    try {
+        const saved = localStorage.getItem(CONFIG.STORAGE_KEY);
+        if (saved) {
+            const progress = JSON.parse(saved);
+            // Only restore if less than 24 hours old
+            if (Date.now() - progress.timestamp < 86400000) {
+                return progress;
+            }
+        }
+    } catch (error) {
+        console.error('Failed to load progress:', error);
+    }
+    return null;
+}
+
+/**
+ * Gets translation text for current book
+ * @param {string} key - Translation key
+ * @returns {*} Translation value
+ */
+function t(key) {
+    const translations = TRANSLATIONS[AppState.bookSelected];
+    return translations ? translations[key] : key;
+}
+
+/**
+ * Sanitizes HTML to prevent XSS
+ * @param {string} text - Text to sanitize
+ * @returns {string} Sanitized text
+ */
+function sanitizeHTML(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// ============================================================================
+// AUDIO MANAGEMENT
+// ============================================================================
+
+/**
+ * Preloads correct answer audio files
+ */
+function preloadAudio() {
+    for (let i = 1; i <= CONFIG.TOTAL_CORRECT_SOUNDS; i++) {
+        const formattedNumber = i < 10 ? `0${i}` : `${i}`;
+        const soundFile = `correct${formattedNumber}.mp3`;
+        const audio = new Audio(`${CONFIG.AUDIO_PATH}${soundFile}`);
+        audio.preload = 'auto';
+        AppState.audioCache.set(i, audio);
+    }
+}
+
+/**
+ * Plays a random correct answer sound
+ */
+function playRandomCorrectSound() {
+    try {
+        const randomNumber = Math.floor(Math.random() * CONFIG.TOTAL_CORRECT_SOUNDS) + 1;
+        const audio = AppState.audioCache.get(randomNumber);
+
+        if (audio) {
+            // Clone the audio to allow overlapping plays
+            const clone = audio.cloneNode();
+            clone.play().catch(error => {
+                console.warn('Audio playback failed:', error);
+            });
+        }
+    } catch (error) {
+        console.error('Error playing sound:', error);
+    }
+}
+
+// ============================================================================
+// UI MANAGEMENT
+// ============================================================================
+
+/**
+ * Hides all filter elements
+ */
 function hideFilters() {
-    lessonLabel.style.display = 'none';
-    moduleLabel.style.display = 'none';
-    directionLabel.style.display = 'none';
-    directionSelect.style.display = 'none';
-    lessonSelect.style.display = 'none';
-    moduleSelect.style.display = 'none';
-    orderContainer.style.display = 'none';
-    startBtn.style.display = 'none';
-    flag1.style.display = 'none';
-    flag2.style.display = 'none';
+    DOM.lessonLabel.style.display = 'none';
+    DOM.moduleLabel.style.display = 'none';
+    DOM.directionLabel.style.display = 'none';
+    DOM.directionSelect.style.display = 'none';
+    DOM.lessonSelect.style.display = 'none';
+    DOM.moduleSelect.style.display = 'none';
+    DOM.orderContainer.style.display = 'none';
+    DOM.startBtn.style.display = 'none';
+    DOM.flag1.style.display = 'none';
+    DOM.flag2.style.display = 'none';
 }
 
+/**
+ * Sets up UI based on selected book
+ */
 function setupUIForBook() {
-    if (bookSelected === "FR-DE") {
-        lessonLabel.textContent = "Sélectionnez la leçon:";
-        moduleLabel.textContent = "Sélectionnez le module:";
-        directionLabel.textContent = "Direction de pratique:";
-        directionSelect.innerHTML = `
-            <option value="BOTH">Les deux</option>
-            <option value="FR->DE">FR -> DE</option>
-            <option value="DE->FR">DE -> FR</option>
-        `;
-        orderLabel.innerHTML = '<input type="checkbox" id="randomOrder" checked /> Ordre aléatoire';
-        flag1.src = "flag_france.png";
-        flag1.alt = "Drapeau français";
-        flag2.src = "flag_germany.png";
-        flag2.alt = "Flagge Deutschlands";
+    const trans = TRANSLATIONS[AppState.bookSelected];
 
-        statsTitle.textContent = "Statistiques";
-        mostRepeatedTitle.textContent = "Mots les plus répétés:";
-        restartBtn.textContent = "Réessayer";
+    // Update labels
+    DOM.lessonLabel.textContent = trans.selectLesson;
+    DOM.moduleLabel.textContent = trans.selectModule;
+    DOM.directionLabel.textContent = trans.direction;
 
-        startBtn.textContent = "Commencer";
-        checkAnswerBtn.textContent = "Valider";
-    } else {
-        lessonLabel.textContent = "Select Lesson:";
-        moduleLabel.textContent = "Select Module:";
-        directionLabel.textContent = "Direction:";
-        directionSelect.innerHTML = `
-            <option value="BOTH">Both</option>
-            <option value="DE->EN">DE -> EN</option>
-            <option value="EN->DE">EN -> DE</option>
-        `;
-        orderLabel.innerHTML = '<input type="checkbox" id="randomOrder" checked /> Random order';
-        flag1.src = "flag_germany.png";
-        flag1.alt = "German flag";
-        flag2.src = "flag_uk.png";
-        flag2.alt = "UK flag";
+    // Update direction options
+    DOM.directionSelect.innerHTML = `
+        <option value="BOTH">${trans.directionBoth}</option>
+        <option value="FORWARD">${trans.directionForward}</option>
+        <option value="BACKWARD">${trans.directionBackward}</option>
+    `;
 
-        statsTitle.textContent = "Statistics";
-        mostRepeatedTitle.textContent = "Most repeated words:";
-        restartBtn.textContent = "Try again";
+    // Update order label with new checkbox
+    DOM.orderLabel.innerHTML = `
+        <input type="checkbox" id="randomOrder" checked aria-label="${trans.randomOrder}" />
+        ${trans.randomOrder}
+    `;
 
-        startBtn.textContent = "Start";
-        checkAnswerBtn.textContent = "Check";
-    }
+    // Re-assign checkbox reference after innerHTML change
+    AppState.randomOrderCheckbox = document.getElementById('randomOrder');
 
-    flag1.style.display = 'inline';
-    flag2.style.display = 'inline';
+    // Update flags
+    DOM.flag1.src = trans.flag1.src;
+    DOM.flag1.alt = trans.flag1.alt;
+    DOM.flag2.src = trans.flag2.src;
+    DOM.flag2.alt = trans.flag2.alt;
 
-    lessonLabel.style.display = 'block';
-    moduleLabel.style.display = 'block';
-    directionLabel.style.display = 'block';
-    directionSelect.style.display = 'block';
-    lessonSelect.style.display = 'block';
-    moduleSelect.style.display = 'block';
-    orderContainer.style.display = 'block';
-    startBtn.style.display = 'block';
+    // Update button texts
+    DOM.startBtn.textContent = trans.start;
+    DOM.checkAnswerBtn.textContent = trans.check;
+    DOM.statsTitle.textContent = trans.statsTitle;
+    DOM.mostRepeatedTitle.textContent = trans.mostRepeated;
+    DOM.restartBtn.textContent = trans.restart;
+
+    // Show UI elements
+    DOM.flag1.style.display = 'inline';
+    DOM.flag2.style.display = 'inline';
+    DOM.lessonLabel.style.display = 'block';
+    DOM.moduleLabel.style.display = 'block';
+    DOM.directionLabel.style.display = 'block';
+    DOM.directionSelect.style.display = 'block';
+    DOM.lessonSelect.style.display = 'block';
+    DOM.moduleSelect.style.display = 'block';
+    DOM.orderContainer.style.display = 'block';
+    DOM.startBtn.style.display = 'block';
 }
 
+/**
+ * Populates lesson filter dropdown
+ * @param {Array} data - Vocabulary data
+ */
 function populateLessonFilter(data) {
-    while (lessonSelect.options.length > 1) {
-        lessonSelect.remove(1);
+    while (DOM.lessonSelect.options.length > 1) {
+        DOM.lessonSelect.remove(1);
     }
     const lessons = [...new Set(data.map(item => item.lesson))];
-    lessons.forEach(les => {
+    lessons.forEach(lesson => {
         const opt = document.createElement('option');
-        opt.value = les;
-        opt.textContent = les;
-        lessonSelect.appendChild(opt);
+        opt.value = lesson;
+        opt.textContent = lesson;
+        DOM.lessonSelect.appendChild(opt);
     });
 }
 
+/**
+ * Populates module filter dropdown
+ * @param {Array} data - Vocabulary data
+ * @param {string} selectedLesson - Currently selected lesson
+ */
 function populateModuleFilter(data, selectedLesson = 'all') {
-    while (moduleSelect.options.length > 1) {
-        moduleSelect.remove(1);
+    while (DOM.moduleSelect.options.length > 1) {
+        DOM.moduleSelect.remove(1);
     }
 
     let modules;
     if (selectedLesson === 'all') {
         modules = [...new Set(data.map(item => item.module))];
     } else {
-        modules = [...new Set(data.filter(d => d.lesson === selectedLesson).map(item => item.module))];
+        modules = [...new Set(
+            data.filter(d => d.lesson === selectedLesson)
+                .map(item => item.module)
+        )];
     }
 
     modules.forEach(mod => {
         const opt = document.createElement('option');
         opt.value = mod;
         opt.textContent = mod;
-        moduleSelect.appendChild(opt);
+        DOM.moduleSelect.appendChild(opt);
     });
 }
 
-lessonSelect.addEventListener('change', () => {
-    populateModuleFilter(vocabData, lessonSelect.value);
-});
+/**
+ * Updates progress bar and info
+ */
+function updateProgress() {
+    DOM.progressInfo.textContent = `${AppState.correctCount}/${AppState.totalCount}`;
+    const percentage = (AppState.correctCount / AppState.totalCount) * 100;
+    DOM.progressBar.style.width = percentage + '%';
 
-startBtn.addEventListener('click', () => {
-    direction = directionSelect.value;
-    isRandom = randomOrderCheckbox.checked;
+    // Update ARIA attribute for screen readers
+    DOM.progressContainer.setAttribute('aria-valuenow', Math.round(percentage));
+}
 
-    const selectedLesson = lessonSelect.value;
-    const selectedModule = moduleSelect.value;
-
-    filteredWords = vocabData.filter(item => {
-        return (selectedLesson === 'all' || item.lesson === selectedLesson) &&
-               (selectedModule === 'all' || item.module === selectedModule);
-    });
-
-    if (filteredWords.length === 0) {
-        alert(bookSelected === 'FR-DE' ? "Aucun mot trouvé." : "No words found.");
-        return;
-    }
-
-    // Hide "Vokabeltrainer"
-    bannerTitle.style.display = 'none';
-    bannerContent.innerHTML = '';
-
-    // Book name in bold
-    const bookName = bookSelect.options[bookSelect.selectedIndex].textContent;
-    const lessonModuleLine = `${(selectedLesson === 'all' ? 'All' : selectedLesson)} | ${(selectedModule === 'all' ? 'All' : selectedModule)}`;
-
-    // Choose the appropriate flag
-    let bannerFlagSrc = '';
-    let bannerFlagAlt = '';
-    if (bookSelected === 'FR-DE') {
-        bannerFlagSrc = 'flag_france.png';
-        bannerFlagAlt = 'Drapeau français';
+/**
+ * Updates answer input placeholder based on current question
+ * @param {Object} wordData - Current word data
+ * @param {string} displayedWord - Currently displayed word
+ */
+function updatePlaceholder(wordData, displayedWord) {
+    if (AppState.bookSelected === 'FR-DE') {
+        if (displayedWord === wordData.french) {
+            DOM.answerInput.placeholder = t('placeholderDE');
+        } else {
+            DOM.answerInput.placeholder = t('placeholderFR');
+        }
     } else {
-        bannerFlagSrc = 'flag_uk.png';
-        bannerFlagAlt = 'UK flag';
+        if (displayedWord === wordData.german) {
+            DOM.answerInput.placeholder = t('placeholderEN');
+        } else {
+            DOM.answerInput.placeholder = t('placeholderDE');
+        }
+    }
+}
+
+// ============================================================================
+// QUIZ LOGIC
+// ============================================================================
+
+/**
+ * Chooses which word to display based on direction
+ * @param {Object} wordData - Vocabulary item
+ * @returns {string} Word to display
+ */
+function chooseDisplayWord(wordData) {
+    if (AppState.bookSelected === 'FR-DE') {
+        if (AppState.direction === 'FORWARD') return wordData.french;
+        if (AppState.direction === 'BACKWARD') return wordData.german;
+        return Math.random() < 0.5 ? wordData.french : wordData.german;
+    } else {
+        if (AppState.direction === 'FORWARD') return wordData.german;
+        if (AppState.direction === 'BACKWARD') return wordData.english;
+        return Math.random() < 0.5 ? wordData.german : wordData.english;
+    }
+}
+
+/**
+ * Gets correct answers for current word
+ * @param {Object} wordData - Current word data
+ * @returns {Object} Correct answers array and question language
+ */
+function getCorrectAnswers(wordData) {
+    let correctAnswerArr;
+    let questionLanguage;
+
+    if (AppState.bookSelected === 'FR-DE') {
+        if (DOM.questionText.textContent === wordData.french) {
+            correctAnswerArr = wordData.german.split(';').map(s => s.trim());
+            questionLanguage = 'FR->DE';
+        } else {
+            correctAnswerArr = wordData.french.split(';').map(s => s.trim());
+            questionLanguage = 'DE->FR';
+        }
+    } else {
+        if (DOM.questionText.textContent === wordData.german) {
+            correctAnswerArr = wordData.english.split(';').map(s => s.trim());
+            questionLanguage = 'DE->EN';
+        } else {
+            correctAnswerArr = wordData.german.split(';').map(s => s.trim());
+            questionLanguage = 'EN->DE';
+        }
     }
 
-    const bookDiv = document.createElement('div');
-    bookDiv.innerHTML = `<b>${bookName}</b>`;
-    const lessonModuleDiv = document.createElement('div');
-    lessonModuleDiv.textContent = lessonModuleLine;
-    const bannerImg = document.createElement('img');
-    bannerImg.src = bannerFlagSrc;
-    bannerImg.alt = bannerFlagAlt;
-    bannerImg.className = 'banner-flag';
+    return { correctAnswers: correctAnswerArr, questionLanguage };
+}
 
-    bannerContent.appendChild(bookDiv);
-    bannerContent.appendChild(lessonModuleDiv);
-    bannerContent.appendChild(bannerImg);
+/**
+ * Generates unique key for a word pair
+ * @param {Object} wordData - Vocabulary item
+ * @returns {string} Unique key
+ */
+function getKeyForWord(wordData) {
+    if (AppState.bookSelected === 'FR-DE') {
+        return `${wordData.french}|${wordData.german}`;
+    } else {
+        return `${wordData.german}|${wordData.english}`;
+    }
+}
 
-    setupPanel.style.display = 'none';
-    quizPanel.style.display = 'block';
-    statsPanel.style.display = 'none';
-    
-    startQuiz();
-});
-
+/**
+ * Starts the quiz
+ */
 function startQuiz() {
-    currentIndex = 0;
-    missedWords = [];
-    attemptCounts = {};
-    correctCount = 0;
-    totalCount = filteredWords.length;
-    answeredWords = {};
+    AppState.currentIndex = 0;
+    AppState.missedWords = [];
+    AppState.attemptCounts = {};
+    AppState.correctCount = 0;
+    AppState.totalCount = AppState.filteredWords.length;
+    AppState.answeredWords = {};
+    AppState.isProcessingAnswer = false;
+    AppState.quizStartTime = Date.now();
 
-    currentWords = filteredWords.slice();
-    if (isRandom) {
-        shuffleArray(currentWords);
+    AppState.currentWords = AppState.filteredWords.slice();
+    if (AppState.isRandom) {
+        shuffleArray(AppState.currentWords);
     }
 
     updateProgress();
     showNextWord();
 }
 
+/**
+ * Shows the next word in the quiz
+ */
 function showNextWord() {
-    if (currentIndex >= currentWords.length) {
-        if (missedWords.length > 0) {
-            currentWords = missedWords;
-            missedWords = [];
-            currentIndex = 0;
-            if (isRandom) shuffleArray(currentWords);
+    if (AppState.currentIndex >= AppState.currentWords.length) {
+        if (AppState.missedWords.length > 0) {
+            AppState.currentWords = AppState.missedWords;
+            AppState.missedWords = [];
+            AppState.currentIndex = 0;
+            if (AppState.isRandom) shuffleArray(AppState.currentWords);
             showNextWord();
         } else {
             showStats();
@@ -265,208 +528,424 @@ function showNextWord() {
         return;
     }
 
-    const wordData = currentWords[currentIndex];
-    let displayWord = chooseDisplayWord(wordData);
+    const wordData = AppState.currentWords[AppState.currentIndex];
+    const displayWord = chooseDisplayWord(wordData);
 
-    questionText.textContent = displayWord;
-    feedbackMessage.textContent = "";
-    exampleSentence.textContent = "";
+    DOM.questionText.textContent = displayWord;
+    DOM.feedbackMessage.textContent = '';
+    DOM.feedbackMessage.className = 'feedback';
+    DOM.exampleSentence.textContent = '';
 
     updatePlaceholder(wordData, displayWord);
 
-    answerInput.value = "";
-    answerInput.focus();
+    DOM.answerInput.value = '';
+    DOM.answerInput.disabled = false;
+    DOM.checkAnswerBtn.disabled = false;
+    DOM.answerInput.focus();
+
+    AppState.isProcessingAnswer = false;
 }
 
-let waitingForNextAfterIncorrect = false;
-
-checkAnswerBtn.addEventListener('click', handleAnswer);
-answerInput.addEventListener('keyup', (e) => {
-    if (e.key === "Enter") {
-        handleAnswer();
-    }
-});
-
-function handleAnswer() {
-    if (waitingForNextAfterIncorrect) {
-        waitingForNextAfterIncorrect = false;
-        currentIndex++;
-        showNextWord();
-        return;
-    }
-    checkAnswer();
-}
-
+/**
+ * Checks the user's answer
+ */
 function checkAnswer() {
-    const userAnswer = answerInput.value.trim();
+    if (AppState.isProcessingAnswer) return;
+
+    const userAnswer = DOM.answerInput.value.trim();
     if (!userAnswer) return;
 
-    const wordData = currentWords[currentIndex];
-    let {correctAnswers, questionLanguage} = getCorrectAnswers(wordData);
+    const wordData = AppState.currentWords[AppState.currentIndex];
+    const { correctAnswers, questionLanguage } = getCorrectAnswers(wordData);
 
     const key = getKeyForWord(wordData);
-    attemptCounts[key] = (attemptCounts[key] || 0) + 1;
+    AppState.attemptCounts[key] = (AppState.attemptCounts[key] || 0) + 1;
 
     if (correctAnswers.includes(userAnswer)) {
-        playRandomCorrectSound();
-
-        feedbackMessage.style.color = "green";
-        feedbackMessage.textContent =
-            bookSelected === "FR-DE"
-                ? (questionLanguage === "FR->DE" ? "Richtig!" : "Très bien!")
-                : (questionLanguage === "DE->EN" ? "Good job!" : "Richtig!");
-
-        correctCount++;
-        answeredWords[key] = (answeredWords[key] || 0) + 1;
-
-        updateProgress();
-
-        // Disable input and button temporarily
-        answerInput.disabled = true;
-        checkAnswerBtn.disabled = true;
-
-        setTimeout(() => {
-            currentIndex++;
-            answerInput.disabled = false;
-            checkAnswerBtn.disabled = false;
-            showNextWord();
-        }, 2000); // Wait 2 seconds before showing the next word
+        handleCorrectAnswer(questionLanguage, key);
     } else {
-        feedbackMessage.style.color = "red";
-        feedbackMessage.textContent = "Oops!";
-
-        const correctStr = correctAnswers.join(" ; ");
-        exampleSentence.innerHTML = `<div style="font-weight:bold; font-size:2em; margin-top:20px;">${correctStr}</div><div>${wordData.example}</div>`;
-
-        if (!missedWords.includes(wordData)) {
-            missedWords.push(wordData);
-        }
-
-        waitingForNextAfterIncorrect = true;
+        handleIncorrectAnswer(correctAnswers, wordData);
     }
+
+    saveProgress();
 }
 
+/**
+ * Handles correct answer
+ * @param {string} questionLanguage - Direction of question
+ * @param {string} key - Word key
+ */
+function handleCorrectAnswer(questionLanguage, key) {
+    playRandomCorrectSound();
 
-function getCorrectAnswers(wordData) {
-    let correctAnswerArr;
-    let questionLanguage;
-    if (bookSelected === "FR-DE") {
-        if (questionText.textContent === wordData.french) {
-            correctAnswerArr = wordData.german.split(';').map(s=>s.trim());
-            questionLanguage = "FR->DE";
-        } else {
-            correctAnswerArr = wordData.french.split(';').map(s=>s.trim());
-            questionLanguage = "DE->FR";
-        }
+    DOM.feedbackMessage.className = 'feedback success';
+
+    // Set correct feedback based on question direction
+    if (AppState.bookSelected === 'FR-DE') {
+        DOM.feedbackMessage.textContent = questionLanguage === 'FR->DE'
+            ? t('correctDE')
+            : t('correctFR');
     } else {
-        if (questionText.textContent === wordData.german) {
-            correctAnswerArr = wordData.english.split(';').map(s=>s.trim());
-            questionLanguage = "DE->EN";
-        } else {
-            correctAnswerArr = wordData.german.split(';').map(s=>s.trim());
-            questionLanguage = "EN->DE";
+        DOM.feedbackMessage.textContent = questionLanguage === 'DE->EN'
+            ? t('correctEN')
+            : t('correctDE');
+    }
+
+    // Show example sentence for correct answers too
+    const wordData = AppState.currentWords[AppState.currentIndex];
+    if (wordData.example) {
+        const exampleDiv = document.createElement('div');
+        exampleDiv.textContent = wordData.example;
+        exampleDiv.style.marginTop = '10px';
+        exampleDiv.style.fontStyle = 'italic';
+        DOM.exampleSentence.textContent = '';
+        DOM.exampleSentence.appendChild(exampleDiv);
+    }
+
+    AppState.correctCount++;
+    AppState.answeredWords[key] = (AppState.answeredWords[key] || 0) + 1;
+
+    updateProgress();
+
+    // Disable input and button temporarily
+    DOM.answerInput.disabled = true;
+    DOM.checkAnswerBtn.disabled = true;
+    AppState.isProcessingAnswer = true;
+
+    setTimeout(() => {
+        AppState.currentIndex++;
+        showNextWord();
+    }, CONFIG.CORRECT_ANSWER_DELAY_MS);
+}
+
+/**
+ * Handles incorrect answer
+ * @param {Array} correctAnswers - Array of correct answers
+ * @param {Object} wordData - Current word data
+ */
+function handleIncorrectAnswer(correctAnswers, wordData) {
+    DOM.feedbackMessage.className = 'feedback error';
+    DOM.feedbackMessage.textContent = t('incorrect');
+
+    const correctStr = correctAnswers.join(' ; ');
+
+    // Fix XSS vulnerability: use textContent instead of innerHTML
+    const correctDiv = document.createElement('div');
+    correctDiv.style.fontWeight = 'bold';
+    correctDiv.style.fontSize = '2em';
+    correctDiv.style.marginTop = '20px';
+    correctDiv.textContent = correctStr;
+
+    const exampleDiv = document.createElement('div');
+    exampleDiv.textContent = wordData.example || '';
+
+    DOM.exampleSentence.textContent = '';
+    DOM.exampleSentence.appendChild(correctDiv);
+    DOM.exampleSentence.appendChild(exampleDiv);
+
+    if (!AppState.missedWords.includes(wordData)) {
+        AppState.missedWords.push(wordData);
+    }
+
+    // Disable input and button, enable on next click
+    DOM.answerInput.disabled = true;
+    DOM.checkAnswerBtn.disabled = true;
+    AppState.isProcessingAnswer = true;
+
+    // Change button text to indicate next action
+    const originalText = DOM.checkAnswerBtn.textContent;
+    DOM.checkAnswerBtn.textContent = '→';
+
+    // Set up one-time click handler for next word
+    const nextHandler = () => {
+        DOM.checkAnswerBtn.textContent = originalText;
+        DOM.checkAnswerBtn.removeEventListener('click', nextHandler);
+        DOM.answerInput.removeEventListener('keyup', nextKeyHandler);
+        AppState.currentIndex++;
+        showNextWord();
+    };
+
+    const nextKeyHandler = (e) => {
+        if (e.key === 'Enter') {
+            nextHandler();
         }
-    }
-    return {correctAnswers: correctAnswerArr, questionLanguage};
+    };
+
+    DOM.checkAnswerBtn.addEventListener('click', nextHandler);
+    DOM.answerInput.addEventListener('keyup', nextKeyHandler);
+
+    // Re-enable inputs for navigation
+    DOM.answerInput.disabled = false;
+    DOM.checkAnswerBtn.disabled = false;
+    DOM.answerInput.focus();
 }
 
-function chooseDisplayWord(wordData) {
-    if (bookSelected === "FR-DE") {
-        if (direction === "FR->DE") return wordData.french;
-        if (direction === "DE->FR") return wordData.german;
-        return (Math.random()<0.5) ? wordData.french : wordData.german;
-    } else {
-        if (direction === "DE->EN") return wordData.german;
-        if (direction === "EN->DE") return wordData.english;
-        return (Math.random()<0.5) ? wordData.german : wordData.english;
-    }
-}
-
-function updatePlaceholder(wordData, displayedWord) {
-    if (bookSelected === "FR-DE") {
-        if (displayedWord === wordData.french) {
-            answerInput.placeholder = "Deine antwort...";
-        } else {
-            answerInput.placeholder = "Votre réponse...";
-        }
-    } else {
-        if (displayedWord === wordData.german) {
-            answerInput.placeholder = "Your answer...";
-        } else {
-            answerInput.placeholder = "Deine antwort...";
-        }
-    }
-}
-
-function getKeyForWord(wordData) {
-    if (bookSelected === "FR-DE") {
-        return wordData.french + "|" + wordData.german;
-    } else {
-        return wordData.german + "|" + wordData.english;
-    }
-}
-
-function updateProgress() {
-    progressInfo.textContent = `${correctCount}/${totalCount}`;
-    const percentage = (correctCount / totalCount) * 100;
-    progressBar.style.width = percentage + "%";
-}
-
+/**
+ * Shows statistics after quiz completion
+ */
 function showStats() {
-    quizPanel.style.display = 'none';
-    statsPanel.style.display = 'block';
+    DOM.quizPanel.style.display = 'none';
+    DOM.statsPanel.style.display = 'block';
 
-    const totalAttempts = Object.values(attemptCounts).reduce((a,b)=>a+b,0);
-    const averageAttempts = (totalAttempts / totalCount).toFixed(2);
+    // Calculate time spent
+    AppState.quizEndTime = Date.now();
+    const timeSpentMs = AppState.quizEndTime - AppState.quizStartTime;
+    const timeSpentSeconds = Math.floor(timeSpentMs / 1000);
+    const minutes = Math.floor(timeSpentSeconds / 60);
+    const seconds = timeSpentSeconds % 60;
+    const timeFormatted = minutes > 0
+        ? `${minutes}m ${seconds}s`
+        : `${seconds}s`;
 
-    if (bookSelected === 'FR-DE') {
-        statsSummary.textContent = `Vous avez répondu correctement à ${correctCount} mots sur ${totalCount}. Tentatives moyennes par mot: ${averageAttempts}.`;
+    // Calculate statistics
+    const totalAttempts = Object.values(AppState.attemptCounts).reduce((a, b) => a + b, 0);
+    const averageAttempts = (totalAttempts / AppState.totalCount).toFixed(2);
+    const accuracy = ((AppState.correctCount / totalAttempts) * 100).toFixed(1);
+    const firstAttemptCorrect = Object.values(AppState.attemptCounts).filter(count => count === 1).length;
+    const wordsPerMinute = minutes > 0 ? (AppState.correctCount / minutes).toFixed(1) : 'N/A';
+
+    // Build enhanced summary
+    const summaryDiv = document.createElement('div');
+    summaryDiv.className = 'stats-summary-enhanced';
+
+    // Main stats
+    const mainStatsHTML = `
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-value">${AppState.correctCount}/${AppState.totalCount}</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Mots complétés' : 'Words completed'}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${timeFormatted}</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Temps total' : 'Total time'}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${accuracy}%</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Précision' : 'Accuracy'}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${averageAttempts}</div>
+                <div class="stat-label">${AppState.bookSelected === 'FR-DE' ? 'Tentatives moy.' : 'Avg. attempts'}</div>
+            </div>
+        </div>
+        <div class="stat-details">
+            <p><strong>${AppState.bookSelected === 'FR-DE' ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
+            <p><strong>${AppState.bookSelected === 'FR-DE' ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${AppState.bookSelected === 'FR-DE' ? 'mots/min' : 'words/min'}</p>
+            <p><strong>${AppState.bookSelected === 'FR-DE' ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
+        </div>
+    `;
+
+    summaryDiv.innerHTML = mainStatsHTML;
+    DOM.statsSummary.innerHTML = '';
+    DOM.statsSummary.appendChild(summaryDiv);
+
+    // Most repeated words
+    const entries = Object.entries(AppState.attemptCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    DOM.mostRepeatedList.innerHTML = '';
+
+    if (entries.length > 0 && entries[0][1] > 1) {
+        entries.slice(0, 5).forEach(([key, val]) => {
+            if (val > 1) { // Only show words that needed more than 1 attempt
+                const parts = key.split('|');
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <span class="word-pair">${parts[0]} - ${parts[1]}</span>
+                    <span class="attempt-badge">${val} ${t('attempts')}</span>
+                `;
+                DOM.mostRepeatedList.appendChild(li);
+            }
+        });
     } else {
-        statsSummary.textContent = `You answered correctly ${correctCount} out of ${totalCount} words. Average attempts per word: ${averageAttempts}.`;
-    }
-
-    const entries = Object.entries(attemptCounts).sort((a,b)=>b[1]-a[1]);
-    mostRepeatedList.innerHTML = "";
-    entries.slice(0,5).forEach(([key, val]) => {
-        const parts = key.split("|");
         const li = document.createElement('li');
-        li.textContent = `${parts[0]} - ${parts[1]} : ${val} ${bookSelected === 'FR-DE' ? 'tentatives' : 'attempts'}`;
-        mostRepeatedList.appendChild(li);
-    });
+        li.className = 'perfect-score';
+        li.textContent = AppState.bookSelected === 'FR-DE'
+            ? '🎉 Parfait! Tous les mots corrects du premier coup!'
+            : '🎉 Perfect! All words correct on first try!';
+        DOM.mostRepeatedList.appendChild(li);
+    }
 }
 
-restartBtn.addEventListener('click', () => {
-    statsPanel.style.display = 'none';
-    setupPanel.style.display = 'block';
-    bannerTitle.style.display = 'block';
-    bannerTitle.textContent = "Vokabeltrainer";
-    bannerContent.innerHTML = "";
+// ============================================================================
+// EVENT HANDLERS
+// ============================================================================
+
+/**
+ * Handles book selection change
+ */
+DOM.bookSelect.addEventListener('change', () => {
+    AppState.bookSelected = DOM.bookSelect.value;
+
+    if (!AppState.bookSelected) {
+        hideFilters();
+        return;
+    }
+
+    showLoading();
+
+    const jsonFile = CONFIG.JSON_FILES[AppState.bookSelected];
+
+    fetch(jsonFile)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            AppState.vocabData = data;
+            setupUIForBook();
+            populateLessonFilter(data);
+            populateModuleFilter(data, 'all');
+            hideLoading();
+        })
+        .catch(error => {
+            console.error('Error loading vocabulary:', error);
+            hideLoading();
+            alert(TRANSLATIONS[AppState.bookSelected]?.errorLoading ||
+                  'Error loading data. Please try again.');
+        });
 });
 
-function shuffleArray(array) {
-    for (let i = array.length -1; i > 0; i--) {
-        const j = Math.floor(Math.random()* (i+1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
+/**
+ * Handles lesson selection change
+ */
+DOM.lessonSelect.addEventListener('change', () => {
+    populateModuleFilter(AppState.vocabData, DOM.lessonSelect.value);
+});
 
-keyboard.addEventListener('click', (e) => {
+/**
+ * Handles start button click
+ */
+DOM.startBtn.addEventListener('click', () => {
+    // Map old direction values to new ones
+    const directionValue = DOM.directionSelect.value;
+    AppState.direction = directionValue;
+
+    // Get checkbox value (re-query in case it was recreated)
+    const randomCheckbox = document.getElementById('randomOrder');
+    AppState.isRandom = randomCheckbox ? randomCheckbox.checked : true;
+
+    const selectedLesson = DOM.lessonSelect.value;
+    const selectedModule = DOM.moduleSelect.value;
+
+    AppState.filteredWords = AppState.vocabData.filter(item => {
+        return (selectedLesson === 'all' || item.lesson === selectedLesson) &&
+               (selectedModule === 'all' || item.module === selectedModule);
+    });
+
+    if (AppState.filteredWords.length === 0) {
+        alert(t('noWords'));
+        return;
+    }
+
+    // Update banner
+    DOM.bannerTitle.style.display = 'none';
+    DOM.bannerContent.innerHTML = '';
+
+    const bookName = DOM.bookSelect.options[DOM.bookSelect.selectedIndex].textContent;
+    const lessonModuleLine = `${selectedLesson === 'all' ? 'All' : selectedLesson} | ${selectedModule === 'all' ? 'All' : selectedModule}`;
+
+    const trans = TRANSLATIONS[AppState.bookSelected];
+    const bannerFlag = trans.bannerFlag;
+
+    const bookDiv = document.createElement('div');
+    const bookBold = document.createElement('b');
+    bookBold.textContent = bookName;
+    bookDiv.appendChild(bookBold);
+
+    const lessonModuleDiv = document.createElement('div');
+    lessonModuleDiv.textContent = lessonModuleLine;
+
+    const bannerImg = document.createElement('img');
+    bannerImg.src = bannerFlag.src;
+    bannerImg.alt = bannerFlag.alt;
+    bannerImg.className = 'banner-flag';
+
+    DOM.bannerContent.appendChild(bookDiv);
+    DOM.bannerContent.appendChild(lessonModuleDiv);
+    DOM.bannerContent.appendChild(bannerImg);
+
+    DOM.setupPanel.style.display = 'none';
+    DOM.quizPanel.style.display = 'block';
+    DOM.statsPanel.style.display = 'none';
+
+    startQuiz();
+});
+
+/**
+ * Handles check answer button click
+ */
+DOM.checkAnswerBtn.addEventListener('click', () => {
+    if (!AppState.isProcessingAnswer || DOM.checkAnswerBtn.textContent === '→') {
+        checkAnswer();
+    }
+});
+
+/**
+ * Handles answer input keyup (Enter key)
+ */
+DOM.answerInput.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter' && !AppState.isProcessingAnswer) {
+        checkAnswer();
+    }
+});
+
+/**
+ * Handles special character keyboard clicks
+ */
+DOM.keyboard.addEventListener('click', (e) => {
     if (e.target.dataset.char) {
         const char = e.target.dataset.char;
-        answerInput.value += char;
-        answerInput.focus();
+        const cursorPos = DOM.answerInput.selectionStart;
+        const currentValue = DOM.answerInput.value;
+
+        DOM.answerInput.value =
+            currentValue.substring(0, cursorPos) +
+            char +
+            currentValue.substring(cursorPos);
+
+        // Move cursor after inserted character
+        DOM.answerInput.selectionStart = DOM.answerInput.selectionEnd = cursorPos + 1;
+        DOM.answerInput.focus();
     }
 });
 
-function playRandomCorrectSound() {
-    // Generate a random number between 1 and 25
-    const randomNumber = Math.floor(Math.random() * 25) + 1;
-    // Format the number with leading zeros if less than 10
-    const formattedNumber = randomNumber < 10 ? `0${randomNumber}` : `${randomNumber}`;
-    // Construct the file name
-    const soundFile = `correct${formattedNumber}.mp3`;
-    // Play the sound
-    const audio = new Audio("correct_mp3/" + soundFile);
-    audio.play();
+/**
+ * Handles restart button click
+ */
+DOM.restartBtn.addEventListener('click', () => {
+    DOM.statsPanel.style.display = 'none';
+    DOM.setupPanel.style.display = 'block';
+    DOM.bannerTitle.style.display = 'block';
+    DOM.bannerTitle.textContent = 'Vokabeltrainer';
+    DOM.bannerContent.innerHTML = '';
+});
+
+// ============================================================================
+// INITIALIZATION
+// ============================================================================
+
+/**
+ * Initialize the application
+ */
+function init() {
+    // Preload audio files for better performance
+    preloadAudio();
+
+    // Load saved progress if available
+    const savedProgress = loadProgress();
+    if (savedProgress && savedProgress.bookSelected === AppState.bookSelected) {
+        AppState.attemptCounts = savedProgress.attemptCounts || {};
+    }
+
+    console.log('Vokabeltrainer initialized successfully');
 }
 
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}

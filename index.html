@@ -1,9 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="de">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vokabeltrainer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+
+    <!-- Primary Meta Tags -->
+    <title>Vokabeltrainer - Interactive Language Learning App | French-German & German-English</title>
+    <meta name="title" content="Vokabeltrainer - Interactive Language Learning App">
+    <meta name="description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1) and German-English (Green Line 2) with smart repetition, progress tracking, and offline support.">
+    <meta name="keywords" content="vocabulary trainer, Vokabeltrainer, German learning, French German, English German, Découvertes 1, Green Line 2, language learning, Bayern, flashcards">
+    <meta name="author" content="Lacomax">
+    <meta name="theme-color" content="#66b3ff">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lacomax.github.io/">
+    <meta property="og:title" content="Vokabeltrainer - Interactive Language Learning App">
+    <meta property="og:description" content="Free vocabulary trainer for German language learners. Practice French-German and German-English with smart repetition and progress tracking.">
+    <meta property="og:image" content="https://lacomax.github.io/icons/icon-512x512.png">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://lacomax.github.io/">
+    <meta name="twitter:title" content="Vokabeltrainer - Interactive Language Learning App">
+    <meta name="twitter:description" content="Free vocabulary trainer for German language learners. Practice French-German and German-English with smart repetition.">
+    <meta name="twitter:image" content="https://lacomax.github.io/icons/icon-512x512.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
@@ -15,89 +50,136 @@
         </div>
     </header>
 
-    <main>
-        <section class="setup-panel">
+    <main role="main">
+        <section class="setup-panel" aria-label="Quiz setup">
             <div class="filters">
-                <h2>Buch</h2>
-                <select id="bookSelect">
+                <label for="bookSelect" class="filter-label">Buch</label>
+                <select id="bookSelect" aria-label="Wählen Sie ein Buch" required>
                     <option value="">-- Wählen Sie --</option>
                     <option value="FR-DE">Découvertes 1 - Bayern</option>
                     <option value="DE-EN">Green Line 2 - Bayern</option>
                 </select>
 
-                <label for="lessonSelect" id="lessonLabel" style="display:none;"></label>
-                <select id="lessonSelect" style="display:none;">
+                <label for="lessonSelect" id="lessonLabel" class="filter-label" style="display:none;"></label>
+                <select id="lessonSelect" style="display:none;" aria-label="Wählen Sie eine Lektion">
                     <option value="all">All</option>
                 </select>
 
-                <label for="moduleSelect" id="moduleLabel" style="display:none;"></label>
-                <select id="moduleSelect" style="display:none;">
+                <label for="moduleSelect" id="moduleLabel" class="filter-label" style="display:none;"></label>
+                <select id="moduleSelect" style="display:none;" aria-label="Wählen Sie ein Modul">
                     <option value="all">All</option>
                 </select>
 
-                <label for="directionSelect" id="directionLabel" style="display:none;"></label>
-                <select id="directionSelect" style="display:none;">
+                <label for="directionSelect" id="directionLabel" class="filter-label" style="display:none;"></label>
+                <select id="directionSelect" style="display:none;" aria-label="Wählen Sie die Richtung">
                 </select>
 
                 <div style="display:none;" id="orderContainer">
-                    <label id="orderLabel">
-                        <input type="checkbox" id="randomOrder" checked />
+                    <label id="orderLabel" for="randomOrder">
+                        <input type="checkbox" id="randomOrder" checked aria-label="Zufällige Reihenfolge aktivieren" />
                     </label>
                 </div>
 
-                <button id="startBtn" style="display:none;">Commencer</button>
+                <button id="startBtn" style="display:none;" aria-label="Quiz starten">Commencer</button>
             </div>
 
-            <div class="illustrations">
-                <img id="flag1" class="flag" style="display:none;">
-                <img id="flag2" class="flag" style="display:none;">
+            <div class="illustrations" role="img" aria-label="Language flags">
+                <img id="flag1" class="flag" style="display:none;" alt="">
+                <img id="flag2" class="flag" style="display:none;" alt="">
             </div>
         </section>
 
-        <section class="quiz-panel" style="display:none;">
-            <div class="progress-container">
+        <section class="quiz-panel" style="display:none;" aria-label="Quiz question">
+            <div class="progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Quiz progress">
                 <div class="progress-bar" id="progressBar"></div>
             </div>
-            <p id="progressInfo"></p>
+            <p id="progressInfo" aria-live="polite"></p>
 
             <div class="question-container">
-                <h2 id="questionText">...</h2>
-                <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off"/>
-                <div class="keyboard">
-                    <button data-char="’">’</button>
-                    <button data-char="é">é</button>
-                    <button data-char="è">è</button>
-                    <button data-char="ê">ê</button>
-                    <button data-char="ë">ë</button>
-                    <button data-char="à">à</button>
-                    <button data-char="â">â</button>
-                    <button data-char="ä">ä</button>
-                    <button data-char="î">î</button>
-                    <button data-char="ï">ï</button>
-                    <button data-char="ô">ô</button>
-                    <button data-char="ù">ù</button>
-                    <button data-char="û">û</button>
-                    <button data-char="ü">ü</button>
-                    <button data-char="œ">œ</button>
-                    <button data-char="ç">ç</button>
-                    <button data-char="ß">ß</button>
+                <h2 id="questionText" aria-live="assertive">...</h2>
+                <label for="answerInput" class="sr-only">Your answer</label>
+                <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off" aria-required="true"/>
+                <div class="keyboard" role="toolbar" aria-label="Special characters keyboard">
+                    <!-- Fila 1: Vocales con acento agudo y grave (Francés) -->
+                    <div class="keyboard-row">
+                        <button data-char="é" aria-label="Insert e acute" type="button">é</button>
+                        <button data-char="É" aria-label="Insert E acute" type="button">É</button>
+                        <button data-char="è" aria-label="Insert e grave" type="button">è</button>
+                        <button data-char="È" aria-label="Insert E grave" type="button">È</button>
+                        <button data-char="à" aria-label="Insert a grave" type="button">à</button>
+                        <button data-char="À" aria-label="Insert A grave" type="button">À</button>
+                        <button data-char="ù" aria-label="Insert u grave" type="button">ù</button>
+                        <button data-char="Ù" aria-label="Insert U grave" type="button">Ù</button>
+                    </div>
+                    <!-- Fila 2: Vocales con circunflejo y diéresis (Francés/Alemán) -->
+                    <div class="keyboard-row">
+                        <button data-char="ê" aria-label="Insert e circumflex" type="button">ê</button>
+                        <button data-char="Ê" aria-label="Insert E circumflex" type="button">Ê</button>
+                        <button data-char="â" aria-label="Insert a circumflex" type="button">â</button>
+                        <button data-char="Â" aria-label="Insert A circumflex" type="button">Â</button>
+                        <button data-char="î" aria-label="Insert i circumflex" type="button">î</button>
+                        <button data-char="Î" aria-label="Insert I circumflex" type="button">Î</button>
+                        <button data-char="ô" aria-label="Insert o circumflex" type="button">ô</button>
+                        <button data-char="Ô" aria-label="Insert O circumflex" type="button">Ô</button>
+                        <button data-char="û" aria-label="Insert u circumflex" type="button">û</button>
+                        <button data-char="Û" aria-label="Insert U circumflex" type="button">Û</button>
+                    </div>
+                    <!-- Fila 3: Diéresis (Francés/Alemán) -->
+                    <div class="keyboard-row">
+                        <button data-char="ë" aria-label="Insert e diaeresis" type="button">ë</button>
+                        <button data-char="Ë" aria-label="Insert E diaeresis" type="button">Ë</button>
+                        <button data-char="ï" aria-label="Insert i diaeresis" type="button">ï</button>
+                        <button data-char="Ï" aria-label="Insert I diaeresis" type="button">Ï</button>
+                        <button data-char="ÿ" aria-label="Insert y diaeresis" type="button">ÿ</button>
+                        <button data-char="Ÿ" aria-label="Insert Y diaeresis" type="button">Ÿ</button>
+                        <button data-char="ä" aria-label="Insert a umlaut" type="button">ä</button>
+                        <button data-char="Ä" aria-label="Insert A umlaut" type="button">Ä</button>
+                        <button data-char="ö" aria-label="Insert o umlaut" type="button">ö</button>
+                        <button data-char="Ö" aria-label="Insert O umlaut" type="button">Ö</button>
+                        <button data-char="ü" aria-label="Insert u umlaut" type="button">ü</button>
+                        <button data-char="Ü" aria-label="Insert U umlaut" type="button">Ü</button>
+                    </div>
+                    <!-- Fila 4: Caracteres especiales -->
+                    <div class="keyboard-row">
+                        <button data-char="ç" aria-label="Insert c cedilla" type="button">ç</button>
+                        <button data-char="Ç" aria-label="Insert C cedilla" type="button">Ç</button>
+                        <button data-char="œ" aria-label="Insert oe ligature" type="button">œ</button>
+                        <button data-char="Œ" aria-label="Insert OE ligature" type="button">Œ</button>
+                        <button data-char="æ" aria-label="Insert ae ligature" type="button">æ</button>
+                        <button data-char="Æ" aria-label="Insert AE ligature" type="button">Æ</button>
+                        <button data-char="ß" aria-label="Insert sharp s" type="button">ß</button>
+                        <button data-char="'" aria-label="Insert apostrophe" type="button">'</button>
+                        <button data-char="«" aria-label="Insert left guillemet" type="button">«</button>
+                        <button data-char="»" aria-label="Insert right guillemet" type="button">»</button>
+                    </div>
                 </div>
-                <button id="checkAnswerBtn">Valider</button>
+                <button id="checkAnswerBtn" type="button" aria-label="Check answer">Valider</button>
             </div>
 
-            <div class="feedback" id="feedbackMessage"></div>
-            <div class="example" id="exampleSentence"></div>
+            <div class="feedback" id="feedbackMessage" role="status" aria-live="assertive" aria-atomic="true"></div>
+            <div class="example" id="exampleSentence" role="complementary"></div>
         </section>
 
-        <section class="stats-panel" style="display:none;">
+        <section class="stats-panel" style="display:none;" aria-label="Quiz statistics" role="region">
             <h2 id="statsTitle">Statistiques</h2>
-            <p id="statsSummary"></p>
+            <p id="statsSummary" role="status"></p>
             <h3 id="mostRepeatedTitle">Mots les plus répétés:</h3>
-            <ul id="mostRepeatedList"></ul>
-            <button id="restartBtn">Réessayer / Try again</button>
+            <ul id="mostRepeatedList" aria-label="Most repeated words list"></ul>
+            <button id="restartBtn" type="button" aria-label="Restart quiz">Réessayer / Try again</button>
         </section>
     </main>
 
     <script src="script.js"></script>
+
+    <!-- Register Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => console.log('SW registered:', registration.scope))
+                    .catch(error => console.log('SW registration failed:', error));
+            });
+        }
+    </script>
 </body>
 </html>
