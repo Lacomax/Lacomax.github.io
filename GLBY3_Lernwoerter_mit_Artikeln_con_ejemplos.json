@@ -1,0 +1,5282 @@
+[
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"personality",
+        "german":"die Persönlichkeit",
+        "example":"Her personality shines when she's helping others."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to disagree (with)",
+        "german":"anderer Meinung sein; nicht einverstanden sein (mit)",
+        "example":"It's okay to disagree with others' opinions."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to compromise",
+        "german":"Kompromisse eingehen",
+        "example":"Sometimes, you need to compromise to resolve conflicts."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"smart",
+        "german":"schlau; klug; intelligent",
+        "example":"She is very smart and always does well on her exams."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"self, selves (pl)",
+        "german":"das Selbst",
+        "example":"You need to take care of yourself first."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"nature",
+        "german":"die Natur",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"logic",
+        "german":"die Logik",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"body",
+        "german":"der Körper",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"saying",
+        "german":"die Redensart; das Sprichwort",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"practice",
+        "german":"das Training; die Übung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to judge",
+        "german":"beurteilen; bewerten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"cover",
+        "german":"das Cover; das Titelblatt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to matter",
+        "german":"von Bedeutung sein; etw. ausmachen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"I don't care",
+        "german":"es ist mir egal",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to be in",
+        "german":"in sein; angesagt sein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to be out",
+        "german":"out sein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"as long as",
+        "german":"solange",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"call-in",
+        "german":"die Sendung, bei der sich das Publikum telefonisch beteiligen kann",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"imagination",
+        "german":"die Fantasie; die Vorstellungskraft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"to compete (with\/against)",
+        "german":"konkurrieren (mit); sich messen (mit); in Wettbewerb treten (mit); antreten (gegen)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"CI",
+        "english":"themselves",
+        "german":"sich selbst (3. P. Pl.)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to push oneself",
+        "german":"sich alles abverlangen; sich Mühe geben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to study",
+        "german":"studieren; lernen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to enjoy oneself",
+        "german":"Spaß haben; sich amüsieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"waste",
+        "german":"die Verschwendung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to accept",
+        "german":"akzeptieren; hinnehmen; annehmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"grade (AE)",
+        "german":"die Note; die Klasse",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to make it",
+        "german":"es schaffen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to complain",
+        "german":"sich beschweren; sich beklagen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"report card (AE)",
+        "german":"das Zeugnis",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"loser",
+        "german":"der Verlierer \/ die Verliererin; der Loser \/ die Loserin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to be hard on sb",
+        "german":"streng mit jmdm. sein; mit jmdm. hart ins Gericht gehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to relax",
+        "german":"sich entspannen; sich ausruhen; sich beruhigen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"laid-back",
+        "german":"entspannt; locker",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"bossy",
+        "german":"herrisch; rechthaberisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"rich",
+        "german":"reich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"college",
+        "german":"die Universität (in den USA)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"all by oneself",
+        "german":"ganz allein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"successful",
+        "german":"erfolgreich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"stubborn",
+        "german":"eigensinnig; störrisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to make a decision",
+        "german":"eine Entscheidung treffen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"ambitious",
+        "german":"ehrgeizig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"pushy",
+        "german":"aufdringlich; penetrant; aggressiv",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to react",
+        "german":"reagieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"in sb's shoes",
+        "german":"an jmds. Stelle",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to criticize (AE)",
+        "german":"kritisieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to push sb",
+        "german":"jmdn. drängen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"to motivate",
+        "german":"motivieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S1",
+        "english":"chance",
+        "german":"die Chance; die Gelegenheit; die Möglichkeit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"middle school (AE)",
+        "german":"die Mittelschule (weiterführende Schule in den USA, Mittelstufe)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"trainer",
+        "german":"der Trainer \/ die Trainerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"safety",
+        "german":"die Sicherheit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"bond",
+        "german":"die Bindung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to come easily to sb",
+        "german":"jmdm. leichtfallen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"influence",
+        "german":"der Einfluss",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"Norman",
+        "german":"der Normanne \/ die Normannin; normannisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"pork",
+        "german":"das Schweinefleisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"beef",
+        "german":"das Rindfleisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to mix",
+        "german":"mixen; mischen; vermischen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"future",
+        "german":"zukünftig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"rural",
+        "german":"ländlich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"responsibility",
+        "german":"die Verantwortung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"living",
+        "german":"die Lebensweise",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to be grounded",
+        "german":"Hausarrest haben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to taste",
+        "german":"schmecken; probieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"hot",
+        "german":"scharf",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"spectacular",
+        "german":"spektakulär",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"pot",
+        "german":"der Topf",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to turn into",
+        "german":"ändern in; umwandeln in",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"tasty",
+        "german":"lecker; schmackhaft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"dish",
+        "german":"das Gericht; die Speise",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"vegetable",
+        "german":"das Gemüse",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to seem",
+        "german":"scheinen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"certain",
+        "german":"bestimmt; sicher; gewiss",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"recipe",
+        "german":"das Rezept",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to drive",
+        "german":"fahren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"to put sth right",
+        "german":"etw. richtigstellen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"understandable",
+        "german":"verständlich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"dream",
+        "german":"der Traum",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"extreme",
+        "german":"extrem; radikal; äußerste\/-r\/-s",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S2",
+        "english":"comparable",
+        "german":"vergleichbar",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"to develop",
+        "german":"(sich) entwickeln; (sich) entwickeln",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"Saxon",
+        "german":"der Sachse \/ die Sächsin; sächsisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"Anglo-Saxon",
+        "german":"der Angelsachse \/ die Angelsächsin; angelsächsisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"to defeat",
+        "german":"besiegen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"meat (no pl)",
+        "german":"das Fleisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"to remain",
+        "german":"bleiben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"S3",
+        "english":"Greek",
+        "german":"Griechisch; griechisch; aus Griechenland",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"to have a point",
+        "german":"nicht ganz Unrecht haben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"to meet halfway",
+        "german":"sich auf halbem Weg treffen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"I don’t mind … (+ -ing)",
+        "german":"Ich habe nichts dagegen (zu) …; Mir macht es nichts aus (zu) …",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"this way",
+        "german":"so; auf diese Weise",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"misunderstood",
+        "german":"missverstanden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"ear",
+        "german":"das Ohr",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"SK",
+        "english":"diving",
+        "german":"das Tauchen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"argument",
+        "german":"das Argument",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"cage",
+        "german":"der Käfig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"strict",
+        "german":"streng; strikt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"dress code",
+        "german":"die Kleiderordnung; die Bekleidungsvorschriften",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"skin",
+        "german":"die Haut; das Fell",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"to interrupt",
+        "german":"unterbrechen",
+        "example":"It's not polite to interrupt someone while they are speaking."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"to convince",
+        "german":"überzeugen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"UT",
+        "english":"(the) most",
+        "german":"am meisten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to be fed up (with)",
+        "german":"sauer sein (auf); die Nase voll haben (von)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to feel like (+ noun or -ing)",
+        "german":"Lust haben (auf\/zu)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to trust",
+        "german":"vertrauen",
+        "example":"You can trust me with your secrets."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"sneaker (AE)",
+        "german":"der Turnschuh",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to dream",
+        "german":"träumen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"in-crowd",
+        "german":"die Angesagten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"either … or …",
+        "german":"entweder … oder …",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"far away",
+        "german":"weit weg",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to chill out",
+        "german":"chillen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"blond",
+        "german":"blond",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"What’s going on?",
+        "german":"Was ist los?; Was geht ab?",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"shake",
+        "german":"der Shake; der Milchshake",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"dance",
+        "german":"der Tanz; die Tanzveranstaltung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to lend (to)",
+        "german":"leihen; verleihen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to go behind sb's back",
+        "german":"jmdn. hintergehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to worry sb",
+        "german":"jmdn. beunruhigen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"bay",
+        "german":"die Bucht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to come along",
+        "german":"mitkommen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to suggest",
+        "german":"vorschlagen",
+        "example":"Can you suggest a good restaurant nearby?"
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to pay attention to",
+        "german":"beachten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to ignore",
+        "german":"ignorieren; außer Acht lassen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"pretty",
+        "german":"hübsch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"mommy (AE)",
+        "german":"Mama; Mami; Mutti",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to drop",
+        "german":"fallen (lassen)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to afford",
+        "german":"sich leisten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"anger (no pl)",
+        "german":"der Zorn; die Wut",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"loyal",
+        "german":"loyal; treu",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to lie",
+        "german":"lügen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"to fit in",
+        "german":"hineinpassen; sich einfügen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U1",
+        "module":"ST",
+        "english":"trust",
+        "german":"das Vertrauen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"still",
+        "german":"das Standbild",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"plate",
+        "german":"der Teller",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"mug",
+        "german":"der Becher",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"cup",
+        "german":"die Tasse",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"spoon",
+        "german":"der Löffel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"knife, knives (pl)",
+        "german":"das Messer, die Messer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"fork",
+        "german":"die Gabel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"bread roll",
+        "german":"das Brötchen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"marmalade",
+        "german":"die Marmelade aus Zitrusfrüchten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"honey",
+        "german":"der Honig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"muesli",
+        "german":"das Müsli",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"sausage",
+        "german":"die Wurst; die Bratwurst",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"sugar",
+        "german":"der Zucker",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"experience",
+        "german":"die Erfahrung; das Erlebnis",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"host family",
+        "german":"die Gastfamilie",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"exchange student",
+        "german":"der Austauschschüler \/ die Austauschschülerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"type",
+        "german":"der Typ; die Art; die Sorte",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"to upset",
+        "german":"aus der Fassung bringen; aufregen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"impolite",
+        "german":"unhöflich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"this (+ adj)",
+        "german":"so",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"that (+ adj)",
+        "german":"so",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC1",
+        "module":null,
+        "english":"to be used to (+ -ing)",
+        "german":"gewöhnt sein an; gewohnt sein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"usage",
+        "german":"der Gebrauch; die Nutzung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"what for",
+        "german":"wozu",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"a day",
+        "german":"pro Tag",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"content",
+        "german":"der Inhalt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"communication",
+        "german":"die Kommunikation",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"digital",
+        "german":"digital",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"cyber bullying",
+        "german":"das Cybermobbing",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"psychological",
+        "german":"psychologisch; psychisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"danger",
+        "german":"die Gefahr",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"psychologist",
+        "german":"der Psychologe \/ die Psychologin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"to warn",
+        "german":"warnen",
+        "example":"The sign is there to warn people about the danger."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"self-esteem",
+        "german":"das Selbstwertgefühl; die Selbstachtung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"according to",
+        "german":"laut; gemäß",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"to be supposed to (do)",
+        "german":"(tun) sollen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"mostly",
+        "german":"meistens; größtenteils; hauptsächlich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"direct",
+        "german":"direkt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"interaction",
+        "german":"die Interaktion",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"indirect",
+        "german":"indirekt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"to take a risk",
+        "german":"ein Risiko eingehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"to keep up",
+        "german":"aufrechterhalten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"fake",
+        "german":"falsch; gefälscht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"identity",
+        "german":"die Identität",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"to face",
+        "german":"gegenüber stehen; konfrontiert werden mit; anblicken; sich zuwenden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"image",
+        "german":"das Bild; das Image",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"especially",
+        "german":"besonders; vor allem",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"anything",
+        "german":"alles",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"behaviour (no pl)",
+        "german":"das Verhalten; das Benehmen; das Betragen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"permanent",
+        "german":"permanent; dauerhaft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"depression",
+        "german":"die Depression; die Niedergeschlagenheit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"suicide",
+        "german":"der Selbstmord; der Suizid",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"vlog",
+        "german":"der Vlog; der Videoblog",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F1",
+        "module":null,
+        "english":"to design",
+        "german":"entwerfen; gestalten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"guided tour",
+        "german":"geführte Tour; die Führung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"lively",
+        "german":"lebendig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"tower",
+        "german":"der Turm",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"slate",
+        "german":"der Schiefer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"coal",
+        "german":"die Kohle",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"dragon",
+        "german":"der Drache",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"interviewer",
+        "german":"der Interviewer \/ die Interviewerin; der Befrager \/ die Befragerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"Briton",
+        "german":"der Brite \/ die Britin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"to control",
+        "german":"kontrollieren; beherrschen; steuern",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CI",
+        "english":"to conquer",
+        "german":"erobern",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"backpack",
+        "german":"der Rucksack",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"since (+ Zeitpunkt)",
+        "german":"seit; seitdem",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"for (+ Zeitraum)",
+        "german":"seit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"to last",
+        "german":"dauern; andauern; anhalten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"miner",
+        "german":"der Bergarbeiter \/ die Bergarbeiterin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"border",
+        "german":"die Grenze",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"comedy",
+        "german":"die Komödie; Comedy-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"gig",
+        "german":"der Auftritt; der Gig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"lead singer",
+        "german":"der Leadsänger \/ die Leadsängerin; der Frontsänger \/ die Frontsängerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S1",
+        "english":"choir",
+        "german":"der Chor",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"such",
+        "german":"solch; solche\/-r\/-s",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to roll one’s eyes",
+        "german":"die Augen verdrehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"Welsh rarebit (no pl)",
+        "german":"überbackenes Käsebrot",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to apologise",
+        "german":"sich entschuldigen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"vegetarian",
+        "german":"der Vegetarier \/ die Vegetarierin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"all right",
+        "german":"in Ordnung; alles klar",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to be tired of (+ noun or -ing)",
+        "german":"es müde sein (zu); es leid sein (zu); es satt haben (zu)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to snap (at sb)",
+        "german":"anfahren; anschnauzen (ugs.)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"What’s wrong?",
+        "german":"Was ist los?; Was stimmt nicht?",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to give sb a funny look",
+        "german":"jmdn. schief\/komisch anschauen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"stretcher",
+        "german":"die Tragbahre",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to glare at",
+        "german":"zornig anstarren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"unkind",
+        "german":"unfreundlich; gemein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to behave",
+        "german":"sich benehmen; sich verhalten",
+        "example":"The children behaved well during the ceremony."
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"funfair",
+        "german":"der Jahrmarkt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"roast lamb",
+        "german":"der Lammbraten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"underground",
+        "german":"unter der Erde; unter die Erde",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"pit",
+        "german":"die Grube; das Bergwerk",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"S2",
+        "english":"to contact",
+        "german":"sich in Verbindung setzen; kontaktieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"persuasive",
+        "german":"überzeugend",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"to persuade",
+        "german":"überreden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"particular",
+        "german":"bestimmte\/-r\/-s",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"to attract",
+        "german":"anziehen; auf sich ziehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"criterion, criteria (pl)",
+        "german":"das Kriterium; das Merkmal",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"humour (no pl)",
+        "german":"der Humor; die Stimmung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"final",
+        "german":"letzte\/-r\/-s",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"druid",
+        "german":"der Druide",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"to scare sb",
+        "german":"jmdm. Angst machen; jmdn. erschrecken",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"tongue twister",
+        "german":"der Zungenbrecher",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"so",
+        "german":"es; das",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"view",
+        "german":"die Aussicht; der Blick",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"puffin",
+        "german":"der Papageientaucher",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"seal",
+        "german":"der Seehund; die Robbe",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"kayaking",
+        "german":"das Kajakfahren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"treat",
+        "german":"die Leckerei",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"the mainland (no pl)",
+        "german":"das Festland",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"to work magic (on)",
+        "german":"Zauber ausüben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"SK",
+        "english":"category",
+        "german":"die Kategorie; die Klasse",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"UT",
+        "english":"to rent out",
+        "german":"vermieten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"UT",
+        "english":"public holiday",
+        "german":"gesetzlicher Feiertag",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"entrance",
+        "german":"der Eingang; der Eintritt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"empty",
+        "german":"leer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"hall",
+        "german":"die Halle; der Saal",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"locked",
+        "german":"abgeschlossen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"pocket",
+        "german":"die Tasche; die Hosentasche",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"signal",
+        "german":"das Signal; der Empfang",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"thick",
+        "german":"dick (nicht für Personen)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"perhaps",
+        "german":"vielleicht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"wounded",
+        "german":"verwundet; verletzt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"moonlight",
+        "german":"das Mondlicht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"above",
+        "german":"über; oberhalb (von)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"stairs (pl)",
+        "german":"die Treppe",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to see sb (+ -ing)",
+        "german":"jmdn. etw. tun sehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to keep out (of)",
+        "german":"draußen bleiben; draußen halten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"cracking",
+        "german":"knackend; brechend",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to realise",
+        "german":"erkennen; realisieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"key ring",
+        "german":"der Schlüsselbund; der Schlüsselanhänger",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"back",
+        "german":"der Rücken; die Rückseite",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"rope",
+        "german":"das Seil",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to hold onto",
+        "german":"(sich) festhalten an",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"crack",
+        "german":"das Knacken; das Krachen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to scream",
+        "german":"schreien; kreischen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"wood",
+        "german":"das Holz",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"hard",
+        "german":"fest; stark",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to hear sb (+ -ing)",
+        "german":"jmdn. etw. tun hören",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"definitely",
+        "german":"bestimmt; definitiv; eindeutig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"some",
+        "german":"irgendein\/-e",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"newspaper",
+        "german":"die Zeitung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to interview",
+        "german":"interviewen; befragen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to be trapped",
+        "german":"eingeschlossen sein; in der Falle sitzen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to give up",
+        "german":"aufgeben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"prince",
+        "german":"der Prinz",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"blood",
+        "german":"das Blut",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"sword",
+        "german":"das Schwert",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"alive",
+        "german":"lebend; am Leben; lebendig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"grave",
+        "german":"das Grab",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"ST",
+        "english":"to return",
+        "german":"zurückkehren; zurückfahren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CO",
+        "english":"actor",
+        "german":"der Schauspieler \/ die Schauspielerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CO",
+        "english":"advert",
+        "german":"die Anzeige; der Werbespot",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CO",
+        "english":"director",
+        "german":"der Regisseur \/ die Regisseurin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U2",
+        "module":"CO",
+        "english":"human",
+        "german":"der Mensch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"to deal (with)",
+        "german":"sich befassen (mit); umgehen (mit)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"FAQ",
+        "german":"die Liste mit häufig gestellten Fragen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"news report",
+        "german":"der Tatsachenbericht; der Nachrichtenbeitrag; die Meldung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"entry",
+        "german":"der Eintrag",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"reference article",
+        "german":"der Artikel in einem Nachschlagewerk",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"to expect",
+        "german":"erwarten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"headline",
+        "german":"die Schlagzeile",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"IN",
+        "english":"hedgehog",
+        "german":"der Igel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"food",
+        "german":"das Futter",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"ill",
+        "german":"krank",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"wildlife",
+        "german":"die Tierwelt (in freier Wildbahn)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to feed",
+        "german":"füttern; ernähren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"weight",
+        "german":"das Gewicht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to release",
+        "german":"hier: freilassen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to take care of",
+        "german":"sich kümmern um; sorgen für",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to get lost",
+        "german":"verloren gehen; sich verirren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"active",
+        "german":"aktiv",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to avoid (+ noun or -ing)",
+        "german":"vermeiden; meiden; aus dem Weg gehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"run area",
+        "german":"das Gehege; der Auslauf",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"clean",
+        "german":"sauber",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"layer (of)",
+        "german":"die Schicht (aus); die Lage (aus)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to soak up",
+        "german":"aufsaugen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to weigh",
+        "german":"wiegen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"to be fearful of",
+        "german":"Angst haben vor",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S1",
+        "english":"set of instructions",
+        "german":"die Anleitung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"celebrity",
+        "german":"Prominente\/-r; die berühmte Person",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"Australian",
+        "german":"australisch; der Australier \/ die Australierin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"bush",
+        "german":"der Busch (Buschlandschaft); die Wildnis",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"firefighter",
+        "german":"der Feuerwehrmann \/ die Feuerwehrfrau",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"to rescue",
+        "german":"retten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"flame",
+        "german":"die Flamme",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"confused",
+        "german":"verwirrt; wirr; konfus",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"thirsty",
+        "german":"durstig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"animal shelter",
+        "german":"das Tierheim",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"elephant",
+        "german":"der Elefant",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"to march",
+        "german":"marschieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"rhino",
+        "german":"das Rhinozeros; das Nashorn",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"march",
+        "german":"der Marsch; die Kundgebung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"tusk",
+        "german":"der Stoßzahn",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"medicine (no pl)",
+        "german":"die Medizin; die Medikamente",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"ivory (no pl)",
+        "german":"das Elfenbein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"poaching (no pl)",
+        "german":"die Wilderei",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"to become extinct",
+        "german":"aussterben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"within",
+        "german":"innerhalb",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"violent",
+        "german":"gewaltsam; gewalttätig; brutal",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"protest",
+        "german":"der Protest",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"in power",
+        "german":"an der Macht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"on the brink of",
+        "german":"am Rande von; kurz vor",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS1",
+        "module":"S2",
+        "english":"extinction (no pl)",
+        "german":"das Aussterben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"small talk",
+        "german":"der Smalltalk; das Geplauder",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"to get on (the bus)",
+        "german":"einsteigen (in den Bus)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"to keep the ball bouncing",
+        "german":"hier: das Gespräch am Laufen halten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"next door",
+        "german":"(von) nebenan",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"to bounce",
+        "german":"springen; hüpfen; zurückwerfen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"to check out",
+        "german":"prüfen; abchecken (ugs.); auschecken",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"Cheers!",
+        "german":"Danke!",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"to catch",
+        "german":"mitbekommen (ugs.); mitkriegen (ugs.)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"atmosphere",
+        "german":"die Atmosphäre; die Stimmung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"relaxed",
+        "german":"entspannt; locker; gelassen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"awkward",
+        "german":"peinlich; ungünstig; ungeschickt; unbeholfen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"shy",
+        "german":"schüchtern",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"stage direction",
+        "german":"die Regieanweisung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC2",
+        "module":null,
+        "english":"hint",
+        "german":"der Hinweis; die Andeutung; der Tipp",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"smoky",
+        "german":"verraucht; rauchig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"heating",
+        "german":"die Heizung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"belt",
+        "german":"der Gürtel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"lord",
+        "german":"der Lord; der Herr",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"monarch",
+        "german":"der Monarch \/ die Monarchin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"Tudor",
+        "german":"Tudor-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"intelligent",
+        "german":"intelligent; klug; vernünftig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"as",
+        "german":"als",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"to divorce",
+        "german":"sich scheiden lassen von",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"Catholic",
+        "german":"der Katholik \/ die Katholikin; katholisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"the Pope",
+        "german":"der Papst",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"to marry",
+        "german":"heiraten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"era",
+        "german":"die Ära; das Zeitalter",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"Spanish Armada",
+        "german":"spanische Armada (spanische Kriegsflotte)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"colony",
+        "german":"die Kolonie",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"to serve",
+        "german":"dienen; servieren; bedienen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"court",
+        "german":"der Hof; das Gericht; der Gerichtshof",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"play",
+        "german":"das Theaterstück",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"back then",
+        "german":"damals",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"Middle Ages",
+        "german":"das Mittelalter",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"comfortable",
+        "german":"komfortabel; bequem",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"informal",
+        "german":"informell; zwanglos",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"everyday",
+        "german":"alltäglich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"mirror",
+        "german":"der Spiegel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"necklace",
+        "german":"die Halskette",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"sandal",
+        "german":"die Sandale",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"hairbrush",
+        "german":"die Haarbürste",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"Victorian",
+        "german":"viktorianisch; der Viktorianer \/ die Viktorianerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"calendar",
+        "german":"der Kalender",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"generation",
+        "german":"die Generation",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"lifestyle",
+        "german":"der Lebensstil; der Lifestyle",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"CI",
+        "english":"gadget",
+        "german":"das Gerät; die technische Spielerei",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"they",
+        "german":"hier: man",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"favourite",
+        "german":"der Favorit \/ die Favoritin; der Günstling",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"to panic",
+        "german":"panisch werden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"to change one’s mind",
+        "german":"seine Meinung ändern",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"potato, potatoes (pl)",
+        "german":"die Kartoffel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"tobacco (no pl)",
+        "german":"der Tabak",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"to play bowls",
+        "german":"Bowling spielen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"more and more",
+        "german":"immer mehr",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"education (no pl)",
+        "german":"die Erziehung; die Bildung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"to feel",
+        "german":"meinen; das Gefühl haben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"reign",
+        "german":"die Herrschaft; die Regierungszeit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S1",
+        "english":"to capture",
+        "german":"ergreifen; gefangen nehmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"original",
+        "german":"das Original",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"to turn back",
+        "german":"umkehren; zurückgehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"murder",
+        "german":"der Mord",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"guide",
+        "german":"der Führer \/ die Führerin; der Reiseführer \/ die Reiseführerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"dirt",
+        "german":"der Schmutz; der Dreck",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"pipe",
+        "german":"die Pfeife",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"electric",
+        "german":"elektrisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"to pull down",
+        "german":"abreißen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"to come true",
+        "german":"wahr werden; in Erfüllung gehen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"last night",
+        "german":"gestern Abend; gestern Nacht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"to experience",
+        "german":"erfahren; erleben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"musical",
+        "german":"musikalisch; Musik-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"biography",
+        "german":"die Biografie",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"S2",
+        "english":"colonial",
+        "german":"kolonial; Kolonial-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"SK",
+        "english":"entertainment (no pl)",
+        "german":"die Unterhaltung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"SK",
+        "english":"to reign",
+        "german":"herrschen; regieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"SK",
+        "english":"description",
+        "german":"die Beschreibung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"SK",
+        "english":"biographical",
+        "german":"biografisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"SK",
+        "english":"quill",
+        "german":"der Federkiel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"SK",
+        "english":"bible",
+        "german":"die Bibel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"UT",
+        "english":"as if",
+        "german":"als ob",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"UT",
+        "english":"to be made of",
+        "german":"bestehen aus",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"UT",
+        "english":"jewel",
+        "german":"der Juwel; der Edelstein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"UT",
+        "english":"weapon",
+        "german":"die Waffe",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"mystery",
+        "german":"das Mysterium; das Rätsel; das Geheimnis",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"photo shoot",
+        "german":"das Fotoshooting; die Fotoaufnahmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"photographer",
+        "german":"der Fotograf \/ die Fotografin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"set",
+        "german":"der Aufnahmeort; der Drehort",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to focus (on)",
+        "german":"sich konzentrieren (auf)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"memory",
+        "german":"die Erinnerung; das Gedächtnis",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"chaos",
+        "german":"das Chaos; das Durcheinander",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to mix up",
+        "german":"vermischen; durcheinanderbringen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"lady-in-waiting",
+        "german":"die Hofdame",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"not even",
+        "german":"nicht einmal; noch nicht einmal",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"plaster cast",
+        "german":"der Gipsverband",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"fine",
+        "german":"gut; schön",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to zoom in (on)",
+        "german":"heranzoomen (auf)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"shot",
+        "german":"die Aufnahme",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"nurse",
+        "german":"die Krankenschwester \/ der Krankenpfleger",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"boot",
+        "german":"der Kofferraum",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to drive off",
+        "german":"wegfahren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"out of focus",
+        "german":"unscharf",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to photobomb",
+        "german":"ins Foto laufen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"flash",
+        "german":"der Blitz; der Lichtblitz",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to edit out",
+        "german":"herausschneiden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to crop (a photo)",
+        "german":"(ein Foto) zurechtschneiden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"to crash (into)",
+        "german":"zusammenstoßen (mit)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"ambulance",
+        "german":"der Krankenwagen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U3",
+        "module":"ST",
+        "english":"flashback",
+        "german":"die Rückblende; der Flashback",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"fiction (no pl)",
+        "german":"die Erzählliteratur; die Fiktion; die Erfindung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"plot",
+        "german":"die Handlung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"series (sg or pl)",
+        "german":"die Serie",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"to identify with",
+        "german":"sich identifizieren mit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"genre",
+        "german":"die Gattung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"love",
+        "german":"die Liebe",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"graphic novel",
+        "german":"der Comicroman",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"novel",
+        "german":"der Roman",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"happy ending",
+        "german":"das Happy End",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"death",
+        "german":"der Tod",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"friendship",
+        "german":"die Freundschaft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"enemy",
+        "german":"der Feind \/ die Feindin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"scenery",
+        "german":"die Landschaft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"IN",
+        "english":"setting",
+        "german":"der Schauplatz; der Rahmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"among",
+        "german":"unter; inmitten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"distance",
+        "german":"die Distanz; die Entfernung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"to disobey",
+        "german":"nicht gehorchen; ungehorsam sein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"order",
+        "german":"der Befehl",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"grass",
+        "german":"das Gras",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"woods",
+        "german":"der Wald; das Wäldchen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"to take a breath",
+        "german":"Luft holen; Atem holen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"smoke",
+        "german":"der Rauch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"to lay down",
+        "german":"hinlegen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"to remind (sb of sth\/sb)",
+        "german":"(jmdn. an etw.\/jmdn.) erinnern",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"silent",
+        "german":"still; ruhig; schweigsam; stumm",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"shadow",
+        "german":"der Schatten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"to hook",
+        "german":"hier: fesseln",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"exact",
+        "german":"exakt; genau",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"author",
+        "german":"der Autor \/ die Autorin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S1",
+        "english":"sharp",
+        "german":"scharf; schneidend",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"burial",
+        "german":"das Begräbnis; die Beerdigung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"parade",
+        "german":"die Parade; der Umzug",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"to declare",
+        "german":"erklären",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"citizen",
+        "german":"der Bürger \/ die Bürgerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"float",
+        "german":"der Festzugswagen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"vintage car",
+        "german":"der Oldtimer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"celebration",
+        "german":"die Feier",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"my fault",
+        "german":"meine Schuld",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"wig",
+        "german":"die Perücke",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"inch",
+        "german":"der Zoll (Längenmaß, ca. 2,54 cm)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"suited",
+        "german":"geeignet; passend",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"bell",
+        "german":"die Glocke; die Klingel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"to wave",
+        "german":"winken; schwenken",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"to approve",
+        "german":"annehmen; zustimmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"apart from",
+        "german":"abgesehen von; außer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"bite",
+        "german":"der Biss; der Stich; der Bissen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"body",
+        "german":"die Leiche",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"case",
+        "german":"der Fall",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"to disappear",
+        "german":"verschwinden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"clothing",
+        "german":"die Kleidung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"to drown",
+        "german":"ertrinken; ertränken",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"S2",
+        "english":"police officer",
+        "german":"der Polizeibeamte \/ die Polizeibeamtin; der Polizist \/ die Polizistin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"TS2",
+        "module":"OP",
+        "english":"to try out",
+        "german":"ausprobieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"dos and don’ts",
+        "german":"die Ge- und Verbote; was man tun und was man nicht tun sollte",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"to litter",
+        "german":"verschmutzen; verunreinigen; Müll herumliegen lassen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"normally",
+        "german":"normalerweise",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"custom",
+        "german":"die Gewohnheit; der Brauch; die Sitte",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"politeness",
+        "german":"die Höflichkeit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"to spit",
+        "german":"spucken",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"to shake hands",
+        "german":"Hände schütteln; sich die Hand geben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"to blow one's nose",
+        "german":"sich die Nase putzen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"AC3",
+        "module":null,
+        "english":"punctual",
+        "german":"pünktlich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to settle",
+        "german":"besiedeln; sich niederlassen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to worship",
+        "german":"verehren; anbeten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"Pilgrim",
+        "german":"der Pilger \/ die Pilgerin (Person, die 1620 aus religiösen Gründen nach Amerika auswanderte)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"crowded",
+        "german":"überfüllt",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"smell",
+        "german":"der Geruch; der Duft; der Gestank",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"seasick",
+        "german":"seekrank",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"little",
+        "german":"wenig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"Master",
+        "german":"Herr (histor. Anrede)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to damage",
+        "german":"beschädigen; schaden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to repair",
+        "german":"reparieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"overboard",
+        "german":"über Bord",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"on board",
+        "german":"an Bord",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"Mistress",
+        "german":"Frau (histor. Anrede)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"direction",
+        "german":"die Richtung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"bag",
+        "german":"der Sack",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to plant",
+        "german":"pflanzen; anpflanzen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"native",
+        "german":"einheimisch; eingeboren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"agreement",
+        "german":"das Abkommen; die Vereinbarung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"chief",
+        "german":"der Häuptling",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"Indian",
+        "german":"der Indianer \/ die Indianerin; indianisch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to fish",
+        "german":"Fische fangen; angeln",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"coat",
+        "german":"der Mantel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"harvest",
+        "german":"die Ernte",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"feast",
+        "german":"das Festmahl",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to shoot (at)",
+        "german":"schießen (auf)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"goose, geese (pl)",
+        "german":"die Gans",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"duck",
+        "german":"die Ente",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"gun",
+        "german":"die Schusswaffe",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"deer (sg or pl)",
+        "german":"der Hirsch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"council of elders",
+        "german":"der Ältestenrat",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"council",
+        "german":"der Rat; die Ratsversammlung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to break away (from)",
+        "german":"sich trennen (von); sich lossagen (von)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"for",
+        "german":"wegen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"brick",
+        "german":"der Ziegel; der Ziegelstein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"blueberry",
+        "german":"die Blaubeere; die Heidelbeere",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"maple syrup",
+        "german":"der Ahornsirup",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"diner (AE)",
+        "german":"einfaches Restaurant mit Theke und Tischen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"lobster",
+        "german":"der Hummer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"seafood",
+        "german":"die Meeresfrüchte",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"sauce",
+        "german":"die Soße",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"roast turkey",
+        "german":"der Putenbraten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"stuffing (no pl)",
+        "german":"die Füllung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"sweet potatoes (pl)",
+        "german":"die Süßkartoffeln",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"dessert",
+        "german":"das Dessert; die Nachspeise",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"professional",
+        "german":"professionell",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"F2",
+        "module":null,
+        "english":"to stay in character",
+        "german":"in der Rolle bleiben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"Pueblo",
+        "german":"Bezeichnung für die im Südwesten der USA lebenden Ureinwohner",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"settlement",
+        "german":"die Siedlung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"to be inhabited",
+        "german":"bewohnt sein",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"adobe (no pl)",
+        "german":"der Lehmziegel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"speed",
+        "german":"die Geschwindigkeit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"record",
+        "german":"der Rekord",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"miles per hour (mph)",
+        "german":"Meilen pro Stunde",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"kilometres per hour (km\/h)",
+        "german":"Stundenkilometer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"extreme",
+        "german":"das Extrem",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"cool",
+        "german":"kühl",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"wide-open",
+        "german":"weit und flach",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"cultural",
+        "german":"kulturell",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"gigantic",
+        "german":"gigantisch; riesig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"climate",
+        "german":"das Klima",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"destruction",
+        "german":"die Zerstörung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"civilization",
+        "german":"die Kultur; die Zivilisation",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"site",
+        "german":"der Ort; das Gelände; der Schauplatz",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CI",
+        "english":"natural",
+        "german":"natürlich; Natur-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"gym",
+        "german":"die Turnhalle; das Fitnessstudio",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"tryout",
+        "german":"der Aufnahmetest (für eine Mannschaft)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"by",
+        "german":"(spätestens) bis",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to try out for",
+        "german":"am Auswahlverfahren teilnehmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"cheerleading",
+        "german":"das Cheerleading (Aktivitäten der Cheerleader)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to get over sth",
+        "german":"über etw. hinwegkommen; mit etw. fertigwerden",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to wish",
+        "german":"(sich) wünschen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"scout",
+        "german":"der Talentsucher \/ die Talentsucherin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"scholarship",
+        "german":"das Stipendium",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to graduate",
+        "german":"einen Schul-\/Hochschulabschluss machen; einen akademischen Grad erwerben",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"good luck",
+        "german":"(viel) Glück",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"tonight",
+        "german":"heute Abend; heute Nacht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to volunteer",
+        "german":"sich freiwillig melden; eine ehrenamtliche Tätigkeit übernehmen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"food bank",
+        "german":"die Tafel (Essensausgabe für sozial Schwächere)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to make a team",
+        "german":"sich für ein Team qualifizieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"to pack",
+        "german":"packen; einpacken",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"career",
+        "german":"der Beruf; die Laufbahn; die Karriere",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"likely",
+        "german":"wahrscheinlich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"impossible",
+        "german":"unmöglich",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"athlete",
+        "german":"der Sportler \/ die Sportlerin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S1",
+        "english":"pro",
+        "german":"der Profi; Profi-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"to mean",
+        "german":"meinen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"heat (no pl)",
+        "german":"die Hitze; die Wärme",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"air-conditioning",
+        "german":"die Klimaanlage",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"to wonder",
+        "german":"sich Gedanken machen; sich fragen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"traffic",
+        "german":"der Verkehr",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"power",
+        "german":"der Strom; die Elektrizität; die Energie",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"even though",
+        "german":"auch wenn; obwohl",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"running water",
+        "german":"fließendes Wasser",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"straw (no pl)",
+        "german":"das Stroh",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"sacred",
+        "german":"heilig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"saguaro",
+        "german":"Saguaro",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"gila monster",
+        "german":"die Gilakrustenechse",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"venomous",
+        "german":"giftig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"lizard",
+        "german":"die Echse; die Eidechse",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"tarantula",
+        "german":"die Tarantel (Spinnenart)",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"scorpion",
+        "german":"das Skorpion",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"rattlesnake",
+        "german":"die Klapperschlange",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"venom (no pl)",
+        "german":"das Gift",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"spicy",
+        "german":"würzig; pikant",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"at one's own risk",
+        "german":"auf eigene Gefahr",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"however",
+        "german":"jedoch",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"focus",
+        "german":"der Blickpunkt; der Schwerpunkt; der Fokus",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"flavor (AE)",
+        "german":"der Geschmack; das Aroma",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S2",
+        "english":"onion",
+        "german":"die Zwiebel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"dentist",
+        "german":"der Zahnarzt \/ die Zahnärztin",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"bank",
+        "german":"die Bank",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"conflict",
+        "german":"der Konflikt; die Auseinandersetzung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"quite",
+        "german":"ziemlich; ganz; völlig",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"law",
+        "german":"das Gesetz; das Recht",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"to threaten",
+        "german":"drohen; bedrohen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"to accuse (sb of sth)",
+        "german":"beschuldigen; anklagen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"to contradict",
+        "german":"widersprechen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"to take revenge",
+        "german":"(sich) rächen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"to fascinate",
+        "german":"faszinieren",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"documentary",
+        "german":"der Dokumentarfilm; die Dokumentation; Dokumentar-",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"S3",
+        "english":"production",
+        "german":"die Produktion; die Inszenierung",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"Italian",
+        "german":"der Italiener \/ die Italienerin; italienisch; Italienisch; aus Italien",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"anniversary",
+        "german":"das Jubiläum; der Jahrestag",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"controversial",
+        "german":"umstritten; kontrovers",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"disease",
+        "german":"die Krankheit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"independence (no pl)",
+        "german":"die Unabhängigkeit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"therefore",
+        "german":"deshalb; deswegen; daher; somit",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"people",
+        "german":"das Volk",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"arrival",
+        "german":"die Ankunft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"specific",
+        "german":"spezifisch; speziell",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"SK",
+        "english":"neutral",
+        "german":"neutral",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"UT",
+        "english":"guidebook",
+        "german":"der Reiseführer",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"UT",
+        "english":"to publish",
+        "german":"veröffentlichen; publizieren; verlegen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"UT",
+        "english":"private",
+        "german":"privat",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"to shop",
+        "german":"einkaufen; shoppen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"narrow",
+        "german":"eng; schmal",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"opening",
+        "german":"die Öffnung; der Beginn",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"soft",
+        "german":"weich; sanft",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"cathedral",
+        "german":"die Kathedrale",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"to treat",
+        "german":"behandeln",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"off",
+        "german":"(von …) weg\/ab\/herunter",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"to fill up",
+        "german":"(sich) füllen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"to scratch",
+        "german":"kratzen; kritzeln",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"a while",
+        "german":"eine Weile",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"raindrop",
+        "german":"der Regentropfen",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"out of breath",
+        "german":"außer Atem",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"glad",
+        "german":"froh",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"thunderstorm",
+        "german":"das Gewitter",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"flash flood",
+        "german":"die Sturzflut",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"headband",
+        "german":"das Stirnband",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"weak",
+        "german":"schwach",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"ST",
+        "english":"to hold on",
+        "german":"durchhalten",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CO",
+        "english":"buffalo (sg or pl)",
+        "german":"der Büffel",
+        "example":null
+    },
+    {
+        "book":"Green Line Bayern 2017 Band 3",
+        "lesson":"U4",
+        "module":"CO",
+        "english":"to step",
+        "german":"treten; steigen",
+        "example":null
+    }
+]
