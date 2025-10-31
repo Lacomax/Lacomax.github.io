@@ -57,17 +57,19 @@
                 <select id="bookSelect" aria-label="Wählen Sie ein Buch" required>
                     <option value="">-- Wählen Sie --</option>
                     <option value="FR-DE">Découvertes 1 - Bayern</option>
+                    <option value="FR-DE-2">Découvertes 2 - Bayern</option>
                     <option value="DE-EN">Green Line 2 - Bayern</option>
+                    <option value="DE-EN-3">Green Line 3 - Bayern</option>
                 </select>
 
                 <label for="lessonSelect" id="lessonLabel" class="filter-label" style="display:none;"></label>
-                <select id="lessonSelect" style="display:none;" aria-label="Wählen Sie eine Lektion">
-                    <option value="all">All</option>
+                <select id="lessonSelect" multiple style="display:none;" aria-label="Wählen Sie eine oder mehrere Lektionen">
+                    <option value="all" selected>All</option>
                 </select>
 
                 <label for="moduleSelect" id="moduleLabel" class="filter-label" style="display:none;"></label>
-                <select id="moduleSelect" style="display:none;" aria-label="Wählen Sie ein Modul">
-                    <option value="all">All</option>
+                <select id="moduleSelect" multiple style="display:none;" aria-label="Wählen Sie ein oder mehrere Module">
+                    <option value="all" selected>All</option>
                 </select>
 
                 <label for="directionSelect" id="directionLabel" class="filter-label" style="display:none;"></label>

@@ -14,7 +14,9 @@ const CONFIG = {
     AUDIO_PATH: 'correct_mp3/',
     JSON_FILES: {
         'FR-DE': './vocabD1B.json',
-        'DE-EN': './vocabGL2B.json'
+        'FR-DE-2': './vocabD2B.json',
+        'DE-EN': './vocabGL2B.json',
+        'DE-EN-3': './GLBY3_Lernwoerter_mit_Artikeln_con_ejemplos.json'
     },
     STORAGE_KEY: 'vokabeltrainer_progress'
 };
@@ -51,7 +53,61 @@ const TRANSLATIONS = {
         flag2: { src: 'flag_germany.png', alt: 'Flagge Deutschlands' },
         bannerFlag: { src: 'flag_france.png', alt: 'Drapeau français' }
     },
+    'FR-DE-2': {
+        selectLesson: 'Sélectionnez la leçon:',
+        selectModule: 'Sélectionnez le module:',
+        direction: 'Direction de pratique:',
+        directionBoth: 'Les deux',
+        directionForward: 'FR → DE',
+        directionBackward: 'DE → FR',
+        randomOrder: 'Ordre aléatoire',
+        start: 'Commencer',
+        check: 'Valider',
+        correctFR: 'Très bien!',
+        correctDE: 'Richtig!',
+        incorrect: 'Oops!',
+        noWords: 'Aucun mot trouvé.',
+        placeholderDE: 'Deine antwort...',
+        placeholderFR: 'Votre réponse...',
+        statsTitle: 'Statistiques',
+        mostRepeated: 'Mots les plus répétés:',
+        restart: 'Réessayer',
+        statsSummary: (correct, total, avg) =>
+            `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
+        attempts: 'tentatives',
+        errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
+        flag1: { src: 'flag_france.png', alt: 'Drapeau français' },
+        flag2: { src: 'flag_germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'flag_france.png', alt: 'Drapeau français' }
+    },
     'DE-EN': {
+        selectLesson: 'Select Lesson:',
+        selectModule: 'Select Module:',
+        direction: 'Direction:',
+        directionBoth: 'Both',
+        directionForward: 'DE → EN',
+        directionBackward: 'EN → DE',
+        randomOrder: 'Random order',
+        start: 'Start',
+        check: 'Check',
+        correctDE: 'Richtig!',
+        correctEN: 'Good job!',
+        incorrect: 'Oops!',
+        noWords: 'No words found.',
+        placeholderDE: 'Deine antwort...',
+        placeholderEN: 'Your answer...',
+        statsTitle: 'Statistics',
+        mostRepeated: 'Most repeated words:',
+        restart: 'Try again',
+        statsSummary: (correct, total, avg) =>
+            `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
+        attempts: 'attempts',
+        errorLoading: 'Error loading data. Please try again.',
+        flag1: { src: 'flag_germany.png', alt: 'German flag' },
+        flag2: { src: 'flag_uk.png', alt: 'UK flag' },
+        bannerFlag: { src: 'flag_uk.png', alt: 'UK flag' }
+    },
+    'DE-EN-3': {
         selectLesson: 'Select Lesson:',
         selectModule: 'Select Module:',
         direction: 'Direction:',
@@ -367,19 +423,23 @@ function populateLessonFilter(data) {
 /**
  * Populates module filter dropdown
  * @param {Array} data - Vocabulary data
- * @param {string} selectedLesson - Currently selected lesson
+ * @param {Array|string} selectedLessons - Currently selected lessons (array for multiple selection)
  */
-function populateModuleFilter(data, selectedLesson = 'all') {
+function populateModuleFilter(data, selectedLessons = 'all') {
     while (DOM.moduleSelect.options.length > 1) {
         DOM.moduleSelect.remove(1);
     }
 
     let modules;
-    if (selectedLesson === 'all') {
+
+    // Handle both single string and array of lessons
+    if (selectedLessons === 'all' || (Array.isArray(selectedLessons) && selectedLessons.includes('all'))) {
         modules = [...new Set(data.map(item => item.module))];
     } else {
+        // Convert to array if it's a single value
+        const lessonsArray = Array.isArray(selectedLessons) ? selectedLessons : [selectedLessons];
         modules = [...new Set(
-            data.filter(d => d.lesson === selectedLesson)
+            data.filter(d => lessonsArray.includes(d.lesson))
                 .map(item => item.module)
         )];
     }
@@ -410,7 +470,7 @@ function updateProgress() {
  * @param {string} displayedWord - Currently displayed word
  */
 function updatePlaceholder(wordData, displayedWord) {
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         if (displayedWord === wordData.french) {
             DOM.answerInput.placeholder = t('placeholderDE');
         } else {
@@ -435,7 +495,7 @@ function updatePlaceholder(wordData, displayedWord) {
  * @returns {string} Word to display
  */
 function chooseDisplayWord(wordData) {
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         if (AppState.direction === 'FORWARD') return wordData.french;
         if (AppState.direction === 'BACKWARD') return wordData.german;
         return Math.random() < 0.5 ? wordData.french : wordData.german;
@@ -455,7 +515,7 @@ function getCorrectAnswers(wordData) {
     let correctAnswerArr;
     let questionLanguage;
 
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         if (DOM.questionText.textContent === wordData.french) {
             correctAnswerArr = wordData.german.split(';').map(s => s.trim());
             questionLanguage = 'FR->DE';
@@ -482,7 +542,7 @@ function getCorrectAnswers(wordData) {
  * @returns {string} Unique key
  */
 function getKeyForWord(wordData) {
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         return `${wordData.french}|${wordData.german}`;
     } else {
         return `${wordData.german}|${wordData.english}`;
@@ -581,7 +641,7 @@ function handleCorrectAnswer(questionLanguage, key) {
     DOM.feedbackMessage.className = 'feedback success';
 
     // Set correct feedback based on question direction
-    if (AppState.bookSelected === 'FR-DE') {
+    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
         DOM.feedbackMessage.textContent = questionLanguage === 'FR->DE'
             ? t('correctDE')
             : t('correctFR');
@@ -807,7 +867,8 @@ DOM.bookSelect.addEventListener('change', () => {
  * Handles lesson selection change
  */
 DOM.lessonSelect.addEventListener('change', () => {
-    populateModuleFilter(AppState.vocabData, DOM.lessonSelect.value);
+    const selectedLessons = Array.from(DOM.lessonSelect.selectedOptions).map(opt => opt.value);
+    populateModuleFilter(AppState.vocabData, selectedLessons);
 });
 
 /**
@@ -822,12 +883,15 @@ DOM.startBtn.addEventListener('click', () => {
     const randomCheckbox = document.getElementById('randomOrder');
     AppState.isRandom = randomCheckbox ? randomCheckbox.checked : true;
 
-    const selectedLesson = DOM.lessonSelect.value;
-    const selectedModule = DOM.moduleSelect.value;
+    // Get selected lessons and modules (multiple selection)
+    const selectedLessons = Array.from(DOM.lessonSelect.selectedOptions).map(opt => opt.value);
+    const selectedModules = Array.from(DOM.moduleSelect.selectedOptions).map(opt => opt.value);
 
+    // Filter vocabulary based on multiple selections
     AppState.filteredWords = AppState.vocabData.filter(item => {
-        return (selectedLesson === 'all' || item.lesson === selectedLesson) &&
-               (selectedModule === 'all' || item.module === selectedModule);
+        const lessonMatch = selectedLessons.includes('all') || selectedLessons.includes(item.lesson);
+        const moduleMatch = selectedModules.includes('all') || selectedModules.includes(item.module);
+        return lessonMatch && moduleMatch;
     });
 
     if (AppState.filteredWords.length === 0) {
@@ -840,7 +904,11 @@ DOM.startBtn.addEventListener('click', () => {
     DOM.bannerContent.innerHTML = '';
 
     const bookName = DOM.bookSelect.options[DOM.bookSelect.selectedIndex].textContent;
-    const lessonModuleLine = `${selectedLesson === 'all' ? 'All' : selectedLesson} | ${selectedModule === 'all' ? 'All' : selectedModule}`;
+
+    // Display selected lessons and modules
+    const lessonDisplay = selectedLessons.includes('all') ? 'All' : selectedLessons.join(', ');
+    const moduleDisplay = selectedModules.includes('all') ? 'All' : selectedModules.join(', ');
+    const lessonModuleLine = `${lessonDisplay} | ${moduleDisplay}`;
 
     const trans = TRANSLATIONS[AppState.bookSelected];
     const bannerFlag = trans.bannerFlag;
