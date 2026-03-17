@@ -218,7 +218,7 @@ main {
 }
 
 .aux-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--text-secondary);
     font-style: italic;
 }
@@ -226,18 +226,19 @@ main {
 .answer-row {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    width: 100%;
     margin-bottom: 10px;
 }
 
 .answer-row input {
-    flex: 1;
+    flex: 0 1 auto;
+    width: 50%;
     margin-bottom: 0;
 }
 
 .aux-hint {
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
     font-style: italic;
     white-space: nowrap;
