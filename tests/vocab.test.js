@@ -308,7 +308,9 @@ runner.test('Should map direction values correctly', (t) => {
 
 // Re-implement parseAuxiliaries locally for testing (same as in script.js)
 function parseAuxiliaries(text, language) {
-    if (!text) return { prefix: '', core: '', suffix: '' };
+    if (!text) {
+        return { prefix: '', core: '', suffix: '' };
+    }
     let prefix = '';
     let core = text;
     let suffix = '';
@@ -319,21 +321,21 @@ function parseAuxiliaries(text, language) {
             suffix = annoMatch[0].trim();
             core = core.slice(0, -annoMatch[0].length);
         }
-        const parenQnQcMatch = core.match(/\s+\((?:(?:de |à |avec |pour )?(?:faire )?(?:qn\/qc|qn|qc))\)$/);
+        const parenQnQcMatch = core.match(/\s+\((?:(?:de |à |avec |pour )?(?:faire )?(?:qn\/qc|qc\/qn|qn|qc))\)$/);
         if (parenQnQcMatch) {
-            suffix = (parenQnQcMatch[0].trim() + ' ' + suffix).trim();
+            suffix = `${parenQnQcMatch[0].trim()} ${suffix}`.trim();
             core = core.slice(0, -parenQnQcMatch[0].length);
         }
-        const bareQnQcMatch = core.match(/\s+((?:(?:de |à |avec |pour )?(?:faire )?)?(?:qn\/qc|qn|qc))$/);
-        if (bareQnQcMatch) {
-            suffix = (bareQnQcMatch[1].trim() + ' ' + suffix).trim();
+        let bareQnQcMatch;
+        while ((bareQnQcMatch = core.match(/\s+((?:(?:de |à |avec |pour )?(?:faire )?)?(?:qn\/qc|qc\/qn|qn|qc))$/)) !== null) {
+            suffix = `${bareQnQcMatch[1].trim()} ${suffix}`.trim();
             core = core.slice(0, -bareQnQcMatch[0].length);
         }
         const ellipsisCount = (core.match(/\.\.\./g) || []).length;
         if (ellipsisCount === 1) {
-            const ellipsisMatch = core.match(/\s+(\.\.\.[\?!]?)$/);
+            const ellipsisMatch = core.match(/\s+(\.\.\.[?!]?)$/);
             if (ellipsisMatch) {
-                suffix = (ellipsisMatch[1].trim() + ' ' + suffix).trim();
+                suffix = `${ellipsisMatch[1].trim()} ${suffix}`.trim();
                 core = core.slice(0, -ellipsisMatch[0].length);
             }
         }
@@ -357,16 +359,27 @@ function parseAuxiliaries(text, language) {
         }
         const sbSthMatch = core.match(/\s+((?:sb|sth)(?:\s+(?:to\s+(?:do\s+)?)?(?:sb|sth))*)$/);
         if (sbSthMatch) {
-            suffix = (sbSthMatch[1].trim() + ' ' + suffix).trim();
+            suffix = `${sbSthMatch[1].trim()} ${suffix}`.trim();
             core = core.slice(0, -sbSthMatch[0].length);
         }
     }
 
-    return { prefix: prefix, core: core.trim(), suffix: suffix };
+    return { prefix, core: core.trim(), suffix };
 }
 
 function parseAllAnswers(text, language) {
     return text.split(';').map(s => parseAuxiliaries(s.trim(), language));
+}
+
+function findCommonAux(parsed) {
+    if (parsed.length === 0) {
+        return { commonPrefix: '', commonSuffix: '' };
+    }
+    const firstPrefix = parsed[0].prefix;
+    const firstSuffix = parsed[0].suffix;
+    const commonPrefix = parsed.every(p => p.prefix === firstPrefix) ? firstPrefix : '';
+    const commonSuffix = parsed.every(p => p.suffix === firstSuffix) ? firstSuffix : '';
+    return { commonPrefix, commonSuffix };
 }
 
 // --- French parsing tests ---
@@ -523,6 +536,62 @@ runner.test('parseAuxiliaries: empty string', (t) => {
     t.assertEqual(r.core, '');
     t.assertEqual(r.prefix, '');
     t.assertEqual(r.suffix, '');
+});
+
+// --- Chained French markers ---
+
+runner.test('parseAuxiliaries: French chained qc/qn à qn', (t) => {
+    const r = parseAuxiliaries('présenter qc/qn à qn', 'french');
+    t.assertEqual(r.core, 'présenter');
+    t.assertEqual(r.suffix, 'qc/qn à qn');
+});
+
+runner.test('parseAuxiliaries: French expliquer qc à qn', (t) => {
+    const r = parseAuxiliaries('expliquer qc à qn', 'french');
+    t.assertEqual(r.core, 'expliquer');
+    t.assertEqual(r.suffix, 'qc à qn');
+});
+
+// --- German embedded markers ---
+
+runner.test('parseAuxiliaries: German with embedded etw. in middle', (t) => {
+    const r = parseAuxiliaries('jmdn. veranlassen etw. zu tun', 'german');
+    t.assertEqual(r.prefix, 'jmdn.');
+    t.assertEqual(r.core, 'veranlassen etw. zu tun');
+});
+
+runner.test('parseAuxiliaries: German marker in middle stays in core', (t) => {
+    const r = parseAuxiliaries('streng mit jmdm. sein', 'german');
+    t.assertEqual(r.prefix, '');
+    t.assertEqual(r.core, 'streng mit jmdm. sein');
+});
+
+// --- findCommonAux tests ---
+
+runner.test('findCommonAux: common prefix across all alternatives', (t) => {
+    const parsed = [
+        { prefix: 'jmdn.', core: 'aufziehen', suffix: '' },
+        { prefix: 'jmdn.', core: 'hänseln', suffix: '' },
+        { prefix: 'jmdn.', core: 'ärgern', suffix: '' }
+    ];
+    const { commonPrefix, commonSuffix } = findCommonAux(parsed);
+    t.assertEqual(commonPrefix, 'jmdn.');
+    t.assertEqual(commonSuffix, '');
+});
+
+runner.test('findCommonAux: different prefixes returns empty', (t) => {
+    const parsed = [
+        { prefix: 'sich', core: 'freuen', suffix: '' },
+        { prefix: '', core: 'lachen', suffix: '' }
+    ];
+    const { commonPrefix } = findCommonAux(parsed);
+    t.assertEqual(commonPrefix, '');
+});
+
+runner.test('findCommonAux: empty array', (t) => {
+    const { commonPrefix, commonSuffix } = findCommonAux([]);
+    t.assertEqual(commonPrefix, '');
+    t.assertEqual(commonSuffix, '');
 });
 
 // ============================================================================

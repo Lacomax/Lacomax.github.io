@@ -198,6 +198,7 @@ const DOM = {
     flag1: document.getElementById('flag1'),
     flag2: document.getElementById('flag2'),
     bannerContent: document.getElementById('bannerContent'),
+    questionPrefix: document.getElementById('questionPrefix'),
     questionSuffix: document.getElementById('questionSuffix'),
     answerPrefix: document.getElementById('answerPrefix'),
     answerSuffix: document.getElementById('answerSuffix')
@@ -287,17 +288,6 @@ function t(key) {
     return translations ? translations[key] : key;
 }
 
-/**
- * Sanitizes HTML to prevent XSS
- * @param {string} text - Text to sanitize
- * @returns {string} Sanitized text
- */
-function sanitizeHTML(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-}
-
 // ============================================================================
 // AUXILIARY TEXT PARSING
 // ============================================================================
@@ -327,15 +317,15 @@ function parseAuxiliaries(text, language) {
         }
 
         // 2. Parenthesized qn/qc: (de qc), (à qn), etc.
-        const parenQnQcMatch = core.match(/\s+\((?:(?:de |à |avec |pour )?(?:faire )?(?:qn\/qc|qn|qc))\)$/);
+        const parenQnQcMatch = core.match(/\s+\((?:(?:de |à |avec |pour )?(?:faire )?(?:qn\/qc|qc\/qn|qn|qc))\)$/);
         if (parenQnQcMatch) {
             suffix = `${parenQnQcMatch[0].trim()} ${suffix}`.trim();
             core = core.slice(0, -parenQnQcMatch[0].length);
         }
 
-        // 3. Bare qn/qc at end with optional preposition
-        const bareQnQcMatch = core.match(/\s+((?:(?:de |à |avec |pour )?(?:faire )?)?(?:qn\/qc|qn|qc))$/);
-        if (bareQnQcMatch) {
+        // 3. Bare qn/qc at end with optional preposition (loop for chained markers)
+        let bareQnQcMatch;
+        while ((bareQnQcMatch = core.match(/\s+((?:(?:de |à |avec |pour )?(?:faire )?)?(?:qn\/qc|qc\/qn|qn|qc))$/)) !== null) {
             suffix = `${bareQnQcMatch[1].trim()} ${suffix}`.trim();
             core = core.slice(0, -bareQnQcMatch[0].length);
         }
@@ -730,6 +720,7 @@ function showNextWord() {
     // Parse question auxiliary text
     const questionLang = AppState.currentQuestionField;
     const parsedQuestion = parseAuxiliaries(displayWord, questionLang);
+    DOM.questionPrefix.textContent = parsedQuestion.prefix;
     DOM.questionText.textContent = parsedQuestion.core;
     DOM.questionSuffix.textContent = parsedQuestion.suffix;
 
@@ -910,6 +901,7 @@ function handleIncorrectAnswer(correctAnswers, wordData) {
  * Shows statistics after quiz completion
  */
 function showStats() {
+    DOM.questionPrefix.textContent = '';
     DOM.questionSuffix.textContent = '';
     DOM.answerPrefix.textContent = '';
     DOM.answerSuffix.textContent = '';
@@ -927,8 +919,6 @@ function showStats() {
         ? `${minutes}m ${seconds}s`
         : `${seconds}s`;
 
-    console.log(`📊 Time spent: ${timeFormatted}`);
-
     // Calculate statistics
     const totalAttempts = Object.values(AppState.attemptCounts).reduce((a, b) => a + b, 0);
     const averageAttempts = totalAttempts > 0 ? (totalAttempts / AppState.totalCount).toFixed(2) : '0.00';
@@ -936,8 +926,6 @@ function showStats() {
     const firstAttemptCorrect = Object.values(AppState.attemptCounts).filter(count => count === 1).length;
     // Calculate words per minute using total seconds (even if < 1 minute)
     const wordsPerMinute = timeSpentSeconds > 0 ? (AppState.correctCount / (timeSpentSeconds / 60)).toFixed(1) : '0.0';
-
-    console.log(`📈 Stats: ${AppState.correctCount}/${AppState.totalCount} | Accuracy: ${accuracy}% | Avg attempts: ${averageAttempts}`);
 
     // Determine if French-German or German-English
     const isFrenchGerman = AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2';
@@ -988,10 +976,14 @@ function showStats() {
             if (val > 1) { // Only show words that needed more than 1 attempt
                 const parts = key.split('|');
                 const li = document.createElement('li');
-                li.innerHTML = `
-                    <span class="word-pair">${parts[0]} - ${parts[1]}</span>
-                    <span class="attempt-badge">${val} ${t('attempts')}</span>
-                `;
+                const wordSpan = document.createElement('span');
+                wordSpan.className = 'word-pair';
+                wordSpan.textContent = `${parts[0]} - ${parts[1]}`;
+                const badgeSpan = document.createElement('span');
+                badgeSpan.className = 'attempt-badge';
+                badgeSpan.textContent = `${val} ${t('attempts')}`;
+                li.appendChild(wordSpan);
+                li.appendChild(badgeSpan);
                 DOM.mostRepeatedList.appendChild(li);
             }
         });
@@ -1167,6 +1159,7 @@ DOM.restartBtn.addEventListener('click', () => {
     DOM.bannerTitle.style.display = 'block';
     DOM.bannerTitle.textContent = 'Vokabeltrainer';
     DOM.bannerContent.innerHTML = '';
+    DOM.questionPrefix.textContent = '';
     DOM.questionSuffix.textContent = '';
     DOM.answerPrefix.textContent = '';
     DOM.answerSuffix.textContent = '';

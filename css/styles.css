@@ -490,4 +490,13 @@ main {
         width: 95%;
         padding: 15px;
     }
+
+    .answer-row {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .aux-hint {
+        font-size: 0.85rem;
+    }
 }
