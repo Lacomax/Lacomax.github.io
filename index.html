@@ -98,9 +98,16 @@
             <p id="progressInfo" aria-live="polite"></p>
 
             <div class="question-container">
-                <h2 id="questionText" aria-live="assertive">...</h2>
+                <div class="question-display" aria-live="assertive">
+                    <h2 id="questionText">...</h2>
+                    <span id="questionSuffix" class="aux-text"></span>
+                </div>
                 <label for="answerInput" class="sr-only">Your answer</label>
-                <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off" aria-required="true"/>
+                <div class="answer-row">
+                    <span id="answerPrefix" class="aux-hint"></span>
+                    <input type="text" id="answerInput" placeholder="Votre réponse..." autocomplete="off" aria-required="true"/>
+                    <span id="answerSuffix" class="aux-hint"></span>
+                </div>
                 <div class="keyboard" role="toolbar" aria-label="Special characters keyboard">
                     <!-- Fila 1: Vocales con acento agudo y grave (Francés) -->
                     <div class="keyboard-row">

@@ -303,6 +303,229 @@ runner.test('Should map direction values correctly', (t) => {
 });
 
 // ============================================================================
+// AUXILIARY PARSING TESTS
+// ============================================================================
+
+// Re-implement parseAuxiliaries locally for testing (same as in script.js)
+function parseAuxiliaries(text, language) {
+    if (!text) return { prefix: '', core: '', suffix: '' };
+    let prefix = '';
+    let core = text;
+    let suffix = '';
+
+    if (language === 'french') {
+        const annoMatch = core.match(/(\s+\((?:adv|adj|inv|fam|m|f|pl)\.\))+$/);
+        if (annoMatch) {
+            suffix = annoMatch[0].trim();
+            core = core.slice(0, -annoMatch[0].length);
+        }
+        const parenQnQcMatch = core.match(/\s+\((?:(?:de |à |avec |pour )?(?:faire )?(?:qn\/qc|qn|qc))\)$/);
+        if (parenQnQcMatch) {
+            suffix = (parenQnQcMatch[0].trim() + ' ' + suffix).trim();
+            core = core.slice(0, -parenQnQcMatch[0].length);
+        }
+        const bareQnQcMatch = core.match(/\s+((?:(?:de |à |avec |pour )?(?:faire )?)?(?:qn\/qc|qn|qc))$/);
+        if (bareQnQcMatch) {
+            suffix = (bareQnQcMatch[1].trim() + ' ' + suffix).trim();
+            core = core.slice(0, -bareQnQcMatch[0].length);
+        }
+        const ellipsisCount = (core.match(/\.\.\./g) || []).length;
+        if (ellipsisCount === 1) {
+            const ellipsisMatch = core.match(/\s+(\.\.\.[\?!]?)$/);
+            if (ellipsisMatch) {
+                suffix = (ellipsisMatch[1].trim() + ' ' + suffix).trim();
+                core = core.slice(0, -ellipsisMatch[0].length);
+            }
+        }
+    } else if (language === 'german') {
+        const sichMatch = core.match(/^(sich(?:\s+(?:an|auf|für|mit|von|über|um|aus|vor|zu|bei|nach)\s+(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*))?)\s+/);
+        if (sichMatch) {
+            prefix = sichMatch[1].trim();
+            core = core.slice(sichMatch[0].length);
+        } else {
+            const caseMatch = core.match(/^((?:(?:an|von|mit|für|bei|zu|über|auf|aus|nach)\s+)?(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*)+)\s*/);
+            if (caseMatch) {
+                prefix = caseMatch[1].trim();
+                core = core.slice(caseMatch[0].length);
+            }
+        }
+    } else if (language === 'english') {
+        const parenMatch = core.match(/\s+\([^)]+\)$/);
+        if (parenMatch) {
+            suffix = parenMatch[0].trim();
+            core = core.slice(0, -parenMatch[0].length);
+        }
+        const sbSthMatch = core.match(/\s+((?:sb|sth)(?:\s+(?:to\s+(?:do\s+)?)?(?:sb|sth))*)$/);
+        if (sbSthMatch) {
+            suffix = (sbSthMatch[1].trim() + ' ' + suffix).trim();
+            core = core.slice(0, -sbSthMatch[0].length);
+        }
+    }
+
+    return { prefix: prefix, core: core.trim(), suffix: suffix };
+}
+
+function parseAllAnswers(text, language) {
+    return text.split(';').map(s => parseAuxiliaries(s.trim(), language));
+}
+
+// --- French parsing tests ---
+
+runner.test('parseAuxiliaries: French bare qn/qc', (t) => {
+    const r = parseAuxiliaries('chercher qn/qc', 'french');
+    t.assertEqual(r.core, 'chercher');
+    t.assertEqual(r.suffix, 'qn/qc');
+    t.assertEqual(r.prefix, '');
+});
+
+runner.test('parseAuxiliaries: French qn only', (t) => {
+    const r = parseAuxiliaries('inviter qn', 'french');
+    t.assertEqual(r.core, 'inviter');
+    t.assertEqual(r.suffix, 'qn');
+});
+
+runner.test('parseAuxiliaries: French qc with preposition', (t) => {
+    const r = parseAuxiliaries('penser à qn/qc', 'french');
+    t.assertEqual(r.core, 'penser');
+    t.assertEqual(r.suffix, 'à qn/qc');
+});
+
+runner.test('parseAuxiliaries: French parenthesized annotation (fam.)', (t) => {
+    const r = parseAuxiliaries('en avoir marre de qn/qc (fam.)', 'french');
+    t.assertEqual(r.core, 'en avoir marre');
+    t.assertEqual(r.suffix, 'de qn/qc (fam.)');
+});
+
+runner.test('parseAuxiliaries: French with (adj.) (inv.)', (t) => {
+    const r = parseAuxiliaries('casse-gueule (adj.) (inv.)', 'french');
+    t.assertEqual(r.core, 'casse-gueule');
+    t.assertEqual(r.suffix, '(adj.) (inv.)');
+});
+
+runner.test('parseAuxiliaries: French parenthesized qc (de qc)', (t) => {
+    const r = parseAuxiliaries('discuter (de qc)', 'french');
+    t.assertEqual(r.core, 'discuter');
+    t.assertTrue(r.suffix.includes('(de qc)'));
+});
+
+runner.test('parseAuxiliaries: French se reflexive stays in core', (t) => {
+    const r = parseAuxiliaries('se dépêcher', 'french');
+    t.assertEqual(r.core, 'se dépêcher');
+    t.assertEqual(r.suffix, '');
+    t.assertEqual(r.prefix, '');
+});
+
+runner.test('parseAuxiliaries: French no auxiliary', (t) => {
+    const r = parseAuxiliaries('bonjour', 'french');
+    t.assertEqual(r.core, 'bonjour');
+    t.assertEqual(r.suffix, '');
+    t.assertEqual(r.prefix, '');
+});
+
+runner.test('parseAuxiliaries: French faire qc', (t) => {
+    const r = parseAuxiliaries('savoir faire qc', 'french');
+    t.assertEqual(r.core, 'savoir');
+    t.assertEqual(r.suffix, 'faire qc');
+});
+
+runner.test('parseAuxiliaries: French ne ... pas not parsed (ellipsis in middle)', (t) => {
+    const r = parseAuxiliaries('ne ... pas', 'french');
+    t.assertEqual(r.core, 'ne ... pas');
+    t.assertEqual(r.suffix, '');
+});
+
+// --- German parsing tests ---
+
+runner.test('parseAuxiliaries: German sich prefix', (t) => {
+    const r = parseAuxiliaries('sich Sorgen machen', 'german');
+    t.assertEqual(r.prefix, 'sich');
+    t.assertEqual(r.core, 'Sorgen machen');
+});
+
+runner.test('parseAuxiliaries: German sich + prep + case marker', (t) => {
+    const r = parseAuxiliaries('sich an jdn./etw. erinnern', 'german');
+    t.assertEqual(r.prefix, 'sich an jdn./etw.');
+    t.assertEqual(r.core, 'erinnern');
+});
+
+runner.test('parseAuxiliaries: German jmdn. prefix', (t) => {
+    const r = parseAuxiliaries('jmdn. aufziehen', 'german');
+    t.assertEqual(r.prefix, 'jmdn.');
+    t.assertEqual(r.core, 'aufziehen');
+});
+
+runner.test('parseAuxiliaries: German no auxiliary', (t) => {
+    const r = parseAuxiliaries('Hallo', 'german');
+    t.assertEqual(r.prefix, '');
+    t.assertEqual(r.core, 'Hallo');
+    t.assertEqual(r.suffix, '');
+});
+
+runner.test('parseAuxiliaries: German etw. prefix', (t) => {
+    const r = parseAuxiliaries('etw. besichtigen', 'german');
+    t.assertEqual(r.prefix, 'etw.');
+    t.assertEqual(r.core, 'besichtigen');
+});
+
+// --- English parsing tests ---
+
+runner.test('parseAuxiliaries: English sb at end', (t) => {
+    const r = parseAuxiliaries('to tease sb', 'english');
+    t.assertEqual(r.core, 'to tease');
+    t.assertEqual(r.suffix, 'sb');
+});
+
+runner.test('parseAuxiliaries: English sb to do sth', (t) => {
+    const r = parseAuxiliaries('to tell sb to do sth', 'english');
+    t.assertEqual(r.core, 'to tell');
+    t.assertEqual(r.suffix, 'sb to do sth');
+});
+
+runner.test('parseAuxiliaries: English with (infml)', (t) => {
+    const r = parseAuxiliaries('to hang out (infml)', 'english');
+    t.assertEqual(r.core, 'to hang out');
+    t.assertEqual(r.suffix, '(infml)');
+});
+
+runner.test('parseAuxiliaries: English sth in middle stays in core', (t) => {
+    const r = parseAuxiliaries('to take sth seriously', 'english');
+    t.assertEqual(r.core, 'to take sth seriously');
+    t.assertEqual(r.suffix, '');
+});
+
+runner.test('parseAuxiliaries: English no auxiliary', (t) => {
+    const r = parseAuxiliaries('hello', 'english');
+    t.assertEqual(r.core, 'hello');
+    t.assertEqual(r.suffix, '');
+    t.assertEqual(r.prefix, '');
+});
+
+// --- parseAllAnswers tests ---
+
+runner.test('parseAllAnswers: multiple German answers with common prefix', (t) => {
+    const results = parseAllAnswers('jmdn. aufziehen; jmdn. hänseln; jmdn. ärgern', 'german');
+    t.assertEqual(results.length, 3);
+    t.assertEqual(results[0].prefix, 'jmdn.');
+    t.assertEqual(results[0].core, 'aufziehen');
+    t.assertEqual(results[1].core, 'hänseln');
+    t.assertEqual(results[2].core, 'ärgern');
+});
+
+runner.test('parseAllAnswers: French single answer', (t) => {
+    const results = parseAllAnswers('regarder qc', 'french');
+    t.assertEqual(results.length, 1);
+    t.assertEqual(results[0].core, 'regarder');
+    t.assertEqual(results[0].suffix, 'qc');
+});
+
+runner.test('parseAuxiliaries: empty string', (t) => {
+    const r = parseAuxiliaries('', 'french');
+    t.assertEqual(r.core, '');
+    t.assertEqual(r.prefix, '');
+    t.assertEqual(r.suffix, '');
+});
+
+// ============================================================================
 // RUN TESTS
 // ============================================================================
 

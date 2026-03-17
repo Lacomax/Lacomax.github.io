@@ -156,7 +156,9 @@ const AppState = {
     isProcessingAnswer: false,
     audioCache: new Map(),
     quizStartTime: 0,
-    quizEndTime: 0
+    quizEndTime: 0,
+    currentQuestionField: '',
+    currentParsedAnswers: null
 };
 
 // ============================================================================
@@ -195,7 +197,10 @@ const DOM = {
     bannerTitle: document.getElementById('bannerTitle'),
     flag1: document.getElementById('flag1'),
     flag2: document.getElementById('flag2'),
-    bannerContent: document.getElementById('bannerContent')
+    bannerContent: document.getElementById('bannerContent'),
+    questionSuffix: document.getElementById('questionSuffix'),
+    answerPrefix: document.getElementById('answerPrefix'),
+    answerSuffix: document.getElementById('answerSuffix')
 };
 
 // ============================================================================
@@ -291,6 +296,129 @@ function sanitizeHTML(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// ============================================================================
+// AUXILIARY TEXT PARSING
+// ============================================================================
+
+/**
+ * Parses auxiliary grammatical text from a vocabulary term.
+ * Returns { prefix, core, suffix } where core is the main word to type.
+ * @param {string} text - The vocabulary term
+ * @param {string} language - 'french', 'german', or 'english'
+ * @returns {{ prefix: string, core: string, suffix: string }}
+ */
+function parseAuxiliaries(text, language) {
+    if (!text) {
+        return { prefix: '', core: '', suffix: '' };
+    }
+
+    let prefix = '';
+    let core = text;
+    let suffix = '';
+
+    if (language === 'french') {
+        // 1. Parenthesized annotations: (adv.), (adj.), (inv.), (fam.), (m.), (f.), (pl.)
+        const annoMatch = core.match(/(\s+\((?:adv|adj|inv|fam|m|f|pl)\.\))+$/);
+        if (annoMatch) {
+            suffix = annoMatch[0].trim();
+            core = core.slice(0, -annoMatch[0].length);
+        }
+
+        // 2. Parenthesized qn/qc: (de qc), (à qn), etc.
+        const parenQnQcMatch = core.match(/\s+\((?:(?:de |à |avec |pour )?(?:faire )?(?:qn\/qc|qn|qc))\)$/);
+        if (parenQnQcMatch) {
+            suffix = `${parenQnQcMatch[0].trim()} ${suffix}`.trim();
+            core = core.slice(0, -parenQnQcMatch[0].length);
+        }
+
+        // 3. Bare qn/qc at end with optional preposition
+        const bareQnQcMatch = core.match(/\s+((?:(?:de |à |avec |pour )?(?:faire )?)?(?:qn\/qc|qn|qc))$/);
+        if (bareQnQcMatch) {
+            suffix = `${bareQnQcMatch[1].trim()} ${suffix}`.trim();
+            core = core.slice(0, -bareQnQcMatch[0].length);
+        }
+
+        // 4. Trailing ellipsis (only if no other ... in the text)
+        const ellipsisCount = (core.match(/\.\.\./g) || []).length;
+        if (ellipsisCount === 1) {
+            const ellipsisMatch = core.match(/\s+(\.\.\.[?!]?)$/);
+            if (ellipsisMatch) {
+                suffix = `${ellipsisMatch[1].trim()} ${suffix}`.trim();
+                core = core.slice(0, -ellipsisMatch[0].length);
+            }
+        }
+    } else if (language === 'german') {
+        // 1. sich + optional preposition + case markers
+        const sichMatch = core.match(/^(sich(?:\s+(?:an|auf|für|mit|von|über|um|aus|vor|zu|bei|nach)\s+(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*))?)\s+/);
+        if (sichMatch) {
+            prefix = sichMatch[1].trim();
+            core = core.slice(sichMatch[0].length);
+        } else {
+            // 2. Case markers without sich: jdn., jdm., etw., etc. with optional preposition
+            const caseMatch = core.match(/^((?:(?:an|von|mit|für|bei|zu|über|auf|aus|nach)\s+)?(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*)+)\s*/);
+            if (caseMatch) {
+                prefix = caseMatch[1].trim();
+                core = core.slice(caseMatch[0].length);
+            }
+        }
+    } else if (language === 'english') {
+        // 1. Parenthesized annotations: (AE), (infml), (+ -ing), etc.
+        const parenMatch = core.match(/\s+\([^)]+\)$/);
+        if (parenMatch) {
+            suffix = parenMatch[0].trim();
+            core = core.slice(0, -parenMatch[0].length);
+        }
+
+        // 2. sb/sth at end
+        const sbSthMatch = core.match(/\s+((?:sb|sth)(?:\s+(?:to\s+(?:do\s+)?)?(?:sb|sth))*)$/);
+        if (sbSthMatch) {
+            suffix = `${sbSthMatch[1].trim()} ${suffix}`.trim();
+            core = core.slice(0, -sbSthMatch[0].length);
+        }
+    }
+
+    return { prefix, core: core.trim(), suffix };
+}
+
+/**
+ * Parses all semicolon-separated answer alternatives.
+ * @param {string} text - The full answer text with semicolons
+ * @param {string} language - 'french', 'german', or 'english'
+ * @returns {Array<{ prefix: string, core: string, suffix: string }>}
+ */
+function parseAllAnswers(text, language) {
+    return text.split(';').map(s => parseAuxiliaries(s.trim(), language));
+}
+
+/**
+ * Determines the answer field name based on book and question field.
+ * @returns {string} 'french', 'german', or 'english'
+ */
+function getAnswerField() {
+    const book = AppState.bookSelected;
+    const qf = AppState.currentQuestionField;
+    if (book === 'FR-DE' || book === 'FR-DE-2') {
+        return qf === 'french' ? 'german' : 'french';
+    }
+    return qf === 'german' ? 'english' : 'german';
+}
+
+/**
+ * Finds common prefix/suffix across parsed answer alternatives.
+ * @param {Array<{ prefix: string, core: string, suffix: string }>} parsed
+ * @returns {{ commonPrefix: string, commonSuffix: string }}
+ */
+function findCommonAux(parsed) {
+    if (parsed.length === 0) {
+        return { commonPrefix: '', commonSuffix: '' };
+    }
+    const firstPrefix = parsed[0].prefix;
+    const firstSuffix = parsed[0].suffix;
+    const commonPrefix = parsed.every(p => p.prefix === firstPrefix) ? firstPrefix : '';
+    const commonSuffix = parsed.every(p => p.suffix === firstSuffix) ? firstSuffix : '';
+    return { commonPrefix, commonSuffix };
 }
 
 // ============================================================================
@@ -458,30 +586,21 @@ function populateModuleFilter(data, selectedLessons = 'all') {
 function updateProgress() {
     DOM.progressInfo.textContent = `${AppState.correctCount}/${AppState.totalCount}`;
     const percentage = (AppState.correctCount / AppState.totalCount) * 100;
-    DOM.progressBar.style.width = percentage + '%';
+    DOM.progressBar.style.width = `${percentage}%`;
 
     // Update ARIA attribute for screen readers
     DOM.progressContainer.setAttribute('aria-valuenow', Math.round(percentage));
 }
 
 /**
- * Updates answer input placeholder based on current question
- * @param {Object} wordData - Current word data
- * @param {string} displayedWord - Currently displayed word
+ * Updates answer input placeholder based on current question field
  */
-function updatePlaceholder(wordData, displayedWord) {
+function updatePlaceholder() {
+    const qf = AppState.currentQuestionField;
     if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
-        if (displayedWord === wordData.french) {
-            DOM.answerInput.placeholder = t('placeholderDE');
-        } else {
-            DOM.answerInput.placeholder = t('placeholderFR');
-        }
+        DOM.answerInput.placeholder = qf === 'french' ? t('placeholderDE') : t('placeholderFR');
     } else {
-        if (displayedWord === wordData.german) {
-            DOM.answerInput.placeholder = t('placeholderEN');
-        } else {
-            DOM.answerInput.placeholder = t('placeholderDE');
-        }
+        DOM.answerInput.placeholder = qf === 'german' ? t('placeholderEN') : t('placeholderDE');
     }
 }
 
@@ -490,48 +609,63 @@ function updatePlaceholder(wordData, displayedWord) {
 // ============================================================================
 
 /**
- * Chooses which word to display based on direction
+ * Chooses which word to display based on direction.
+ * Also sets AppState.currentQuestionField.
  * @param {Object} wordData - Vocabulary item
  * @returns {string} Word to display
  */
 function chooseDisplayWord(wordData) {
     if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
-        if (AppState.direction === 'FORWARD') return wordData.french;
-        if (AppState.direction === 'BACKWARD') return wordData.german;
-        return Math.random() < 0.5 ? wordData.french : wordData.german;
+        if (AppState.direction === 'FORWARD') {
+            AppState.currentQuestionField = 'french';
+            return wordData.french;
+        }
+        if (AppState.direction === 'BACKWARD') {
+            AppState.currentQuestionField = 'german';
+            return wordData.german;
+        }
+        if (Math.random() < 0.5) {
+            AppState.currentQuestionField = 'french';
+            return wordData.french;
+        }
+        AppState.currentQuestionField = 'german';
+        return wordData.german;
     } else {
-        if (AppState.direction === 'FORWARD') return wordData.german;
-        if (AppState.direction === 'BACKWARD') return wordData.english;
-        return Math.random() < 0.5 ? wordData.german : wordData.english;
+        if (AppState.direction === 'FORWARD') {
+            AppState.currentQuestionField = 'german';
+            return wordData.german;
+        }
+        if (AppState.direction === 'BACKWARD') {
+            AppState.currentQuestionField = 'english';
+            return wordData.english;
+        }
+        if (Math.random() < 0.5) {
+            AppState.currentQuestionField = 'german';
+            return wordData.german;
+        }
+        AppState.currentQuestionField = 'english';
+        return wordData.english;
     }
 }
 
 /**
- * Gets correct answers for current word
+ * Gets correct answers for current word using parsed cores.
  * @param {Object} wordData - Current word data
  * @returns {Object} Correct answers array and question language
  */
 function getCorrectAnswers(wordData) {
-    let correctAnswerArr;
     let questionLanguage;
+    const qf = AppState.currentQuestionField;
 
     if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
-        if (DOM.questionText.textContent === wordData.french) {
-            correctAnswerArr = wordData.german.split(';').map(s => s.trim());
-            questionLanguage = 'FR->DE';
-        } else {
-            correctAnswerArr = wordData.french.split(';').map(s => s.trim());
-            questionLanguage = 'DE->FR';
-        }
+        questionLanguage = qf === 'french' ? 'FR->DE' : 'DE->FR';
     } else {
-        if (DOM.questionText.textContent === wordData.german) {
-            correctAnswerArr = wordData.english.split(';').map(s => s.trim());
-            questionLanguage = 'DE->EN';
-        } else {
-            correctAnswerArr = wordData.german.split(';').map(s => s.trim());
-            questionLanguage = 'EN->DE';
-        }
+        questionLanguage = qf === 'german' ? 'DE->EN' : 'EN->DE';
     }
+
+    const correctAnswerArr = AppState.currentParsedAnswers
+        ? AppState.currentParsedAnswers.map(p => p.core)
+        : wordData[getAnswerField()].split(';').map(s => s.trim());
 
     return { correctAnswers: correctAnswerArr, questionLanguage };
 }
@@ -580,7 +714,9 @@ function showNextWord() {
             AppState.currentWords = AppState.missedWords;
             AppState.missedWords = [];
             AppState.currentIndex = 0;
-            if (AppState.isRandom) shuffleArray(AppState.currentWords);
+            if (AppState.isRandom) {
+                shuffleArray(AppState.currentWords);
+            }
             showNextWord();
         } else {
             showStats();
@@ -591,12 +727,28 @@ function showNextWord() {
     const wordData = AppState.currentWords[AppState.currentIndex];
     const displayWord = chooseDisplayWord(wordData);
 
-    DOM.questionText.textContent = displayWord;
+    // Parse question auxiliary text
+    const questionLang = AppState.currentQuestionField;
+    const parsedQuestion = parseAuxiliaries(displayWord, questionLang);
+    DOM.questionText.textContent = parsedQuestion.core;
+    DOM.questionSuffix.textContent = parsedQuestion.suffix;
+
+    // Parse answer auxiliary text
+    const answerField = getAnswerField();
+    const answerText = wordData[answerField];
+    const parsedAnswers = parseAllAnswers(answerText, answerField);
+    AppState.currentParsedAnswers = parsedAnswers;
+
+    // Show common prefix/suffix hints around the input
+    const { commonPrefix, commonSuffix } = findCommonAux(parsedAnswers);
+    DOM.answerPrefix.textContent = commonPrefix;
+    DOM.answerSuffix.textContent = commonSuffix;
+
     DOM.feedbackMessage.textContent = '';
     DOM.feedbackMessage.className = 'feedback';
     DOM.exampleSentence.textContent = '';
 
-    updatePlaceholder(wordData, displayWord);
+    updatePlaceholder();
 
     DOM.answerInput.value = '';
     DOM.answerInput.disabled = false;
@@ -610,10 +762,14 @@ function showNextWord() {
  * Checks the user's answer
  */
 function checkAnswer() {
-    if (AppState.isProcessingAnswer) return;
+    if (AppState.isProcessingAnswer) {
+        return;
+    }
 
     const userAnswer = DOM.answerInput.value.trim();
-    if (!userAnswer) return;
+    if (!userAnswer) {
+        return;
+    }
 
     const wordData = AppState.currentWords[AppState.currentIndex];
     const { correctAnswers, questionLanguage } = getCorrectAnswers(wordData);
@@ -676,14 +832,35 @@ function handleIncorrectAnswer(correctAnswers, wordData) {
     DOM.feedbackMessage.className = 'feedback error';
     DOM.feedbackMessage.textContent = t('incorrect');
 
-    const correctStr = correctAnswers.join(' ; ');
-
-    // Fix XSS vulnerability: use textContent instead of innerHTML
+    // Build styled correct answer display using parsed auxiliaries
     const correctDiv = document.createElement('div');
-    correctDiv.style.fontWeight = 'bold';
     correctDiv.style.fontSize = '2em';
     correctDiv.style.marginTop = '20px';
-    correctDiv.textContent = correctStr;
+
+    const parsed = AppState.currentParsedAnswers || [];
+    parsed.forEach((p, i) => {
+        if (i > 0) {
+            const sep = document.createElement('span');
+            sep.textContent = ' ; ';
+            correctDiv.appendChild(sep);
+        }
+        if (p.prefix) {
+            const prefixSpan = document.createElement('span');
+            prefixSpan.className = 'correct-answer-aux';
+            prefixSpan.textContent = `${p.prefix} `;
+            correctDiv.appendChild(prefixSpan);
+        }
+        const coreSpan = document.createElement('span');
+        coreSpan.className = 'correct-answer-core';
+        coreSpan.textContent = p.core;
+        correctDiv.appendChild(coreSpan);
+        if (p.suffix) {
+            const suffixSpan = document.createElement('span');
+            suffixSpan.className = 'correct-answer-aux';
+            suffixSpan.textContent = ` ${p.suffix}`;
+            correctDiv.appendChild(suffixSpan);
+        }
+    });
 
     const exampleDiv = document.createElement('div');
     exampleDiv.textContent = wordData.example || '';
@@ -733,7 +910,9 @@ function handleIncorrectAnswer(correctAnswers, wordData) {
  * Shows statistics after quiz completion
  */
 function showStats() {
-    console.log('✅ showStats() ENHANCED VERSION v3.0 - Cache cleared!');
+    DOM.questionSuffix.textContent = '';
+    DOM.answerPrefix.textContent = '';
+    DOM.answerSuffix.textContent = '';
 
     DOM.quizPanel.style.display = 'none';
     DOM.statsPanel.style.display = 'block';
@@ -988,6 +1167,9 @@ DOM.restartBtn.addEventListener('click', () => {
     DOM.bannerTitle.style.display = 'block';
     DOM.bannerTitle.textContent = 'Vokabeltrainer';
     DOM.bannerContent.innerHTML = '';
+    DOM.questionSuffix.textContent = '';
+    DOM.answerPrefix.textContent = '';
+    DOM.answerSuffix.textContent = '';
 });
 
 // ============================================================================

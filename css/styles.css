@@ -198,10 +198,60 @@ main {
     text-align: center;
 }
 
+.question-display {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.question-display h2 {
+    margin-bottom: 0;
+}
+
 .question-container h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: var(--text-color);
+}
+
+.aux-text {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.answer-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.answer-row input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.aux-hint {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.correct-answer-aux {
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    font-style: italic;
+    font-weight: normal;
+}
+
+.correct-answer-core {
+    font-weight: bold;
 }
 
 .question-container input {
