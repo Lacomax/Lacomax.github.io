@@ -396,6 +396,18 @@ function getAnswerField() {
 }
 
 /**
+ * Normalizes text for answer comparison.
+ * Maps all apostrophe-like characters (curly quotes, backtick, acute accent,
+ * modifier letter apostrophe, prime) to the ASCII straight apostrophe so the
+ * quiz accepts answers regardless of which variant the user's keyboard yields.
+ * @param {string} str
+ * @returns {string}
+ */
+function normalizeAnswer(str) {
+    return str.replace(/[‘’`´ʼ′]/g, "'");
+}
+
+/**
  * Finds common prefix/suffix across parsed answer alternatives.
  * @param {Array<{ prefix: string, core: string, suffix: string }>} parsed
  * @returns {{ commonPrefix: string, commonSuffix: string }}
@@ -768,7 +780,9 @@ function checkAnswer() {
     const key = getKeyForWord(wordData);
     AppState.attemptCounts[key] = (AppState.attemptCounts[key] || 0) + 1;
 
-    if (correctAnswers.includes(userAnswer)) {
+    const normalizedUser = normalizeAnswer(userAnswer);
+    const isCorrect = correctAnswers.some(ans => normalizeAnswer(ans) === normalizedUser);
+    if (isCorrect) {
         handleCorrectAnswer(questionLanguage, key);
     } else {
         handleIncorrectAnswer(correctAnswers, wordData);

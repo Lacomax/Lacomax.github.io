@@ -595,6 +595,43 @@ runner.test('findCommonAux: empty array', (t) => {
 });
 
 // ============================================================================
+// APOSTROPHE NORMALIZATION TESTS
+// ============================================================================
+
+// Re-implement normalizeAnswer locally (same as in script.js)
+function normalizeAnswer(str) {
+    return str.replace(/[‘’`´ʼ′]/g, "'");
+}
+
+runner.test('normalizeAnswer: curly right quote U+2019 becomes ASCII', (t) => {
+    t.assertEqual(normalizeAnswer('to change one’s mind'), "to change one's mind");
+});
+
+runner.test('normalizeAnswer: backtick becomes ASCII apostrophe', (t) => {
+    t.assertEqual(normalizeAnswer('to change one`s mind'), "to change one's mind");
+});
+
+runner.test('normalizeAnswer: acute accent becomes ASCII apostrophe', (t) => {
+    t.assertEqual(normalizeAnswer('to change one´s mind'), "to change one's mind");
+});
+
+runner.test('normalizeAnswer: ASCII apostrophe passes through', (t) => {
+    t.assertEqual(normalizeAnswer("to change one's mind"), "to change one's mind");
+});
+
+runner.test('normalizeAnswer: file value with backtick matches user typing curly quote', (t) => {
+    const fileValue = 'to change one`s mind';
+    const userTypes = 'to change one’s mind';
+    t.assertEqual(normalizeAnswer(fileValue), normalizeAnswer(userTypes));
+});
+
+runner.test('normalizeAnswer: file value with curly quote matches user typing ASCII', (t) => {
+    const fileValue = 'I don’t mind';
+    const userTypes = "I don't mind";
+    t.assertEqual(normalizeAnswer(fileValue), normalizeAnswer(userTypes));
+});
+
+// ============================================================================
 // RUN TESTS
 // ============================================================================
 

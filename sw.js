@@ -3,7 +3,7 @@
  * Provides offline functionality and caching strategies
  */
 
-const CACHE_VERSION = 'v3.1.0';
+const CACHE_VERSION = 'v3.2.0';
 const CACHE_NAME = `vokabeltrainer-${CACHE_VERSION}`;
 
 // Files to cache immediately on install
