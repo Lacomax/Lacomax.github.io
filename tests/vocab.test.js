@@ -600,8 +600,24 @@ runner.test('findCommonAux: empty array', (t) => {
 
 // Re-implement normalizeAnswer locally (same as in script.js)
 function normalizeAnswer(str) {
-    return str.replace(/[‘’`´ʼ′]/g, "'");
+    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/\s+/g, ' ').trim();
 }
+
+runner.test('normalizeAnswer: double space in middle collapses to one', (t) => {
+    t.assertEqual(normalizeAnswer('to go  out'), 'to go out');
+});
+
+runner.test('normalizeAnswer: leading and trailing spaces are trimmed', (t) => {
+    t.assertEqual(normalizeAnswer('  hello  '), 'hello');
+});
+
+runner.test('normalizeAnswer: non-breaking space treated as regular whitespace', (t) => {
+    t.assertEqual(normalizeAnswer('to go out'), 'to go out');
+});
+
+runner.test('normalizeAnswer: user typing double space matches single-space answer', (t) => {
+    t.assertEqual(normalizeAnswer('eine  Nummer'), normalizeAnswer('eine Nummer'));
+});
 
 runner.test('normalizeAnswer: curly right quote U+2019 becomes ASCII', (t) => {
     t.assertEqual(normalizeAnswer('to change one’s mind'), "to change one's mind");

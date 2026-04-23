@@ -397,14 +397,17 @@ function getAnswerField() {
 
 /**
  * Normalizes text for answer comparison.
- * Maps all apostrophe-like characters (curly quotes, backtick, acute accent,
- * modifier letter apostrophe, prime) to the ASCII straight apostrophe so the
- * quiz accepts answers regardless of which variant the user's keyboard yields.
+ * - Maps apostrophe-like characters (curly quotes, backtick, acute accent,
+ *   modifier letter apostrophe, prime) to the ASCII straight apostrophe so the
+ *   quiz accepts answers regardless of which variant the user's keyboard yields.
+ * - Collapses any run of whitespace (incl. non-breaking space, tabs) to a
+ *   single space and trims the ends, so accidental double-spaces and leading/
+ *   trailing spaces don't cause false rejections.
  * @param {string} str
  * @returns {string}
  */
 function normalizeAnswer(str) {
-    return str.replace(/[‘’`´ʼ′]/g, "'");
+    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/\s+/g, ' ').trim();
 }
 
 /**
