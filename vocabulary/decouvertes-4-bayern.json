@@ -1,0 +1,4906 @@
+[
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un lycée",
+        "german": "ein Gymnasium (nur die Sekundarstufe II); ein Lycée",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "le Grand Est",
+        "german": "Region im Nordosten Frankreichs",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un voyage scolaire",
+        "german": "eine Klassenfahrt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "la Champagne",
+        "german": "Landschaft und Region im Grand Est",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "régional/régionale; régionaux/régionales",
+        "german": "regional",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "la Lorraine",
+        "german": "Lothringen (Teil der Region Grand Est)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "ancien/ancienne",
+        "german": "ehemalig (wenn es vor dem Nomen steht)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une bataille",
+        "german": "eine Schlacht",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un champ de bataille",
+        "german": "ein Schlachtfeld",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un cimetière",
+        "german": "ein Friedhof",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un Allemand/une Allemande",
+        "german": "ein Deutscher/eine Deutsche",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "le Parlement européen",
+        "german": "das Europaparlament",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une cave",
+        "german": "ein Keller",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "le champagne",
+        "german": "der Champagner",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une truffe",
+        "german": "eine Trüffel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "un itinéraire",
+        "german": "ein Weg; eine Route",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "l’Alsace (f.)",
+        "german": "das Elsass (Teil der Region Grand Est)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "former qc",
+        "german": "etw. formen; etw. bilden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "le Luxembourg",
+        "german": "Luxemburg",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "une cigogne",
+        "german": "ein Storch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "DE",
+        "french": "alsacien/alsacienne",
+        "german": "elsässisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un commentaire",
+        "german": "ein Kommentar",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "informer qn sur qc",
+        "german": "jdn. über etw. informieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une visite guidée",
+        "german": "eine Führung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une étape",
+        "german": "eine Etappe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "magique/magique",
+        "german": "magisch; zauberhaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une façade",
+        "german": "eine Fassade; eine Außenwand",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "illuminer qc",
+        "german": "etw. beleuchten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "haut/haute",
+        "german": "hoch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "l’intérieur (m.)",
+        "german": "das Innere",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un peintre/une peintre",
+        "german": "ein Maler/eine Malerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un producteur/une productrice",
+        "german": "ein Erzeuger/eine Erzeugerin; ein Hersteller/eine Herstellerin; ein Produzent/eine Produzentin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "détruire qc",
+        "german": "etw. zerstören",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un symbole",
+        "german": "ein Symbol",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "finalement",
+        "german": "schließlich; zum Schluss",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "décider de faire qc",
+        "german": "entscheiden, etw. zu tun; beschließen, etw. zu tun",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "reconstruire qc",
+        "german": "etw. wiederaufbauen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "durer",
+        "german": "dauern",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "en partie",
+        "german": "teilweise; zum Teil",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "libre/libre",
+        "german": "frei",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un rédacteur/une rédactrice",
+        "german": "ein Redakteur/eine Redakteurin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "grâce à qn/qc",
+        "german": "durch jdn./etw.; dank einer Person/einer Sache",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une application",
+        "german": "eine Anwendung; eine App",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "interactif/interactive",
+        "german": "interaktiv",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "la Première Guerre mondiale",
+        "german": "der Erste Weltkrieg (1914–1918)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "dur/dure",
+        "german": "hart; schwierig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "marquer qc",
+        "german": "etw. prägen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "virtuel/virtuelle",
+        "german": "virtuell",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une tranchée",
+        "german": "ein Graben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une trace",
+        "german": "eine Spur",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "en plein air",
+        "german": "draußen; im Freien",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un fort",
+        "german": "eine Festung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "se dérouler",
+        "german": "sich abspielen; stattfinden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une armée",
+        "german": "eine Armee; ein Heer",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un blessé/une blessée",
+        "german": "ein Verletzter/eine Verletzte",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un mort/une morte",
+        "german": "ein Toter/eine Tote",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "complet/complète",
+        "german": "komplett; vollständig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une tombe",
+        "german": "ein Grab",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "un reste",
+        "german": "ein Rest",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "rendre hommage à qn",
+        "german": "jdn. ehren; jdn. würdigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "A",
+        "french": "une auberge de jeunesse",
+        "german": "eine Jugendherberge",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une vidéo",
+        "german": "ein Video",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "la choucroute",
+        "german": "das Sauerkraut",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "franco-allemand/franco-allemande",
+        "german": "deutsch-französisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un jeu de piste",
+        "german": "eine Schnitzeljagd",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "en haut",
+        "german": "oben; nach oben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "sauf",
+        "german": "außer",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une marche",
+        "german": "eine Stufe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un ascenseur",
+        "german": "ein Aufzug; ein Fahrstuhl",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "Ça vaut le coup.",
+        "german": "Es lohnt sich.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un nuage",
+        "german": "eine Wolke",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "les Vosges (f.) (pl.)",
+        "german": "die Vogesen (Gebirge im Nordosten Frankreichs)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "être du même avis",
+        "german": "gleicher Meinung sein",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "distribuer qc",
+        "german": "etw. austeilen; etw. verteilen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "sérieux/sérieuse",
+        "german": "ernst(haft); seriös",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "prendre qn/qc au sérieux",
+        "german": "jdn./etw. ernst nehmen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "se concentrer sur qc",
+        "german": "sich auf etw. konzentrieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un Européen/une Européenne",
+        "german": "ein Europäer/eine Europäerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une institution",
+        "german": "eine Institution",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "passionnant/passionnante",
+        "german": "spannend; fesselnd",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une émission",
+        "german": "eine Sendung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "une tarte flambée",
+        "german": "ein Flammkuchen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un Alsacien/une Alsacienne",
+        "german": "ein Elsässer/eine Elsässerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "B",
+        "french": "un dialecte",
+        "german": "ein Dialekt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "P",
+        "french": "un questionnaire",
+        "german": "ein Fragebogen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "P",
+        "french": "remplir qc",
+        "german": "etw. füllen; etw. ausfüllen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "P",
+        "french": "une énigme",
+        "german": "ein Rätsel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "P",
+        "french": "une cachette",
+        "german": "ein Versteck",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "P",
+        "french": "fixer qc à qc",
+        "german": "etw. an etw. festbinden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 1",
+        "module": "P",
+        "french": "un point de départ",
+        "german": "ein Startpunkt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "une coopération",
+        "german": "eine Zusammenarbeit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "DE",
+        "french": "reconnaître qn/qc",
+        "german": "jdn./etw. (wieder)erkennen; jdn./etw. anerkennen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un ennemi/une ennemie",
+        "german": "ein Feind/eine Feindin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "la mort",
+        "german": "der Tod",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un résistant/une résistante",
+        "german": "ein Widerstandskämpfer/eine Widerstandskämpferin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "déporter qn",
+        "german": "jdn. deportieren; jdn. verschleppen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un maire/une maire",
+        "german": "ein Bürgermeister/eine Bürgermeisterin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "malgré qc",
+        "german": "trotz etw.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une expérience",
+        "german": "eine Erfahrung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un jumelage",
+        "german": "eine Städte-/Schulpartnerschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "le Bade-Wurtemberg",
+        "german": "Baden-Württemberg",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un président/une présidente",
+        "german": "ein Präsident/eine Präsidentin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un chancelier/une chancelière",
+        "german": "ein Kanzler/eine Kanzlerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "signer qc",
+        "german": "etw. unterschreiben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un traité",
+        "german": "ein Vertrag",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "le traité de l’Elysée",
+        "german": "der Elysée-Vertrag",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "l’amitié (f.)",
+        "german": "die Freundschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une réconciliation",
+        "german": "eine Versöhnung; eine Aussöhnung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une relation",
+        "german": "eine Beziehung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une connaissance",
+        "german": "eine Kenntnis; eine Erkenntnis; eine Bekanntschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "lutter contre qc",
+        "german": "gegen etw. kämpfen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un préjugé",
+        "german": "ein Vorurteil",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un geste",
+        "german": "eine Geste",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "la paix",
+        "german": "der Frieden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une entreprise",
+        "german": "ein Betrieb; eine Firma; ein Unternehmen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un domaine",
+        "german": "ein Bereich; eine Domäne",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "Aix-la-Chapelle",
+        "german": "Aachen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "renforcer qc",
+        "german": "etw. verstärken; etw. festigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "les transports (m.) (pl.)",
+        "german": "das Transportwesen; das Transportgewerbe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un employé/une employée",
+        "german": "ein Angestellter/eine Angestellte",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "à bord de qc",
+        "german": "an Bord von etw.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "militaire/militaire",
+        "german": "Militär-; militärisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "une brigade",
+        "german": "eine Brigade (eine militärische Einheit)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "culturel/culturelle",
+        "german": "Kultur-; kulturell",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "l’éducation (f.)",
+        "german": "die Erziehung; die Bildung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "l’économie (f.)",
+        "german": "die Wirtschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "la politique",
+        "german": "die Politik",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "le chef de l’Etat/la chef de l’Etat",
+        "german": "der Staatschef/die Staatschefin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "le dos",
+        "german": "der Rücken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un directeur/une directrice",
+        "german": "ein Direktor/eine Direktorin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "fuir",
+        "german": "fliehen; flüchten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "collaborer avec qn",
+        "german": "mit jdm. zusammenarbeiten; mit jdm. (dem Feind) kollaborieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "défendre qn/qc",
+        "german": "jdn./etw. verteidigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "un général/une générale",
+        "german": "ein General/eine Generalin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "résister à qn/qc",
+        "german": "jdm./etw. Widerstand leisten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "A",
+        "french": "la résistance",
+        "german": "der Widerstand",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un cliché",
+        "german": "ein Klischee",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "positif/positive",
+        "german": "positiv",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "négatif/négative",
+        "german": "negativ",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un moteur",
+        "german": "ein Motor",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un sondage",
+        "german": "eine Umfrage",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "l’esprit (m.)",
+        "german": "der Geist; der Verstand",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "venir à l’esprit de qn",
+        "german": "jdm. in den Sinn kommen; jdm. einfallen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "l’Union europénne (l’UE) (f.)",
+        "german": "die Europäische Union",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la rigidité",
+        "german": "die Starre; die Steifheit; die Unbeweglichkeit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "l'austérité(f.)",
+        "german": "die Strenge",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la discipline",
+        "german": "die Disziplin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "l’organisation (f.)",
+        "german": "die Gestaltung; die Organisation",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "le tourisme",
+        "german": "der Tourismus",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "le nazisme",
+        "german": "der Nazismus (Kurzform von Nationalsozialismus)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la chute du mur",
+        "german": "der Mauerfall (der Fall der Berliner Mauer am 9. November 1989)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la réunification",
+        "german": "die Wiedervereinigung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "l’industrie (f.)",
+        "german": "die Industrie",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la technologie",
+        "german": "die Technologie",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une innovation",
+        "german": "eine Neuerung; eine Innovation",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une saucisse",
+        "german": "ein Würstchen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "l’écologie (f.)",
+        "german": "die Ökologie; die Umweltforschung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un diagramme",
+        "german": "ein Diagramm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la majorité",
+        "german": "die Mehrheit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "divers/diverse",
+        "german": "verschieden; unterschiedlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "chacun/chacune",
+        "german": "jeder/jede/jedes",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "certains/certaines",
+        "german": "gewisse; bestimmte",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un pour cent (inv.)",
+        "german": "ein Prozent",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la plupart (des)",
+        "german": "die meisten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "surprendre qn",
+        "german": "jdn. überraschen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "constater qc",
+        "german": "etw. feststellen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "conclure qc de qc",
+        "german": "etw. aus etw. schließen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "illustrer qc",
+        "german": "etw. illustrieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "prouver qc",
+        "german": "etw. beweisen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "confirmer qc",
+        "german": "etw. bestätigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "augmenter",
+        "german": "steigen; wachsen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "baisser",
+        "german": "sinken; fallen; zurückgehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "berlinois/berlinoise",
+        "german": "berlinerisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une coutume",
+        "german": "ein Brauch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une valeur",
+        "german": "ein Wert",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "y",
+        "german": "dort; dorthin; daran",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une vitrine",
+        "german": "ein Schaufenster",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "correct/correcte",
+        "german": "richtig; korrekt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "Berlin",
+        "german": "Berlin (Hauptstadt Deutschlands)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la peau",
+        "german": "die Haut",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "le cuir",
+        "german": "das Leder",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "gras/grasse",
+        "german": "fett; fettig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la crème",
+        "german": "die Sahne; der Rahm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une joue",
+        "german": "eine Wange",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une natte",
+        "german": "ein Zopf",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un Berlinois/une Berlinoise",
+        "german": "ein Berliner/eine Berlinerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "turc/turque",
+        "german": "türkisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "grec/grecque",
+        "german": "griechisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "en",
+        "german": "daher; von dort; daraus; darüber",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "arabe/arabe",
+        "german": "arabisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "s’attendre à qc",
+        "german": "etw. erwarten; mit etw. rechnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une nationalité",
+        "german": "eine Nationalität; eine Staatsangehörigkeit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "la planète",
+        "german": "der Planet; die Erde",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "déçu/déçue",
+        "german": "enttäuscht",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "un béret",
+        "german": "eine Baskenmütze",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une moustache",
+        "german": "ein Schnurrbart",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "commun/commune",
+        "german": "gemeinsam (Adj.)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une période",
+        "german": "eine Zeit; eine Periode",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "déclarer qc à qn",
+        "german": "jdm. etw. erklären; jdm. etw. bekanntgeben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 2",
+        "module": "B",
+        "french": "une tension",
+        "german": "eine Spannung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "un boulot (fam.)",
+        "german": "ein Job (ugs.)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "une expression",
+        "german": "ein Ausdruck",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "un ingénieur/une ingénieure",
+        "german": "ein Ingenieur/eine Ingenieurin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "DE",
+        "french": "un infirmier/une infirmière",
+        "german": "ein Krankenpfleger/eine Krankenpflegerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une journée d’orientation",
+        "german": "ein Berufsberatungstag",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "le parcours",
+        "german": "der Werdegang",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "professionnel/professionnelle",
+        "german": "professionell; beruflich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "les études (f.) (pl.)",
+        "german": "das Studium",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "faire des études",
+        "german": "studieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une possibilité",
+        "german": "eine Möglichkeit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un vétérinaire/une vétérinaire",
+        "german": "ein Tierarzt/eine Tierärztin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un coiffeur/une coiffeuse",
+        "german": "ein Friseur/eine Friseurin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un conseiller/une conseillère",
+        "german": "ein Berater/eine Beraterin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un choix",
+        "german": "eine Wahl",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "une formation",
+        "german": "eine Ausbildung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un pilote/une pilote",
+        "german": "ein Pilot/eine Pilotin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "voyager",
+        "german": "reisen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "fasciner qn",
+        "german": "jdn. faszinieren; jdn. fesseln",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un assistant social/une assistante sociale; des assistants sociaux/des assistantes sociales",
+        "german": "ein Sozialarbeiter/eine Sozialarbeiterin/Sozialarbeiter/Sozi alarbeiterinnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "utile/utile",
+        "german": "nützlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "permettre à qn de faire qc",
+        "german": "jdm. erlauben, etw. zu tun; jdm. ermöglichen, etw. zu tun",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "le journalisme",
+        "german": "der Journalismus",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un mécanicien/une mécanicienne",
+        "german": "ein Mechaniker/eine Mechanikerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "le spectacle",
+        "german": "das Showbusiness; das Showgeschäft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "le commerce",
+        "german": "der Handel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "l’agriculture (f.)",
+        "german": "die Landwirtschaft; der Ackerbau",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "à l’étranger",
+        "german": "im/ins Ausland",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "soupirer",
+        "german": "seufzen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un mari",
+        "german": "ein Ehemann",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "par hasard",
+        "german": "zufällig; etwa",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se calmer",
+        "german": "sich beruhigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "l’argent (m.) de poche",
+        "german": "das Taschengeld",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se reposer",
+        "german": "sich ausruhen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "se fermer",
+        "german": "sich schließen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "sortir qc",
+        "german": "etw. hinausbringen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "faire la vaisselle",
+        "german": "(ab)spülen; abwaschen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "vider qc",
+        "german": "etw. leeren; hier: etw. ausräumen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "un lave-vaisselle",
+        "german": "ein Geschirrspüler",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "débarrasser la table",
+        "german": "den Tisch abräumen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "passer l’aspirateur",
+        "german": "staubsaugen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "nettoyer qc",
+        "german": "etw. reinigen; etw. sauber machen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "A",
+        "french": "laver le linge",
+        "german": "Wäsche waschen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "s’ouvrir",
+        "german": "sich öffnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "une soirée jeux",
+        "german": "ein Spieleabend",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "se faire du souci (pour qn/qc)",
+        "german": "sich (um jdn./etw.) Sorgen machen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "inquiet/inquiète",
+        "german": "unruhig; beunruhigt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un animateur/une animatrice",
+        "german": "ein(e) (Fernseh-/Radio- )Moderator(in)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "excité/excitée",
+        "german": "aufgeregt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "car",
+        "german": "denn",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un retour",
+        "german": "eine Rückkehr; eine Rückfahrt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "de retour",
+        "german": "(wieder) zurück",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "incroyable/incroyable",
+        "german": "unglaublich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "la reconnaissance",
+        "german": "die Anerkennung; die Dankbarkeit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un vaccin",
+        "german": "ein Impfstoff",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "prendre une décision",
+        "german": "eine Entscheidung treffen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "humanitaire/humanitaire",
+        "german": "humanitär",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "la recherche",
+        "german": "die Forschung; die Suche",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "à cent pour cent",
+        "german": "zu hundert Prozent",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "sans faire qc",
+        "german": "ohne etw. zu tun",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un footballeur/une footballeuse",
+        "german": "ein Fußballer/eine Fußballerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "partir à l’aventure",
+        "german": "auf gut Glück losziehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "un magazine",
+        "german": "eine Zeitschrift",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "inventer qc",
+        "german": "etw. erfinden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "B",
+        "french": "communiquer avec qn",
+        "german": "mit jdm. kommunizieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un agriculteur/une agricultrice",
+        "german": "ein Landwirt/eine Landwirtin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un architecte/une architecte",
+        "german": "ein Architekt/eine Architektin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un avocat/une avocate",
+        "german": "ein Anwalt/eine Anwältin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un coureur automobile/une coureuse automobile",
+        "german": "ein Rennfahrer/eine Rennfahrerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un diplomate/une diplomate",
+        "german": "ein Diplomat/eine Diplomatin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un policier/une policière",
+        "german": "ein Polizist/eine Polizistin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 3",
+        "module": "P",
+        "french": "un scientifique/une scientifique",
+        "german": "ein Wissenschaftler/eine Wissenschaftlerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "accro (à qc) (fam.)",
+        "german": "süchtig (nach etw.)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un ado/une ado (fam.) (= un adolescent/une adolescente)",
+        "german": "ein Jugendlicher/eine Jugendliche",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un smartphone",
+        "german": "ein Smartphone",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "indispensable/indispensable",
+        "german": "unbedingt notwendig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "dépendant/dépendante de qc",
+        "german": "abhängig von etw.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un compte",
+        "german": "ein Account; ein Konto",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un réseau social/des réseaux sociaux",
+        "german": "ein soziales Netzwerk/soziale Netzwerke",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un collégien/une collégienne",
+        "german": "ein Schüler/eine Schülerin des Collège",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "une interdiction",
+        "german": "ein Verbot",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "une insulte",
+        "german": "eine Beleidigung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "en moyenne",
+        "german": "durchschnittlich; im Durchschnitt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un écran",
+        "german": "eine Leinwand; ein Bildschirm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "publier qc",
+        "german": "etw. veröffentlichen; etw. herausgeben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "une statistique",
+        "german": "eine Statistik",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "un appareil",
+        "german": "ein Apparat; ein Gerät",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "DE",
+        "french": "en ligne",
+        "german": "online",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un youtubeur/une youtubeuse",
+        "german": "ein Youtuber/eine Youtuberin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "prévenir qn",
+        "german": "jdn. benachrichtigen; jdn. warnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une conséquence",
+        "german": "eine Folge; eine Konsequenz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "recevoir qn/qc",
+        "german": "jdn./etw. empfangen; etw. erhalten; etw. bekommen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "évident/évidente",
+        "german": "klar; offensichtlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une publicité (fam.: une pub)",
+        "german": "eine Werbung; ein Werbespot",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un effort",
+        "german": "eine Anstrengung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "tuer qn",
+        "german": "jdn. töten; jdn. umbringen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "Tant pis!",
+        "german": "Dann eben nicht!; Pech gehabt!",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un ordinateur portable",
+        "german": "ein Notebook; ein Laptop",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "ajouter qc",
+        "german": "etw. hinzufügen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un câble",
+        "german": "ein Kabel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "poster qc",
+        "german": "etw. ins Internet stellen; etw. posten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "enregistrer qc",
+        "german": "etw. aufnehmen; etw. aufzeichnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une qualité",
+        "german": "eine Qualität; eine Eigenschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un montage",
+        "german": "hier: ein Schnitt (Film); eine Montage",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une chaîne",
+        "german": "ein Kanal",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "une société",
+        "german": "eine Gesellschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un chéri/une chérie",
+        "german": "ein Liebling; ein Schatz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "l’horreur f.",
+        "german": "der Schrecken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "avoir horreur de qn/qc",
+        "german": "jdn./etw. verabscheuen; jdn./etw. hassen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "sourire",
+        "german": "lächeln",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "liker qc",
+        "german": "etw. liken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "augmenter",
+        "german": "steigen; wachsen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "plein de (+ Nomen)",
+        "german": "viel/viele; jede Menge",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "un abonné/une abonnée",
+        "german": "ein Abonnent/eine Abonnentin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "s’abonner à qc",
+        "german": "etw. abonnieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "A",
+        "french": "la lecture",
+        "german": "das Lesen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "en direct",
+        "german": "live",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "international/internationale; nternationaux/internationales",
+        "german": "international",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une centaine",
+        "german": "etwa hundert",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "étranger/étrangère",
+        "german": "ausländisch; fremd",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un professionnel/une professionnelle",
+        "german": "ein Fachmann/eine Fachfrau; ein Profi",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "l’or (m.)",
+        "german": "das Gold",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une passion",
+        "german": "eine Leidenschaft",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "le 7e art",
+        "german": "Bezeichnung für die Filmkunst",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une critique (de film)",
+        "german": "eine (Film-)Kritik",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une option",
+        "german": "ein Wahlfach",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "suivre qn/qc",
+        "german": "jdm./etw. folgen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "régulier/régulière",
+        "german": "regelmäßig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "l’actualité (f.)",
+        "german": "das Tagesgeschehen; das Zeitgeschehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un participant/une participante",
+        "german": "ein Teilnehmer/eine Teilnehmerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "le Palais des festivals",
+        "german": "Festivalpalast in Cannes",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un smoking",
+        "german": "ein Smoking",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une robe",
+        "german": "ein Kleid",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "se présenter",
+        "german": "sich vorstellen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un tapis",
+        "german": "ein Teppich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un photographe/une photographe",
+        "german": "ein Fotograf/eine Fotografin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une cérémonie",
+        "german": "eine Zeremonie",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "Nuremberg",
+        "german": "Nürnberg",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une comédie",
+        "german": "eine Komödie",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un drame",
+        "german": "ein Drama",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un film d’animation",
+        "german": "ein Animationsfilm; ein Trickfilm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une action",
+        "german": "eine Handlung; eine Tat",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une aire de repos",
+        "german": "ein Rastplatz (an der Autobahn)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "opprimer qn",
+        "german": "jdn. unterdrücken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un peuple",
+        "german": "ein Volk",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un couple",
+        "german": "ein (Liebes-)Paar; ein (Ehe-)Paar",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "se révolter contre qn/qc",
+        "german": "sich gegen jdn./etw. auflehnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un scénario",
+        "german": "ein Drehbuch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un cœur",
+        "german": "ein Herz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "avoir un coup de cœur pour qn/qc",
+        "german": "sich in jdn./etw. verlieben; sein Herz an jdn./etw. verlieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une comédie dramatique",
+        "german": "eine Tragikomödie",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un éducateur/une éducatrice",
+        "german": "ein Erzieher/eine Erzieherin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "autiste/autiste",
+        "german": "autistisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "défavorisé/défavorisée",
+        "german": "benachteiligt; sozial schwach",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "critiquer qn/qc",
+        "german": "jdn./etw. kritisieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un handicapé/une handicapée",
+        "german": "ein Behinderter/eine Behinderte",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un sujet",
+        "german": "ein Thema",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "pleurer",
+        "german": "weinen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un genre",
+        "german": "eine Gattung; eine Art",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une fiche technique",
+        "german": "technische Daten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un réalisateur/une réalisatrice",
+        "german": "ein (Film-)Regisseur/eine (Film- )Regisseurin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "la date de sortie (d’un film)",
+        "german": "der Filmstart",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un film policier",
+        "german": "ein Kriminalfilm; ein Krimi",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un film fantastique",
+        "german": "ein Fantasyfilm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "la science-fiction",
+        "german": "die Science-Fiction",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un documentaire",
+        "german": "ein Dokumentarfilm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un résumé",
+        "german": "eine Zusammenfassung; eine Inhaltsangabe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "il s’agit de qc",
+        "german": "es handelt sich um etw.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "personnel/personnelle",
+        "german": "persönlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "ennuyeux/ennuyeuse",
+        "german": "langweilig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "le suspense",
+        "german": "die Spannung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un jeu télévisé",
+        "german": "eine Quizsendung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une émission de téléréalité",
+        "german": "eine Realityshow",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une station de radio",
+        "german": "ein Radiosender",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un podcast",
+        "german": "ein Podcast",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une séance (de cinéma)",
+        "german": "eine (Film-)Vorführung; eine (Film- )Vorstellung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un film d’horreur",
+        "german": "ein Horrorfilm",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "la presse",
+        "german": "die Presse",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "la presse écrite",
+        "german": "die Printmedien",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un catalogue",
+        "german": "ein Katalog",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un prospectus",
+        "german": "ein Prospekt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un dépliant",
+        "german": "ein Faltblatt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "surfer sur Internet",
+        "german": "im Internet surfen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "commenter qc",
+        "german": "etw. kommentieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "créer un lien vers qc/qn",
+        "german": "etw./jdn. verlinken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "marquer qn (sur une photo)",
+        "german": "hier: jdn. (auf einem Foto) markieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "s’inscrire à qc",
+        "german": "sich in/bei/für etw. einschreiben; sich bei/für/zu etw. anmelden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "effectuer une recherche",
+        "german": "eine Suche ausführen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une page d’accueil",
+        "german": "eine Startseite",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "une photo de profil",
+        "german": "ein Profilfoto",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un fil d’actualité",
+        "german": "ein Newsfeed",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "B",
+        "french": "un utilisateur/une utilisatrice",
+        "german": "ein Nutzer/eine Nutzerin; ein Benutzer/eine Benutzerin; ein Anwender/eine Anwenderin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "une bande-annonce/des bandes- annonces",
+        "german": "ein Trailer/Trailer",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "principal/principale; principaux/principales",
+        "german": "Haupt-",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "le héros/l’héroïne",
+        "german": "der Held/die Heldin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "un décor",
+        "german": "ein Bühnenbild",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "un dialogue",
+        "german": "ein Dialog",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "une mise en scène",
+        "german": "eine Regie; eine Inszenierung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "un sujet d'actualité",
+        "german": "ein aktuelles Thema",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 4",
+        "module": "P",
+        "french": "recommander qc à qn",
+        "german": "jdm. etw. empfehlen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "ambitieux/ambitieuse",
+        "german": "ehrgeizig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "gouverner",
+        "german": "regieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "un Etat",
+        "german": "ein Staat",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "la puissance",
+        "german": "die Stärke; die Macht",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "entreprendre qc",
+        "german": "etw. unternehmen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "immense/immense",
+        "german": "enorm; riesig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "une demande",
+        "german": "eine Anfrage; eine Nachfrage",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "à la demande de qn",
+        "german": "auf Veranlassung von jdm.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "l’architecture (f.)",
+        "german": "die Architektur",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "baroque/baroque",
+        "german": "Barock-; des Barocks (Epoche)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "une résidence",
+        "german": "ein Wohnsitz; hier: ein Amtssitz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "officiel/officielle",
+        "german": "offiziell; amtlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "décorer qc",
+        "german": "etw. schmücken; etw. verzieren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "admirer qn/qc",
+        "german": "jdn./etw. bewundern",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "copier qc",
+        "german": "etw. kopieren; etw. abschreiben; hier: etw. nachbauen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "l’Autriche (f.)",
+        "german": "Österreich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "la Russie",
+        "german": "Russland",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "l’Espagne (f.)",
+        "german": "Spanien",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "la mode",
+        "german": "die Mode",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "à la mode",
+        "german": "modern; modisch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "une naissance",
+        "german": "eine Geburt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "futur/future",
+        "german": "zukünftiger/zukünftige/zukünftiges; künftiger/künftige/künftiges",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "un mariage",
+        "german": "eine Hochzeit; eine Ehe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "la cour",
+        "german": "hier: der Hofstaat",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "DE",
+        "french": "s’installer",
+        "german": "sich niederlassen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "somptueux/somptueuse",
+        "german": "prächtig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "agrandir qc",
+        "german": "etw. vergrößern",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "la chasse",
+        "german": "die Jagd",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une fée",
+        "german": "eine Fee",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un conte (de fées)",
+        "german": "ein Märchen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "nécessaire/nécessaire (à qc)",
+        "german": "notwendig (für etw.); erforderlich (für etw.)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un courtisan/une courtisane",
+        "german": "ein Höfling/eine Hofdame",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "le luxe",
+        "german": "der Luxus",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une chapelle",
+        "german": "eine Kapelle",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "donner sur qc",
+        "german": "zu etw. hin liegen; auf etw. (hinaus)gehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une perruque",
+        "german": "eine Perücke",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un bijou/des bijoux",
+        "german": "ein Schmuck; ein Schmuckstück/Schmuckstücke",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "la galerie des Glaces",
+        "german": "Spiegelsaal im Schloss von Versailles",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une fenêtre",
+        "german": "ein Fenster",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un miroir",
+        "german": "ein Spiegel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une symétrie",
+        "german": "eine Symmetrie",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une sculpture",
+        "german": "eine Skulptur",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un tableau",
+        "german": "ein Gemälde",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un plafond",
+        "german": "eine Decke (eines Zimmers)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "royal/royale; royaux/royales",
+        "german": "königlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un canal/des canaux",
+        "german": "ein Kanal/Kanäle",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une fontaine",
+        "german": "ein Springbrunnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une orangerie",
+        "german": "eine Orangerie (Gewächshaus zum Züchten und Überwintern von Zitruspflanzen)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un potager",
+        "german": "ein Gemüsegarten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "nourrir qn",
+        "german": "jdn. ernähren",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un labyrinthe",
+        "german": "ein Labyrinth",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "les horaires (d’ouverture) (m.) (pl.)",
+        "german": "die Öffnungszeiten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "nocturne/nocturne",
+        "german": "nächtlich",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un feu d’artifice",
+        "german": "ein Feuerwerk",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un tarif",
+        "german": "ein Preis; ein Tarif",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un accès",
+        "german": "ein Zugang; ein Zutritt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un résident/une résidente",
+        "german": "ein Bewohner/eine Bewohnerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une réservation",
+        "german": "eine Reservierung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "télécharger qc",
+        "german": "etw. herunterladen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "une révolution",
+        "german": "eine Revolution",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "Guillaume 1er",
+        "german": "Wilhelm I. (1797–1888), ab 1871 erster deutscher Kaiser",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "la Prusse",
+        "german": "Preußen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un empereur/une impératrice",
+        "german": "ein Kaiser/eine Kaiserin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "proclamer qn empereur",
+        "german": "jdn. zum Kaiser ausrufen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "mettre fin à qc",
+        "german": "etw. beenden; etw. ein Ende setzen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un bal masqué",
+        "german": "ein Maskenball",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un chargeur",
+        "german": "ein Ladegerät",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "un plaisir",
+        "german": "ein Vergnügen; eine Freude",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "refuser qc",
+        "german": "etw. ablehnen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "remercier qn",
+        "german": "jdm. danken; sich bei jdm. bedanken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "De rien.",
+        "german": "Bitte!; Gern geschehen.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "Je t’en/vous en prie.",
+        "german": "Ich bitte dich/Sie.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "A",
+        "french": "Il n’y a pas de quoi.",
+        "german": "Gern geschehen.; Bitte sehr.; Keine Ursache.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "strict/stricte",
+        "german": "streng; strikt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "le rythme",
+        "german": "der Rhythmus",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "assister à qc",
+        "german": "an etw. teilnehmen; etw. miterleben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un valet",
+        "german": "ein Diener",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "habiller qn",
+        "german": "jdn. ankleiden; jdn. anziehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "maquiller qn",
+        "german": "jdn. schminken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "la messe",
+        "german": "die Messe; der Gottesdienst",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "seul/seule",
+        "german": "allein(e); einzig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "s’adresser à qn",
+        "german": "sich an jdn. richten; sich an jdn. wenden; jdn. anreden",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un ministre/une ministre",
+        "german": "ein Minister/eine Ministerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une réunion",
+        "german": "eine Versammlung; eine Besprechung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une proposition",
+        "german": "ein Vorschlag",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "les finances (f.) (pl.)",
+        "german": "die Finanzen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "s’en aller",
+        "german": "weggehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une salle à manger",
+        "german": "ein Esszimmer",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un menu",
+        "german": "ein Menü; eine Speisekarte",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une soupe",
+        "german": "eine Suppe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "la noblesse",
+        "german": "der Adel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "flatter qn",
+        "german": "jdn. umschmeicheln",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "à partir de",
+        "german": "von … an; ab (zeitlich)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "le billard",
+        "german": "das Billard",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une pièce (de théâtre)",
+        "german": "ein (Theater-)Stück",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une foule",
+        "german": "eine Menschenmenge",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "privé/privée",
+        "german": "privat",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une direction",
+        "german": "eine Richtung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "la majesté",
+        "german": "die Majestät",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "sec/sèche",
+        "german": "trocken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "compliqué/compliquée",
+        "german": "kompliziert",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "la Renaissance",
+        "german": "die Renaissance (Epoche)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "élégant/élégante",
+        "german": "elegant; fein; geschmackvoll",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "l’extérieur",
+        "german": "das Äußere",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "la décoration",
+        "german": "die Dekoration",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "décoré/décorée",
+        "german": "dekoriert",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une colonne",
+        "german": "eine Säule",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un arc",
+        "german": "ein Bogen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "un contraste",
+        "german": "ein Kontrast",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "une maison à colombages",
+        "german": "ein Fachwerkhaus",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 5",
+        "module": "B",
+        "french": "imiter qc",
+        "german": "etw. nachahmen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un camping",
+        "german": "ein Campingplatz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le camping",
+        "german": "das Camping",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une superficie",
+        "german": "eine Fläche; eine Grundfläche",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "les Alpes (f.) (pl.)",
+        "german": "die Alpen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le Jura",
+        "german": "das Juragebirge",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un glacier",
+        "german": "ein Gletscher",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "Zurich",
+        "german": "Zürich (Stadt in der Schweiz)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "Genève",
+        "german": "Genf (Stadt in der französischsprachigen Schweiz)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "Bâle",
+        "german": "Basel (Stadt in der Schweiz)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "Berne",
+        "german": "Bern (Hauptstadt der Schweiz)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "propre/propre (vor dem Nomen)",
+        "german": "eigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "la monnaie",
+        "german": "das Kleingeld; die Währung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le franc suisse",
+        "german": "der Schweizer Franken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le lac Léman",
+        "german": "der Genfer See",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "l’italien",
+        "german": "das Italienische",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le romanche",
+        "german": "das Rätoromanische (Sprache in der Schweiz)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "l’occitan (m.)",
+        "german": "das Okzitanische; die okzitanische Sprache",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "germanophone/germanophone",
+        "german": "deutschsprachig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "la Suisse alémanique",
+        "german": "die deutschsprachige Schweiz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un canton",
+        "german": "ein Kanton",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "bilingue/bilingue",
+        "german": "zweisprachig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "Fribourg",
+        "german": "Freiburg (zweisprachiger Kanton im Westen der Schweiz und gleichzeitig Name der Kantons-",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un Suisse/une Suisse",
+        "german": "ein Schweizer/eine Schweizerin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "la Gruyère",
+        "german": "Greyerz (Region im Kanton Freiburg)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le lac de la Gruyère",
+        "german": "der Greyerzer See",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un compromis",
+        "german": "ein Kompromiss",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "faire du camping",
+        "german": "campen; zelten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une tente",
+        "german": "ein Zelt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "louer qc",
+        "german": "etw. mieten; etw. vermieten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un mobile home",
+        "german": "ein Mobilheim",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un campeur/une campeuse",
+        "german": "ein Camper/eine Camperin",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "faire du paddle",
+        "german": "paddeln",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une chocolaterie",
+        "german": "eine Schokoladenfabrik",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le cacao",
+        "german": "der Kakao",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "à travers",
+        "german": "durch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "sentir qc",
+        "german": "hier: nach etw. riechen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une dégustation",
+        "german": "eine Verkostung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un produit",
+        "german": "ein Produkt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "plein/pleine (de qc)",
+        "german": "voll (mit etw.)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "Gruyères",
+        "german": "Greyerz (Gemeinde im Kanton Freiburg)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une fromagerie",
+        "german": "eine Käserei",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un sens",
+        "german": "ein Sinn; eine Richtung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une odeur",
+        "german": "ein Geruch",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une vache",
+        "german": "eine Kuh",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "le gruyère",
+        "german": "der Greyerzer (Schweizer Hartkäse)",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un sommet",
+        "german": "ein Gipfel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un funiculaire",
+        "german": "eine Drahtseilbahn",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "l’altitude (f.)",
+        "german": "die Höhe",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "l’Italie (f.)",
+        "german": "Italien",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une fondue",
+        "german": "ein Fondue",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un chalet",
+        "german": "eine Berghütte; ein Chalet",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "rater qc (fam.)",
+        "german": "etw. verpassen; etw. verpfuschen; etw. nicht schaffen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une vallée",
+        "german": "ein Tal",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un chocolatier",
+        "german": "ein Schokoladenhersteller",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "changer d’avis",
+        "german": "seine Meinung ändern",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "confortable/confortable",
+        "german": "bequem; komfortabel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "convaincre qn de qc",
+        "german": "jdn. von etw. überzeugen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une objection",
+        "german": "ein Einwand",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "d’un côté, …, de l’autre",
+        "german": "einerseits …, andererseits",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "exact/exacte",
+        "german": "genau; richtig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "une raison",
+        "german": "ein Grund",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "faire le point sur qc",
+        "german": "einen zusammenfassenden Überblick über etw. geben",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "se mettre d’accord sur qc",
+        "german": "sich auf/über etw. einigen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "DE",
+        "french": "un portrait",
+        "german": "ein Porträt",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "le désordre",
+        "german": "die Unordnung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "le gaz",
+        "german": "das Gas",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "exprimer qc",
+        "german": "etw. ausdrücken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "le mécontentement",
+        "german": "die Unzufriedenheit",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "C’est le bazar! (fam.)",
+        "german": "Was für ein Durcheinander!",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "franc/franche",
+        "german": "offen; aufrichtig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "déranger qn",
+        "german": "jdn. stören",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "propre/propre (nach dem Nomen)",
+        "german": "sauber",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "mettre la main à la pâte (fam.)",
+        "german": "Hand anlegen; anpacken; zupacken",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "A",
+        "french": "être responsable/responsable de qc",
+        "german": "verantwortlich sein für etw.; zuständig sein für etw.",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "impatient/impatiente",
+        "german": "ungeduldig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "un bon plan",
+        "german": "ein Geheimtipp",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "aller en boîte (fam.)",
+        "german": "in die Disco gehen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "recharger qc",
+        "german": "etw. aufladen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "B",
+        "french": "se connecter à qc",
+        "german": "sich in etw. einloggen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "la décoration",
+        "german": "die Dekoration",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "prêter qc à qn",
+        "german": "jdm. etw. leihen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "mettre qc à la disposition de qn",
+        "german": "jdm. etw. zur Verfügung stellen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "disponible/disponible",
+        "german": "verfügbar",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "le matériel",
+        "german": "das Material; die Ausrüstung",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "une enceinte",
+        "german": "eine Lautsprecherbox",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "le courant",
+        "german": "der Strom",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "une prise de courant",
+        "german": "eine Steckdose",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "une rallonge",
+        "german": "eine Verlängerung; ein Verlängerungskabel",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "brancher qc sur qc",
+        "german": "etw. an etw. anschließen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "grignoter qc",
+        "german": "etw. knabbern",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "un emplacement",
+        "german": "ein Stellplatz",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "un camping-car",
+        "german": "ein Wohnmobil",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "une caravane",
+        "german": "ein Wohnwagen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "monter qc",
+        "german": "etw. aufbauen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "une réception",
+        "german": "ein Empfang; eine Rezeption",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "un accueil",
+        "german": "ein Empfang",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "complet/complète",
+        "german": "ausgebucht; voll",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "calme/calme",
+        "german": "ruhig; still",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "bruyant/bruyante",
+        "german": "laut",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "sale/sale",
+        "german": "schmutzig",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "interdit",
+        "german": "verboten",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "les sanitaires m. pl.",
+        "german": "die Sanitäranlagen",
+        "example": ""
+    },
+    {
+        "book": "Découvertes Bayern Band 4",
+        "lesson": "Leçon 6",
+        "module": "C",
+        "french": "une salle commune",
+        "german": "ein Gemeinschaftsraum",
+        "example": ""
+    }
+]

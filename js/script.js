@@ -10,13 +10,19 @@
 
 const CONFIG = {
     CORRECT_ANSWER_DELAY_MS: 2000,
-    TOTAL_CORRECT_SOUNDS: 25,
+    TOTAL_CORRECT_SOUNDS: 47,
     AUDIO_PATH: 'audio/correct/',
     JSON_FILES: {
         'FR-DE': './vocabulary/decouvertes-1-bayern.json',
         'FR-DE-2': './vocabulary/decouvertes-2-bayern.json',
+        'FR-DE-3': './vocabulary/decouvertes-3-bayern.json',
+        'FR-DE-4': './vocabulary/decouvertes-4-bayern.json',
+        'FR-DE-5': './vocabulary/decouvertes-5-bayern.json',
         'DE-EN': './vocabulary/greenline-2-bayern.json',
-        'DE-EN-3': './vocabulary/greenline-3-bayern.json'
+        'DE-EN-3': './vocabulary/greenline-3-bayern.json',
+        'DE-EN-4': './vocabulary/greenline-4-bayern.json',
+        'DE-EN-5': './vocabulary/greenline-5-bayern.json',
+        'DE-EN-6': './vocabulary/greenline-6-bayern.json'
     },
     STORAGE_KEY: 'vokabeltrainer_progress'
 };
@@ -25,8 +31,9 @@ const CONFIG = {
 // TRANSLATIONS / i18n
 // ============================================================================
 
+// Keyed by foreign language; every book key starts with 'FR-' or 'DE-EN'
 const TRANSLATIONS = {
-    'FR-DE': {
+    FR: {
         selectLesson: 'Sélectionnez la leçon:',
         selectModule: 'Sélectionnez le module:',
         direction: 'Direction de pratique:',
@@ -53,61 +60,7 @@ const TRANSLATIONS = {
         flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
         bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
     },
-    'FR-DE-2': {
-        selectLesson: 'Sélectionnez la leçon:',
-        selectModule: 'Sélectionnez le module:',
-        direction: 'Direction de pratique:',
-        directionBoth: 'Les deux',
-        directionForward: 'FR → DE',
-        directionBackward: 'DE → FR',
-        randomOrder: 'Ordre aléatoire',
-        start: 'Commencer',
-        check: 'Valider',
-        correctFR: 'Très bien!',
-        correctDE: 'Richtig!',
-        incorrect: 'Oups!',
-        noWords: 'Aucun mot trouvé.',
-        placeholderDE: 'Deine Antwort...',
-        placeholderFR: 'Votre réponse...',
-        statsTitle: 'Statistiques',
-        mostRepeated: 'Mots les plus répétés:',
-        restart: 'Réessayer',
-        statsSummary: (correct, total, avg) =>
-            `Vous avez répondu correctement à ${correct} mots sur ${total}. Tentatives moyennes par mot: ${avg}.`,
-        attempts: 'tentatives',
-        errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
-        flag1: { src: 'images/flags/france.png', alt: 'Drapeau français' },
-        flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
-        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
-    },
-    'DE-EN': {
-        selectLesson: 'Select Lesson:',
-        selectModule: 'Select Module:',
-        direction: 'Direction:',
-        directionBoth: 'Both',
-        directionForward: 'DE → EN',
-        directionBackward: 'EN → DE',
-        randomOrder: 'Random order',
-        start: 'Start',
-        check: 'Check',
-        correctDE: 'Richtig!',
-        correctEN: 'Good job!',
-        incorrect: 'Oops!',
-        noWords: 'No words found.',
-        placeholderDE: 'Deine Antwort...',
-        placeholderEN: 'Your answer...',
-        statsTitle: 'Statistics',
-        mostRepeated: 'Most repeated words:',
-        restart: 'Try again',
-        statsSummary: (correct, total, avg) =>
-            `You answered correctly ${correct} out of ${total} words. Average attempts per word: ${avg}.`,
-        attempts: 'attempts',
-        errorLoading: 'Error loading data. Please try again.',
-        flag1: { src: 'images/flags/germany.png', alt: 'German flag' },
-        flag2: { src: 'images/flags/uk.png', alt: 'UK flag' },
-        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' }
-    },
-    'DE-EN-3': {
+    EN: {
         selectLesson: 'Select Lesson:',
         selectModule: 'Select Module:',
         direction: 'Direction:',
@@ -279,12 +232,33 @@ function loadProgress() {
 }
 
 /**
+ * Checks whether a book is French-German (otherwise German-English)
+ * @param {string} [book] - Book key, defaults to the selected book
+ * @returns {boolean} True for Découvertes books
+ */
+function isFrenchBook(book = AppState.bookSelected) {
+    return book.startsWith('FR-');
+}
+
+/**
+ * Gets the translation table for a book
+ * @param {string} [book] - Book key, defaults to the selected book
+ * @returns {Object|undefined} Translations for the book's language
+ */
+function getTranslations(book = AppState.bookSelected) {
+    if (!book) {
+        return undefined;
+    }
+    return TRANSLATIONS[isFrenchBook(book) ? 'FR' : 'EN'];
+}
+
+/**
  * Gets translation text for current book
  * @param {string} key - Translation key
  * @returns {*} Translation value
  */
 function t(key) {
-    const translations = TRANSLATIONS[AppState.bookSelected];
+    const translations = getTranslations();
     return translations ? translations[key] : key;
 }
 
@@ -389,7 +363,7 @@ function parseAllAnswers(text, language) {
 function getAnswerField() {
     const book = AppState.bookSelected;
     const qf = AppState.currentQuestionField;
-    if (book === 'FR-DE' || book === 'FR-DE-2') {
+    if (isFrenchBook(book)) {
         return qf === 'french' ? 'german' : 'french';
     }
     return qf === 'german' ? 'english' : 'german';
@@ -487,7 +461,7 @@ function hideFilters() {
  * Sets up UI based on selected book
  */
 function setupUIForBook() {
-    const trans = TRANSLATIONS[AppState.bookSelected];
+    const trans = getTranslations();
 
     // Update labels
     DOM.lessonLabel.textContent = trans.selectLesson;
@@ -602,7 +576,7 @@ function updateProgress() {
  */
 function updatePlaceholder() {
     const qf = AppState.currentQuestionField;
-    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
+    if (isFrenchBook()) {
         DOM.answerInput.placeholder = qf === 'french' ? t('placeholderDE') : t('placeholderFR');
     } else {
         DOM.answerInput.placeholder = qf === 'german' ? t('placeholderEN') : t('placeholderDE');
@@ -620,7 +594,7 @@ function updatePlaceholder() {
  * @returns {string} Word to display
  */
 function chooseDisplayWord(wordData) {
-    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
+    if (isFrenchBook()) {
         if (AppState.direction === 'FORWARD') {
             AppState.currentQuestionField = 'french';
             return wordData.french;
@@ -662,7 +636,7 @@ function getCorrectAnswers(wordData) {
     let questionLanguage;
     const qf = AppState.currentQuestionField;
 
-    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
+    if (isFrenchBook()) {
         questionLanguage = qf === 'french' ? 'FR->DE' : 'DE->FR';
     } else {
         questionLanguage = qf === 'german' ? 'DE->EN' : 'EN->DE';
@@ -681,7 +655,7 @@ function getCorrectAnswers(wordData) {
  * @returns {string} Unique key
  */
 function getKeyForWord(wordData) {
-    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
+    if (isFrenchBook()) {
         return `${wordData.french}|${wordData.german}`;
     } else {
         return `${wordData.german}|${wordData.english}`;
@@ -805,7 +779,7 @@ function handleCorrectAnswer(questionLanguage, key) {
     DOM.feedbackMessage.className = 'feedback success';
 
     // Set correct feedback based on question direction
-    if (AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2') {
+    if (isFrenchBook()) {
         DOM.feedbackMessage.textContent = questionLanguage === 'FR->DE'
             ? t('correctDE')
             : t('correctFR');
@@ -945,7 +919,7 @@ function showStats() {
     const wordsPerMinute = timeSpentSeconds > 0 ? (AppState.correctCount / (timeSpentSeconds / 60)).toFixed(1) : '0.0';
 
     // Determine if French-German or German-English
-    const isFrenchGerman = AppState.bookSelected === 'FR-DE' || AppState.bookSelected === 'FR-DE-2';
+    const isFrenchGerman = isFrenchBook();
 
     // Build enhanced summary
     const summaryDiv = document.createElement('div');
@@ -1050,7 +1024,7 @@ DOM.bookSelect.addEventListener('change', () => {
         .catch(error => {
             console.error('Error loading vocabulary:', error);
             hideLoading();
-            alert(TRANSLATIONS[AppState.bookSelected]?.errorLoading ||
+            alert(getTranslations()?.errorLoading ||
                   'Error loading data. Please try again.');
         });
 });
@@ -1102,7 +1076,7 @@ DOM.startBtn.addEventListener('click', () => {
     const moduleDisplay = selectedModules.includes('all') ? 'All' : selectedModules.join(', ');
     const lessonModuleLine = `${lessonDisplay} | ${moduleDisplay}`;
 
-    const trans = TRANSLATIONS[AppState.bookSelected];
+    const trans = getTranslations();
     const bannerFlag = trans.bannerFlag;
 
     const bookDiv = document.createElement('div');

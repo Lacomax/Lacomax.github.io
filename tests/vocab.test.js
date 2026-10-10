@@ -15,10 +15,21 @@ class TestRunner {
         this.tests = [];
         this.passed = 0;
         this.failed = 0;
+        this.skipped = 0;
     }
 
     test(name, fn) {
         this.tests.push({ name, fn });
+    }
+
+    /**
+     * Aborts the current test and marks it as skipped instead of failed.
+     * Used for browser-only tests when running under Node.js.
+     */
+    skip(reason) {
+        const error = new Error(reason || 'Skipped');
+        error.isSkip = true;
+        throw error;
     }
 
     assertEqual(actual, expected, message) {
@@ -65,13 +76,20 @@ class TestRunner {
                 this.passed++;
                 console.log(`✅ ${test.name}`);
             } catch (error) {
+                if (error.isSkip) {
+                    this.skipped++;
+                    console.log(`⏭️  ${test.name} (skipped: ${error.message})`);
+                    continue;
+                }
                 this.failed++;
                 console.error(`❌ ${test.name}`);
                 console.error(`   ${error.message}`);
             }
         }
 
-        console.log(`\n📊 Results: ${this.passed} passed, ${this.failed} failed`);
+        console.log(
+            `\n📊 Results: ${this.passed} passed, ${this.failed} failed, ${this.skipped} skipped`
+        );
         return this.failed === 0;
     }
 }
@@ -134,21 +152,37 @@ runner.test('Should accept correct answers separated by semicolons', (t) => {
 
 // Test: Config constants
 runner.test('CONFIG should have required properties', (t) => {
+    // Mirrors CONFIG in js/script.js
     const CONFIG = {
         CORRECT_ANSWER_DELAY_MS: 2000,
-        TOTAL_CORRECT_SOUNDS: 25,
-        AUDIO_PATH: 'correct_mp3/',
+        TOTAL_CORRECT_SOUNDS: 47,
+        AUDIO_PATH: 'audio/correct/',
         JSON_FILES: {
-            'FR-DE': './vocabD1B.json',
-            'DE-EN': './vocabGL2B.json'
-        }
+            'FR-DE': './vocabulary/decouvertes-1-bayern.json',
+            'FR-DE-2': './vocabulary/decouvertes-2-bayern.json',
+            'FR-DE-3': './vocabulary/decouvertes-3-bayern.json',
+            'FR-DE-4': './vocabulary/decouvertes-4-bayern.json',
+            'FR-DE-5': './vocabulary/decouvertes-5-bayern.json',
+            'DE-EN': './vocabulary/greenline-2-bayern.json',
+            'DE-EN-3': './vocabulary/greenline-3-bayern.json',
+            'DE-EN-4': './vocabulary/greenline-4-bayern.json',
+            'DE-EN-5': './vocabulary/greenline-5-bayern.json',
+            'DE-EN-6': './vocabulary/greenline-6-bayern.json'
+        },
+        STORAGE_KEY: 'vokabeltrainer_progress'
     };
 
     t.assertEqual(CONFIG.CORRECT_ANSWER_DELAY_MS, 2000);
-    t.assertEqual(CONFIG.TOTAL_CORRECT_SOUNDS, 25);
-    t.assertEqual(CONFIG.AUDIO_PATH, 'correct_mp3/');
+    t.assertEqual(CONFIG.TOTAL_CORRECT_SOUNDS, 47);
+    t.assertEqual(CONFIG.AUDIO_PATH, 'audio/correct/');
+    t.assertEqual(CONFIG.STORAGE_KEY, 'vokabeltrainer_progress');
+    t.assertEqual(Object.keys(CONFIG.JSON_FILES).length, 10, 'All 10 books must be mapped');
     t.assertTrue('FR-DE' in CONFIG.JSON_FILES);
+    t.assertTrue('FR-DE-2' in CONFIG.JSON_FILES);
     t.assertTrue('DE-EN' in CONFIG.JSON_FILES);
+    t.assertTrue('DE-EN-3' in CONFIG.JSON_FILES);
+    t.assertEqual(CONFIG.JSON_FILES['FR-DE'], './vocabulary/decouvertes-1-bayern.json');
+    t.assertEqual(CONFIG.JSON_FILES['DE-EN'], './vocabulary/greenline-2-bayern.json');
 });
 
 // Test: Translation system
@@ -211,6 +245,11 @@ runner.test('Should calculate progress percentage correctly', (t) => {
 
 // Test: LocalStorage save/load
 runner.test('Should save and load progress from localStorage', (t) => {
+    // Browser-only: localStorage is not usable in a plain Node.js run
+    if (typeof document === 'undefined') {
+        t.skip('browser-only (localStorage)');
+    }
+
     const STORAGE_KEY = 'test_vokabeltrainer_progress';
 
     function saveProgress(data) {
@@ -254,6 +293,11 @@ runner.test('Should save and load progress from localStorage', (t) => {
 
 // Test: XSS protection
 runner.test('Should sanitize HTML content', (t) => {
+    // Browser-only: needs a DOM (document.createElement)
+    if (typeof document === 'undefined') {
+        t.skip('browser-only (DOM)');
+    }
+
     function sanitizeHTML(text) {
         const div = document.createElement('div');
         div.textContent = text;
@@ -300,6 +344,39 @@ runner.test('Should map direction values correctly', (t) => {
     t.assertEqual(chooseDisplayWord(frdeWord, 'BACKWARD', 'FR-DE'), 'Hallo');
     t.assertEqual(chooseDisplayWord(deenWord, 'FORWARD', 'DE-EN'), 'Hallo');
     t.assertEqual(chooseDisplayWord(deenWord, 'BACKWARD', 'DE-EN'), 'Hello');
+});
+
+/* global require, __dirname */
+// Test: every book in js/script.js has a vocabulary file the quiz can use
+runner.test('All configured vocabulary files should load with complete entries', (t) => {
+    if (typeof require === 'undefined') {
+        t.skip('Node.js only');
+    }
+    const fs = require('fs');
+    const path = require('path');
+    const root = path.join(__dirname, '..');
+    const script = fs.readFileSync(path.join(root, 'js', 'script.js'), 'utf8');
+    const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+    const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
+    const block = script.match(/JSON_FILES:\s*{([^}]*)}/)[1];
+    const books = [...block.matchAll(/'([^']+)':\s*'([^']+)'/g)];
+
+    t.assertEqual(books.length, 10, 'script.js should map 10 books');
+    books.forEach(([, book, file]) => {
+        t.assertTrue(html.includes(`value="${book}"`), `${book} missing from book menu`);
+        t.assertTrue(sw.includes(file), `${file} missing from service worker cache`);
+        const foreignKey = book.startsWith('FR-') ? 'french' : 'english';
+        const data = JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
+        t.assertTrue(data.length > 100, `${file} has only ${data.length} entries`);
+        data.forEach((entry, i) => {
+            ['lesson', 'module', foreignKey, 'german'].forEach((key) => {
+                t.assertTrue(
+                    typeof entry[key] === 'string' && entry[key].trim() !== '',
+                    `${file}[${i}] has empty ${key}`
+                );
+            });
+        });
+    });
 });
 
 // ============================================================================

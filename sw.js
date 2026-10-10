@@ -3,7 +3,7 @@
  * Provides offline functionality and caching strategies
  */
 
-const CACHE_VERSION = 'v3.4.0';
+const CACHE_VERSION = 'v3.5.0';
 const CACHE_NAME = `vokabeltrainer-${CACHE_VERSION}`;
 
 // Files to cache immediately on install
@@ -23,13 +23,19 @@ const STATIC_CACHE = [
 const DYNAMIC_CACHE = [
     './vocabulary/decouvertes-1-bayern.json',
     './vocabulary/decouvertes-2-bayern.json',
+    './vocabulary/decouvertes-3-bayern.json',
+    './vocabulary/decouvertes-4-bayern.json',
+    './vocabulary/decouvertes-5-bayern.json',
     './vocabulary/greenline-2-bayern.json',
-    './vocabulary/greenline-3-bayern.json'
+    './vocabulary/greenline-3-bayern.json',
+    './vocabulary/greenline-4-bayern.json',
+    './vocabulary/greenline-5-bayern.json',
+    './vocabulary/greenline-6-bayern.json'
 ];
 
 // Audio files (cache on demand)
 const AUDIO_CACHE = [];
-for (let i = 1; i <= 25; i++) {
+for (let i = 1; i <= 47; i++) {
     const num = i < 10 ? `0${i}` : `${i}`;
     AUDIO_CACHE.push(`./audio/correct/correct${num}.mp3`);
 }

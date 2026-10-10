@@ -1,14 +1,16 @@
 # 📚 Vokabeltrainer - Interactive Vocabulary Learning App
 
-A lightweight, client-side vocabulary training application designed for German language learners. Built specifically for students using **Découvertes 1** (French-German) and **Green Line 2** (German-English) textbooks from the Bavarian curriculum.
+A lightweight, client-side vocabulary training application designed for German language learners. Built specifically for students using the **Découvertes 1 & 2** (French-German) and **Green Line 2 & 3** (German-English) textbooks from the Bavarian curriculum.
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 ## 🌟 Features
 
-### 📖 Dual Course Support
+### 📖 Four Books Supported
 - **French ⟷ German** (Découvertes 1 - Bayern)
+- **French ⟷ German** (Découvertes 2 - Bayern)
 - **German ⟷ English** (Green Line 2 - Bayern)
+- **German ⟷ English** (Green Line 3 - Bayern)
 
 ### 🎯 Learning Tools
 - **Bidirectional Practice**: Learn in both translation directions
@@ -36,23 +38,6 @@ A lightweight, client-side vocabulary training application designed for German l
 ## 🚀 Demo
 
 Visit the live application: [https://lacomax.github.io](https://lacomax.github.io)
-
-## 📸 Screenshots
-
-### Setup Screen
-Select your book, lesson, module, and practice direction:
-
-![Setup Screen](docs/screenshot-setup.png)
-
-### Quiz Interface
-Practice with real-time feedback and example sentences:
-
-![Quiz Interface](docs/screenshot-quiz.png)
-
-### Statistics
-Track your progress and identify words that need more practice:
-
-![Statistics](docs/screenshot-stats.png)
 
 ## 🛠️ Technologies Used
 
@@ -92,7 +77,7 @@ npx serve
 ## 📚 Usage Instructions
 
 ### Getting Started
-1. **Select a Book**: Choose between "Découvertes 1 - Bayern" (FR-DE) or "Green Line 2 - Bayern" (DE-EN)
+1. **Select a Book**: "Découvertes 1 - Bayern" (FR-DE), "Découvertes 2 - Bayern" (FR-DE-2), "Green Line 2 - Bayern" (DE-EN) or "Green Line 3 - Bayern" (DE-EN-3)
 2. **Choose Lesson**: Select a specific lesson or "All" to practice everything
 3. **Pick Module** (optional): Focus on specific topics within lessons
 4. **Set Direction**: Choose translation direction or "Both" for bidirectional practice
@@ -139,24 +124,36 @@ Vocabulary data is stored in JSON format:
 
 ```
 Lacomax.github.io/
-├── index.html              # Main HTML structure
-├── script.js               # Application logic
-├── styles.css              # Styling and themes
-├── manifest.json           # PWA manifest
-├── sw.js                   # Service Worker
-├── vocabD1B.json          # French-German vocabulary
-├── vocabGL2B.json         # German-English vocabulary
-├── correct_mp3/           # Success sound effects
-├── icons/                 # PWA icons (multiple sizes)
-├── flag_france.png        # French flag
-├── flag_germany.png       # German flag
-├── flag_uk.png            # UK flag
-├── favicon.ico            # Browser icon
-├── tests/                 # Test suite
-│   └── vocab.test.js      # Unit tests
-├── .gitignore
+├── index.html                          # Main HTML structure (single page)
+├── manifest.json                       # PWA manifest
+├── sw.js                               # Service Worker (bump CACHE_VERSION when deploying)
+├── package.json                        # npm scripts + dev dependencies
+├── css/
+│   └── styles.css                      # Styling and themes
+├── js/
+│   └── script.js                       # Application logic (CONFIG, TRANSLATIONS, quiz flow)
+├── vocabulary/
+│   ├── decouvertes-1-bayern.json       # French-German (Découvertes 1)
+│   ├── decouvertes-2-bayern.json       # French-German (Découvertes 2)
+│   ├── greenline-2-bayern.json         # German-English (Green Line 2)
+│   └── greenline-3-bayern.json         # German-English (Green Line 3)
+├── audio/
+│   └── correct/                        # correct01.mp3 ... correct25.mp3
+├── images/
+│   ├── favicon.ico                     # Browser icon
+│   └── flags/                          # france.png, germany.png, uk.png
+├── icons/
+│   ├── ios/                            # Icons referenced by manifest.json and index.html
+│   ├── android/                        # Additional generated icon sets
+│   ├── windows11/
+│   ├── icons.json
+│   └── README.md
+├── tests/
+│   └── vocab.test.js                   # Unit tests (custom runner, no Jest)
 ├── .eslintrc.json
 ├── .prettierrc.json
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
@@ -215,7 +212,7 @@ This project is licensed under the GNU General Public License v2.0 - see the [LI
 
 ## 🙏 Acknowledgments
 
-- Vocabulary data based on **Découvertes 1** and **Green Line 2** textbooks (Klett Verlag)
+- Vocabulary data based on the **Découvertes 1 & 2** and **Green Line 2 & 3** textbooks (Klett Verlag)
 - Success sound effects for positive reinforcement
 - Inspired by modern language learning platforms
 
