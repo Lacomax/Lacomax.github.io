@@ -3,7 +3,7 @@
  * Provides offline functionality and caching strategies
  */
 
-const CACHE_VERSION = 'v3.5.0';
+const CACHE_VERSION = 'v3.5.1';
 const CACHE_NAME = `vokabeltrainer-${CACHE_VERSION}`;
 
 // Files to cache immediately on install
@@ -50,7 +50,8 @@ self.addEventListener('install', (event) => {
         caches.open(CACHE_NAME)
             .then((cache) => {
                 console.log('[SW] Caching static assets');
-                return cache.addAll(STATIC_CACHE);
+                // Bypass the browser HTTP cache so a new version never stores stale code
+                return cache.addAll(STATIC_CACHE.map((url) => new Request(url, { cache: 'reload' })));
             })
             .then(() => {
                 console.log('[SW] Static assets cached successfully');
@@ -105,7 +106,10 @@ self.addEventListener('fetch', (event) => {
     }
 
     // Handle different types of requests
-    if (isStaticAsset(url.pathname)) {
+    if (isAppCode(url.pathname)) {
+        // Network-first for HTML/JS/CSS so the book menu and script.js never get out of sync
+        event.respondWith(networkFirst(request, { cache: 'no-cache' }));
+    } else if (isStaticAsset(url.pathname)) {
         // Cache-first strategy for static assets
         event.respondWith(cacheFirst(request));
     } else if (isVocabularyFile(url.pathname)) {
@@ -162,9 +166,9 @@ async function cacheFirst(request) {
 /**
  * Network-first strategy: Try network, fallback to cache
  */
-async function networkFirst(request) {
+async function networkFirst(request, fetchOptions = {}) {
     try {
-        const networkResponse = await fetch(request);
+        const networkResponse = await fetch(request, fetchOptions);
 
         // Cache successful responses
         if (networkResponse && networkResponse.status === 200) {
@@ -193,13 +197,20 @@ async function networkFirst(request) {
 }
 
 /**
- * Check if URL is a static asset
+ * Check if URL is app code (page, scripts, styles)
+ */
+function isAppCode(pathname) {
+    return pathname.endsWith('/') ||
+           pathname.endsWith('.html') ||
+           pathname.endsWith('.css') ||
+           pathname.endsWith('.js');
+}
+
+/**
+ * Check if URL is a static asset (images, manifest)
  */
 function isStaticAsset(pathname) {
-    return pathname.endsWith('.html') ||
-           pathname.endsWith('.css') ||
-           pathname.endsWith('.js') ||
-           pathname.endsWith('.png') ||
+    return pathname.endsWith('.png') ||
            pathname.endsWith('.ico') ||
            pathname.endsWith('.json') && pathname.includes('manifest');
 }
