@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
     <!-- Primary Meta Tags -->
-    <title>Vokabeltrainer - Interactive Language Learning App | French-German & German-English</title>
+    <title>Vokabeltrainer - Interactive Language Learning App | French, English & Spanish</title>
     <meta name="title" content="Vokabeltrainer - Interactive Language Learning App">
-    <meta name="description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1–5) and German-English (Green Line 2–6) with smart repetition, multiple lesson selection, progress tracking, and offline support.">
-    <meta name="keywords" content="vocabulary trainer, Vokabeltrainer, German learning, French German, English German, Découvertes 1-5, Green Line 2-6, language learning, Bayern, flashcards">
+    <meta name="description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1–5), German-English (Green Line 2–6) and Spanish-German (Encuentros hoy 1) with smart repetition, multiple lesson selection, progress tracking, and offline support.">
+    <meta name="keywords" content="vocabulary trainer, Vokabeltrainer, German learning, French German, English German, Spanish German, Découvertes 1-5, Green Line 2-6, Encuentros hoy 1, language learning, Bayern, flashcards">
     <meta name="author" content="Lacomax">
     <meta name="theme-color" content="#66b3ff">
 
@@ -16,17 +16,18 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lacomax.github.io/">
     <meta property="og:title" content="Vokabeltrainer - Interactive Language Learning App">
-    <meta property="og:description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1–5) and German-English (Green Line 2–6) with smart repetition, multiple lesson selection, and progress tracking.">
+    <meta property="og:description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1–5), German-English (Green Line 2–6) and Spanish-German (Encuentros hoy 1) with smart repetition, multiple lesson selection, and progress tracking.">
     <meta property="og:image" content="https://lacomax.github.io/icons/ios/512.png">
     <meta property="og:locale" content="de_DE">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://lacomax.github.io/">
     <meta name="twitter:title" content="Vokabeltrainer - Interactive Language Learning App">
-    <meta name="twitter:description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1–5) and German-English (Green Line 2–6) with smart repetition and multiple lesson selection.">
+    <meta name="twitter:description" content="Free vocabulary trainer for German language learners. Practice French-German (Découvertes 1–5), German-English (Green Line 2–6) and Spanish-German (Encuentros hoy 1) with smart repetition and multiple lesson selection.">
     <meta name="twitter:image" content="https://lacomax.github.io/icons/ios/512.png">
 
     <!-- Favicon -->
@@ -69,6 +70,9 @@
                         <option value="DE-EN-4">Green Line 4 - Bayern</option>
                         <option value="DE-EN-5">Green Line 5 - Bayern</option>
                         <option value="DE-EN-6">Green Line 6 - Bayern</option>
+                    </optgroup>
+                    <optgroup label="Spanisch">
+                        <option value="ES-DE">Encuentros hoy 1</option>
                     </optgroup>
                 </select>
 
@@ -171,6 +175,35 @@
                         <button data-char="'" aria-label="Insert apostrophe" type="button">'</button>
                         <button data-char="«" aria-label="Insert left guillemet" type="button">«</button>
                         <button data-char="»" aria-label="Insert right guillemet" type="button">»</button>
+                    </div>
+                    <!-- Filas 5-7: Español (solo con libros de español, que ocultan las filas 1-4) -->
+                    <div class="keyboard-row" data-lang="es" style="display:none;">
+                        <button data-char="á" aria-label="Insert a acute" type="button">á</button>
+                        <button data-char="é" aria-label="Insert e acute" type="button">é</button>
+                        <button data-char="í" aria-label="Insert i acute" type="button">í</button>
+                        <button data-char="ó" aria-label="Insert o acute" type="button">ó</button>
+                        <button data-char="ú" aria-label="Insert u acute" type="button">ú</button>
+                        <button data-char="ñ" aria-label="Insert n tilde" type="button">ñ</button>
+                        <button data-char="ü" aria-label="Insert u diaeresis" type="button">ü</button>
+                        <button data-char="¿" aria-label="Insert inverted question mark" type="button">¿</button>
+                        <button data-char="¡" aria-label="Insert inverted exclamation mark" type="button">¡</button>
+                    </div>
+                    <div class="keyboard-row" data-lang="es" style="display:none;">
+                        <button data-char="Á" aria-label="Insert A acute" type="button">Á</button>
+                        <button data-char="É" aria-label="Insert E acute" type="button">É</button>
+                        <button data-char="Í" aria-label="Insert I acute" type="button">Í</button>
+                        <button data-char="Ó" aria-label="Insert O acute" type="button">Ó</button>
+                        <button data-char="Ú" aria-label="Insert U acute" type="button">Ú</button>
+                        <button data-char="Ñ" aria-label="Insert N tilde" type="button">Ñ</button>
+                        <button data-char="Ü" aria-label="Insert U diaeresis" type="button">Ü</button>
+                    </div>
+                    <!-- Fila 7: Alemán (para las respuestas en alemán) -->
+                    <div class="keyboard-row" data-lang="es" style="display:none;">
+                        <button data-char="ä" aria-label="Insert a umlaut" type="button">ä</button>
+                        <button data-char="Ä" aria-label="Insert A umlaut" type="button">Ä</button>
+                        <button data-char="ö" aria-label="Insert o umlaut" type="button">ö</button>
+                        <button data-char="Ö" aria-label="Insert O umlaut" type="button">Ö</button>
+                        <button data-char="ß" aria-label="Insert sharp s" type="button">ß</button>
                     </div>
                 </div>
                 <button id="checkAnswerBtn" type="button" aria-label="Check answer">Valider</button>

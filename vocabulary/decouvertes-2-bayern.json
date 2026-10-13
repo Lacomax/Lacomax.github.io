@@ -1199,8 +1199,8 @@
     {
         "lesson": "Leçon 3",
         "module": "A",
-        "french": "…, hein? (fam.)",
-        "german": "…, oder?",
+        "french": "..., hein? (fam.)",
+        "german": "..., oder?",
         "example": ""
     },
     {
@@ -1423,7 +1423,7 @@
     {
         "lesson": "Leçon 3",
         "module": "A",
-        "french": "Ça va avec … ?",
+        "french": "Ça va avec ... ?",
         "german": "Passt das zu ...?",
         "example": ""
     },
@@ -1486,15 +1486,15 @@
     {
         "lesson": "Leçon 3",
         "module": "B",
-        "french": "ne … que",
+        "french": "ne ... que",
         "german": "nur",
         "example": ""
     },
     {
         "lesson": "Leçon 3",
         "module": "B",
-        "french": "il n’y a pas que …",
-        "german": "es gibt nicht nur …",
+        "french": "il n’y a pas que ...",
+        "german": "es gibt nicht nur ...",
         "example": ""
     },
     {
@@ -2704,7 +2704,7 @@
     {
         "lesson": "Leçon 5",
         "module": "A",
-        "french": "ne … pas encore",
+        "french": "ne ... pas encore",
         "german": "noch nicht",
         "example": ""
     },
@@ -3880,8 +3880,8 @@
     {
         "lesson": "Leçon 7",
         "module": "B",
-        "french": "dater de …",
-        "german": "stammen aus …; sein von …",
+        "french": "dater de ...",
+        "german": "stammen aus ...; sein von ...",
         "example": ""
     },
     {

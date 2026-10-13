@@ -1,23 +1,22 @@
 # 📚 Vokabeltrainer - Interactive Vocabulary Learning App
 
-A lightweight, client-side vocabulary training application designed for German language learners. Built specifically for students using the **Découvertes 1 & 2** (French-German) and **Green Line 2 & 3** (German-English) textbooks from the Bavarian curriculum.
+A lightweight, client-side vocabulary training application designed for German language learners. Built specifically for students using the **Découvertes 1–5** (French-German), **Green Line 2–6** (German-English) and **Encuentros hoy 1** (Spanish-German) textbooks from the Bavarian curriculum.
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 ## 🌟 Features
 
-### 📖 Four Books Supported
-- **French ⟷ German** (Découvertes 1 - Bayern)
-- **French ⟷ German** (Découvertes 2 - Bayern)
-- **German ⟷ English** (Green Line 2 - Bayern)
-- **German ⟷ English** (Green Line 3 - Bayern)
+### 📖 Eleven Books Supported
+- **French ⟷ German** (Découvertes 1–5 - Bayern)
+- **German ⟷ English** (Green Line 2–6 - Bayern)
+- **Spanish ⟷ German** (Encuentros hoy 1)
 
 ### 🎯 Learning Tools
 - **Bidirectional Practice**: Learn in both translation directions
 - **Smart Repetition**: Automatically repeats missed words until mastered
 - **Adaptive Quizzes**: Words you miss are queued for review
 - **Progress Tracking**: Real-time progress bar and statistics
-- **Audio Feedback**: 25 different success sounds for engagement
+- **Audio Feedback**: 47 different success sounds for engagement
 
 ### 🎨 User Experience
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
@@ -77,7 +76,7 @@ npx serve
 ## 📚 Usage Instructions
 
 ### Getting Started
-1. **Select a Book**: "Découvertes 1 - Bayern" (FR-DE), "Découvertes 2 - Bayern" (FR-DE-2), "Green Line 2 - Bayern" (DE-EN) or "Green Line 3 - Bayern" (DE-EN-3)
+1. **Select a Book**: Découvertes 1–5 (FR-DE … FR-DE-5), Green Line 2–6 (DE-EN … DE-EN-6) or Encuentros hoy 1 (ES-DE)
 2. **Choose Lesson**: Select a specific lesson or "All" to practice everything
 3. **Pick Module** (optional): Focus on specific topics within lessons
 4. **Set Direction**: Choose translation direction or "Both" for bidirectional practice
@@ -133,15 +132,14 @@ Lacomax.github.io/
 ├── js/
 │   └── script.js                       # Application logic (CONFIG, TRANSLATIONS, quiz flow)
 ├── vocabulary/
-│   ├── decouvertes-1-bayern.json       # French-German (Découvertes 1)
-│   ├── decouvertes-2-bayern.json       # French-German (Découvertes 2)
-│   ├── greenline-2-bayern.json         # German-English (Green Line 2)
-│   └── greenline-3-bayern.json         # German-English (Green Line 3)
+│   ├── decouvertes-1-bayern.json       # French-German (Découvertes 1) ... decouvertes-5-bayern.json
+│   ├── greenline-2-bayern.json         # German-English (Green Line 2) ... greenline-6-bayern.json
+│   └── encuentros-hoy-1.json           # Spanish-German (Encuentros hoy 1)
 ├── audio/
-│   └── correct/                        # correct01.mp3 ... correct25.mp3
+│   └── correct/                        # correct01.mp3 ... correct47.mp3
 ├── images/
 │   ├── favicon.ico                     # Browser icon
-│   └── flags/                          # france.png, germany.png, uk.png
+│   └── flags/                          # france.png, germany.png, spain.png, uk.png
 ├── icons/
 │   ├── ios/                            # Icons referenced by manifest.json and index.html
 │   ├── android/                        # Additional generated icon sets
@@ -212,7 +210,7 @@ This project is licensed under the GNU General Public License v2.0 - see the [LI
 
 ## 🙏 Acknowledgments
 
-- Vocabulary data based on the **Découvertes 1 & 2** and **Green Line 2 & 3** textbooks (Klett Verlag)
+- Vocabulary data based on the **Découvertes 1–5** and **Green Line 2–6** textbooks (Klett Verlag) and **Encuentros hoy 1** (Cornelsen)
 - Success sound effects for positive reinforcement
 - Inspired by modern language learning platforms
 

@@ -163,6 +163,7 @@ runner.test('CONFIG should have required properties', (t) => {
             'FR-DE-3': './vocabulary/decouvertes-3-bayern.json',
             'FR-DE-4': './vocabulary/decouvertes-4-bayern.json',
             'FR-DE-5': './vocabulary/decouvertes-5-bayern.json',
+            'ES-DE': './vocabulary/encuentros-hoy-1.json',
             'DE-EN': './vocabulary/greenline-2-bayern.json',
             'DE-EN-3': './vocabulary/greenline-3-bayern.json',
             'DE-EN-4': './vocabulary/greenline-4-bayern.json',
@@ -176,7 +177,7 @@ runner.test('CONFIG should have required properties', (t) => {
     t.assertEqual(CONFIG.TOTAL_CORRECT_SOUNDS, 47);
     t.assertEqual(CONFIG.AUDIO_PATH, 'audio/correct/');
     t.assertEqual(CONFIG.STORAGE_KEY, 'vokabeltrainer_progress');
-    t.assertEqual(Object.keys(CONFIG.JSON_FILES).length, 10, 'All 10 books must be mapped');
+    t.assertEqual(Object.keys(CONFIG.JSON_FILES).length, 11, 'All 11 books must be mapped');
     t.assertTrue('FR-DE' in CONFIG.JSON_FILES);
     t.assertTrue('FR-DE-2' in CONFIG.JSON_FILES);
     t.assertTrue('DE-EN' in CONFIG.JSON_FILES);
@@ -361,11 +362,11 @@ runner.test('All configured vocabulary files should load with complete entries',
     const block = script.match(/JSON_FILES:\s*{([^}]*)}/)[1];
     const books = [...block.matchAll(/'([^']+)':\s*'([^']+)'/g)];
 
-    t.assertEqual(books.length, 10, 'script.js should map 10 books');
+    t.assertEqual(books.length, 11, 'script.js should map 11 books');
     books.forEach(([, book, file]) => {
         t.assertTrue(html.includes(`value="${book}"`), `${book} missing from book menu`);
         t.assertTrue(sw.includes(file), `${file} missing from service worker cache`);
-        const foreignKey = book.startsWith('FR-') ? 'french' : 'english';
+        const foreignKey = { FR: 'french', ES: 'spanish' }[book.slice(0, 2)] || 'english';
         const data = JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
         t.assertTrue(data.length > 100, `${file} has only ${data.length} entries`);
         data.forEach((entry, i) => {
@@ -375,6 +376,23 @@ runner.test('All configured vocabulary files should load with complete entries',
                     `${file}[${i}] has empty ${key}`
                 );
             });
+            // The ellipsis character can't be typed: the data uses three dots
+            Object.values(entry).forEach((value) => {
+                t.assertFalse(
+                    typeof value === 'string' && value.includes('\u2026'),
+                    `${file}[${i}] contains the ellipsis character: ${value}`
+                );
+            });
+            // Encuentros writes notes in parentheses that the answer check may drop, so they
+            // must be balanced and not nested, and no italics marker (*) may be left over
+            if (foreignKey === 'spanish') {
+                [entry.spanish, entry.german].forEach((value) => {
+                    t.assertTrue(
+                        /^[^()*]*(?:\([^()*]*\)[^()*]*)*$/.test(value),
+                        `${file}[${i}] has nested or unbalanced parentheses or a "*": ${value}`
+                    );
+                });
+            }
         });
     });
 });
@@ -417,15 +435,34 @@ function parseAuxiliaries(text, language) {
             }
         }
     } else if (language === 'german') {
-        const sichMatch = core.match(/^(sich(?:\s+(?:an|auf|für|mit|von|über|um|aus|vor|zu|bei|nach)\s+(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*))?)\s+/);
+        const sichMatch = core.match(/^(sich(?:\s+(?:an|auf|für|mit|von|über|um|aus|vor|zu|bei|nach)\s+(?:(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.)(?:\/(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.))?\s*))?)\s+/);
         if (sichMatch) {
             prefix = sichMatch[1].trim();
             core = core.slice(sichMatch[0].length);
         } else {
-            const caseMatch = core.match(/^((?:(?:an|von|mit|für|bei|zu|über|auf|aus|nach)\s+)?(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*)+)\s*/);
+            const caseMatch = core.match(/^((?:(?:an|von|mit|für|bei|zu|über|auf|aus|nach)\s+)?(?:(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.)(?:\/(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.))?\s*)+)\s*/);
             if (caseMatch) {
                 prefix = caseMatch[1].trim();
                 core = core.slice(caseMatch[0].length);
+            }
+        }
+    } else if (language === 'spanish') {
+        let parenMatch;
+        while ((parenMatch = core.match(/\s+\([^()]*\)$/)) !== null) {
+            suffix = `${parenMatch[0].trim()} ${suffix}`.trim();
+            core = core.slice(0, -parenMatch[0].length);
+        }
+        let objectMatch;
+        while ((objectMatch = core.match(/\s+((?:(?:a|de|con|en|para|por)\s+)?(?:algo|alguien))$/)) !== null) {
+            suffix = `${objectMatch[1]} ${suffix}`.trim();
+            core = core.slice(0, -objectMatch[0].length);
+        }
+        const ellipsisCount = (core.match(/\.\.\./g) || []).length;
+        if (ellipsisCount === 1) {
+            const ellipsisMatch = core.match(/\s+(\.\.\.[?!]?)$/);
+            if (ellipsisMatch) {
+                suffix = `${ellipsisMatch[1].trim()} ${suffix}`.trim();
+                core = core.slice(0, -ellipsisMatch[0].length);
             }
         }
     } else if (language === 'english') {
@@ -643,6 +680,73 @@ runner.test('parseAuxiliaries: German marker in middle stays in core', (t) => {
     t.assertEqual(r.core, 'streng mit jmdm. sein');
 });
 
+runner.test('parseAuxiliaries: German jdn/jdm without period (Encuentros)', (t) => {
+    const r1 = parseAuxiliaries('jdn anrufen', 'german');
+    t.assertEqual(r1.prefix, 'jdn');
+    t.assertEqual(r1.core, 'anrufen');
+    const r2 = parseAuxiliaries('jdm etw. wünschen', 'german');
+    t.assertEqual(r2.prefix, 'jdm etw.');
+    t.assertEqual(r2.core, 'wünschen');
+    const r3 = parseAuxiliaries('jdn/etw. verhöhnen', 'german');
+    t.assertEqual(r3.prefix, 'jdn/etw.');
+    t.assertEqual(r3.core, 'verhöhnen');
+});
+
+runner.test('parseAuxiliaries: German words starting with jd stay in core', (t) => {
+    const r = parseAuxiliaries('jeder Tag', 'german');
+    t.assertEqual(r.prefix, '');
+    t.assertEqual(r.core, 'jeder Tag');
+});
+
+// --- Spanish parsing tests ---
+
+runner.test('parseAuxiliaries: Spanish trailing notes in parentheses', (t) => {
+    const r = parseAuxiliaries('la bici (fam.) (= la bicicleta)', 'spanish');
+    t.assertEqual(r.core, 'la bici');
+    t.assertEqual(r.suffix, '(fam.) (= la bicicleta)');
+});
+
+runner.test('parseAuxiliaries: Spanish (+ inf.) placeholder', (t) => {
+    const r = parseAuxiliaries('ir a (+ inf.)', 'spanish');
+    t.assertEqual(r.core, 'ir a');
+    t.assertEqual(r.suffix, '(+ inf.)');
+});
+
+runner.test('parseAuxiliaries: Spanish chained algo a alguien', (t) => {
+    const r = parseAuxiliaries('desear algo a alguien', 'spanish');
+    t.assertEqual(r.core, 'desear');
+    t.assertEqual(r.suffix, 'algo a alguien');
+});
+
+runner.test('parseAuxiliaries: Spanish a alguien', (t) => {
+    const r = parseAuxiliaries('llamar a alguien', 'spanish');
+    t.assertEqual(r.core, 'llamar');
+    t.assertEqual(r.suffix, 'a alguien');
+});
+
+runner.test('parseAuxiliaries: Spanish trailing ellipsis keeps the comma', (t) => {
+    const r = parseAuxiliaries('Oye, ...', 'spanish');
+    t.assertEqual(r.core, 'Oye,');
+    t.assertEqual(r.suffix, '...');
+});
+
+runner.test('parseAuxiliaries: Spanish ellipsis in the middle stays in core', (t) => {
+    const r = parseAuxiliaries('cumplir ... años', 'spanish');
+    t.assertEqual(r.core, 'cumplir ... años');
+    t.assertEqual(r.suffix, '');
+});
+
+runner.test('parseAuxiliaries: Spanish parentheses inside a word stay in core', (t) => {
+    const r = parseAuxiliaries('tercer(o)', 'spanish');
+    t.assertEqual(r.core, 'tercer(o)');
+});
+
+runner.test('parseAuxiliaries: French trailing ellipsis (former … character)', (t) => {
+    const r = parseAuxiliaries("C'est parti pour ...", 'french');
+    t.assertEqual(r.core, "C'est parti pour");
+    t.assertEqual(r.suffix, '...');
+});
+
 // --- findCommonAux tests ---
 
 runner.test('findCommonAux: common prefix across all alternatives', (t) => {
@@ -677,8 +781,16 @@ runner.test('findCommonAux: empty array', (t) => {
 
 // Re-implement normalizeAnswer locally (same as in script.js)
 function normalizeAnswer(str) {
-    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/\s+/g, ' ').trim();
+    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/…/g, '...').replace(/\s+/g, ' ').trim();
 }
+
+runner.test('normalizeAnswer: ellipsis character becomes three dots', (t) => {
+    t.assertEqual(normalizeAnswer('Los geht’s mit …'), "Los geht's mit ...");
+});
+
+runner.test('normalizeAnswer: typed three dots match a phone-converted ellipsis', (t) => {
+    t.assertEqual(normalizeAnswer('what a ...'), normalizeAnswer('what a …'));
+});
 
 runner.test('normalizeAnswer: double space in middle collapses to one', (t) => {
     t.assertEqual(normalizeAnswer('to go  out'), 'to go out');
@@ -722,6 +834,122 @@ runner.test('normalizeAnswer: file value with curly quote matches user typing AS
     const fileValue = 'I don’t mind';
     const userTypes = "I don't mind";
     t.assertEqual(normalizeAnswer(fileValue), normalizeAnswer(userTypes));
+});
+
+// ============================================================================
+// ACCEPTED ANSWERS TESTS
+// ============================================================================
+
+// Re-implement getAcceptedAnswers locally (same as in script.js)
+function getAcceptedAnswers(parsedAnswers, lenient) {
+    const accepted = new Set();
+    const add = (text) => {
+        accepted.add(normalizeAnswer(text));
+        accepted.add(normalizeAnswer(text.replace(/[,;:]\s*$/, '')));
+    };
+    parsedAnswers.forEach(({ prefix, core, suffix }) => {
+        if (!lenient) {
+            accepted.add(normalizeAnswer(core));
+            return;
+        }
+        [core, `${prefix} ${core}`, `${core} ${suffix}`, `${prefix} ${core} ${suffix}`].forEach(text => {
+            [text, text.replace(/^\s*hier:\s*/, '')].forEach(variant => {
+                add(variant);
+                add(variant.replace(/\([^()]*\)/g, ' '));
+                add(variant.replace(/[()]/g, ''));
+            });
+        });
+    });
+    accepted.delete('');
+    return accepted;
+}
+
+const accepted = (text, language, lenient) =>
+    [...getAcceptedAnswers(parseAllAnswers(text, language), lenient)].sort();
+
+runner.test('getAcceptedAnswers: strict mode accepts only the cores', (t) => {
+    t.assertEqual(accepted('Flur; Diele', 'german', false).join('|'), 'Diele|Flur');
+    t.assertEqual(
+        accepted('motiviert sein (etw. zu tun)', 'german', false).join('|'),
+        'motiviert sein (etw. zu tun)'
+    );
+});
+
+runner.test('getAcceptedAnswers: lenient mode makes parenthesized parts optional', (t) => {
+    t.assertEqual(accepted('un poco (de)', 'spanish', true).join('|'), 'un poco|un poco (de)|un poco de');
+    t.assertEqual(
+        accepted('Englisch (Sprache)', 'german', true).join('|'),
+        'Englisch|Englisch (Sprache)|Englisch Sprache'
+    );
+    t.assertEqual(
+        accepted('tercer(o); tercera', 'spanish', true).join('|'),
+        'tercer|tercer(o)|tercera|tercero'
+    );
+});
+
+runner.test('getAcceptedAnswers: lenient mode accepts hints and drops hier:', (t) => {
+    t.assertEqual(accepted('desear algo a alguien', 'spanish', true).join('|'), 'desear|desear algo a alguien');
+    t.assertEqual(accepted('jdn anrufen', 'german', true).join('|'), 'anrufen|jdn anrufen');
+    t.assertEqual(
+        accepted('gut; hier: na gut; o. k.', 'german', true).join('|'),
+        'gut|hier: na gut|na gut|o. k.'
+    );
+    t.assertEqual(accepted('Oye, ...', 'spanish', true).join('|'), 'Oye|Oye,|Oye, ...');
+});
+
+// Node only: the local copies above must behave exactly like the functions in js/script.js
+runner.test('Local copies behave like js/script.js on every vocabulary entry', (t) => {
+    if (typeof require === 'undefined') {
+        t.skip('Node.js only');
+    }
+    const fs = require('fs');
+    const path = require('path');
+    const vm = require('vm');
+    const root = path.join(__dirname, '..');
+    const source = fs.readFileSync(path.join(root, 'js', 'script.js'), 'utf8').replace(/\r\n/g, '\n');
+    const extract = (name) => {
+        const start = source.indexOf(`\nfunction ${name}(`);
+        t.assertTrue(start >= 0, `${name} missing from script.js`);
+        let depth = 0;
+        let end = source.indexOf('{', start);
+        for (; end < source.length; end++) {
+            if (source[end] === '{') {
+                depth++;
+            } else if (source[end] === '}' && --depth === 0) {
+                break;
+            }
+        }
+        return source.slice(start, end + 1);
+    };
+    const real = vm.createContext({});
+    ['parseAuxiliaries', 'parseAllAnswers', 'normalizeAnswer', 'getAcceptedAnswers']
+        .forEach(name => vm.runInContext(extract(name), real));
+
+    let compared = 0;
+    fs.readdirSync(path.join(root, 'vocabulary')).forEach(file => {
+        const data = JSON.parse(fs.readFileSync(path.join(root, 'vocabulary', file), 'utf8'));
+        data.forEach(entry => {
+            ['french', 'spanish', 'english', 'german'].forEach(language => {
+                const text = entry[language];
+                if (typeof text !== 'string') {
+                    return;
+                }
+                const mine = parseAllAnswers(text, language);
+                const theirs = real.parseAllAnswers(text, language);
+                t.assertEqual(JSON.stringify(mine), JSON.stringify(theirs), `${file}: parse "${text}"`);
+                [false, true].forEach(lenient => {
+                    t.assertEqual(
+                        [...getAcceptedAnswers(mine, lenient)].sort().join('|'),
+                        [...real.getAcceptedAnswers(theirs, lenient)].sort().join('|'),
+                        `${file}: accepted answers for "${text}" (lenient: ${lenient})`
+                    );
+                });
+                t.assertEqual(normalizeAnswer(text), real.normalizeAnswer(text), `${file}: normalize "${text}"`);
+                compared++;
+            });
+        });
+    });
+    t.assertTrue(compared > 10000, `only ${compared} strings compared`);
 });
 
 // ============================================================================

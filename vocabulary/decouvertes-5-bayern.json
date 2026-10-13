@@ -539,16 +539,16 @@
         "book": "Découvertes Bayern Band 5",
         "lesson": "Leçon 1",
         "module": "B",
-        "french": "ne … ni …, ni",
-        "german": "weder … noch (Verneinung von zwei Objekten)",
+        "french": "ne ... ni ..., ni",
+        "german": "weder ... noch (Verneinung von zwei Objekten)",
         "example": ""
     },
     {
         "book": "Découvertes Bayern Band 5",
         "lesson": "Leçon 1",
         "module": "B",
-        "french": "ni … ni … ne",
-        "german": "weder … noch (Verneinung von zwei Subjekten)",
+        "french": "ni ... ni ... ne",
+        "german": "weder ... noch (Verneinung von zwei Subjekten)",
         "example": ""
     },
     {
@@ -2491,8 +2491,8 @@
         "book": "Découvertes Bayern Band 5",
         "lesson": "Leçon 3",
         "module": "B",
-        "french": "par rapport à …",
-        "german": "im Verhältnis zu …",
+        "french": "par rapport à ...",
+        "german": "im Verhältnis zu ...",
         "example": ""
     },
     {

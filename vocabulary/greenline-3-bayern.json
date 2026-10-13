@@ -723,8 +723,8 @@
         "book":"Green Line Bayern 2017 Band 3",
         "lesson":"U1",
         "module":"SK",
-        "english":"I don’t mind … (+ -ing)",
-        "german":"Ich habe nichts dagegen (zu) …; Mir macht es nichts aus (zu) …",
+        "english":"I don’t mind ... (+ -ing)",
+        "german":"Ich habe nichts dagegen (zu) ...; Mir macht es nichts aus (zu) ...",
         "example":null
     },
     {
@@ -875,8 +875,8 @@
         "book":"Green Line Bayern 2017 Band 3",
         "lesson":"U1",
         "module":"ST",
-        "english":"either … or …",
-        "german":"entweder … oder …",
+        "english":"either ... or ...",
+        "german":"entweder ... oder ...",
         "example":null
     },
     {
@@ -5172,7 +5172,7 @@
         "lesson":"U4",
         "module":"ST",
         "english":"off",
-        "german":"(von …) weg\/ab\/herunter",
+        "german":"(von ...) weg\/ab\/herunter",
         "example":null
     },
     {

@@ -179,8 +179,8 @@
         "book": "Green Line Bayern 2017 Band 4",
         "lesson": "AC1",
         "module": "_",
-        "english": "You’d better … (= You had better)",
-        "german": "Du solltest lieber …",
+        "english": "You’d better ... (= You had better)",
+        "german": "Du solltest lieber ...",
         "example": ""
     },
     {
@@ -332,7 +332,7 @@
         "lesson": "U1",
         "module": "S1",
         "english": "How about (+ noun or gerund)?",
-        "german": "Wie wäre es mit …?; Wie ist es mit …?",
+        "german": "Wie wäre es mit ...?; Wie ist es mit ...?",
         "example": ""
     },
     {
@@ -388,15 +388,15 @@
         "lesson": "U1",
         "module": "S1",
         "english": "It's no use (+ gerund)",
-        "german": "Es nützt nichts …",
+        "german": "Es nützt nichts ...",
         "example": ""
     },
     {
         "book": "Green Line Bayern 2017 Band 4",
         "lesson": "U1",
         "module": "S1",
-        "english": "I'm afraid …",
-        "german": "Leider …",
+        "english": "I'm afraid ...",
+        "german": "Leider ...",
         "example": ""
     },
     {
@@ -508,7 +508,7 @@
         "lesson": "U1",
         "module": "S2",
         "english": "in order to",
-        "german": "um … zu; mit der Absicht, zu",
+        "german": "um ... zu; mit der Absicht, zu",
         "example": ""
     },
     {
@@ -1595,8 +1595,8 @@
         "book": "Green Line Bayern 2017 Band 4",
         "lesson": "TS1",
         "module": "S1",
-        "english": "neither … nor …",
-        "german": "weder … noch …",
+        "english": "neither ... nor ...",
+        "german": "weder ... noch ...",
         "example": ""
     },
     {
@@ -2804,7 +2804,7 @@
         "lesson": "U2",
         "module": "SK2",
         "english": "unless",
-        "german": "es sei denn, (dass) …; wenn nicht",
+        "german": "es sei denn, (dass) ...; wenn nicht",
         "example": ""
     },
     {
@@ -3267,7 +3267,7 @@
         "book": "Green Line Bayern 2017 Band 4",
         "lesson": "U3",
         "module": "CI",
-        "english": "… as well as …",
+        "english": "... as well as ...",
         "german": "sowie; und (auch)",
         "example": ""
     },
@@ -3996,7 +3996,7 @@
         "lesson": "U3",
         "module": "STA",
         "english": "beyond",
-        "german": "jenseits; über … hinaus",
+        "german": "jenseits; über ... hinaus",
         "example": ""
     },
     {
@@ -4083,7 +4083,7 @@
         "book": "Green Line Bayern 2017 Band 4",
         "lesson": "U3",
         "module": "SK2",
-        "english": "Sincerely, …",
+        "english": "Sincerely, ...",
         "german": "Mit freundlichen Grüßen",
         "example": ""
     },
@@ -5212,7 +5212,7 @@
         "lesson": "U4",
         "module": "STA",
         "english": "in case",
-        "german": "falls; für den Fall, dass …",
+        "german": "falls; für den Fall, dass ...",
         "example": ""
     },
     {

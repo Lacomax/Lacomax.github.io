@@ -3,7 +3,7 @@
  * Provides offline functionality and caching strategies
  */
 
-const CACHE_VERSION = 'v3.5.1';
+const CACHE_VERSION = 'v3.6.0';
 const CACHE_NAME = `vokabeltrainer-${CACHE_VERSION}`;
 
 // Files to cache immediately on install
@@ -16,6 +16,7 @@ const STATIC_CACHE = [
     './images/favicon.ico',
     './images/flags/france.png',
     './images/flags/germany.png',
+    './images/flags/spain.png',
     './images/flags/uk.png'
 ];
 
@@ -26,6 +27,7 @@ const DYNAMIC_CACHE = [
     './vocabulary/decouvertes-3-bayern.json',
     './vocabulary/decouvertes-4-bayern.json',
     './vocabulary/decouvertes-5-bayern.json',
+    './vocabulary/encuentros-hoy-1.json',
     './vocabulary/greenline-2-bayern.json',
     './vocabulary/greenline-3-bayern.json',
     './vocabulary/greenline-4-bayern.json',

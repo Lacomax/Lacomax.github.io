@@ -91,8 +91,8 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 1",
         "module": "A",
-        "french": "C’est parti pour …",
-        "german": "Los geht’s mit …",
+        "french": "C’est parti pour ...",
+        "german": "Los geht’s mit ...",
         "example": ""
     },
     {
@@ -163,7 +163,7 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 1",
         "module": "A",
-        "french": "ne … pas du tout",
+        "french": "ne ... pas du tout",
         "german": "überhaupt nicht",
         "example": ""
     },
@@ -419,16 +419,16 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 1",
         "module": "B",
-        "french": "rien ne …",
-        "german": "nichts …",
+        "french": "rien ne ...",
+        "german": "nichts ...",
         "example": ""
     },
     {
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 1",
         "module": "B",
-        "french": "personne ne …",
-        "german": "niemand …",
+        "french": "personne ne ...",
+        "german": "niemand ...",
         "example": ""
     },
     {
@@ -451,7 +451,7 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 1",
         "module": "B",
-        "french": "ne … personne",
+        "french": "ne ... personne",
         "german": "niemand",
         "example": ""
     },
@@ -491,7 +491,7 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 1",
         "module": "B",
-        "french": "ne … pas non plus",
+        "french": "ne ... pas non plus",
         "german": "auch nicht",
         "example": ""
     },
@@ -1979,8 +1979,8 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 4",
         "module": "A",
-        "french": "Qu’est-ce qui …?",
-        "german": "Was …? (Fragepronomen, Subjekt ist eine Sache)",
+        "french": "Qu’est-ce qui ...?",
+        "german": "Was ...? (Fragepronomen, Subjekt ist eine Sache)",
         "example": ""
     },
     {
@@ -1995,8 +1995,8 @@
         "book": "Découvertes Bayern Band 3",
         "lesson": "Leçon 4",
         "module": "A",
-        "french": "Qui est-ce que …?",
-        "german": "Wen …?",
+        "french": "Qui est-ce que ...?",
+        "german": "Wen ...?",
         "example": ""
     },
     {

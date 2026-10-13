@@ -18,6 +18,7 @@ const CONFIG = {
         'FR-DE-3': './vocabulary/decouvertes-3-bayern.json',
         'FR-DE-4': './vocabulary/decouvertes-4-bayern.json',
         'FR-DE-5': './vocabulary/decouvertes-5-bayern.json',
+        'ES-DE': './vocabulary/encuentros-hoy-1.json',
         'DE-EN': './vocabulary/greenline-2-bayern.json',
         'DE-EN-3': './vocabulary/greenline-3-bayern.json',
         'DE-EN-4': './vocabulary/greenline-4-bayern.json',
@@ -27,11 +28,22 @@ const CONFIG = {
     STORAGE_KEY: 'vokabeltrainer_progress'
 };
 
+/**
+ * Per-language settings, keyed by the language of the book (see getBookLanguage).
+ * - foreignField: vocabulary field holding the foreign word
+ * - foreignFirst: FORWARD shows the foreign word (FR/ES) instead of the German one (EN)
+ */
+const LANGUAGES = {
+    FR: { foreignField: 'french', foreignFirst: true },
+    ES: { foreignField: 'spanish', foreignFirst: true },
+    EN: { foreignField: 'english', foreignFirst: false }
+};
+
 // ============================================================================
 // TRANSLATIONS / i18n
 // ============================================================================
 
-// Keyed by foreign language; every book key starts with 'FR-' or 'DE-EN'
+// Keyed by foreign language: book keys start with 'FR-', 'ES-' or 'DE-EN'
 const TRANSLATIONS = {
     FR: {
         selectLesson: 'Sélectionnez la leçon:',
@@ -58,7 +70,52 @@ const TRANSLATIONS = {
         errorLoading: 'Erreur de chargement des données. Veuillez réessayer.',
         flag1: { src: 'images/flags/france.png', alt: 'Drapeau français' },
         flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
-        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' }
+        bannerFlag: { src: 'images/flags/france.png', alt: 'Drapeau français' },
+        statWords: 'Mots complétés',
+        statTime: 'Temps total',
+        statAccuracy: 'Précision',
+        statAvgAttempts: 'Tentatives moy.',
+        statFirstAttempt: '✓ Correct du premier coup',
+        statSpeed: '⚡ Vitesse',
+        statWordsPerMinute: 'mots/min',
+        statTotalAttempts: '📊 Total de tentatives',
+        perfectScore: '🎉 Parfait! Tous les mots corrects du premier coup!'
+    },
+    ES: {
+        selectLesson: 'Elige la lección:',
+        selectModule: 'Elige el apartado:',
+        direction: 'Dirección:',
+        directionBoth: 'Ambas',
+        directionForward: 'ES → DE',
+        directionBackward: 'DE → ES',
+        randomOrder: 'Orden aleatorio',
+        start: 'Empezar',
+        check: 'Comprobar',
+        correctES: '¡Muy bien!',
+        correctDE: 'Richtig!',
+        incorrect: '¡Uy!',
+        noWords: 'No se han encontrado palabras.',
+        placeholderDE: 'Deine Antwort...',
+        placeholderES: 'Tu respuesta...',
+        statsTitle: 'Estadísticas',
+        mostRepeated: 'Palabras más repetidas:',
+        restart: 'Otra vez',
+        statsSummary: (correct, total, avg) =>
+            `Has acertado ${correct} de ${total} palabras. Intentos medios por palabra: ${avg}.`,
+        attempts: 'intentos',
+        errorLoading: 'Error al cargar los datos. Inténtalo de nuevo.',
+        flag1: { src: 'images/flags/spain.png', alt: 'Bandera de España' },
+        flag2: { src: 'images/flags/germany.png', alt: 'Flagge Deutschlands' },
+        bannerFlag: { src: 'images/flags/spain.png', alt: 'Bandera de España' },
+        statWords: 'Palabras completadas',
+        statTime: 'Tiempo total',
+        statAccuracy: 'Precisión',
+        statAvgAttempts: 'Intentos medios',
+        statFirstAttempt: '✓ Correctas al primer intento',
+        statSpeed: '⚡ Velocidad',
+        statWordsPerMinute: 'palabras/min',
+        statTotalAttempts: '📊 Intentos totales',
+        perfectScore: '🎉 ¡Perfecto! ¡Todas las palabras correctas al primer intento!'
     },
     EN: {
         selectLesson: 'Select Lesson:',
@@ -85,7 +142,16 @@ const TRANSLATIONS = {
         errorLoading: 'Error loading data. Please try again.',
         flag1: { src: 'images/flags/germany.png', alt: 'German flag' },
         flag2: { src: 'images/flags/uk.png', alt: 'UK flag' },
-        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' }
+        bannerFlag: { src: 'images/flags/uk.png', alt: 'UK flag' },
+        statWords: 'Words completed',
+        statTime: 'Total time',
+        statAccuracy: 'Accuracy',
+        statAvgAttempts: 'Avg. attempts',
+        statFirstAttempt: '✓ First attempt correct',
+        statSpeed: '⚡ Speed',
+        statWordsPerMinute: 'words/min',
+        statTotalAttempts: '📊 Total attempts',
+        perfectScore: '🎉 Perfect! All words correct on first try!'
     }
 };
 
@@ -232,12 +298,27 @@ function loadProgress() {
 }
 
 /**
- * Checks whether a book is French-German (otherwise German-English)
+ * Gets the foreign language of a book
  * @param {string} [book] - Book key, defaults to the selected book
- * @returns {boolean} True for Découvertes books
+ * @returns {string} 'FR' (Découvertes), 'ES' (Encuentros) or 'EN' (Green Line)
  */
-function isFrenchBook(book = AppState.bookSelected) {
-    return book.startsWith('FR-');
+function getBookLanguage(book = AppState.bookSelected) {
+    if (book.startsWith('FR-')) {
+        return 'FR';
+    }
+    if (book.startsWith('ES-')) {
+        return 'ES';
+    }
+    return 'EN';
+}
+
+/**
+ * Gets the vocabulary field of a book's foreign language
+ * @param {string} [book] - Book key, defaults to the selected book
+ * @returns {string} 'french', 'spanish' or 'english'
+ */
+function getForeignField(book = AppState.bookSelected) {
+    return LANGUAGES[getBookLanguage(book)].foreignField;
 }
 
 /**
@@ -249,7 +330,7 @@ function getTranslations(book = AppState.bookSelected) {
     if (!book) {
         return undefined;
     }
-    return TRANSLATIONS[isFrenchBook(book) ? 'FR' : 'EN'];
+    return TRANSLATIONS[getBookLanguage(book)];
 }
 
 /**
@@ -270,7 +351,7 @@ function t(key) {
  * Parses auxiliary grammatical text from a vocabulary term.
  * Returns { prefix, core, suffix } where core is the main word to type.
  * @param {string} text - The vocabulary term
- * @param {string} language - 'french', 'german', or 'english'
+ * @param {string} language - 'french', 'spanish', 'german', or 'english'
  * @returns {{ prefix: string, core: string, suffix: string }}
  */
 function parseAuxiliaries(text, language) {
@@ -315,16 +396,41 @@ function parseAuxiliaries(text, language) {
         }
     } else if (language === 'german') {
         // 1. sich + optional preposition + case markers
-        const sichMatch = core.match(/^(sich(?:\s+(?:an|auf|für|mit|von|über|um|aus|vor|zu|bei|nach)\s+(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*))?)\s+/);
+        const sichMatch = core.match(/^(sich(?:\s+(?:an|auf|für|mit|von|über|um|aus|vor|zu|bei|nach)\s+(?:(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.)(?:\/(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.))?\s*))?)\s+/);
         if (sichMatch) {
             prefix = sichMatch[1].trim();
             core = core.slice(sichMatch[0].length);
         } else {
             // 2. Case markers without sich: jdn., jdm., etw., etc. with optional preposition
-            const caseMatch = core.match(/^((?:(?:an|von|mit|für|bei|zu|über|auf|aus|nach)\s+)?(?:(?:jdn|jdm|jmdn|jmdm|etw)\.(?:\/(?:jdn|jdm|jmdn|jmdm|etw)\.)?\s*)+)\s*/);
+            //    (Encuentros prints jdn/jdm without the period)
+            const caseMatch = core.match(/^((?:(?:an|von|mit|für|bei|zu|über|auf|aus|nach)\s+)?(?:(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.)(?:\/(?:(?:jdn|jdm|jmdn|jmdm)(?:\.|\b)|etw\.))?\s*)+)\s*/);
             if (caseMatch) {
                 prefix = caseMatch[1].trim();
                 core = core.slice(caseMatch[0].length);
+            }
+        }
+    } else if (language === 'spanish') {
+        // 1. Trailing notes in parentheses: (adv.), (pl.), (fam.), (+ inf.), (de), (= la bicicleta)
+        let parenMatch;
+        while ((parenMatch = core.match(/\s+\([^()]*\)$/)) !== null) {
+            suffix = `${parenMatch[0].trim()} ${suffix}`.trim();
+            core = core.slice(0, -parenMatch[0].length);
+        }
+
+        // 2. algo/alguien at end with optional preposition (loop for chained markers)
+        let objectMatch;
+        while ((objectMatch = core.match(/\s+((?:(?:a|de|con|en|para|por)\s+)?(?:algo|alguien))$/)) !== null) {
+            suffix = `${objectMatch[1]} ${suffix}`.trim();
+            core = core.slice(0, -objectMatch[0].length);
+        }
+
+        // 3. Trailing ellipsis (only if no other ... in the text), e.g. "Oye, ..."
+        const ellipsisCount = (core.match(/\.\.\./g) || []).length;
+        if (ellipsisCount === 1) {
+            const ellipsisMatch = core.match(/\s+(\.\.\.[?!]?)$/);
+            if (ellipsisMatch) {
+                suffix = `${ellipsisMatch[1].trim()} ${suffix}`.trim();
+                core = core.slice(0, -ellipsisMatch[0].length);
             }
         }
     } else if (language === 'english') {
@@ -349,7 +455,7 @@ function parseAuxiliaries(text, language) {
 /**
  * Parses all semicolon-separated answer alternatives.
  * @param {string} text - The full answer text with semicolons
- * @param {string} language - 'french', 'german', or 'english'
+ * @param {string} language - 'french', 'spanish', 'german', or 'english'
  * @returns {Array<{ prefix: string, core: string, suffix: string }>}
  */
 function parseAllAnswers(text, language) {
@@ -358,15 +464,11 @@ function parseAllAnswers(text, language) {
 
 /**
  * Determines the answer field name based on book and question field.
- * @returns {string} 'french', 'german', or 'english'
+ * @returns {string} 'french', 'spanish', 'german', or 'english'
  */
 function getAnswerField() {
-    const book = AppState.bookSelected;
-    const qf = AppState.currentQuestionField;
-    if (isFrenchBook(book)) {
-        return qf === 'french' ? 'german' : 'french';
-    }
-    return qf === 'german' ? 'english' : 'german';
+    const foreignField = getForeignField();
+    return AppState.currentQuestionField === foreignField ? 'german' : foreignField;
 }
 
 /**
@@ -374,6 +476,8 @@ function getAnswerField() {
  * - Maps apostrophe-like characters (curly quotes, backtick, acute accent,
  *   modifier letter apostrophe, prime) to the ASCII straight apostrophe so the
  *   quiz accepts answers regardless of which variant the user's keyboard yields.
+ * - Maps the ellipsis character (…) to three dots, so "..." typed on a keyboard
+ *   matches, and so does "…" from phones that auto-convert three dots.
  * - Collapses any run of whitespace (incl. non-breaking space, tabs) to a
  *   single space and trims the ends, so accidental double-spaces and leading/
  *   trailing spaces don't cause false rejections.
@@ -381,7 +485,41 @@ function getAnswerField() {
  * @returns {string}
  */
 function normalizeAnswer(str) {
-    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/\s+/g, ' ').trim();
+    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/…/g, '...').replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * Lists the normalized answers accepted for the current word.
+ * Every book accepts the core of each alternative. With lenient matching (Spanish
+ * book) the text with its hints and with or without the parenthesized parts is
+ * accepted too, because Encuentros writes notes and optional words in parentheses:
+ * "un poco (de)" accepts "un poco", "un poco de" and "un poco (de)".
+ * @param {Array<{ prefix: string, core: string, suffix: string }>} parsedAnswers
+ * @param {boolean} lenient - Also accept hints and optional parenthesized parts
+ * @returns {Set<string>}
+ */
+function getAcceptedAnswers(parsedAnswers, lenient) {
+    const accepted = new Set();
+    // Adds an answer with and without a trailing comma ("Oye," -> "Oye")
+    const add = (text) => {
+        accepted.add(normalizeAnswer(text));
+        accepted.add(normalizeAnswer(text.replace(/[,;:]\s*$/, '')));
+    };
+    parsedAnswers.forEach(({ prefix, core, suffix }) => {
+        if (!lenient) {
+            accepted.add(normalizeAnswer(core));
+            return;
+        }
+        [core, `${prefix} ${core}`, `${core} ${suffix}`, `${prefix} ${core} ${suffix}`].forEach(text => {
+            [text, text.replace(/^\s*hier:\s*/, '')].forEach(variant => {
+                add(variant);
+                add(variant.replace(/\([^()]*\)/g, ' '));
+                add(variant.replace(/[()]/g, ''));
+            });
+        });
+    });
+    accepted.delete('');
+    return accepted;
 }
 
 /**
@@ -458,6 +596,18 @@ function hideFilters() {
 }
 
 /**
+ * Shows the special-character rows for the selected book: the Spanish rows
+ * (á é í ó ú ñ ü ¿ ¡, plus German ä ö ß) for Spanish books, the original
+ * French/German rows for all other books.
+ */
+function updateKeyboardForBook() {
+    const isSpanish = getBookLanguage() === 'ES';
+    DOM.keyboard.querySelectorAll('.keyboard-row').forEach(row => {
+        row.style.display = (row.dataset.lang === 'es') === isSpanish ? '' : 'none';
+    });
+}
+
+/**
  * Sets up UI based on selected book
  */
 function setupUIForBook() {
@@ -496,6 +646,8 @@ function setupUIForBook() {
     DOM.statsTitle.textContent = trans.statsTitle;
     DOM.mostRepeatedTitle.textContent = trans.mostRepeated;
     DOM.restartBtn.textContent = trans.restart;
+
+    updateKeyboardForBook();
 
     // Show UI elements
     DOM.flag1.style.display = 'inline';
@@ -575,12 +727,9 @@ function updateProgress() {
  * Updates answer input placeholder based on current question field
  */
 function updatePlaceholder() {
-    const qf = AppState.currentQuestionField;
-    if (isFrenchBook()) {
-        DOM.answerInput.placeholder = qf === 'french' ? t('placeholderDE') : t('placeholderFR');
-    } else {
-        DOM.answerInput.placeholder = qf === 'german' ? t('placeholderEN') : t('placeholderDE');
-    }
+    DOM.answerInput.placeholder = getAnswerField() === 'german'
+        ? t('placeholderDE')
+        : t(`placeholder${getBookLanguage()}`);
 }
 
 // ============================================================================
@@ -594,37 +743,19 @@ function updatePlaceholder() {
  * @returns {string} Word to display
  */
 function chooseDisplayWord(wordData) {
-    if (isFrenchBook()) {
-        if (AppState.direction === 'FORWARD') {
-            AppState.currentQuestionField = 'french';
-            return wordData.french;
-        }
-        if (AppState.direction === 'BACKWARD') {
-            AppState.currentQuestionField = 'german';
-            return wordData.german;
-        }
-        if (Math.random() < 0.5) {
-            AppState.currentQuestionField = 'french';
-            return wordData.french;
-        }
-        AppState.currentQuestionField = 'german';
-        return wordData.german;
+    const foreignField = getForeignField();
+    // FORWARD shows the foreign word for FR/ES books and the German word for EN books
+    const forwardField = LANGUAGES[getBookLanguage()].foreignFirst ? foreignField : 'german';
+    const backwardField = forwardField === 'german' ? foreignField : 'german';
+
+    if (AppState.direction === 'FORWARD') {
+        AppState.currentQuestionField = forwardField;
+    } else if (AppState.direction === 'BACKWARD') {
+        AppState.currentQuestionField = backwardField;
     } else {
-        if (AppState.direction === 'FORWARD') {
-            AppState.currentQuestionField = 'german';
-            return wordData.german;
-        }
-        if (AppState.direction === 'BACKWARD') {
-            AppState.currentQuestionField = 'english';
-            return wordData.english;
-        }
-        if (Math.random() < 0.5) {
-            AppState.currentQuestionField = 'german';
-            return wordData.german;
-        }
-        AppState.currentQuestionField = 'english';
-        return wordData.english;
+        AppState.currentQuestionField = Math.random() < 0.5 ? forwardField : backwardField;
     }
+    return wordData[AppState.currentQuestionField];
 }
 
 /**
@@ -633,14 +764,8 @@ function chooseDisplayWord(wordData) {
  * @returns {Object} Correct answers array and question language
  */
 function getCorrectAnswers(wordData) {
-    let questionLanguage;
-    const qf = AppState.currentQuestionField;
-
-    if (isFrenchBook()) {
-        questionLanguage = qf === 'french' ? 'FR->DE' : 'DE->FR';
-    } else {
-        questionLanguage = qf === 'german' ? 'DE->EN' : 'EN->DE';
-    }
+    const lang = getBookLanguage();
+    const questionLanguage = AppState.currentQuestionField === 'german' ? `DE->${lang}` : `${lang}->DE`;
 
     const correctAnswerArr = AppState.currentParsedAnswers
         ? AppState.currentParsedAnswers.map(p => p.core)
@@ -655,11 +780,10 @@ function getCorrectAnswers(wordData) {
  * @returns {string} Unique key
  */
 function getKeyForWord(wordData) {
-    if (isFrenchBook()) {
-        return `${wordData.french}|${wordData.german}`;
-    } else {
-        return `${wordData.german}|${wordData.english}`;
-    }
+    const foreign = wordData[getForeignField()];
+    return LANGUAGES[getBookLanguage()].foreignFirst
+        ? `${foreign}|${wordData.german}`
+        : `${wordData.german}|${foreign}`;
 }
 
 /**
@@ -757,8 +881,11 @@ function checkAnswer() {
     const key = getKeyForWord(wordData);
     AppState.attemptCounts[key] = (AppState.attemptCounts[key] || 0) + 1;
 
-    const normalizedUser = normalizeAnswer(userAnswer);
-    const isCorrect = correctAnswers.some(ans => normalizeAnswer(ans) === normalizedUser);
+    const answerField = getAnswerField();
+    const parsedAnswers = AppState.currentParsedAnswers ||
+        parseAllAnswers(wordData[answerField], answerField);
+    const accepted = getAcceptedAnswers(parsedAnswers, getBookLanguage() === 'ES');
+    const isCorrect = accepted.has(normalizeAnswer(userAnswer));
     if (isCorrect) {
         handleCorrectAnswer(questionLanguage, key);
     } else {
@@ -778,16 +905,10 @@ function handleCorrectAnswer(questionLanguage, key) {
 
     DOM.feedbackMessage.className = 'feedback success';
 
-    // Set correct feedback based on question direction
-    if (isFrenchBook()) {
-        DOM.feedbackMessage.textContent = questionLanguage === 'FR->DE'
-            ? t('correctDE')
-            : t('correctFR');
-    } else {
-        DOM.feedbackMessage.textContent = questionLanguage === 'DE->EN'
-            ? t('correctEN')
-            : t('correctDE');
-    }
+    // Praise in the language of the answer
+    DOM.feedbackMessage.textContent = questionLanguage.endsWith('->DE')
+        ? t('correctDE')
+        : t(`correct${getBookLanguage()}`);
 
     AppState.correctCount++;
     AppState.answeredWords[key] = (AppState.answeredWords[key] || 0) + 1;
@@ -918,9 +1039,6 @@ function showStats() {
     // Calculate words per minute using total seconds (even if < 1 minute)
     const wordsPerMinute = timeSpentSeconds > 0 ? (AppState.correctCount / (timeSpentSeconds / 60)).toFixed(1) : '0.0';
 
-    // Determine if French-German or German-English
-    const isFrenchGerman = isFrenchBook();
-
     // Build enhanced summary
     const summaryDiv = document.createElement('div');
     summaryDiv.className = 'stats-summary-enhanced';
@@ -930,25 +1048,25 @@ function showStats() {
         <div class="stat-grid">
             <div class="stat-box">
                 <div class="stat-value">${AppState.correctCount}/${AppState.totalCount}</div>
-                <div class="stat-label">${isFrenchGerman ? 'Mots complétés' : 'Words completed'}</div>
+                <div class="stat-label">${t('statWords')}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${timeFormatted}</div>
-                <div class="stat-label">${isFrenchGerman ? 'Temps total' : 'Total time'}</div>
+                <div class="stat-label">${t('statTime')}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${accuracy}%</div>
-                <div class="stat-label">${isFrenchGerman ? 'Précision' : 'Accuracy'}</div>
+                <div class="stat-label">${t('statAccuracy')}</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value">${averageAttempts}</div>
-                <div class="stat-label">${isFrenchGerman ? 'Tentatives moy.' : 'Avg. attempts'}</div>
+                <div class="stat-label">${t('statAvgAttempts')}</div>
             </div>
         </div>
         <div class="stat-details">
-            <p><strong>${isFrenchGerman ? '✓ Correct du premier coup' : '✓ First attempt correct'}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
-            <p><strong>${isFrenchGerman ? '⚡ Vitesse' : '⚡ Speed'}:</strong> ${wordsPerMinute} ${isFrenchGerman ? 'mots/min' : 'words/min'}</p>
-            <p><strong>${isFrenchGerman ? '📊 Total de tentatives' : '📊 Total attempts'}:</strong> ${totalAttempts}</p>
+            <p><strong>${t('statFirstAttempt')}:</strong> ${firstAttemptCorrect}/${AppState.totalCount}</p>
+            <p><strong>${t('statSpeed')}:</strong> ${wordsPerMinute} ${t('statWordsPerMinute')}</p>
+            <p><strong>${t('statTotalAttempts')}:</strong> ${totalAttempts}</p>
         </div>
     `;
 
@@ -981,9 +1099,7 @@ function showStats() {
     } else {
         const li = document.createElement('li');
         li.className = 'perfect-score';
-        li.textContent = isFrenchGerman
-            ? '🎉 Parfait! Tous les mots corrects du premier coup!'
-            : '🎉 Perfect! All words correct on first try!';
+        li.textContent = t('perfectScore');
         DOM.mostRepeatedList.appendChild(li);
     }
 }
