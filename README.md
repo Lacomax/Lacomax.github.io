@@ -20,7 +20,7 @@ A lightweight, client-side vocabulary training application designed for German l
 
 ### 🎨 User Experience
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Special Character Keyboard**: Easy input for accented characters (é, ä, ç, ß, etc.)
+- **Special Character Keyboard**: Easy input for accented characters (é, ä, ç, ß, etc.); the Spanish book gets its own rows (á, ñ, ü, ¿, ¡, ä, ö, ß)
 - **Multiple Quiz Modes**:
   - Sequential or random order
   - Filter by lesson and module
@@ -81,23 +81,26 @@ npx serve
 3. **Pick Module** (optional): Focus on specific topics within lessons
 4. **Set Direction**: Choose translation direction or "Both" for bidirectional practice
 5. **Random Order**: Toggle to practice words in random or sequential order
-6. **Start**: Click "Commencer" (FR) or "Start" (EN) to begin
+6. **Start**: Click "Commencer" (FR), "Start" (EN) or "Empezar" (ES) to begin
 
 ### During Quiz
 - Type your answer in the input field
 - Use special character buttons for accented letters
-- Press **Enter** or click **Valider/Check** to submit
+- Hints shown next to the input (e.g. `qn`, `etw.`, `algo`, `(adv.)`) are not part of the answer
+- Curly apostrophes, `…` instead of `...` and extra spaces are accepted
+- Encuentros hoy 1: text in parentheses and `hier:` are optional (`un poco (de)` accepts `un poco` and `un poco de`)
+- Press **Enter** or click **Valider/Check/Comprobar** to submit
 - ✅ Correct answers: Progress bar advances, word is marked complete
 - ❌ Incorrect answers: See the correct answer and example sentence, word will be repeated
 
 ### After Quiz
 - View your statistics and performance
 - See which words needed the most attempts
-- Click "Réessayer/Try again" to restart with the same or different settings
+- Click "Réessayer/Try again/Otra vez" to restart with the same or different settings
 
 ### Keyboard Shortcuts
 - **Enter**: Submit answer
-- **Special Character Buttons**: Click to insert é, ä, ç, ß, etc.
+- **Special Character Buttons**: Click to insert é, ä, ç, ß, ñ, ¿, ¡, etc.
 - **Tab**: Navigate between inputs and buttons
 
 ## 📊 Data Structure
@@ -118,6 +121,9 @@ Vocabulary data is stored in JSON format:
 - **Multiple Answers**: Separate alternatives with semicolons (`;`)
 - **Example Sentences**: Provide context for better learning
 - **Phonetics**: IPA transcriptions for English words (Green Line 2)
+- **Languages**: Découvertes files use `french`/`german`, Green Line `german`/`english`, Encuentros `spanish`/`german`
+- **Notes**: Encuentros writes the book's italic notes in parentheses (`bien (adv.)`, `¿Qué tal? (+ sust.)`)
+- **Ellipses**: written as three dots (`...`), never as the `…` character
 
 ## 🗂️ Project Structure
 
