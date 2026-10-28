@@ -781,7 +781,8 @@ runner.test('findCommonAux: empty array', (t) => {
 
 // Re-implement normalizeAnswer locally (same as in script.js)
 function normalizeAnswer(str) {
-    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/…/g, '...').replace(/\s+/g, ' ').trim();
+    const text = str.replace(/[‘’`´ʼ′]/g, "'").replace(/…/g, '...').replace(/\s+/g, ' ').trim();
+    return text.endsWith('...') ? text : text.replace(/\s*[.!?]$/, '');
 }
 
 runner.test('normalizeAnswer: ellipsis character becomes three dots', (t) => {
@@ -790,6 +791,17 @@ runner.test('normalizeAnswer: ellipsis character becomes three dots', (t) => {
 
 runner.test('normalizeAnswer: typed three dots match a phone-converted ellipsis', (t) => {
     t.assertEqual(normalizeAnswer('what a ...'), normalizeAnswer('what a …'));
+});
+
+runner.test('normalizeAnswer: sentence-final period, ! and ? are optional', (t) => {
+    t.assertEqual(normalizeAnswer('Ich verstehe, was du meinst.'), normalizeAnswer('Ich verstehe, was du meinst'));
+    t.assertEqual(normalizeAnswer('Ich glaub’s nicht!'), "Ich glaub's nicht");
+    t.assertEqual(normalizeAnswer('How are you?'), 'How are you');
+});
+
+runner.test('normalizeAnswer: trailing ellipsis is kept, a mark after it is dropped', (t) => {
+    t.assertEqual(normalizeAnswer('Du solltest lieber ...'), 'Du solltest lieber ...');
+    t.assertEqual(normalizeAnswer('Wie wäre es mit ...?'), 'Wie wäre es mit ...');
 });
 
 runner.test('normalizeAnswer: double space in middle collapses to one', (t) => {
@@ -841,17 +853,13 @@ runner.test('normalizeAnswer: file value with curly quote matches user typing AS
 // ============================================================================
 
 // Re-implement getAcceptedAnswers locally (same as in script.js)
-function getAcceptedAnswers(parsedAnswers, lenient) {
+function getAcceptedAnswers(parsedAnswers) {
     const accepted = new Set();
     const add = (text) => {
         accepted.add(normalizeAnswer(text));
         accepted.add(normalizeAnswer(text.replace(/[,;:]\s*$/, '')));
     };
     parsedAnswers.forEach(({ prefix, core, suffix }) => {
-        if (!lenient) {
-            accepted.add(normalizeAnswer(core));
-            return;
-        }
         [core, `${prefix} ${core}`, `${core} ${suffix}`, `${prefix} ${core} ${suffix}`].forEach(text => {
             [text, text.replace(/^\s*hier:\s*/, '')].forEach(variant => {
                 add(variant);
@@ -864,37 +872,47 @@ function getAcceptedAnswers(parsedAnswers, lenient) {
     return accepted;
 }
 
-const accepted = (text, language, lenient) =>
-    [...getAcceptedAnswers(parseAllAnswers(text, language), lenient)].sort();
+const accepted = (text, language) =>
+    [...getAcceptedAnswers(parseAllAnswers(text, language))].sort();
 
-runner.test('getAcceptedAnswers: strict mode accepts only the cores', (t) => {
-    t.assertEqual(accepted('Flur; Diele', 'german', false).join('|'), 'Diele|Flur');
-    t.assertEqual(
-        accepted('motiviert sein (etw. zu tun)', 'german', false).join('|'),
-        'motiviert sein (etw. zu tun)'
-    );
+runner.test('getAcceptedAnswers: every alternative is accepted', (t) => {
+    t.assertEqual(accepted('Flur; Diele', 'german').join('|'), 'Diele|Flur');
 });
 
-runner.test('getAcceptedAnswers: lenient mode makes parenthesized parts optional', (t) => {
-    t.assertEqual(accepted('un poco (de)', 'spanish', true).join('|'), 'un poco|un poco (de)|un poco de');
+runner.test('getAcceptedAnswers: parentheses are optional in the English and French books too', (t) => {
+    t.assertEqual(accepted('to turn (a)round', 'english').join('|'), 'to turn (a)round|to turn around|to turn round');
+    t.assertTrue(accepted('(job) interview', 'english').includes('interview'));
+    t.assertTrue(accepted('Ich glaub’s nicht! (ugs.)', 'german').includes("Ich glaub's nicht"));
+    t.assertTrue(accepted('ein (Schul-)Hof', 'german').includes('ein Schul-Hof'));
+});
+
+runner.test('getAcceptedAnswers: "How about ...?" keeps its grammar note out of the answer', (t) => {
+    const parsed = parseAuxiliaries('How about ...? (+ noun or gerund)', 'english');
+    t.assertEqual(parsed.core, 'How about ...?');
+    t.assertEqual(parsed.suffix, '(+ noun or gerund)');
+    t.assertTrue(accepted('How about ...? (+ noun or gerund)', 'english').includes(normalizeAnswer('How about ...?')));
+});
+
+runner.test('getAcceptedAnswers: makes parenthesized parts optional', (t) => {
+    t.assertEqual(accepted('un poco (de)', 'spanish').join('|'), 'un poco|un poco (de)|un poco de');
     t.assertEqual(
-        accepted('Englisch (Sprache)', 'german', true).join('|'),
+        accepted('Englisch (Sprache)', 'german').join('|'),
         'Englisch|Englisch (Sprache)|Englisch Sprache'
     );
     t.assertEqual(
-        accepted('tercer(o); tercera', 'spanish', true).join('|'),
+        accepted('tercer(o); tercera', 'spanish').join('|'),
         'tercer|tercer(o)|tercera|tercero'
     );
 });
 
-runner.test('getAcceptedAnswers: lenient mode accepts hints and drops hier:', (t) => {
-    t.assertEqual(accepted('desear algo a alguien', 'spanish', true).join('|'), 'desear|desear algo a alguien');
-    t.assertEqual(accepted('jdn anrufen', 'german', true).join('|'), 'anrufen|jdn anrufen');
+runner.test('getAcceptedAnswers: accepts hints and drops hier:', (t) => {
+    t.assertEqual(accepted('desear algo a alguien', 'spanish').join('|'), 'desear|desear algo a alguien');
+    t.assertEqual(accepted('jdn anrufen', 'german').join('|'), 'anrufen|jdn anrufen');
     t.assertEqual(
-        accepted('gut; hier: na gut; o. k.', 'german', true).join('|'),
-        'gut|hier: na gut|na gut|o. k.'
+        accepted('gut; hier: na gut; o. k.', 'german').join('|'),
+        'gut|hier: na gut|na gut|o. k'
     );
-    t.assertEqual(accepted('Oye, ...', 'spanish', true).join('|'), 'Oye|Oye,|Oye, ...');
+    t.assertEqual(accepted('Oye, ...', 'spanish').join('|'), 'Oye|Oye,|Oye, ...');
 });
 
 // Node only: the local copies above must behave exactly like the functions in js/script.js
@@ -937,13 +955,11 @@ runner.test('Local copies behave like js/script.js on every vocabulary entry', (
                 const mine = parseAllAnswers(text, language);
                 const theirs = real.parseAllAnswers(text, language);
                 t.assertEqual(JSON.stringify(mine), JSON.stringify(theirs), `${file}: parse "${text}"`);
-                [false, true].forEach(lenient => {
-                    t.assertEqual(
-                        [...getAcceptedAnswers(mine, lenient)].sort().join('|'),
-                        [...real.getAcceptedAnswers(theirs, lenient)].sort().join('|'),
-                        `${file}: accepted answers for "${text}" (lenient: ${lenient})`
-                    );
-                });
+                t.assertEqual(
+                    [...getAcceptedAnswers(mine)].sort().join('|'),
+                    [...real.getAcceptedAnswers(theirs)].sort().join('|'),
+                    `${file}: accepted answers for "${text}"`
+                );
                 t.assertEqual(normalizeAnswer(text), real.normalizeAnswer(text), `${file}: normalize "${text}"`);
                 compared++;
             });

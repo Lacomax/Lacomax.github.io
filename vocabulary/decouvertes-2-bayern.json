@@ -1549,13 +1549,6 @@
     {
         "lesson": "Leçon 3",
         "module": "B",
-        "french": "l'Action contre la faim",
-        "german": "die \"Aktion gegen den Hunger\"\n(Name einer gemeinnützigen",
-        "example": ""
-    },
-    {
-        "lesson": "Leçon 3",
-        "module": "B",
         "french": "le départ",
         "german": "die Abfahrt; der Aufbruch; der Start",
         "example": ""
@@ -3840,13 +3833,6 @@
         "module": "B",
         "french": "un nombre",
         "german": "eine Zahl",
-        "example": ""
-    },
-    {
-        "lesson": "Leçon 7",
-        "module": "B",
-        "french": "un audioguide",
-        "german": "ein Audioguide (Gerät zum\nAbspielen von Informationen",
         "example": ""
     },
     {

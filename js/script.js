@@ -481,24 +481,28 @@ function getAnswerField() {
  * - Collapses any run of whitespace (incl. non-breaking space, tabs) to a
  *   single space and trims the ends, so accidental double-spaces and leading/
  *   trailing spaces don't cause false rejections.
+ * - Drops one sentence-final period, exclamation or question mark, because the
+ *   books punctuate the two languages of an entry differently ("I see your point"
+ *   / "Ich verstehe, was du meinst."). A trailing ellipsis stays: "mit ...?"
+ *   becomes "mit ...", and "mit ..." is left alone.
  * @param {string} str
  * @returns {string}
  */
 function normalizeAnswer(str) {
-    return str.replace(/[‘’`´ʼ′]/g, "'").replace(/…/g, '...').replace(/\s+/g, ' ').trim();
+    const text = str.replace(/[‘’`´ʼ′]/g, "'").replace(/…/g, '...').replace(/\s+/g, ' ').trim();
+    return text.endsWith('...') ? text : text.replace(/\s*[.!?]$/, '');
 }
 
 /**
- * Lists the normalized answers accepted for the current word.
- * Every book accepts the core of each alternative. With lenient matching (Spanish
- * book) the text with its hints and with or without the parenthesized parts is
- * accepted too, because Encuentros writes notes and optional words in parentheses:
- * "un poco (de)" accepts "un poco", "un poco de" and "un poco (de)".
+ * Lists the normalized answers accepted for the current word: the core of each
+ * alternative, also with its hints, and with or without the parenthesized parts,
+ * because all books write notes and optional words in parentheses:
+ * "un poco (de)" accepts "un poco", "un poco de" and "un poco (de)",
+ * "Ich glaub's nicht! (ugs.)" accepts "Ich glaub's nicht!".
  * @param {Array<{ prefix: string, core: string, suffix: string }>} parsedAnswers
- * @param {boolean} lenient - Also accept hints and optional parenthesized parts
  * @returns {Set<string>}
  */
-function getAcceptedAnswers(parsedAnswers, lenient) {
+function getAcceptedAnswers(parsedAnswers) {
     const accepted = new Set();
     // Adds an answer with and without a trailing comma ("Oye," -> "Oye")
     const add = (text) => {
@@ -506,10 +510,6 @@ function getAcceptedAnswers(parsedAnswers, lenient) {
         accepted.add(normalizeAnswer(text.replace(/[,;:]\s*$/, '')));
     };
     parsedAnswers.forEach(({ prefix, core, suffix }) => {
-        if (!lenient) {
-            accepted.add(normalizeAnswer(core));
-            return;
-        }
         [core, `${prefix} ${core}`, `${core} ${suffix}`, `${prefix} ${core} ${suffix}`].forEach(text => {
             [text, text.replace(/^\s*hier:\s*/, '')].forEach(variant => {
                 add(variant);
@@ -884,7 +884,7 @@ function checkAnswer() {
     const answerField = getAnswerField();
     const parsedAnswers = AppState.currentParsedAnswers ||
         parseAllAnswers(wordData[answerField], answerField);
-    const accepted = getAcceptedAnswers(parsedAnswers, getBookLanguage() === 'ES');
+    const accepted = getAcceptedAnswers(parsedAnswers);
     const isCorrect = accepted.has(normalizeAnswer(userAnswer));
     if (isCorrect) {
         handleCorrectAnswer(questionLanguage, key);
