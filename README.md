@@ -87,8 +87,8 @@ npx serve
 - Type your answer in the input field
 - Use special character buttons for accented letters
 - Hints shown next to the input (e.g. `qn`, `etw.`, `algo`, `(adv.)`) are not part of the answer
-- Curly apostrophes, `…` instead of `...` and extra spaces are accepted
-- Encuentros hoy 1: text in parentheses and `hier:` are optional (`un poco (de)` accepts `un poco` and `un poco de`)
+- Curly apostrophes, `…` instead of `...`, extra spaces and a missing final `.`, `!` or `?` are accepted
+- Text in parentheses and `hier:` are optional (`un poco (de)` accepts `un poco` and `un poco de`, `to turn (a)round` accepts `to turn around`, `Ich glaub’s nicht! (ugs.)` accepts `Ich glaub’s nicht`)
 - Press **Enter** or click **Valider/Check/Comprobar** to submit
 - ✅ Correct answers: Progress bar advances, word is marked complete
 - ❌ Incorrect answers: See the correct answer and example sentence, word will be repeated
